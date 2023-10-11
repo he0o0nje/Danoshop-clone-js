@@ -1,3 +1,5 @@
+import "./Footer.js";
+
 function Main() {
   return (
     <>

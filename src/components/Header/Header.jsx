@@ -1,3 +1,5 @@
+import "./HeaderStyle.js";
+
 function Header() {
   return (
     <>
