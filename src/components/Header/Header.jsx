@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import * as style from "./HeaderStyle";
 import logo from "../../assets/images/header/logo.jpg";
 import mypage1 from "../../assets/images/header/mypage1.svg";
@@ -5,6 +6,23 @@ import mypage2 from "../../assets/images/header/mypage2.svg";
 import mypage3 from "../../assets/images/header/mypage3.svg";
 
 function Header() {
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsHeaderFixed(true);
+      } else {
+        setIsHeaderFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <style.Header>
@@ -43,7 +61,7 @@ function Header() {
             </li>
           </ul>
         </style.HeaderTop>
-        <style.HeaderBottom>
+        <style.HeaderBottom className="">
           <style.LogoWrap>
             <style.Link href="!">
               <img src={logo} alt="" />
