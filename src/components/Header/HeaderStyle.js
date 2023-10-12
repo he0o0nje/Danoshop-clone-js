@@ -10,7 +10,6 @@ export const Header = styled.div`
 `;
 
 export const HeaderTop = styled.div`
-  background-color: yellow;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -23,12 +22,10 @@ export const HeaderTop = styled.div`
   li {
     font-size: 0.75rem;
     margin-left: 0.9375rem;
-    font-family: "Noto Sans KR", Arial, sans-serif !important;
   }
 `;
 
 export const boardList = styled.div`
-  margin-left: 0.9375rem;
   position: relative;
   .board_list {
     position: absolute;
@@ -38,12 +35,11 @@ export const boardList = styled.div`
     border: 1px solid #999;
     background: #fff;
   }
-  li {
+  .board_list li {
     margin: 15px 0;
   }
-  a {
-    display: block;
-    font-size: 0.75rem;
+  .board_list a {
+    font-size: 0.6875rem;
     white-space: nowrap;
   }
 `;
@@ -51,8 +47,9 @@ export const boardList = styled.div`
 export const Link = styled.a`
   text-decoration: none;
   color: #666;
+  display: flex;
+  align-items: center;
   .arrRgt {
-    display: inline-block;
     width: 5px;
     height: 5px;
     margin-left: 5px;
