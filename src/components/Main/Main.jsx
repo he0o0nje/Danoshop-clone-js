@@ -3,7 +3,7 @@ import * as style from "./MainStyle";
 function Main() {
   return (
     <>
-      <div>My</div>
+      <style.Main>My</style.Main>
     </>
   );
 }

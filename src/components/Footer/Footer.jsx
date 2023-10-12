@@ -3,7 +3,7 @@ import * as style from "./FooterStyle";
 function Main() {
   return (
     <>
-      <div>World</div>
+      <style.Footer>World</style.Footer>
     </>
   );
 }

@@ -4,7 +4,6 @@ export const Header = styled.div`
   max-width: 1680px;
   width: 92%;
   margin: 0 auto;
-  padding: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
