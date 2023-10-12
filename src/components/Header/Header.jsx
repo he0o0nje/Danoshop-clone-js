@@ -63,20 +63,20 @@ function Header() {
         </style.HeaderTop>
         <style.HeaderBottom className="">
           <style.LogoWrap>
-            <style.Link href="!">
+            <a href="!">
               <img src={logo} alt="" />
-            </style.Link>
+            </a>
           </style.LogoWrap>
           <style.MypageWrap>
-            <style.Link href="!">
+            <a href="!">
               <img src={mypage1} alt="" />
-            </style.Link>
-            <style.Link href="!">
+            </a>
+            <a href="!">
               <img src={mypage2} alt="" />
-            </style.Link>
-            <style.Link href="!">
+            </a>
+            <a href="!">
               <img src={mypage3} alt="" />
-            </style.Link>
+            </a>
           </style.MypageWrap>
           <style.TopCategory>
             <ul>
