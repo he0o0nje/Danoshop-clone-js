@@ -1,7 +1,9 @@
+import * as style from "./MainStyle";
+
 function Main() {
   return (
     <>
-      <div className="main">My</div>
+      <div>My</div>
     </>
   );
 }

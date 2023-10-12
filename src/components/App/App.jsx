@@ -1,14 +1,14 @@
-import "./App.js";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import Main from "../Main/Main";
+import HomePage from "../../pages/HomePage/HomePage";
+import AboutPage from "../../pages/AboutPage/AboutPage";
+import { Reset } from "styled-reset";
+import * as style from "./AppStyle";
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+      <Reset />
+      <HomePage></HomePage>
+      {/* <AboutPage></AboutPage> */}
     </>
   );
 }

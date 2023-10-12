@@ -1,9 +1,14 @@
-import "./HomePageStyle.js";
+import Header from "../../components/Header/Header";
+import Main from "../../components/Main/Main";
+import Footer from "../../components/Footer/Footer";
+import * as style from "./HomePageStyle";
 
 function HomePage() {
   return (
     <>
-      <div className="home_page">Hello</div>
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </>
   );
 }

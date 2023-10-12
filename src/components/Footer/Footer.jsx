@@ -1,9 +1,9 @@
-import "./Footer.js";
+import * as style from "./FooterStyle";
 
 function Main() {
   return (
     <>
-      <div className="main">World</div>
+      <div>World</div>
     </>
   );
 }
