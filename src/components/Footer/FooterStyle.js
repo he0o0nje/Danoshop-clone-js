@@ -60,8 +60,18 @@ export const Inquiry = styled.div`
   div {
     flex-basis: 50%;
   }
-  div + div {
+  strong {
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  .inq_wrap span {
+    padding-right: 10px;
+  }
+  .inq_wrap + .inq_wrap {
     margin-top: 20px;
+  }
+  .cs_list {
+    margin-top: 10px;
   }
 `;
 

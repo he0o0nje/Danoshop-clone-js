@@ -1,11 +1,11 @@
 import HomePage from "../../pages/HomePage/HomePage";
 // import AboutPage from "../../pages/AboutPage/AboutPage";
-import { Reset } from "styled-reset";
+import GlobalStyles from "../../GlobalStyles";
 
 function App() {
   return (
     <>
-      <Reset />
+      <GlobalStyles />
       <HomePage></HomePage>
       {/* <AboutPage></AboutPage> */}
     </>
