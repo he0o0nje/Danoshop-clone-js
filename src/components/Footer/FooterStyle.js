@@ -103,3 +103,22 @@ export const BInfoCont = styled.div`
     margin-left: 0.5rem;
   }
 `;
+
+export const Sns = styled.div`
+  flex-basis: 100%;
+  text-align: right;
+`;
+
+export const SnsTit = styled.div`
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+`;
+
+export const SnsBox = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  a {
+    margin-left: 1rem;
+  }
+`;

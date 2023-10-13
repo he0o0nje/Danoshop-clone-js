@@ -103,7 +103,27 @@ function Main() {
               </style.BInfoCont>
             </style.BInfoList>
           </style.BasicInfo>
-          <div></div>
+          <style.Sns>
+            <style.SnsTit>SNS</style.SnsTit>
+            <style.SnsBox>
+              <a href="!">
+                asdfsadf
+                <img src="../../assets/images/footer/sns1.svg" alt="" />
+              </a>
+              <a href="!">
+                qwerwer
+                <img src="../../assets/images/footer/sns2.svg" alt="" />
+              </a>
+              <a href="!">
+                1342
+                <img src="../../assets/images/footer/sns3.svg" alt="" />
+              </a>
+              <a href="!">
+                5363
+                <img src="../../assets/images/footer/sns4.svg" alt="" />
+              </a>
+            </style.SnsBox>
+          </style.Sns>
           <div></div>
         </style.FooterInner>
       </style.Footer>
