@@ -81,7 +81,7 @@ function Header() {
               <img src={mypage3} alt="" />
             </a>
           </style.MypageWrap>
-          <style.TopCategory>
+          <style.BotCategory>
             <ul>
               <li>
                 <style.Link href="!">전 상품</style.Link>
@@ -114,7 +114,7 @@ function Header() {
                 <style.Link href="!">리빙용품</style.Link>
               </li>
             </ul>
-          </style.TopCategory>
+          </style.BotCategory>
         </style.HeaderBottom>
       </style.Header>
     </>

@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
       src: url("./assets/fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf");
     }
     
+    html {
+      font-size: 62.5%;
+    }
+
     body {
       font-family: "Noto Sans KR", Arial, sans-serif;
       box-sizing: border-box;

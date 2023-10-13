@@ -14,14 +14,14 @@ export const HeaderTop = styled.div`
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  height: 3.125rem;
+  height: 5rem;
   position: relative;
   .top_list {
     display: flex;
   }
   li {
-    font-size: 0.75rem;
-    margin-left: 0.9375rem;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
   }
 `;
 
@@ -30,17 +30,17 @@ export const boardList = styled.div`
   .board_list {
     display: none;
     position: absolute;
-    top: 1.375rem;
-    right: -1.9375rem;
-    padding: 0 1.25rem;
-    border: 1px solid #999;
+    top: 2.2rem;
+    right: -3.1rem;
+    padding: 0 2rem;
+    border: 0.1rem solid #999;
     background: #fff;
   }
   .board_list li {
-    margin: 15px 0;
+    margin: 1.5rem 0;
   }
   .board_list a {
-    font-size: 0.6875rem;
+    font-size: 1.2rem;
     white-space: nowrap;
   }
 `;
@@ -50,11 +50,11 @@ export const Link = styled.a`
   display: flex;
   align-items: center;
   .arrRgt {
-    width: 0.3125rem;
-    height: 0.3125rem;
-    margin-left: 0.3125rem;
-    border-left: 0.0625rem solid #000;
-    border-bottom: 0.0625rem solid #000;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: 0.5rem;
+    border-left: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;
     transform: rotate(-135deg);
   }
 `;
@@ -65,17 +65,17 @@ export const HeaderBottom = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin-top: 1.875rem;
+  margin-top: 3rem;
 `;
 
 export const LogoWrap = styled.div`
   order: 1;
   flex-basis: 50%;
   flex-shrink: 0;
-  height: 3.75rem;
+  height: 6rem;
   img {
-    max-width: 25rem;
-    max-height: 3.75rem;
+    max-width: 40rem;
+    max-height: 6rem;
   }
 `;
 
@@ -87,25 +87,24 @@ export const MypageWrap = styled.div`
   flex-shrink: 0;
   margin-left: auto;
   a {
-    margin-left: 1.875rem;
+    margin-left: 3rem;
   }
 `;
 
-export const TopCategory = styled.div`
+export const BotCategory = styled.div`
   order: 3;
   display: flex;
   width: 100%;
   ul {
     display: flex;
-    height: 5rem;
+    height: 8rem;
   }
   li {
-    padding-right: 3.125rem;
+    padding-right: 5rem;
   }
   a {
-    font-size: 1rem;
-    line-height: 4.875rem;
+    font-size: 1.6rem;
+    line-height: 7.8rem;
     color: #1a1a1a;
-    letter-spacing: -0.0563rem;
   }
 `;

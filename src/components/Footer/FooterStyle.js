@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.div`
   width: 100%;
-  margin: 6.25rem auto 0;
+  margin: 10rem auto 0;
   background: #f8f8f8;
 `;
 
@@ -10,7 +10,7 @@ export const FooterInner = styled.div`
   max-width: 1680px;
   width: 92%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 10rem 0;
   color: #696969;
   display: flex;
   align-items: flex-start;
@@ -22,56 +22,55 @@ export const FooterInner = styled.div`
 `;
 
 export const LogoWrap = styled.div`
-  margin-bottom: 3.125rem;
-  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  font-size: 4rem;
   img {
-    max-width: 25rem;
-    max-height: 3.75rem;
+    max-width: 40rem;
+    max-height: 6rem;
   }
 `;
 
 export const BtnUtil = styled.div`
-  margin-bottom: 3.125rem;
+  margin-bottom: 5rem;
   ul {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
   li {
-    margin: 0 0 1.25rem 0.625rem;
+    margin: 0 0 1rem 2rem;
   }
   a {
     display: block;
-    font-size: 0.875rem;
+    font-size: 1.4rem;
     color: #696969;
   }
 `;
 
 export const Inquiry = styled.div`
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 1.4rem;
   color: #696969;
   line-height: 1.6;
   div {
     flex-basis: 50%;
   }
   strong {
-    font-weight: bold;
-    padding-right: 10px;
+    font-weight: 500;
+    padding-right: 1rem;
   }
   .inq_wrap span {
-    padding-right: 10px;
+    padding-right: 1rem;
   }
   .inq_wrap + .inq_wrap {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
   .cs_list {
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 `;
 
 export const InqTitle = styled.div`
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 550;
+  margin-bottom: 1rem;
 `;
