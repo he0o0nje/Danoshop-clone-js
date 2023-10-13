@@ -46,7 +46,6 @@ export const boardList = styled.div`
 `;
 
 export const Link = styled.a`
-  text-decoration: none;
   color: #666;
   display: flex;
   align-items: center;

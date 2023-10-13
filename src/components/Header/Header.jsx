@@ -4,6 +4,7 @@ import logo from "../../assets/images/header/logo.jpg";
 import mypage1 from "../../assets/images/header/mypage1.svg";
 import mypage2 from "../../assets/images/header/mypage2.svg";
 import mypage3 from "../../assets/images/header/mypage3.svg";
+import { Button } from "react-bootstrap";
 
 function Header() {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -61,7 +62,9 @@ function Header() {
             </li>
           </ul>
         </style.HeaderTop>
-        <style.HeaderBottom className="">
+        <style.HeaderBottom
+          className={`header-bottom ${isHeaderFixed ? "fixed" : "relative"}`}
+        >
           <style.LogoWrap>
             <a href="!">
               <img src={logo} alt="" />

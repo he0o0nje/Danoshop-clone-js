@@ -30,11 +30,6 @@ export const LogoWrap = styled.div`
   }
 `;
 
-export const Link = styled.a`
-  text-decoration: none;
-  color: #000;
-`;
-
 export const BtnUtil = styled.div`
   margin-bottom: 3.125rem;
   ul {

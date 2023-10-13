@@ -14,16 +14,16 @@ function Main() {
           <style.BtnUtil>
             <ul>
               <li>
-                <style.Link href="!">회사소개</style.Link>
+                <a href="!">회사소개</a>
               </li>
               <li>
-                <style.Link href="!">이용약관</style.Link>
+                <a href="!">이용약관</a>
               </li>
               <li>
-                <style.Link href="!">개인정보처리방침</style.Link>
+                <a href="!">개인정보처리방침</a>
               </li>
               <li>
-                <style.Link href="!">이용안내</style.Link>
+                <a href="!">이용안내</a>
               </li>
             </ul>
           </style.BtnUtil>
