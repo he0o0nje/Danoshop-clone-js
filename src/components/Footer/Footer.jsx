@@ -65,7 +65,44 @@ function Main() {
               </div>
             </div>
           </style.Inquiry>
-          <div></div>
+          <style.BasicInfo>
+            <style.InqTitle>쇼핑몰 기본정보</style.InqTitle>
+            <style.BInfoList>
+              <style.BInfoCont>
+                <span className="field">상호명</span>
+                <span className="value">(주)다노</span>
+              </style.BInfoCont>
+              <style.BInfoCont>
+                <span className="field">대표자명</span>
+                <span className="value">정범윤</span>
+              </style.BInfoCont>
+              <style.BInfoCont>
+                <span className="field">사업장 주소</span>
+                <span className="value">
+                  04212 서울특별시 마포구 마포대로 144 (공덕동) 마포T타운 14층
+                </span>
+              </style.BInfoCont>
+              <style.BInfoCont>
+                <span className="field">대표 전화</span>
+                <span className="value">02-2135-1885</span>
+              </style.BInfoCont>
+              <style.BInfoCont>
+                <span className="field">사업자 등록번호</span>
+                <span className="value">106-87-00202</span>
+              </style.BInfoCont>
+              <style.BInfoCont>
+                <span className="field">통신판매업 신고번호</span>
+                <span className="value">
+                  제2017-서울마포-0722
+                  <a href="!"> [사업자정보확인]</a>
+                </span>
+              </style.BInfoCont>
+              <style.BInfoCont>
+                <span className="field">개인정보보호책임자</span>
+                <span className="value">이지수</span>
+              </style.BInfoCont>
+            </style.BInfoList>
+          </style.BasicInfo>
           <div></div>
           <div></div>
         </style.FooterInner>

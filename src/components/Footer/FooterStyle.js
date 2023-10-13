@@ -22,7 +22,7 @@ export const FooterInner = styled.div`
 `;
 
 export const LogoWrap = styled.div`
-  margin-bottom: 5rem;
+  margin-bottom: 4.7rem;
   font-size: 4rem;
   img {
     max-width: 40rem;
@@ -55,11 +55,11 @@ export const Inquiry = styled.div`
     flex-basis: 50%;
   }
   strong {
-    font-weight: 500;
+    font-weight: 600;
     padding-right: 1rem;
   }
   .inq_wrap span {
-    padding-right: 1rem;
+    padding-right: 1.2rem;
   }
   .inq_wrap + .inq_wrap {
     margin-top: 2rem;
@@ -71,6 +71,35 @@ export const Inquiry = styled.div`
 
 export const InqTitle = styled.div`
   font-size: 1.6rem;
-  font-weight: 550;
+  font-weight: 600;
   margin-bottom: 1rem;
+  line-height: 1.6;
+`;
+
+export const BasicInfo = styled.div`
+  text-align: right;
+`;
+
+export const BInfoList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 50rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2;
+  margin-left: auto;
+  div {
+    flex-basis: auto;
+  }
+`;
+
+export const BInfoCont = styled.div`
+  margin-left: 1rem;
+  .field {
+    font-weight: 600;
+  }
+  .value {
+    margin-left: 0.5rem;
+  }
 `;
