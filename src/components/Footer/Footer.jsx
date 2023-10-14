@@ -1,5 +1,9 @@
 import * as style from "./FooterStyle";
 import logo from "../../assets/images/header/logo.jpg";
+import sns1 from "../../assets/images/footer/sns1.png";
+import sns2 from "../../assets/images/footer/sns2.png";
+import sns3 from "../../assets/images/footer/sns3.png";
+import sns4 from "../../assets/images/footer/sns4.png";
 
 function Main() {
   return (
@@ -107,24 +111,22 @@ function Main() {
             <style.SnsTit>SNS</style.SnsTit>
             <style.SnsBox>
               <a href="!">
-                asdfsadf
-                <img src="../../assets/images/footer/sns1.svg" alt="" />
+                <img src={sns1} alt="" />
               </a>
               <a href="!">
-                qwerwer
-                <img src="../../assets/images/footer/sns2.svg" alt="" />
+                <img src={sns2} alt="" />
               </a>
               <a href="!">
-                1342
-                <img src="../../assets/images/footer/sns3.svg" alt="" />
+                <img src={sns3} alt="" />
               </a>
               <a href="!">
-                5363
-                <img src="../../assets/images/footer/sns4.svg" alt="" />
+                <img src={sns4} alt="" />
               </a>
             </style.SnsBox>
           </style.Sns>
-          <div></div>
+          <style.Copyright>
+            Copyright © 다노샵. All Rights Reserved. Hosting by Cafe24 Corp.
+          </style.Copyright>
         </style.FooterInner>
       </style.Footer>
     </>

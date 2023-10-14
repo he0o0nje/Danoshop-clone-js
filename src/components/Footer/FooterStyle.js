@@ -105,14 +105,14 @@ export const BInfoCont = styled.div`
 `;
 
 export const Sns = styled.div`
-  flex-basis: 100%;
+  flex-basis: 100% !important;
   text-align: right;
 `;
 
 export const SnsTit = styled.div`
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 1.5rem;
 `;
 
 export const SnsBox = styled.div`
@@ -120,5 +120,21 @@ export const SnsBox = styled.div`
   justify-content: flex-end;
   a {
     margin-left: 1rem;
+    width: 3.3rem;
+    height: 3.3rem;
   }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const Copyright = styled.div`
+  flex-basis: 100% !important;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: right;
+  margin-top: 3rem;
+  word-spacing: 0.07rem;
 `;
