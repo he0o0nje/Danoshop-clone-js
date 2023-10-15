@@ -3,7 +3,9 @@ import * as style from "./MainStyle";
 function Main() {
   return (
     <>
-      <style.Main>My</style.Main>
+      <style.Main>
+        <style.MainBanner></style.MainBanner>
+      </style.Main>
     </>
   );
 }

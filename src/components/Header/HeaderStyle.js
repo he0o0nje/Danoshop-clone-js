@@ -66,6 +66,7 @@ export const HeaderBottom = styled.div`
   width: 100%;
   height: auto;
   margin-top: 3rem;
+  /* position: fixed; */
 `;
 
 export const LogoWrap = styled.div`
