@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import closeBtn from "../../assets/images/header/checkbox_off.svg";
+import onBtn from "../../assets/images/header/checkbox_on.svg";
 
 export const TopBanner = styled.div`
   position: relative;
@@ -47,6 +48,11 @@ export const TopBanClose = styled.div`
     border: 0.1rem solid #d9d9d9;
     cursor: pointer;
     appearance: none;
+  }
+  input[type="checkbox"]:checked {
+    background: url(${onBtn}) no-repeat center;
+    background-size: 1.5rem;
+    transition: none;
   }
   label {
     margin: 0 1.5rem 0 0.5rem;

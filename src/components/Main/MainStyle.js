@@ -4,7 +4,8 @@ export const Main = styled.div`
   background-color: green;
   width: 100%;
   height: 100rem;
-  margin: 22rem auto 0;
+  margin: 0 auto;
+  padding-top: 22rem;
   position: relative;
 `;
 
