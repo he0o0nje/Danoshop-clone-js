@@ -11,15 +11,11 @@ function Header() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
-        setHeaderFixed(true);
-      } else {
-        setHeaderFixed(false);
-      }
+      window.scrollY > 60 ? setHeaderFixed(true) : setHeaderFixed(false);
     });
 
     return () => {
-      window.removeEventListener("scroll", () => {});
+      // window.removeEventListener("scroll", () => {});
     };
   }, []);
   return (

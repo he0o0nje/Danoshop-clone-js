@@ -4,6 +4,7 @@ export const HeaderWrap = styled.div`
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
+  z-index: 9999;
   position: ${(props) => (props.isFixed ? "fixed" : "absolute")};
   top: ${(props) => (props.isFixed ? "-5rem" : "auto")};
   border-bottom: ${(props) =>
