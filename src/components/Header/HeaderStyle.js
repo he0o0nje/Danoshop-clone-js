@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const HeaderWrap = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  position: ${(props) => (props.isFixed ? "fixed" : "absolute")};
+  top: ${(props) => (props.isFixed ? "-5rem" : "auto")};
+  border-bottom: ${(props) =>
+    props.isFixed ? "1px solid #e8e8e8" : "1px solid #fff"};
+`;
+
 export const Header = styled.div`
   max-width: 1680px;
   width: 92%;
@@ -66,7 +76,6 @@ export const HeaderBottom = styled.div`
   width: 100%;
   height: auto;
   margin-top: 3rem;
-  /* position: fixed; */
 `;
 
 export const LogoWrap = styled.div`
