@@ -10,8 +10,10 @@ export const Main = styled.div`
 `;
 
 export const MainBanner = styled.div`
-  background-color: yellow;
   width: 100%;
-  height: 10rem;
+  height: 69.8rem;
   margin: 0 auto 12rem;
+  img {
+    width: 100%;
+  }
 `;
