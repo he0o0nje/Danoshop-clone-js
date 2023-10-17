@@ -1,7 +1,7 @@
 import * as style from "./ProdTitStyle";
 import Product from "./Pm3Product";
 
-function Am7() {
+function Pm3() {
   return (
     <>
       <style.MainCont>
@@ -15,4 +15,4 @@ function Am7() {
   );
 }
 
-export default Am7;
+export default Pm3;
