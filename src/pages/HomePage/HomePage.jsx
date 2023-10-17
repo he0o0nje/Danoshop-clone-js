@@ -8,6 +8,7 @@ import Pm1 from "../../components/Main/Pm1";
 import Pm3 from "../../components/Main/Pm3";
 import Pm6 from "../../components/Main/Pm6";
 import Pm9 from "../../components/Main/Pm9";
+import Pm11 from "../../components/Main/Pm11";
 import Footer from "../../components/Footer/Footer";
 
 function HomePage() {
@@ -23,6 +24,7 @@ function HomePage() {
         <Pm3></Pm3>
         <Pm6></Pm6>
         <Pm9></Pm9>
+        <Pm11></Pm11>
       </style.Main>
       <Footer></Footer>
     </>
