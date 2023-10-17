@@ -1,4 +1,4 @@
-import * as style from "./Am7Style";
+import * as style from "./ProductStyle";
 import prod1 from "../../assets/images/am7/01.png";
 
 function Am7() {
@@ -10,9 +10,9 @@ function Am7() {
           <p>준비하는데 3분컷, 간편하게 영양만점 하루 시작!</p>
         </style.MainTit>
         <style.MainProdList>
-          <ul>
-            <li>
-              <style.MainProd>
+          <ul className="prod_list">
+            <li className="product">
+              <style.MainProd sale>
                 <div className="prod_thumb">
                   <a href="!">
                     <img src={prod1} alt="" />
@@ -24,7 +24,26 @@ function Am7() {
                   </div>
                   <span className="sale_sticker">10%</span>
                 </div>
-                <div className="prod_desc"></div>
+                <div className="prod_desc">
+                  <div className="name">
+                    <a href="!">
+                      [다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미
+                      시리얼 그래놀라
+                    </a>
+                  </div>
+                  <ul>
+                    <li className="composition">
+                      <strong>구성 : </strong>
+                      <span>1개</span>
+                    </li>
+                    <li className="price">
+                      <span>32,000원</span>
+                    </li>
+                    <li className="sale_price">
+                      <span>29,000원</span>
+                    </li>
+                  </ul>
+                </div>
               </style.MainProd>
             </li>
           </ul>
