@@ -1,6 +1,5 @@
-import * as style from "./Am7Style";
-import prod1 from "../../assets/images/am7/01.png";
-import Product from "./Product";
+import * as style from "./ProdTitStyle";
+import Product from "./Am7Product";
 
 function Am7() {
   return (
