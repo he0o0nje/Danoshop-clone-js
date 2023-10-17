@@ -9,7 +9,7 @@ export const MainProdList = styled.div`
     line-height: 0;
     .product {
       display: inline-block;
-      width: 25%;
+      width: ${(props) => (props.small ? "20%" : "25%")};
       margin-bottom: 7rem;
       color: #757575;
       vertical-align: top;
