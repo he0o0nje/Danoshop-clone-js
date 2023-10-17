@@ -7,6 +7,7 @@ import Am10 from "../../components/Main/Am10";
 import Pm1 from "../../components/Main/Pm1";
 import Pm3 from "../../components/Main/Pm3";
 import Pm6 from "../../components/Main/Pm6";
+import Pm9 from "../../components/Main/Pm9";
 import Footer from "../../components/Footer/Footer";
 
 function HomePage() {
@@ -21,6 +22,7 @@ function HomePage() {
         <Pm1></Pm1>
         <Pm3></Pm3>
         <Pm6></Pm6>
+        <Pm9></Pm9>
       </style.Main>
       <Footer></Footer>
     </>
