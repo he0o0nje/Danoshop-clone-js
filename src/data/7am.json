@@ -1,6 +1,6 @@
 [
   {
-    "image": "../assets/images/am7/01.png",
+    "image": "/img/am7/01.png",
     "sticker": "10%",
     "name": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
     "composition": "1개",
@@ -8,27 +8,21 @@
     "sale_price": "29,000원"
   },
   {
-    "image": "../assets/images/am7/01.png",
-    "sticker": "10%",
-    "name": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-    "composition": "1개",
-    "price": "32,000원",
-    "sale_price": "29,000원"
+    "image": "/img/am7/02.webp",
+    "name": "[다노] 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
+    "composition": "3/9/10개",
+    "price": "7,500원"
   },
   {
-    "image": "../assets/images/am7/01.png",
-    "sticker": "10%",
-    "name": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-    "composition": "1개",
-    "price": "32,000원",
-    "sale_price": "29,000원"
+    "image": "/img/am7/03.jpg",
+    "name": "[다노] 흑임자죽_단백질 프로틴 식사대용죽",
+    "composition": "4/10개",
+    "price": "9,600원"
   },
   {
-    "image": "../assets/images/am7/01.png",
-    "sticker": "10%",
-    "name": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-    "composition": "1개",
-    "price": "32,000원",
-    "sale_price": "29,000원"
+    "image": "/img/am7/04.png",
+    "name": "[다노] 통밀 팬케이크 믹스",
+    "composition": "2/5개",
+    "price": "6,400원"
   }
 ]

@@ -8,7 +8,7 @@ function Product() {
         <ul className="prod_list">
           {dummy.map((item, index) => (
             <li className="product" key={index}>
-              <style.MainProd sale>
+              <style.MainProd {...(item.sticker ? { sale: true } : {})}>
                 <div className="prod_thumb">
                   <a href="!">
                     <img src={item.image} alt="" />
