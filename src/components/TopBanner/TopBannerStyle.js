@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import closeBtn from "../../assets/images/header/checkbox_off.svg";
-import onBtn from "../../assets/images/header/checkbox_on.svg";
 
 export const TopBanner = styled.div`
   position: relative;
@@ -43,14 +41,14 @@ export const TopBanClose = styled.div`
   input {
     width: 1.5rem;
     height: 1.5rem;
-    background: url(${closeBtn}) no-repeat center;
+    background: url("/public/img/header/checkbox_off.svg") no-repeat center;
     background-size: 1.5rem;
     border: 0.1rem solid #d9d9d9;
     cursor: pointer;
     appearance: none;
   }
   input[type="checkbox"]:checked {
-    background: url(${onBtn}) no-repeat center;
+    background: url("/public/img/header/checkbox_on.svg") no-repeat center;
     background-size: 1.5rem;
     transition: none;
   }

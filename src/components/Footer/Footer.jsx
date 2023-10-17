@@ -1,9 +1,4 @@
 import * as style from "./FooterStyle";
-import logo from "../../assets/images/header/logo.jpg";
-import sns1 from "../../assets/images/footer/sns1.png";
-import sns2 from "../../assets/images/footer/sns2.png";
-import sns3 from "../../assets/images/footer/sns3.png";
-import sns4 from "../../assets/images/footer/sns4.png";
 
 function Main() {
   return (
@@ -12,7 +7,7 @@ function Main() {
         <style.FooterInner>
           <style.LogoWrap>
             <a href="!">
-              <img src={logo} alt="" />
+              <img src="/public/img/header/logo.jpg" alt="" />
             </a>
           </style.LogoWrap>
           <style.BtnUtil>
@@ -111,16 +106,16 @@ function Main() {
             <style.SnsTit>SNS</style.SnsTit>
             <style.SnsBox>
               <a href="!">
-                <img src={sns1} alt="" />
+                <img src="/public/img/footer/sns1.png" alt="" />
               </a>
               <a href="!">
-                <img src={sns2} alt="" />
+                <img src="/public/img/footer/sns2.png" alt="" />
               </a>
               <a href="!">
-                <img src={sns3} alt="" />
+                <img src="/public/img/footer/sns3.png" alt="" />
               </a>
               <a href="!">
-                <img src={sns4} alt="" />
+                <img src="/public/img/footer/sns3.png" alt="" />
               </a>
             </style.SnsBox>
           </style.Sns>

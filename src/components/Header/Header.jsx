@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
 import * as style from "./HeaderStyle";
-import logo from "../../assets/images/header/logo.jpg";
-import mypage1 from "../../assets/images/header/mypage1.svg";
-import mypage2 from "../../assets/images/header/mypage2.svg";
-import mypage3 from "../../assets/images/header/mypage3.svg";
 import { Button } from "react-bootstrap";
 
 function Header() {
@@ -60,18 +56,18 @@ function Header() {
           <style.HeaderBottom>
             <style.LogoWrap>
               <a href="!">
-                <img src={logo} alt="" />
+                <img src="/public/img/header/logo.jpg" alt="" />
               </a>
             </style.LogoWrap>
             <style.MypageWrap>
               <a href="!">
-                <img src={mypage1} alt="" />
+                <img src="/public/img/header/mypage1.svg" alt="" />
               </a>
               <a href="!">
-                <img src={mypage2} alt="" />
+                <img src="/public/img/header/mypage2.svg" alt="" />
               </a>
               <a href="!">
-                <img src={mypage3} alt="" />
+                <img src="/public/img/header/mypage3.svg" alt="" />
               </a>
             </style.MypageWrap>
             <style.BotCategory>
