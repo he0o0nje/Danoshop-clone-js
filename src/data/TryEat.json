@@ -1,0 +1,18 @@
+[
+  {
+    "image": "/img/TryEat/01.png",
+    "sticker": "20%",
+    "name": "다노 간편식 세트",
+    "composition": "맛보기 세트 (각 2개씩)",
+    "price": "36,400원",
+    "sale_price": "29,120원"
+  },
+  {
+    "image": "/img/TryEat/02.png",
+    "sticker": "20%",
+    "name": "다노 분식 세트",
+    "composition": "분식 맛보기 세트",
+    "price": "30,000원",
+    "sale_price": "24,000원"
+  }
+]

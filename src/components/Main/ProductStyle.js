@@ -55,7 +55,7 @@ export const MainProd = styled.div`
       box-sizing: border-box;
       cursor: pointer;
       margin: 0.3rem 0;
-      width: 72px;
+      width: 7.2rem;
       height: auto;
       line-height: 1;
       padding: 1rem 1.5rem;
@@ -117,7 +117,7 @@ export const MainProd = styled.div`
         display: inline-block;
         margin-top: 1rem;
         span {
-          font-size: 18px;
+          font-size: 1.8rem;
           color: #000000;
           font-weight: bold;
           text-decoration: ${(props) => (props.sale ? "line-through" : "none")};
@@ -126,12 +126,19 @@ export const MainProd = styled.div`
       .sale_price {
         display: ${(props) => (props.sale ? "inline-block" : "none")};
         span {
-          font-size: 16px;
+          font-size: 1.6rem;
           color: #ff8934;
           font-weight: bold;
           margin-left: 0.5rem;
         }
       }
+    }
+  }
+  .ico_soldout {
+    margin-top: 0.5rem;
+    img {
+      margin-right: 0.4rem;
+      max-height: 2.3rem;
     }
   }
 `;
