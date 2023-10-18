@@ -35,7 +35,7 @@ export const MainProd = styled.div`
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 5%;
+    right: 0;
     z-index: 3;
     height: 100%;
     display: flex;
@@ -44,6 +44,7 @@ export const MainProd = styled.div`
     justify-content: center;
     align-items: flex-end;
     transition: all 0.3s;
+    opacity: 0;
     span {
       display: block;
       position: relative;
@@ -65,6 +66,10 @@ export const MainProd = styled.div`
       color: #fff;
       background-color: #f87126;
     }
+  }
+  &:hover .icon_box {
+    opacity: 1;
+    right: 5%;
   }
   .sale_sticker {
     font-size: 1.6rem;
