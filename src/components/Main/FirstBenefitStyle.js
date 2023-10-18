@@ -12,6 +12,11 @@ export const FirstBeneCont = styled.div`
       max-width: 566px;
       box-sizing: border-box;
       padding: 0 1rem;
+      a:hover {
+        p:last-child {
+          text-decoration: underline;
+        }
+      }
       .txt_area {
         width: 100%;
         margin-top: 3rem;

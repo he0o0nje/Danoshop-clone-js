@@ -1,5 +1,6 @@
 import * as title from "./ProdTitStyle";
 import * as style from "./FirstBenefitStyle";
+import dummy from "../../data/1stBenefit.json";
 
 function FirstBenefit() {
   return (
@@ -11,39 +12,19 @@ function FirstBenefit() {
         </title.MainTit>
         <style.FirstBeneCont>
           <ul>
-            <li>
-              <a href="!">
-                <div className="img_area">
-                  <img src="img/1stBenefit/01.jpg" alt="" />
-                </div>
-                <div className="txt_area">
-                  <p>첫 구매 100원!</p>
-                  <p>자세히 보기{">"}</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="!">
-                <div className="img_area">
-                  <img src="img/1stBenefit/02.jpg" alt="" />
-                </div>
-                <div className="txt_area">
-                  <p>무료 배송 쿠폰</p>
-                  <p>자세히 보기{">"}</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="!">
-                <div className="img_area">
-                  <img src="img/1stBenefit/03.jpg" alt="" />
-                </div>
-                <div className="txt_area">
-                  <p>웰컴 쿠폰팩</p>
-                  <p>자세히 보기{">"}</p>
-                </div>
-              </a>
-            </li>
+            {dummy.map((item, index) => (
+              <li key={index}>
+                <a href="!">
+                  <div className="img_area">
+                    <img src={item.image} alt="" />
+                  </div>
+                  <div className="txt_area">
+                    <p>{item.title}</p>
+                    <p>자세히 보기{">"}</p>
+                  </div>
+                </a>
+              </li>
+            ))}
           </ul>
         </style.FirstBeneCont>
       </title.MainCont>
