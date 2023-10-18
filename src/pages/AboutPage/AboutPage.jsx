@@ -5,6 +5,7 @@ function AboutPage() {
   return (
     <>
       <Header></Header>
+
       <Footer></Footer>
     </>
   );
