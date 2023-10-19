@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <HomePage></HomePage>
+      {/* <HomePage></HomePage> */}
       <AboutPage></AboutPage>
       <style.ShadowLayer></style.ShadowLayer>
     </>
