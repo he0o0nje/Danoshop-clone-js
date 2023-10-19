@@ -114,6 +114,44 @@ function Top() {
                 </tr>
               </tbody>
             </table>
+            <div className="guide_area">
+              <p class="info ">(최소주문수량 1개 이상)</p>
+            </div>
+            <div className="total_products">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p class="product">
+                        [다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용
+                        현미 시리얼 그래놀라
+                        <br></br> -{" "}
+                        <span>자이언트 브라운라이스소울 프로틴_베리</span>
+                      </p>
+                    </td>
+                    <td>
+                      <span className="quantity">
+                        <input type="text" value={1} />
+                        <a href="!" className="up">
+                          +
+                        </a>
+                        <a href="!" className="down">
+                          -
+                        </a>
+                      </span>
+                      <a href="!" className="delete">
+                        <img src="img/product/ico_product_delete.svg" alt="" />
+                      </a>
+                    </td>
+                    <td>
+                      <span className="right">
+                        <span>32,000원</span>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </style.InfoArea>
         </style.DetailArea>
       </style.SubTop>

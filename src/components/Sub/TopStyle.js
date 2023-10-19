@@ -84,7 +84,7 @@ export const InfoArea = styled.div`
   line-height: 1;
   vertical-align: top;
   .heading_area {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 0.1rem solid #e5e5e5;
     padding-bottom: 2.5rem;
     h1 {
       font-size: 2.8rem;
@@ -133,7 +133,7 @@ export const InfoArea = styled.div`
   }
   .option {
     tbody {
-      border-top: 1px solid #e5e5e5;
+      border-top: 0.1rem solid #e5e5e5;
       tr {
         width: 100%;
         display: revert;
@@ -158,6 +158,106 @@ export const InfoArea = styled.div`
             appearance: none;
             vertical-align: middle;
           }
+        }
+      }
+    }
+  }
+  .guide_area {
+    margin: 2.5rem 0 1rem;
+    .info {
+      float: left;
+    }
+  }
+  .total_products {
+    margin-top: 5.9rem;
+    table {
+      margin: 0;
+      tr {
+        border-top: 0.1rem solid #e5e5e5;
+      }
+      td {
+        padding: 3rem 0;
+        line-height: 1.8rem;
+        vertical-align: middle;
+        word-wrap: break-word;
+        word-break: break-all;
+        &:first-child {
+          padding-right: 1rem;
+        }
+        &:last-child {
+          width: 10rem;
+        }
+        .product {
+          span {
+            color: #7d7d7d;
+            line-height: 1.8rem;
+          }
+        }
+        .quantity {
+          display: inline-block;
+          position: relative;
+          width: 10.3rem;
+          padding: 0 3rem;
+          input {
+            width: 4.5rem;
+            height: 3rem;
+            line-height: 2.8rem;
+            margin-left: -0.1rem;
+            padding: 0;
+            border: 0.1rem solid #e5e5e5;
+            text-align: center;
+          }
+          a {
+            width: 3rem;
+            height: 3rem;
+            border: 0.1rem solid #e5e5e5;
+            box-sizing: border-box;
+            overflow: hidden;
+            white-space: nowrap;
+            text-indent: 150%;
+            color: transparent;
+            font-size: 0.1rem;
+            line-height: 0.1rem;
+            &::before {
+              content: "";
+              position: absolute;
+              left: 1rem;
+              top: 50%;
+              width: 0.9rem;
+              height: 0.1rem;
+              background: #000;
+            }
+          }
+          .up {
+            position: absolute;
+            top: 0;
+            right: 0;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              width: 0.1rem;
+              height: 0.9rem;
+              margin: -0.4rem 0 0 0;
+              background: #000;
+            }
+          }
+          .down {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        .delete {
+          display: inline-block;
+          margin: 0.8rem 0 0 0.5rem;
+          vertical-align: top;
+        }
+        .right {
+          font-weight: bold;
+          text-align: right;
+          float: right;
         }
       }
     }
