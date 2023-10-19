@@ -262,4 +262,25 @@ export const InfoArea = styled.div`
       }
     }
   }
+  .total_price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    border-top: 1px solid #e5e5e5;
+    vertical-align: middle;
+    background: #fff;
+    padding: 27px 0 26px;
+    .qty {
+      color: #7d7d7d;
+    }
+    .total {
+      color: #7d7d7d;
+      font-size: 1.3rem;
+      strong {
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
 `;

@@ -152,6 +152,17 @@ function Top() {
                 </tbody>
               </table>
             </div>
+            <div className="total_price">
+              <strong className="title">
+                TOTAL <span class="qty">(QUANTITY)</span>
+              </strong>
+              <span className="total">
+                <strong>
+                  <em>29,000원</em>
+                </strong>{" "}
+                (1개)
+              </span>
+            </div>
           </style.InfoArea>
         </style.DetailArea>
       </style.SubTop>
