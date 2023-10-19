@@ -83,4 +83,53 @@ export const InfoArea = styled.div`
   font-size: 1.3rem;
   line-height: 1;
   vertical-align: top;
+  .heading_area {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 2.5rem;
+    h1 {
+      font-size: 2.8rem;
+      display: inline-block;
+      line-height: 3rem;
+      vertical-align: middle;
+      margin-top: 1.5rem;
+    }
+  }
+  table {
+    margin-top: 2rem;
+    table-layout: fixed;
+    line-height: 1.8rem;
+    width: 100%;
+    th {
+      width: 11.1rem;
+      padding: 0.7rem 0.5rem 0.6rem 0;
+      text-align: left;
+      vertical-align: top;
+    }
+    td {
+      padding: 0.7rem 0.6rem 0.8rem 0;
+      vertical-align: middle;
+    }
+    span {
+      font-size: 1.4rem;
+      color: #555;
+    }
+    .price {
+      font-size: 1.6rem;
+      color: #000;
+      font-weight: bold;
+      strong {
+        text-decoration: line-through;
+      }
+    }
+    .sale_price {
+      font-size: 1.8rem;
+      color: #000;
+      font-weight: bold;
+      .percent {
+        font-size: 1.8rem;
+        color: #f96b06;
+        margin-left: 0.5rem;
+      }
+    }
+  }
 `;
