@@ -163,6 +163,20 @@ function Top() {
                 (1개)
               </span>
             </div>
+            <div className="delivery_info">
+              <div className="title">배송정보</div>
+              <div className="info_value">
+                <p class="type">다노배송(새벽/택배)</p>
+                <p class="value">
+                  새벽배송 : <span class="highlight">오후 5시</span>까지 결제 시{" "}
+                  <span class="highlight">내일 오전 7시 전</span> 도착
+                </p>
+                <p class="value">
+                  택배배송 : <span class="highlight">오후 5시</span>까지 결제 시{" "}
+                  <span class="highlight">오늘</span> 출고
+                </p>
+              </div>
+            </div>
           </style.InfoArea>
         </style.DetailArea>
       </style.SubTop>

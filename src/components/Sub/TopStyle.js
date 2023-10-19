@@ -77,6 +77,7 @@ export const ImgArea = styled.div`
 `;
 
 export const InfoArea = styled.div`
+  letter-spacing: 0.017rem;
   width: 60rem;
   margin-left: 10rem;
   display: inline-block;
@@ -280,6 +281,29 @@ export const InfoArea = styled.div`
         color: #000;
         font-size: 1.5rem;
         font-weight: bold;
+      }
+    }
+  }
+  .delivery_info {
+    display: flex;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    .title {
+      width: 10.6rem;
+      padding: 0.8rem 0;
+    }
+    .info_value {
+      padding: 0.8rem 0;
+      color: #555;
+      .type {
+        margin-bottom: 1.2rem;
+      }
+      .value {
+        margin-bottom: 0.8rem;
+        .highlight {
+          font-weight: bold;
+          color: #ff8934;
+        }
       }
     }
   }
