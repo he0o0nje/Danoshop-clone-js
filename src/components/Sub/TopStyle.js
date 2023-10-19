@@ -99,15 +99,14 @@ export const InfoArea = styled.div`
     table-layout: fixed;
     line-height: 1.8rem;
     width: 100%;
+  }
+  .sale_info {
     th {
       width: 11.1rem;
       padding: 0.7rem 0.5rem 0.6rem 0;
-      text-align: left;
-      vertical-align: top;
     }
     td {
       padding: 0.7rem 0.6rem 0.8rem 0;
-      vertical-align: middle;
     }
     span {
       font-size: 1.4rem;
@@ -129,6 +128,37 @@ export const InfoArea = styled.div`
         font-size: 1.8rem;
         color: #f96b06;
         margin-left: 0.5rem;
+      }
+    }
+  }
+  .option {
+    tbody {
+      border-top: 1px solid #e5e5e5;
+      tr {
+        width: 100%;
+        display: revert;
+        th {
+          padding-top: 2.2rem;
+          width: 11.1rem;
+          vertical-align: top;
+        }
+        td {
+          padding: 1.3rem 0;
+          select {
+            width: 100%;
+            max-width: 100%;
+            height: 4rem;
+            padding: 0 3rem 0 1.5rem;
+            font-size: 1.3rem;
+            border: 0.1rem solid #e0e0e0;
+            box-sizing: border-box;
+            background: #fff url("img/product/ico_select.png") no-repeat right
+              1rem center;
+            background-size: 1.4rem 0.8rem;
+            appearance: none;
+            vertical-align: middle;
+          }
+        }
       }
     }
   }

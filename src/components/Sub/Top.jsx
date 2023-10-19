@@ -36,7 +36,7 @@ function Top() {
                 그래놀라
               </h1>
             </div>
-            <table>
+            <table className="sale_info">
               <tbody>
                 <tr>
                   <th>
@@ -95,6 +95,21 @@ function Top() {
                     <span>
                       <strong>3,500원</strong> (50,000원 이상 구매 시 무료)
                     </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table className="option">
+              <tbody>
+                <tr>
+                  <th>옵션</th>
+                  <td>
+                    <select name="" id="">
+                      <option value="">- [필수] 옵션을 선택해 주세요 -</option>
+                      <option value="">-------------------</option>
+                      <option>자이언트 브라운라이스소울 프로틴_베리</option>
+                      <option>자이언트 브라운라이스소울 프로틴_초코</option>
+                    </select>
                   </td>
                 </tr>
               </tbody>
