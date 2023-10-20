@@ -7,3 +7,9 @@ export const Sub = styled.div`
   position: relative;
   border-top: 2px solid #e8e8e8;
 `;
+
+export const DetailSec = styled.div`
+  max-width: 1420px;
+  width: 92%;
+  margin: 0 auto 12rem;
+`;

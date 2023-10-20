@@ -340,7 +340,7 @@ export const InfoArea = styled.div`
     }
   }
   .naver_btn {
-    margin-top: 1rem;
+    margin: 1rem 0;
     .npay_store {
       width: 28.5rem;
       height: 8.8rem;
