@@ -1,6 +1,6 @@
 import * as style from "./DetailTabStyle";
 
-function DetailTab() {
+function DetailTab01() {
   return (
     <>
       <style.DetailTab>
@@ -29,4 +29,4 @@ function DetailTab() {
   );
 }
 
-export default DetailTab;
+export default DetailTab01;

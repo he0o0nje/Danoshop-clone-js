@@ -1,9 +1,11 @@
-import * as style from "./ProductDetailStyle";
+import * as style from "./ProdDetailStyle";
+import DetailTab01 from "./DetailTab01";
 
-function ProductDetail() {
+function ProdDetail() {
   return (
     <>
-      <style.ProductDetail>
+      <DetailTab01></DetailTab01>
+      <style.ProdDetail>
         <div>
           <p>
             <img src="img/product/01detail.png" alt="" />
@@ -100,9 +102,9 @@ function ProductDetail() {
             <br></br>
           </div>
         </div>
-      </style.ProductDetail>
+      </style.ProdDetail>
     </>
   );
 }
 
-export default ProductDetail;
+export default ProdDetail;

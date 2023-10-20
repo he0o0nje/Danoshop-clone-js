@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProductDetail = styled.div`
+export const ProdDetail = styled.div`
   p {
     text-align: center;
     img {
