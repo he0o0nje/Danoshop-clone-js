@@ -198,22 +198,31 @@ function Top() {
                         <tbody>
                           <tr>
                             <td>
-                              <a
-                                href="!"
-                                class="npay_btn_link npay_btn_pay"
-                              ></a>
+                              <a href="!" class="npay_btn_pay">
+                                -
+                              </a>
                             </td>
                             <td>
-                              <a
-                                href="!"
-                                class="npay_btn_link npay_btn_zzim"
-                              ></a>
+                              <a href="!" class="npay_btn_zzim">
+                                -
+                              </a>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div className="npay_event"></div>
+                    <div className="npay_event">
+                      <p>
+                        <strong>현장결제</strong>
+                        <a href="!">결제할 때 마다, 월 50번 포인트 뽑기!</a>
+                      </p>
+                      <a href="!" className="npay_more prev">
+                        -
+                      </a>
+                      <a href="!" className="npay_more next">
+                        -
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
