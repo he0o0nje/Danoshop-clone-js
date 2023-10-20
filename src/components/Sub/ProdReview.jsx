@@ -1,5 +1,12 @@
-import * as style from "./ProdReviewStyle.js";
+import * as style from "./ProdReviewStyle";
+import DetailTab02 from "./DetailTab02";
 
-function ProdReview() {}
+function ProdReview() {
+  return (
+    <>
+      <DetailTab02></DetailTab02>
+    </>
+  );
+}
 
 export default ProdReview;
