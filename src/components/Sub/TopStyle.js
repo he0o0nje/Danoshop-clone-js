@@ -339,4 +339,68 @@ export const InfoArea = styled.div`
       }
     }
   }
+  .naver_btn {
+    margin-top: 1rem;
+    .npay_store {
+      width: 28.5rem;
+      height: 8.8rem;
+      display: inline-block;
+      line-height: 1.6rem;
+      font-size: 1.2rem;
+      .npay_btn_box {
+        width: auto;
+        height: 100%;
+        display: block;
+        padding: 0 4px;
+        border-top: 2px solid #2b2f3a;
+        .npay_btn {
+          position: relative;
+          padding: 1.1rem 0 1.1rem 8.6rem;
+          .npay_txt {
+            position: absolute;
+            top: 11px;
+            left: 0;
+            width: 79px;
+            height: 36px;
+            background: url("img/product/npay_text.png") no-repeat;
+            background-size: 180px auto;
+          }
+          table {
+            margin-top: 0;
+            td {
+              height: 37px;
+              margin: 0;
+              padding: 0;
+              text-align: left;
+              &:last-child {
+                width: 40px;
+              }
+              .npay_btn_link {
+                display: block;
+                height: 35px;
+                margin-left: 3px;
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                text-align: center;
+              }
+              .npay_btn_pay {
+                border-color: #00c851;
+                background-color: #00de5a;
+                background-image: url(img/product/npay_pay.png);
+                background-position: 50% 0;
+                background-size: 63px auto;
+              }
+              .npay_btn_zzim {
+                background-image: url(img/product/npay_zzim.png);
+                background-position: 50% 0;
+                background-size: 35px auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 `;

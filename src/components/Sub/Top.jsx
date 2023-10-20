@@ -187,6 +187,36 @@ function Top() {
                   관심상품
                 </button>
               </div>
+              <div className="naver_btn">
+                <div className="npay_store">
+                  <div className="npay_btn_box">
+                    <div className="npay_btn">
+                      <div className="npay_txt">
+                        <span class="npay_blind"></span>
+                      </div>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a
+                                href="!"
+                                class="npay_btn_link npay_btn_pay"
+                              ></a>
+                            </td>
+                            <td>
+                              <a
+                                href="!"
+                                class="npay_btn_link npay_btn_zzim"
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="npay_event"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </style.InfoArea>
         </style.DetailArea>
