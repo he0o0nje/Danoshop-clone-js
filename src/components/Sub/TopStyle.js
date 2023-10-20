@@ -266,11 +266,11 @@ export const InfoArea = styled.div`
   .total_price {
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
-    border-top: 1px solid #e5e5e5;
+    font-size: 1.5rem;
+    border-top: 0.1rem solid #e5e5e5;
     vertical-align: middle;
     background: #fff;
-    padding: 27px 0 26px;
+    padding: 2.7rem 0 2.6rem;
     .qty {
       color: #7d7d7d;
     }
@@ -300,10 +300,42 @@ export const InfoArea = styled.div`
       }
       .value {
         margin-bottom: 0.8rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
         .highlight {
           font-weight: bold;
           color: #ff8934;
         }
+      }
+    }
+  }
+  .action_btn_wrap {
+    .action_btn {
+      display: flex;
+      .sizeL {
+        padding: 1.4rem 2.6rem;
+        height: 5rem;
+        min-width: 8rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: bold;
+      }
+      [class^="btn"] + [class^="btn"] {
+        margin-left: 1.2rem;
+      }
+      .btn_submit {
+        flex: 2;
+        height: 6.6rem;
+        padding: 2.3rem 0;
+        background: #1a1a1a;
+        color: #fff;
+      }
+      .btn_normal {
+        flex: 1;
+        height: 6.6rem;
+        padding: 2.3rem 0;
+        border: 0.1rem solid #d6d6d6;
       }
     }
   }

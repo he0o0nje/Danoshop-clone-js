@@ -177,6 +177,17 @@ function Top() {
                 </p>
               </div>
             </div>
+            <div className="action_btn_wrap">
+              <div className="action_btn">
+                <button className="btn_submit sizeL">구매하기</button>
+                <button className="btn_normal sizeL action_cart">
+                  장바구니
+                </button>
+                <button className="btn_normal sizeL action_wish">
+                  관심상품
+                </button>
+              </div>
+            </div>
           </style.InfoArea>
         </style.DetailArea>
       </style.SubTop>
