@@ -42,6 +42,9 @@ export const DetailTab = styled.div`
       a {
         color: #1a1a1a;
       }
+      span {
+        background-color: #1a1a1a;
+      }
     }
   }
 `;

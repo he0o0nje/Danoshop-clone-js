@@ -4,7 +4,9 @@ import DetailTab02 from "./DetailTab02";
 function ProdReview() {
   return (
     <>
-      <DetailTab02></DetailTab02>
+      <style.ProdReview>
+        <DetailTab02></DetailTab02>
+      </style.ProdReview>
     </>
   );
 }
