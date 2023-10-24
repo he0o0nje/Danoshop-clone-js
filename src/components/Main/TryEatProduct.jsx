@@ -37,7 +37,7 @@ function Product() {
                     </li>
                   </ul>
                   {/* <div className="ico_soldout">
-                    <img src="img/TryEat/ico_product_soldout.gif" alt="" />
+                    <img src="img/icon/ico_product_soldout.gif" alt="" />
                   </div> */}
                 </div>
               </style.MainProd>

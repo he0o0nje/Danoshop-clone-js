@@ -140,7 +140,7 @@ function Top() {
                         </a>
                       </span>
                       <a href="!" className="delete">
-                        <img src="img/product/ico_product_delete.svg" alt="" />
+                        <img src="img/icon/ico_product_delete.svg" alt="" />
                       </a>
                     </td>
                     <td>
