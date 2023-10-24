@@ -16,7 +16,7 @@ function ProdReview() {
               <a href="!">전체 상품 리뷰 보기</a>
             </div>
           </div>
-          <div className="review_summary">
+          <style.ReviewSummary>
             <div className="left_content">
               <div className="score">
                 <div className="icon">
@@ -83,7 +83,37 @@ function ProdReview() {
                 </li>
               </ul>
             </div>
-          </div>
+          </style.ReviewSummary>
+          <style.MediaSummary>
+            <div className="header">
+              <div className="title_wrap">
+                <span className="title">포토&동영상</span>
+                <span className="review_count">(1,542)</span>
+              </div>
+              <div className="more_btn">
+                <a href="!">
+                  전체보기
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 8 8"
+                    class="show_all_arrow"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M.667 2.333L4 5.667l3.333-3.334"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="summary_content">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+          </style.MediaSummary>
         </style.ReviewWrap>
       </style.ProdReview>
     </>
