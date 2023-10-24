@@ -20,6 +20,14 @@ function ProdQnA() {
           </style.BoardTit>
           <style.Contents>
             <table>
+              <colgroup>
+                <col style={{ width: "70px" }} />
+                <col style={{ width: "134px" }} />
+                <col style={{ width: "auto" }} />
+                <col style={{ width: "80px" }} />
+                <col style={{ width: "100px" }} />
+                <col style={{ width: "55px" }} />
+              </colgroup>
               <thead>
                 <tr>
                   <th>번호</th>
@@ -31,117 +39,76 @@ function ProdQnA() {
                 </tr>
               </thead>
               <tbody class="center">
-                <tr class=" xans-record-">
-                  <td class="RW">306</td>
+                <tr>
+                  <td>306</td>
                   <td>기타문의</td>
-                  <td class="subject left txtBreak">
-                    <img
-                      src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_lock.gif"
-                      alt="비밀글"
-                      class="ec-common-rwd-image"
-                    />{" "}
-                    <a
-                      href="/article/상품-qa/6/687017/?no=687017&amp;board_no=6&amp;spread_flag=T"
-                      class=""
-                    >
-                      다노샵 상품이 궁금해요🙋‍♀️
-                    </a>{" "}
+                  <td class="left subject">
+                    <img src="img/icon/ico_lock.gif" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
+                    &nbsp;&nbsp;&nbsp;
                     <span class="comment"></span>
                   </td>
                   <td> 한****</td>
                   <td>2023-10-16 18:36:22</td>
                   <td>3</td>
                 </tr>
-                <tr class=" xans-record-">
-                  <td class="RW">305</td>
+                <tr>
+                  <td>305</td>
                   <td>기타문의</td>
-                  <td class="subject left txtBreak">
+                  <td class="left subject">
                     &nbsp;&nbsp;&nbsp;
-                    <img
-                      src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_re.gif"
-                      alt="답변"
-                      class="ec-common-rwd-image"
-                    />{" "}
-                    <img
-                      src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_lock.gif"
-                      alt="비밀글"
-                      class="ec-common-rwd-image"
-                    />{" "}
-                    <a
-                      href="/article/상품-qa/6/687020/?no=687020&amp;board_no=6&amp;spread_flag=T"
-                      class=""
-                    >
-                      안녕하세요, 다노샵입니다. 💁‍♀️
-                    </a>{" "}
+                    <img src="img/icon/ico_re.gif" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="img/icon/ico_lock.gif" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
+                    &nbsp;&nbsp;&nbsp;
                     <span class="comment"></span>
                   </td>
                   <td> 다노샵</td>
                   <td>2023-10-17 11:55:12</td>
                   <td>1</td>
                 </tr>
-                <tr class=" xans-record-">
-                  <td class="RW">304</td>
+                <tr>
+                  <td>304</td>
                   <td>상품 문의</td>
-                  <td class="subject left txtBreak">
-                    <img
-                      src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_lock.gif"
-                      alt="비밀글"
-                      class="ec-common-rwd-image"
-                    />{" "}
-                    <a
-                      href="/article/상품-qa/6/686910/?no=686910&amp;board_no=6&amp;spread_flag=T"
-                      class=""
-                    >
-                      다노샵 상품이 궁금해요🙋‍♀️
-                    </a>{" "}
+                  <td class="left subject">
+                    <img src="img/icon/ico_lock.gif" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
+                    &nbsp;&nbsp;&nbsp;
                     <span class="comment"></span>
                   </td>
                   <td> 이****</td>
                   <td>2023-10-04 13:23:55</td>
                   <td>2</td>
                 </tr>
-                <tr class=" xans-record-">
-                  <td class="RW">303</td>
+                <tr>
+                  <td>303</td>
                   <td>상품 문의</td>
-                  <td class="subject left txtBreak">
+                  <td class="left subject">
                     &nbsp;&nbsp;&nbsp;
-                    <img
-                      src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_re.gif"
-                      alt="답변"
-                      class="ec-common-rwd-image"
-                    />{" "}
-                    <img
-                      src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_lock.gif"
-                      alt="비밀글"
-                      class="ec-common-rwd-image"
-                    />{" "}
-                    <a
-                      href="/article/상품-qa/6/686921/?no=686921&amp;board_no=6&amp;spread_flag=T"
-                      class=""
-                    >
-                      안녕하세요, 다노샵입니다. 💁‍♀️
-                    </a>{" "}
+                    <img src="img/icon/ico_re.gif" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="img/icon/ico_lock.gif" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
+                    &nbsp;&nbsp;&nbsp;
                     <span class="comment"></span>
                   </td>
                   <td> 다노샵</td>
                   <td>2023-10-04 15:43:16</td>
                   <td>1</td>
                 </tr>
-                <tr class=" xans-record-">
-                  <td class="RW">302</td>
+                <tr>
+                  <td>302</td>
                   <td>기타문의</td>
-                  <td class="subject left txtBreak">
-                    <img
-                      src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_lock.gif"
-                      alt="비밀글"
-                      class="ec-common-rwd-image"
-                    />{" "}
-                    <a
-                      href="/article/상품-qa/6/686895/?no=686895&amp;board_no=6&amp;spread_flag=T"
-                      class=""
-                    >
-                      다노샵 상품이 궁금해요🙋‍♀️
-                    </a>{" "}
+                  <td class="left subject">
+                    <img src="img/icon/ico_lock.gif" alt="" />
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
+                    &nbsp;&nbsp;&nbsp;
                     <span class="comment"></span>
                   </td>
                   <td> 권****</td>
@@ -150,6 +117,43 @@ function ProdQnA() {
                 </tr>
               </tbody>
             </table>
+            <div class="">
+              <a href="!" class="first">
+                첫 페이지
+              </a>
+              <a href="!">이전 페이지</a>
+              <ol>
+                <li>
+                  <a href="!" class="this">
+                    1
+                  </a>
+                </li>
+                <li>
+                  <a href="!" class="other">
+                    2
+                  </a>
+                </li>
+                <li>
+                  <a href="!" class="other">
+                    3
+                  </a>
+                </li>
+                <li>
+                  <a href="!" class="other">
+                    4
+                  </a>
+                </li>
+                <li>
+                  <a href="!" class="other">
+                    5
+                  </a>
+                </li>
+              </ol>
+              <a href="!">다음 페이지</a>
+              <a href="!" class="last">
+                마지막 페이지
+              </a>
+            </div>
           </style.Contents>
         </div>
       </style.ProdQnA>

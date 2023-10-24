@@ -34,11 +34,31 @@ export const Contents = styled.div`
   font-size: 1.3rem;
   table {
     width: 100%;
+    text-align: center;
     th {
       padding: 1.5rem 1rem 1.6rem;
       background-color: #f6f6f6;
       height: 2.9rem;
       line-height: 2.2rem;
+    }
+    td {
+      padding: 1.5rem 1rem 1.6rem;
+      border-bottom: 1px solid #e5e5e5;
+      height: 2.9rem;
+      line-height: 2.2rem;
+      vertical-align: middle;
+      .comment {
+        display: inline-block;
+        margin-right: 5rem;
+        vertical-align: middle;
+        color: #ef441f;
+      }
+    }
+    .subject {
+      padding: 0 2rem;
+    }
+    .left {
+      text-align: left;
     }
   }
 `;
