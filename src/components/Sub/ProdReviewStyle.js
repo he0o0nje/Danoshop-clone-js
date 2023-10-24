@@ -48,6 +48,45 @@ export const ReviewWrap = styled.div`
       width: 400px;
       min-height: 122px;
       border-right: solid 1px #d8dde5;
+      text-align: center;
+      .icon {
+        width: 48px;
+        height: 48px;
+        margin: 12px 0;
+        display: inline-block;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .text {
+        margin-left: 4px;
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 72px;
+        color: #14161a;
+        vertical-align: bottom;
+      }
+      .score_percentage {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #14161a;
+        b {
+          font-weight: bold;
+        }
+      }
+      .create_review_btn {
+        margin-top: 24px;
+        background-color: #14161a;
+        color: #fff;
+        width: 158px;
+        height: 44px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bold;
+      }
     }
   }
 `;

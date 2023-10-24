@@ -17,7 +17,18 @@ function ProdReview() {
             </div>
           </div>
           <div className="review_summary">
-            <div className="left_content"></div>
+            <div className="left_content">
+              <div className="score">
+                <div className="icon">
+                  <img src="img/icon/ico_star.svg" alt="" />
+                </div>
+                <span class="text">5.0</span>
+              </div>
+              <div class="score_percentage">
+                <b>99%</b>의 구매자가 이 상품을 좋아합니다.
+              </div>
+              <button class="create_review_btn">상품 리뷰 작성하기</button>
+            </div>
             <div className="right_content"></div>
           </div>
         </style.ReviewWrap>
