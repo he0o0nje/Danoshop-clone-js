@@ -88,5 +88,57 @@ export const ReviewWrap = styled.div`
         font-weight: bold;
       }
     }
+    .right_content {
+      margin-top: 25px;
+      padding-left: 64px;
+      width: calc(100% - 400px - 1px);
+      vertical-align: top;
+      li + li {
+        margin-top: 8px;
+      }
+      li {
+        display: flex;
+        .title {
+          width: 70px;
+          margin-right: 12px;
+          font-size: 12px;
+          line-height: 18px;
+          color: #707680;
+        }
+        .gauge {
+          width: calc(100% - 158px);
+          height: 12px;
+          margin: 3px 0 3px 0;
+          border-radius: 8px;
+          background-color: #ebeff5;
+          .percentile {
+            height: 12px;
+            border-radius: 8px;
+            background-color: #bcc2cc;
+          }
+        }
+        .count {
+          width: 64px;
+          margin-left: 12px;
+          font-size: 12px;
+          line-height: 18px;
+          color: #707680;
+        }
+      }
+      .highlighted {
+        font-weight: bold;
+        .title {
+          color: #14161a;
+        }
+        .gauge {
+          .percentile {
+            background-color: #ff8934;
+          }
+        }
+        .count {
+          color: #14161a;
+        }
+      }
+    }
   }
 `;

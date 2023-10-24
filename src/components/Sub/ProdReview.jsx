@@ -29,7 +29,60 @@ function ProdReview() {
               </div>
               <button class="create_review_btn">상품 리뷰 작성하기</button>
             </div>
-            <div className="right_content"></div>
+            <div className="right_content">
+              <ul>
+                <li className="highlighted">
+                  <div class="title">아주 좋아요</div>
+                  <div class="gauge">
+                    <div
+                      style={{ width: "max(97%, 12px)" }}
+                      class="percentile"
+                    ></div>
+                  </div>
+                  <div class="count">1,964</div>
+                </li>
+                <li>
+                  <div class="title">맘에 들어요</div>
+                  <div class="gauge">
+                    <div
+                      style={{ width: "max(2%, 12px)" }}
+                      class="percentile"
+                    ></div>
+                  </div>
+                  <div class="count">42</div>
+                </li>
+                <li>
+                  <div class="title">보통이에요</div>
+                  <div class="gauge">
+                    <div
+                      style={{ width: "max(0%, 0px)" }}
+                      class="percentile"
+                    ></div>
+                  </div>
+                  <div class="count">10</div>
+                </li>
+                <li>
+                  <div class="title">그냥 그래요</div>
+                  <div class="gauge">
+                    <div
+                      style={{ width: "max(0%, 0px)" }}
+                      class="percentile"
+                    ></div>
+                  </div>
+                  <div class="count">3</div>
+                </li>
+                <li>
+                  <div class="title">별로예요</div>
+                  <div class="gauge">
+                    <div
+                      style={{ width: "max(0%, 0px)" }}
+                      class="percentile"
+                    ></div>
+                  </div>
+                  <div class="count">4</div>
+                </li>
+              </ul>
+            </div>
           </div>
         </style.ReviewWrap>
       </style.ProdReview>
