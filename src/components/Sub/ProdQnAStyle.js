@@ -43,7 +43,7 @@ export const Contents = styled.div`
     }
     td {
       padding: 1.5rem 1rem 1.6rem;
-      border-bottom: 1px solid #e5e5e5;
+      border-bottom: 0.1rem solid #e5e5e5;
       height: 2.9rem;
       line-height: 2.2rem;
       vertical-align: middle;
@@ -59,6 +59,54 @@ export const Contents = styled.div`
     }
     .left {
       text-align: left;
+    }
+  }
+  .paginate {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 0;
+    a {
+      background: url("img/icon/btn_page_next.png") no-repeat center center;
+      background-size: 4rem;
+      width: 4rem;
+      height: 4rem;
+      line-height: 4rem;
+      vertical-align: top;
+      display: inline-block;
+    }
+    .first {
+      background: url("img/icon/btn_page_first.png") no-repeat center center;
+      background-size: 4rem;
+    }
+    .first + a {
+      background: url("img/icon/btn_page_prev.png") no-repeat center center;
+      background-size: 4rem;
+    }
+    .last {
+      background: url("img/icon/btn_page_last.png") no-repeat center center;
+      background-size: 4rem;
+    }
+    ol {
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin-left: -0.1rem;
+        a {
+          font-size: 1.4rem;
+          width: 4rem;
+          padding: 1.2rem 0;
+          color: #6d6d6d;
+          border: 0.1rem solid #e5e5e5;
+          background: #fff;
+          line-height: 1.4rem;
+        }
+        .this {
+          color: #000;
+          border-color: #000;
+          z-index: 1;
+          position: relative;
+        }
+      }
     }
   }
 `;

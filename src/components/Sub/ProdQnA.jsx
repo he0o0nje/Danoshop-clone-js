@@ -117,7 +117,7 @@ function ProdQnA() {
                 </tr>
               </tbody>
             </table>
-            <div class="">
+            <div class="paginate">
               <a href="!" class="first">
                 첫 페이지
               </a>
