@@ -119,6 +119,46 @@ function ProdReview() {
               </ul>
             </div>
           </style.MediaSummary>
+          <style.SortFilter>
+            <ul>
+              <li className="basic_sort">
+                <ul>
+                  <li> 추천순 </li>
+                  <li> 최신순 </li>
+                  <li className="selected"> 별점순 </li>
+                </ul>
+              </li>
+              <li className="search">
+                <div className="input_container">
+                  <input type="text" placeholder="리뷰 키워드 검색" />
+                  <a href="!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                      class="search_input_icon"
+                    >
+                      <rect
+                        width="10.5"
+                        height="10.5"
+                        x="2.25"
+                        y="2.25"
+                        stroke-width="1.5"
+                        rx="5.25"
+                      ></rect>
+                      <path
+                        stroke-width="1.5"
+                        d="M11.78 11.47L16.28 15.97"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li className="media_first"></li>
+            </ul>
+          </style.SortFilter>
         </style.ReviewWrap>
       </style.ProdReview>
     </>

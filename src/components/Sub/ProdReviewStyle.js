@@ -203,3 +203,69 @@ export const MediaSummary = styled.div`
     }
   }
 `;
+
+export const SortFilter = styled.div`
+  position: relative;
+  ul {
+    border-bottom: 0.1rem solid #ebeff5;
+    .basic_sort {
+      display: inline-block;
+      width: 18%;
+      min-width: 11.5rem;
+      ul {
+        display: block;
+        margin-left: 1.2rem;
+        li {
+          cursor: pointer;
+          display: inline-block;
+          padding: 2.2rem 1.2rem;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          color: #bcc2cc;
+        }
+        .selected {
+          color: #14161a;
+          font-weight: bold;
+        }
+      }
+    }
+    .search {
+      float: right;
+      padding: 1.6rem 0 1.6rem 0.8rem;
+      .input_container {
+        background: #ffffff;
+        position: relative;
+        box-sizing: border-box;
+        height: 32px;
+        width: 238px;
+        border: solid 1px #d8dde5;
+        border-radius: 4px;
+        input {
+          font-size: 12px;
+          color: #14161a;
+          line-height: 18px;
+          width: calc(100% - 70px);
+          margin: 6px 8px 6px 32px;
+          text-overflow: ellipsis;
+        }
+        a {
+          position: absolute;
+          border-radius: 5px;
+          background-color: white;
+          margin: 1px;
+          padding: 6px;
+          left: 0;
+          font-size: 0;
+          .search_input_icon {
+            height: 16px;
+            width: 16px;
+            stroke: #bcc2cc;
+          }
+        }
+      }
+    }
+    .media_first {
+      float: right;
+    }
+  }
+`;

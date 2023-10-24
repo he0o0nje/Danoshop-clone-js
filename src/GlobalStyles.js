@@ -28,6 +28,8 @@ const GlobalStyles = createGlobalStyle`
       -webkit-user-select: auto;
       -ms-user-select: auto;
       user-select: auto;
+      border: 0;
+      outline: 0;
     }
 
     input:focus {
