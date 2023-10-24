@@ -147,6 +147,8 @@ export const MediaSummary = styled.div`
   padding: 3.2rem 0;
   border-bottom: 0.1rem solid #ebeff5;
   .header {
+    margin: 0;
+    padding: 0;
     border: 0;
     .title_wrap {
       display: inline-block;
@@ -161,18 +163,17 @@ export const MediaSummary = styled.div`
       }
     }
     .more_btn {
-      font-size: 14px;
-      line-height: 20px;
-      padding: 14px 0 14px 14px;
+      font-size: 1.4rem;
+      line-height: 2rem;
       color: #707680;
       .show_all_arrow {
         position: relative;
-        top: -2px;
-        margin-left: 8px;
+        top: -0.2rem;
+        margin-left: 0.6rem;
         transform: rotate(270deg);
         stroke: #bcc2cc;
-        width: 12px;
-        height: 12px;
+        width: 1.2rem;
+        height: 1.2rem;
       }
     }
   }
@@ -182,19 +183,22 @@ export const MediaSummary = styled.div`
     overflow: hidden;
     min-width: 720px;
     max-width: 2560px;
+    li + li {
+      margin-left: 0.8rem;
+    }
     li {
-      width: calc((100% - 56px) / 8 - 0.1px);
-      padding-bottom: calc((100% - 56px) / 8);
+      width: calc((100% - 5.6rem) / 8 - 0.1rem);
+      padding-bottom: calc((100% - 5.6rem) / 8);
       cursor: pointer;
       display: inline-block;
       overflow: hidden;
       position: relative;
       height: 0;
-      border-radius: 4px;
+      border-radius: 0.4rem;
       img {
         position: absolute;
         width: 100%;
-        border-radius: 4px;
+        border-radius: 0.4rem;
       }
     }
   }

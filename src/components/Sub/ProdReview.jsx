@@ -1,5 +1,6 @@
 import * as style from "./ProdReviewStyle";
 import DetailTab02 from "./DetailTab02";
+import dummy from "../../data/sub/prod001.json";
 
 function ProdReview() {
   return (
@@ -110,7 +111,11 @@ function ProdReview() {
             </div>
             <div className="summary_content">
               <ul>
-                <li></li>
+                {dummy.map((item, index) => (
+                  <li key={index}>
+                    <img src={item.review} alt="" />
+                  </li>
+                ))}
               </ul>
             </div>
           </style.MediaSummary>
