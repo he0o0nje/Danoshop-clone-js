@@ -40,4 +40,14 @@ export const ReviewWrap = styled.div`
       }
     }
   }
+  .review_summary {
+    padding: 32px 0;
+    border-bottom: 1px solid #ebeff5;
+    display: flex;
+    .left_content {
+      width: 400px;
+      min-height: 122px;
+      border-right: solid 1px #d8dde5;
+    }
+  }
 `;

@@ -16,6 +16,10 @@ function ProdReview() {
               <a href="!">전체 상품 리뷰 보기</a>
             </div>
           </div>
+          <div className="review_summary">
+            <div className="left_content"></div>
+            <div className="right_content"></div>
+          </div>
         </style.ReviewWrap>
       </style.ProdReview>
     </>
