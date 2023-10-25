@@ -1,4 +1,5 @@
 import * as style from "./TopStyle";
+import dummy from "../../data/sub/prod001.json";
 
 function Top() {
   return (
@@ -18,13 +19,13 @@ function Top() {
           <style.ImgArea>
             <div className="prod_img">
               <a href="!">
-                <img src="img/product/01big.png" alt="" />
+                <img src="img/sub/prod001/big01.png" alt="" />
               </a>
             </div>
             <div className="list_img">
               <ul>
                 <li>
-                  <img src="img/product/01small.png" alt="" />
+                  <img src="img/sub/prod001/small01.png" alt="" />
                 </li>
               </ul>
             </div>

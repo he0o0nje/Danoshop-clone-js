@@ -3,7 +3,7 @@ import AboutPage from "../../pages/AboutPage/AboutPage";
 import * as style from "./AppStyle";
 import GlobalStyles from "../../GlobalStyles";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (

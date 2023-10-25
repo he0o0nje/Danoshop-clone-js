@@ -8,13 +8,13 @@ function ProdDetail() {
       <style.ProdDetail>
         <div>
           <p>
-            <img src="img/product/01detail.png" alt="" />
-            <img src="img/product/02detail.png" alt="" />
+            <img src="img/sub/prod001/detail01.png" alt="" />
+            <img src="img/sub/prod001/detail02.png" alt="" />
           </p>
           <p>
-            <img src="img/product/03detail.jpg" alt="" />
-            <img src="img/product/04detail.png" alt="" />
-            <img src="img/product/05detail.png" alt="" />
+            <img src="img/sub/prod001/detail03.jpg" alt="" />
+            <img src="img/sub/prod001/detail04.png" alt="" />
+            <img src="img/sub/prod001/detail05.png" alt="" />
           </p>
           <br></br>
         </div>

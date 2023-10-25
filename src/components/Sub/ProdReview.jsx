@@ -111,9 +111,9 @@ function ProdReview() {
             </div>
             <div className="summary_content">
               <ul>
-                {dummy.map((item, index) => (
+                {dummy.media_review.map((item, index) => (
                   <li key={index}>
-                    <img src={item.review} alt="" />
+                    <img src={item.media} alt="" />
                   </li>
                 ))}
               </ul>
@@ -233,74 +233,80 @@ function ProdReview() {
           </style.SortFilter>
           <style.ReviewList>
             <ul className="review_list">
-              <li>
-                <div className="left_content">
-                  <div className="tag_section">
-                    <span>NEW</span>
-                    <span>재구매</span>
-                  </div>
-                  <div className="score_section">
-                    <div className="score_container">
-                      <div className="score_star">
-                        <div>
-                          <img src="img/icon/ico_star.svg" alt="" />
+              {dummy.review.map((item, index) => (
+                <li key={index}>
+                  <div className="left_content">
+                    <div className="tag_section">
+                      {item.tag_new && (
+                        <span className="tag_new">{item.tag_new}</span>
+                      )}
+                      {item.tag_repurchase && (
+                        <span className="tag_repurchase">
+                          {item.tag_repurchase}
+                        </span>
+                      )}
+                    </div>
+                    <div className="score_section">
+                      <div className="score_container">
+                        <div className="score_star">
+                          <div>
+                            <img src="img/icon/ico_star.svg" alt="" />
+                          </div>
+                          <div>
+                            <img src="img/icon/ico_star.svg" alt="" />
+                          </div>
+                          <div>
+                            <img src="img/icon/ico_star.svg" alt="" />
+                          </div>
+                          <div>
+                            <img src="img/icon/ico_star.svg" alt="" />
+                          </div>
+                          <div>
+                            <img src="img/icon/ico_star.svg" alt="" />
+                          </div>
                         </div>
-                        <div>
-                          <img src="img/icon/ico_star.svg" alt="" />
-                        </div>
-                        <div>
-                          <img src="img/icon/ico_star.svg" alt="" />
-                        </div>
-                        <div>
-                          <img src="img/icon/ico_star.svg" alt="" />
-                        </div>
-                        <div>
-                          <img src="img/icon/ico_star.svg" alt="" />
-                        </div>
+                        <div className="score_text">아주 좋아요</div>
                       </div>
-                      <div className="score_text">아주 좋아요</div>
+                      <div class="edit_container">
+                        <div class="date">{item.date}</div>
+                      </div>
                     </div>
-                    <div class="edit_container">
-                      <div class="date">2023.10.24</div>
+                    <div className="content_section">
+                      <div className="message">{item.message}</div>
+                    </div>
+                    <div className="like_section">
+                      <div className="comment_info">
+                        <a href="!">
+                          <span className="text">댓글</span>
+                          <span className="count">0</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 8 8"
+                            class=""
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M.667 2.333L4 5.667l3.333-3.334"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <div className="content_section">
-                    <div className="message">좀딱딱해요 우유에잘안불어요</div>
-                  </div>
-                  <div className="like_section">
-                    <div className="comment_info">
-                      <a href="!">
-                        <span className="text">댓글</span>
-                        <span className="count">0</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 8 8"
-                          class=""
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M.667 2.333L4 5.667l3.333-3.334"
-                          ></path>
-                        </svg>
-                      </a>
+                  <div className="right_content">
+                    <div className="user_name_msg">
+                      <b>{item.user_name}****</b>
+                      님의 리뷰입니다.
+                    </div>
+                    <div className="options_section">
+                      <span className="name">옵션</span>
+                      <span className="value">{item.option}</span>
                     </div>
                   </div>
-                </div>
-                <div className="right_content">
-                  <div className="user_name_msg">
-                    <b>임****</b>
-                    님의 리뷰입니다.
-                  </div>
-                  <div className="options_section">
-                    <span className="name">옵션</span>
-                    <span className="value">
-                      자이언트 브라운라이스소울 프로틴_베리
-                    </span>
-                  </div>
-                </div>
-              </li>
+                </li>
+              ))}
             </ul>
           </style.ReviewList>
           <style.ReviewPagination>
