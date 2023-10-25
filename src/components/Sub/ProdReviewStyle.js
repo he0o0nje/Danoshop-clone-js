@@ -286,4 +286,35 @@ export const SortFilter = styled.div`
       }
     }
   }
+  .filter_list {
+    position: relative;
+    border-bottom: 0.1rem solid #ebeff5;
+    ul {
+      position: relative;
+      display: flex;
+      li {
+        padding: 1.2rem 0.4rem 1.2rem 0;
+        .filter_btn {
+          border-radius: 0.4rem;
+          border: solid 0.1rem #ebeff5;
+          background-color: #ffffff;
+          .dropdown {
+            cursor: pointer;
+            padding: 0.8rem 1.2rem;
+            .dropdown_btn {
+              font-size: 1.2rem;
+              line-height: 1.8rem;
+              color: #14161a;
+              .dropdown_arrow {
+                width: 0.8rem;
+                height: 0.8rem;
+                margin-left: 0.7rem;
+                stroke: #bcc2cc;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 `;

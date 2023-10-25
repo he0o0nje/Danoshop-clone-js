@@ -205,6 +205,31 @@ function ProdReview() {
                 </a>
               </li>
             </ul>
+            <div className="filter_list">
+              <ul>
+                <li>
+                  <div className="filter_btn">
+                    <div className="dropdown">
+                      <div className="dropdown_btn">
+                        별점
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 8 8"
+                          class="dropdown_arrow"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M.667 2.333L4 5.667l3.333-3.334"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </style.SortFilter>
         </style.ReviewWrap>
       </style.ProdReview>
