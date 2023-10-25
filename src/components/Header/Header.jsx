@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import * as style from "./HeaderStyle";
+import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
 function Header() {
@@ -21,32 +22,32 @@ function Header() {
           <style.HeaderTop>
             <ul className="top_list">
               <li>
-                <style.Link href="!">회원가입</style.Link>
+                <style.Link href="/">회원가입</style.Link>
               </li>
               <li>
-                <style.Link href="!">로그인</style.Link>
+                <style.Link href="/">로그인</style.Link>
               </li>
               <li>
-                <style.Link href="!">주문조회</style.Link>
+                <style.Link href="/">주문조회</style.Link>
               </li>
               <li>
-                <style.Link href="!">최근본상품</style.Link>
+                <style.Link href="/">최근본상품</style.Link>
               </li>
               <li>
                 <style.boardList>
-                  <style.Link href="!">
+                  <style.Link href="/">
                     고객센터
                     <i className="arrRgt"></i>
                   </style.Link>
                   <ul className="board_list">
                     <li>
-                      <style.Link href="!">공지사항</style.Link>
+                      <style.Link href="/">공지사항</style.Link>
                     </li>
                     <li>
-                      <style.Link href="!">상품 사용후기</style.Link>
+                      <style.Link href="/">상품 사용후기</style.Link>
                     </li>
                     <li>
-                      <style.Link href="!">상품 Q&A</style.Link>
+                      <style.Link href="/">상품 Q&A</style.Link>
                     </li>
                   </ul>
                 </style.boardList>
@@ -55,52 +56,52 @@ function Header() {
           </style.HeaderTop>
           <style.HeaderBottom>
             <style.LogoWrap>
-              <a href="!">
+              <Link to="/">
                 <img src="img/header/logo.jpg" alt="" />
-              </a>
+              </Link>
             </style.LogoWrap>
             <style.MypageWrap>
-              <a href="!">
+              <a href="/">
                 <img src="img/header/mypage1.svg" alt="" />
               </a>
-              <a href="!">
+              <a href="/">
                 <img src="img/header/mypage2.svg" alt="" />
               </a>
-              <a href="!">
+              <a href="/">
                 <img src="img/header/mypage3.svg" alt="" />
               </a>
             </style.MypageWrap>
             <style.BotCategory>
               <ul>
                 <li>
-                  <style.Link href="!">전 상품</style.Link>
+                  <style.Link href="/">전 상품</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">SALE</style.Link>
+                  <style.Link href="/">SALE</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">100원딜</style.Link>
+                  <style.Link href="/">100원딜</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">식단관리</style.Link>
+                  <style.Link href="/">식단관리</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">간편식</style.Link>
+                  <style.Link href="/">간편식</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">베이커리</style.Link>
+                  <style.Link href="/">베이커리</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">간식·음료</style.Link>
+                  <style.Link href="/">간식·음료</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">분식·반찬</style.Link>
+                  <style.Link href="/">분식·반찬</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">홈트용품</style.Link>
+                  <style.Link href="/">홈트용품</style.Link>
                 </li>
                 <li>
-                  <style.Link href="!">리빙용품</style.Link>
+                  <style.Link href="/">리빙용품</style.Link>
                 </li>
               </ul>
             </style.BotCategory>

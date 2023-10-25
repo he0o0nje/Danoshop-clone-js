@@ -14,7 +14,7 @@ function FirstBenefit() {
           <ul>
             {dummy.map((item, index) => (
               <li key={index}>
-                <a href="!">
+                <a href="/">
                   <div className="img_area">
                     <img src={item.image} alt="" />
                   </div>

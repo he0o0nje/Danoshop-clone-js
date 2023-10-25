@@ -1,5 +1,6 @@
 import * as style from "./ProductStyle";
 import dummy from "../../data/main/3pm.json";
+import { Link } from "react-router-dom";
 
 function Product() {
   return (
@@ -10,9 +11,9 @@ function Product() {
             <li className="product" key={index}>
               <style.MainProd {...(item.sticker ? { sale: true } : {})}>
                 <div className="prod_thumb">
-                  <a href="!">
+                  <Link to="detail">
                     <img src={item.image} alt="" />
-                  </a>
+                  </Link>
                   <div className="icon_box">
                     <span>WISH</span>
                     <span>ADD</span>
@@ -22,7 +23,7 @@ function Product() {
                 </div>
                 <div className="prod_desc">
                   <div className="name">
-                    <a href="!">{item.name}</a>
+                    <Link to="detail">{item.name}</Link>
                   </div>
                   <ul>
                     <li className="composition">

@@ -9,7 +9,7 @@ function Banner() {
         <Carousel fade controls={false}>
           {dummy.map((item, index) => (
             <Carousel.Item interval={1500} key={index}>
-              <a href="!">
+              <a href="/">
                 <img src={item.image} alt="" />
               </a>
             </Carousel.Item>
