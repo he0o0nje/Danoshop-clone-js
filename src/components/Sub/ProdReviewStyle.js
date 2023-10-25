@@ -181,8 +181,8 @@ export const MediaSummary = styled.div`
     padding-top: 1.6rem;
     font-size: 0;
     overflow: hidden;
-    min-width: 720px;
-    max-width: 2560px;
+    min-width: 72rem;
+    max-width: 256rem;
     li + li {
       margin-left: 0.8rem;
     }
@@ -236,29 +236,29 @@ export const SortFilter = styled.div`
         background: #ffffff;
         position: relative;
         box-sizing: border-box;
-        height: 32px;
-        width: 238px;
-        border: solid 1px #d8dde5;
-        border-radius: 4px;
+        height: 3.2rem;
+        width: 23.8rem;
+        border: solid 0.1rem #d8dde5;
+        border-radius: 0.4rem;
         input {
-          font-size: 12px;
+          font-size: 1.2rem;
           color: #14161a;
-          line-height: 18px;
-          width: calc(100% - 70px);
-          margin: 6px 8px 6px 32px;
+          line-height: 1.8rem;
+          width: calc(100% - 7rem);
+          margin: 0.6rem 0.8rem 0.6rem 3.2rem;
           text-overflow: ellipsis;
         }
         a {
           position: absolute;
-          border-radius: 5px;
+          border-radius: 0.5rem;
           background-color: white;
-          margin: 1px;
-          padding: 6px;
+          margin: 0.1rem;
+          padding: 0.6rem;
           left: 0;
           font-size: 0;
           .search_input_icon {
-            height: 16px;
-            width: 16px;
+            height: 1.6rem;
+            width: 1.6rem;
             stroke: #bcc2cc;
           }
         }
@@ -266,6 +266,24 @@ export const SortFilter = styled.div`
     }
     .media_first {
       float: right;
+      .toggle_btn {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 2.2rem 0.8rem 2.2rem 2.2rem;
+        display: inline-block;
+        color: #707680;
+        svg {
+          display: none;
+          stroke: #bcc2cc;
+          width: 1.6rem;
+          height: 1.6rem;
+          vertical-align: text-bottom;
+          margin-right: 0.5rem;
+        }
+        .on {
+          display: inline-block;
+        }
+      }
     }
   }
 `;
