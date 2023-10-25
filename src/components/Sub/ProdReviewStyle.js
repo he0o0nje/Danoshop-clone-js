@@ -317,4 +317,139 @@ export const SortFilter = styled.div`
       }
     }
   }
+  .review_list {
+    border-bottom: 1px solid #dadada;
+    transition: opacity 0.3s ease-out;
+    li {
+      padding: 32px 0;
+      border-bottom: 1px solid #d8dde5;
+      .left_content {
+        display: inline-block;
+        border-right: 1px solid #d8dde5;
+        padding-right: 40px;
+        vertical-align: top;
+        box-sizing: border-box;
+        width: 75%;
+        .tag_section {
+          margin-bottom: 8px;
+          span + span {
+            margin-left: 4px;
+          }
+          span {
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: solid 1px #ebeff5;
+            background-color: #fafcff;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 18px;
+            color: #707680;
+            white-space: nowrap;
+          }
+        }
+        .score_section {
+          min-height: 20px;
+          .score_container {
+            display: inline-block;
+            .score_star {
+              display: inline-block;
+              div {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+            .score_text {
+              display: inline-block;
+              vertical-align: text-bottom;
+              margin-left: 8px;
+              font-size: 14px;
+              font-weight: bold;
+              line-height: 20px;
+              color: #14161a;
+              white-space: nowrap;
+            }
+          }
+          .edit_container {
+            position: relative;
+            float: right;
+            .date {
+              display: inline-block;
+              color: #707680;
+              padding: 1px 0;
+            }
+          }
+        }
+        .content_section {
+          margin-top: 20px;
+          font-size: 13px;
+          line-height: 18px;
+          color: #14161a;
+          position: relative;
+          transition: opacity 0.3s ease-out;
+          .message {
+            max-height: 54px;
+            overflow: hidden;
+            box-sizing: content-box;
+          }
+        }
+        .like_section {
+          margin-top: 20px;
+          height: 20px;
+          .comment_info {
+            display: inline-block;
+            a {
+              padding: 16px 16px 16px 0;
+              color: #707680;
+              .text {
+                font-size: 12px;
+                line-height: 18px;
+              }
+              .count {
+                margin: 0 4px;
+                font-weight: bold;
+              }
+              svg {
+                width: 8px;
+                height: 8px;
+                stroke: #bcc2cc;
+              }
+            }
+          }
+        }
+      }
+      .right_content {
+        display: inline-block;
+        padding-left: 40px;
+        vertical-align: top;
+        box-sizing: border-box;
+        width: 25%;
+        .user_name_msg {
+          margin-bottom: 4px;
+          color: #14161a;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          b {
+            font-weight: bold;
+          }
+        }
+        .options_section {
+          margin-top: 12px;
+          span {
+            font-size: 12px;
+            line-height: 18px;
+            color: #707680;
+          }
+          .name {
+            margin-right: 4px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
 `;
