@@ -230,6 +230,8 @@ function ProdReview() {
                 </li>
               </ul>
             </div>
+          </style.SortFilter>
+          <style.ReviewList>
             <ul className="review_list">
               <li>
                 <div className="left_content">
@@ -300,7 +302,26 @@ function ProdReview() {
                 </div>
               </li>
             </ul>
-          </style.SortFilter>
+          </style.ReviewList>
+          <style.ReviewPagination>
+            <div className="pagination">
+              <a href="!" className="disabled">
+                {"<"}
+              </a>
+              <a href="!" className="active">
+                1
+              </a>
+              <a href="!">2</a>
+              <a href="!">3</a>
+              <a href="!">4</a>
+              <a href="!">5</a>
+              <a href="!">6</a>
+              <a href="!">7</a>
+              <a href="!">8</a>
+              <a href="!">9</a>
+              <a href="!">{">"}</a>
+            </div>
+          </style.ReviewPagination>
         </style.ReviewWrap>
       </style.ProdReview>
     </>

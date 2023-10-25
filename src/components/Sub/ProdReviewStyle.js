@@ -317,45 +317,48 @@ export const SortFilter = styled.div`
       }
     }
   }
+`;
+
+export const ReviewList = styled.div`
   .review_list {
-    border-bottom: 1px solid #dadada;
+    border-bottom: 0.1rem solid #dadada;
     transition: opacity 0.3s ease-out;
     li {
-      padding: 32px 0;
-      border-bottom: 1px solid #d8dde5;
+      padding: 3.2rem 0;
+      border-bottom: 0.1rem solid #d8dde5;
       .left_content {
         display: inline-block;
-        border-right: 1px solid #d8dde5;
-        padding-right: 40px;
+        border-right: 0.1rem solid #d8dde5;
+        padding-right: 4rem;
         vertical-align: top;
         box-sizing: border-box;
         width: 75%;
         .tag_section {
-          margin-bottom: 8px;
+          margin-bottom: 0.8rem;
           span + span {
-            margin-left: 4px;
+            margin-left: 0.4rem;
           }
           span {
-            padding: 4px 8px;
-            border-radius: 4px;
-            border: solid 1px #ebeff5;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.4rem;
+            border: solid 0.1rem #ebeff5;
             background-color: #fafcff;
-            font-size: 12px;
+            font-size: 1.2rem;
             font-weight: bold;
-            line-height: 18px;
+            line-height: 1.8rem;
             color: #707680;
             white-space: nowrap;
           }
         }
         .score_section {
-          min-height: 20px;
+          min-height: 2rem;
           .score_container {
             display: inline-block;
             .score_star {
               display: inline-block;
               div {
-                width: 20px;
-                height: 20px;
+                width: 2rem;
+                height: 2rem;
                 display: inline-block;
                 img {
                   width: 100%;
@@ -366,10 +369,10 @@ export const SortFilter = styled.div`
             .score_text {
               display: inline-block;
               vertical-align: text-bottom;
-              margin-left: 8px;
-              font-size: 14px;
+              margin-left: 0.8rem;
+              font-size: 1.4rem;
               font-weight: bold;
-              line-height: 20px;
+              line-height: 2rem;
               color: #14161a;
               white-space: nowrap;
             }
@@ -380,42 +383,42 @@ export const SortFilter = styled.div`
             .date {
               display: inline-block;
               color: #707680;
-              padding: 1px 0;
+              padding: 0.1rem 0;
             }
           }
         }
         .content_section {
-          margin-top: 20px;
-          font-size: 13px;
-          line-height: 18px;
+          margin-top: 2rem;
+          font-size: 1.3rem;
+          line-height: 1.8rem;
           color: #14161a;
           position: relative;
           transition: opacity 0.3s ease-out;
           .message {
-            max-height: 54px;
+            max-height: 5.4rem;
             overflow: hidden;
             box-sizing: content-box;
           }
         }
         .like_section {
-          margin-top: 20px;
-          height: 20px;
+          margin-top: 2rem;
+          height: 2rem;
           .comment_info {
             display: inline-block;
             a {
-              padding: 16px 16px 16px 0;
+              padding: 1.6rem 1.6rem 1.6rem 0;
               color: #707680;
               .text {
-                font-size: 12px;
-                line-height: 18px;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
               }
               .count {
-                margin: 0 4px;
+                margin: 0 0.4rem;
                 font-weight: bold;
               }
               svg {
-                width: 8px;
-                height: 8px;
+                width: 0.8rem;
+                height: 0.8rem;
                 stroke: #bcc2cc;
               }
             }
@@ -424,12 +427,12 @@ export const SortFilter = styled.div`
       }
       .right_content {
         display: inline-block;
-        padding-left: 40px;
+        padding-left: 4rem;
         vertical-align: top;
         box-sizing: border-box;
         width: 25%;
         .user_name_msg {
-          margin-bottom: 4px;
+          margin-bottom: 0.4rem;
           color: #14161a;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -438,18 +441,46 @@ export const SortFilter = styled.div`
           }
         }
         .options_section {
-          margin-top: 12px;
+          margin-top: 1.2rem;
           span {
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
             color: #707680;
           }
           .name {
-            margin-right: 4px;
+            margin-right: 0.4rem;
             font-weight: bold;
           }
         }
       }
+    }
+  }
+`;
+
+export const ReviewPagination = styled.div`
+  text-align: center;
+  padding-top: 25px;
+  .pagination {
+    display: block;
+    .disabled {
+      pointer-events: none;
+      color: #d7d4d4;
+    }
+    a {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer;
+      *cursor: hand;
+      color: #4a4a4a;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+    .active {
+      background: rgba(0, 0, 0, 0.1);
     }
   }
 `;
