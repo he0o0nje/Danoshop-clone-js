@@ -1,14 +1,14 @@
 [
   {
-    "image": "img/1stBenefit/01.jpg",
+    "image": "img/main/1stBenefit/01.jpg",
     "title": "첫 구매 100원!"
   },
   {
-    "image": "img/1stBenefit/02.jpg",
+    "image": "img/main/1stBenefit/02.jpg",
     "title": "무료 배송 쿠폰"
   },
   {
-    "image": "img/1stBenefit/03.jpg",
+    "image": "img/main/1stBenefit/03.jpg",
     "title": "웰컴 쿠폰팩"
   }
 ]

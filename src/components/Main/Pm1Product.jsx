@@ -1,5 +1,5 @@
 import * as style from "./ProductStyle";
-import dummy from "../../data/1pm.json";
+import dummy from "../../data/main/1pm.json";
 
 function Product() {
   return (

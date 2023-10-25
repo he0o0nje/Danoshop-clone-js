@@ -459,7 +459,7 @@ export const ReviewList = styled.div`
 
 export const ReviewPagination = styled.div`
   text-align: center;
-  padding-top: 25px;
+  padding-top: 2.5rem;
   .pagination {
     display: block;
     .disabled {
@@ -469,15 +469,15 @@ export const ReviewPagination = styled.div`
     a {
       display: inline-block;
       box-sizing: border-box;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
+      width: 4rem;
+      height: 4rem;
+      line-height: 4rem;
       text-align: center;
       cursor: pointer;
       *cursor: hand;
       color: #4a4a4a;
-      font-size: 15px;
-      margin-right: 10px;
+      font-size: 1.5rem;
+      margin-right: 1rem;
     }
     .active {
       background: rgba(0, 0, 0, 0.1);

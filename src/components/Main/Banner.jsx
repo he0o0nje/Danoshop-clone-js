@@ -1,6 +1,6 @@
 import * as style from "./BannerStyle";
 import Carousel from "react-bootstrap/Carousel";
-import dummy from "../../data/Banner.json";
+import dummy from "../../data/main/Banner.json";
 
 function Banner() {
   return (
