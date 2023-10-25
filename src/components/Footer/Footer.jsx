@@ -1,4 +1,5 @@
 import * as style from "./FooterStyle";
+import { Link } from "react-router-dom";
 
 function Main() {
   return (
@@ -6,26 +7,26 @@ function Main() {
       <style.Footer>
         <style.FooterInner>
           <style.LogoWrap>
-            <a href="!">
+            <Link to="/">
               <img src="img/header/logo.jpg" alt="" />
-            </a>
+            </Link>
           </style.LogoWrap>
           <style.BtnUtil>
             <ul>
               <li>
-                <a href="!">회사소개</a>
+                <a href="/">회사소개</a>
               </li>
               <li>
-                <a href="!">이용약관</a>
+                <a href="/">이용약관</a>
               </li>
               <li>
-                <a href="!">개인정보처리방침</a>
+                <a href="/">개인정보처리방침</a>
               </li>
               <li>
-                <a href="!">이용안내</a>
+                <a href="/">이용안내</a>
               </li>
               <li>
-                <a href="!"> </a>
+                <a href="/"> </a>
               </li>
             </ul>
           </style.BtnUtil>
@@ -93,7 +94,7 @@ function Main() {
                 <span className="field">통신판매업 신고번호</span>
                 <span className="value">
                   제2017-서울마포-0722
-                  <a href="!"> [사업자정보확인]</a>
+                  <a href="/"> [사업자정보확인]</a>
                 </span>
               </style.BInfoCont>
               <style.BInfoCont>
@@ -105,16 +106,16 @@ function Main() {
           <style.Sns>
             <style.SnsTit>SNS</style.SnsTit>
             <style.SnsBox>
-              <a href="!">
+              <a href="/">
                 <img src="img/footer/sns1.png" alt="" />
               </a>
-              <a href="!">
+              <a href="/">
                 <img src="img/footer/sns2.png" alt="" />
               </a>
-              <a href="!">
+              <a href="/">
                 <img src="img/footer/sns3.png" alt="" />
               </a>
-              <a href="!">
+              <a href="/">
                 <img src="img/footer/sns4.png" alt="" />
               </a>
             </style.SnsBox>
