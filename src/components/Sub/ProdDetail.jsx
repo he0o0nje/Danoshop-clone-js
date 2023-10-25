@@ -1,5 +1,6 @@
 import * as style from "./ProdDetailStyle";
 import DetailTab01 from "./DetailTab01";
+import dummy from "../../data/sub/prod001.json";
 
 function ProdDetail() {
   return (
@@ -8,13 +9,13 @@ function ProdDetail() {
       <style.ProdDetail>
         <div>
           <p>
-            <img src="img/sub/prod001/detail01.png" alt="" />
-            <img src="img/sub/prod001/detail02.png" alt="" />
+            <img src={dummy.detail[0].image01} alt="" />
+            <img src={dummy.detail[0].image02} alt="" />
           </p>
           <p>
-            <img src="img/sub/prod001/detail03.jpg" alt="" />
-            <img src="img/sub/prod001/detail04.png" alt="" />
-            <img src="img/sub/prod001/detail05.png" alt="" />
+            <img src={dummy.detail[0].image03} alt="" />
+            <img src={dummy.detail[0].image04} alt="" />
+            <img src={dummy.detail[0].image05} alt="" />
           </p>
           <br></br>
         </div>
@@ -31,9 +32,7 @@ function ProdDetail() {
                       <strong>제품명</strong>
                     </th>
                     <td>
-                      <span>
-                        자이언트 프로틴 브라운라이스소울 2종 (베리, 초코)
-                      </span>
+                      <span>{dummy.detail[0].info_name}</span>
                     </td>
                   </tr>
                   <tr>
@@ -52,7 +51,7 @@ function ProdDetail() {
                     </th>
                     <td>
                       <div>
-                        <span>1개 500g</span>
+                        <span>{dummy.detail[0].keep}</span>
                       </div>
                     </td>
                   </tr>

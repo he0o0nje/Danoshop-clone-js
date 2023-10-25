@@ -19,23 +19,20 @@ function Top() {
           <style.ImgArea>
             <div className="prod_img">
               <a href="!">
-                <img src="img/sub/prod001/big01.png" alt="" />
+                <img src={dummy.top[0].product_img} alt="" />
               </a>
             </div>
             <div className="list_img">
               <ul>
                 <li>
-                  <img src="img/sub/prod001/small01.png" alt="" />
+                  <img src={dummy.top[0].product_imgS} alt="" />
                 </li>
               </ul>
             </div>
           </style.ImgArea>
           <style.InfoArea>
             <div className="heading_area">
-              <h1>
-                [다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼
-                그래놀라
-              </h1>
+              <h1>{dummy.top[0].header}</h1>
             </div>
             <table className="sale_info">
               <tbody>
@@ -44,7 +41,7 @@ function Top() {
                     <span>상품요약정보</span>
                   </th>
                   <td>
-                    <span>달콤하게 즐기는 고단백 현미시리얼</span>
+                    <span>{dummy.top[0].summary_info}</span>
                   </td>
                 </tr>
                 <tr>
@@ -53,7 +50,7 @@ function Top() {
                   </th>
                   <td>
                     <span className="price">
-                      <strong>32,000원</strong>
+                      <strong>{dummy.top[0].price}</strong>
                     </span>
                   </td>
                 </tr>
@@ -63,8 +60,8 @@ function Top() {
                   </th>
                   <td>
                     <span className="sale_price">
-                      29,000원
-                      <span className="percent">10%</span>
+                      {dummy.top[0].sale_price}
+                      <span className="percent">{dummy.top[0].discount}</span>
                     </span>
                   </td>
                 </tr>
@@ -76,7 +73,7 @@ function Top() {
                   </th>
                   <td>
                     <span style={{ fontSize: "1.2rem", color: "#000" }}>
-                      1개
+                      {dummy.top[0].composition}
                     </span>
                   </td>
                 </tr>
@@ -108,8 +105,8 @@ function Top() {
                     <select name="" id="">
                       <option value="">- [필수] 옵션을 선택해 주세요 -</option>
                       <option value="">-------------------</option>
-                      <option>자이언트 브라운라이스소울 프로틴_베리</option>
-                      <option>자이언트 브라운라이스소울 프로틴_초코</option>
+                      <option>{dummy.top[0].option01}</option>
+                      <option>{dummy.top[0].option02}</option>
                     </select>
                   </td>
                 </tr>
@@ -124,8 +121,7 @@ function Top() {
                   <tr>
                     <td>
                       <p class="product">
-                        [다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용
-                        현미 시리얼 그래놀라
+                        {dummy.top[0].header}
                         <br></br> -{" "}
                         <span>자이언트 브라운라이스소울 프로틴_베리</span>
                       </p>
