@@ -10,17 +10,23 @@
         "sale_price": "29,000원",
         "discount": "10%",
         "composition": "1개",
-        "option01": "자이언트 브라운라이스소울 프로틴_베리",
-        "option02": "자이언트 브라운라이스소울 프로틴_초코"
+        "select": [
+          {
+            "option": "자이언트 브라운라이스소울 프로틴_베리"
+          },
+          { "option": "자이언트 브라운라이스소울 프로틴_초코" }
+        ]
       }
     ],
     "detail": [
       {
-        "image01": "img/sub/prod001/detail01.png",
-        "image02": "img/sub/prod001/detail02.png",
-        "image03": "img/sub/prod001/detail03.jpg",
-        "image04": "img/sub/prod001/detail04.png",
-        "image05": "img/sub/prod001/detail05.png",
+        "image_set": [
+          { "image": "img/sub/prod001/detail01.png" },
+          { "image": "img/sub/prod001/detail02.png" },
+          { "image": "img/sub/prod001/detail03.jpg" },
+          { "image": "img/sub/prod001/detail04.png" },
+          { "image": "img/sub/prod001/detail05.png" }
+        ],
         "info_name": "자이언트 프로틴 브라운라이스소울 2종 (베리, 초코)",
         "keep": "1개 500g"
       }
@@ -105,11 +111,15 @@
         "sale_price": "",
         "discount": "",
         "composition": "3/9/10개",
-        "option01": "브라운라이스소울 프로틴 _베리(3개)",
-        "option02": "[-4%]브라운라이스소울 프로틴_베리(10개)(+16,500원)",
-        "option03": "브라운라이스소울 프로틴_초코(3개)",
-        "option04": "[-4%]브라운라이스소울 프로틴_초코(10개)(+16,500원)",
-        "option05": "[-2%]프로틴 혼합 9개입(베리+초코+녹차초코 각 3개)(+14,500원)"
+        "select": [
+          { "option": "브라운라이스소울 프로틴 _베리(3개)" },
+          { "option": "[-4%]브라운라이스소울 프로틴_베리(10개)(+16,500원)" },
+          { "option": "브라운라이스소울 프로틴_초코(3개)" },
+          { "option": "[-4%]브라운라이스소울 프로틴_초코(10개)(+16,500원)" },
+          {
+            "option": "[-2%]프로틴 혼합 9개입(베리+초코+녹차초코 각 3개)(+14,500원)"
+          }
+        ]
       }
     ],
     "detail": [

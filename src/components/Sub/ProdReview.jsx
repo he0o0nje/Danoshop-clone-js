@@ -111,7 +111,7 @@ function ProdReview() {
             </div>
             <div className="summary_content">
               <ul>
-                {dummy.media_review.map((item, index) => (
+                {dummy[0].media_review.map((item, index) => (
                   <li key={index}>
                     <img src={item.media} alt="" />
                   </li>
@@ -233,7 +233,7 @@ function ProdReview() {
           </style.SortFilter>
           <style.ReviewList>
             <ul className="review_list">
-              {dummy.review.map((item, index) => (
+              {dummy[0].review.map((item, index) => (
                 <li key={index}>
                   <div className="left_content">
                     <div className="tag_section">

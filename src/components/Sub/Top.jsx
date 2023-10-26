@@ -19,20 +19,20 @@ function Top() {
           <style.ImgArea>
             <div className="prod_img">
               <a href="!">
-                <img src={dummy.top[0].product_img} alt="" />
+                <img src={dummy[0].top[0].product_img} alt="" />
               </a>
             </div>
             <div className="list_img">
               <ul>
                 <li>
-                  <img src={dummy.top[0].product_imgS} alt="" />
+                  <img src={dummy[0].top[0].product_imgS} alt="" />
                 </li>
               </ul>
             </div>
           </style.ImgArea>
-          <style.InfoArea>
+          <style.InfoArea {...(dummy[0].top[0].discount ? { sale: true } : {})}>
             <div className="heading_area">
-              <h1>{dummy.top[0].header}</h1>
+              <h1>{dummy[0].top[0].header}</h1>
             </div>
             <table className="sale_info">
               <tbody>
@@ -41,7 +41,7 @@ function Top() {
                     <span>상품요약정보</span>
                   </th>
                   <td>
-                    <span>{dummy.top[0].summary_info}</span>
+                    <span>{dummy[0].top[0].summary_info}</span>
                   </td>
                 </tr>
                 <tr>
@@ -50,18 +50,20 @@ function Top() {
                   </th>
                   <td>
                     <span className="price">
-                      <strong>{dummy.top[0].price}</strong>
+                      <strong>{dummy[0].top[0].price}</strong>
                     </span>
                   </td>
                 </tr>
-                <tr>
+                <tr className="sale">
                   <th>
                     <span className="sale_price">할인판매가</span>
                   </th>
                   <td>
                     <span className="sale_price">
-                      {dummy.top[0].sale_price}
-                      <span className="percent">{dummy.top[0].discount}</span>
+                      {dummy[0].top[0].sale_price}
+                      <span className="percent">
+                        {dummy[0].top[0].discount}
+                      </span>
                     </span>
                   </td>
                 </tr>
@@ -73,7 +75,7 @@ function Top() {
                   </th>
                   <td>
                     <span style={{ fontSize: "1.2rem", color: "#000" }}>
-                      {dummy.top[0].composition}
+                      {dummy[0].top[0].composition}
                     </span>
                   </td>
                 </tr>
@@ -105,8 +107,9 @@ function Top() {
                     <select name="" id="">
                       <option value="">- [필수] 옵션을 선택해 주세요 -</option>
                       <option value="">-------------------</option>
-                      <option>{dummy.top[0].option01}</option>
-                      <option>{dummy.top[0].option02}</option>
+                      {dummy[0].top[0].select.map((item, index) => (
+                        <option key={index}>{item.option}</option>
+                      ))}
                     </select>
                   </td>
                 </tr>
@@ -121,7 +124,7 @@ function Top() {
                   <tr>
                     <td>
                       <p class="product">
-                        {dummy.top[0].header}
+                        {dummy[0].top[0].header}
                         <br></br> -{" "}
                         <span>자이언트 브라운라이스소울 프로틴_베리</span>
                       </p>

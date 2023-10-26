@@ -9,13 +9,9 @@ function ProdDetail() {
       <style.ProdDetail>
         <div>
           <p>
-            <img src={dummy.detail[0].image01} alt="" />
-            <img src={dummy.detail[0].image02} alt="" />
-          </p>
-          <p>
-            <img src={dummy.detail[0].image03} alt="" />
-            <img src={dummy.detail[0].image04} alt="" />
-            <img src={dummy.detail[0].image05} alt="" />
+            {dummy[0].detail[0].image_set.map((item, index) => (
+              <img key={index} src={item.image} alt="" />
+            ))}
           </p>
           <br></br>
         </div>
@@ -32,7 +28,7 @@ function ProdDetail() {
                       <strong>제품명</strong>
                     </th>
                     <td>
-                      <span>{dummy.detail[0].info_name}</span>
+                      <span>{dummy[0].detail[0].info_name}</span>
                     </td>
                   </tr>
                   <tr>
@@ -51,7 +47,7 @@ function ProdDetail() {
                     </th>
                     <td>
                       <div>
-                        <span>{dummy.detail[0].keep}</span>
+                        <span>{dummy[0].detail[0].keep}</span>
                       </div>
                     </td>
                   </tr>

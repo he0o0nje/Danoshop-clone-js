@@ -118,17 +118,20 @@ export const InfoArea = styled.div`
       color: #000;
       font-weight: bold;
       strong {
-        text-decoration: line-through;
+        text-decoration: ${(props) => (props.sale ? "line-through" : "none")};
       }
     }
-    .sale_price {
-      font-size: 1.8rem;
-      color: #000;
-      font-weight: bold;
-      .percent {
+    .sale {
+      display: ${(props) => (props.sale ? "" : "none")};
+      .sale_price {
         font-size: 1.8rem;
-        color: #f96b06;
-        margin-left: 0.5rem;
+        color: #000;
+        font-weight: bold;
+        .percent {
+          font-size: 1.8rem;
+          color: #f96b06;
+          margin-left: 0.5rem;
+        }
       }
     }
   }
