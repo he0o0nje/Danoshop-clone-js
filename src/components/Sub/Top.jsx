@@ -23,7 +23,7 @@ function Top() {
           <style.ImgArea>
             <div className="prod_img">
               <a href="#none">
-                <img src={product.top[0].product_img} alt="" />
+                <img src={product.top[0].product_imgB} alt="" />
               </a>
             </div>
             <div className="list_img">

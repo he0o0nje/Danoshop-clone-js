@@ -7,8 +7,17 @@ import ProdQnA from "../../components/Sub/ProdQnA";
 import ProdInfo from "../../components/Sub/ProdInfo";
 import Footer from "../../components/Footer/Footer";
 import * as style from "./SubStyle";
+import dummy from "../../data/sub/7am.json";
+import { useParams } from "react-router-dom";
 
 function AboutPage() {
+  const { id } = useParams();
+
+  const product = dummy.find((item) => item.id === parseInt(id));
+
+  if (!product) {
+    return <div>제품을 찾을 수 없습니다.</div>;
+  }
   return (
     <>
       <TopBanner></TopBanner>

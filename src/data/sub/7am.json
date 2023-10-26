@@ -3,7 +3,7 @@
     "id": 1,
     "top": [
       {
-        "product_img": "/img/sub/prod001/big01.png",
+        "product_imgB": "/img/sub/prod001/big01.png",
         "product_imgS": "/img/sub/prod001/small01.png",
         "header": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
         "summary_info": "달콤하게 즐기는 고단백 현미시리얼",
@@ -89,7 +89,7 @@
     "id": 2,
     "top": [
       {
-        "product_img": "/img/sub/prod002/big01.webp",
+        "product_imgB": "/img/sub/prod002/big01.webp",
         "product_imgS": "/img/sub/prod002/small01.gif",
         "header": "[다노] 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
         "summary_info": "달콤하게 즐기는 고단백 현미시리얼",
@@ -178,7 +178,7 @@
     "id": 3,
     "top": [
       {
-        "product_img": "/img/sub/prod003/big01.jpg",
+        "product_imgB": "/img/sub/prod003/big01.jpg",
         "product_imgS": "/img/sub/prod003/small01.jpg",
         "header": "[다노] 흑임자죽_단백질 프로틴 식사대용죽",
         "summary_info": "간편하고 든든한 한끼",
@@ -263,7 +263,7 @@
     "id": 4,
     "top": [
       {
-        "product_img": "/img/sub/prod004/big01.jpg",
+        "product_imgB": "/img/sub/prod004/big01.jpg",
         "product_imgS": "/img/sub/prod004/small01.jpg",
         "header": "[다노] 통밀 팬케이크 믹스",
         "summary_info": "NO오븐 초간편 단백질빵 등장!",

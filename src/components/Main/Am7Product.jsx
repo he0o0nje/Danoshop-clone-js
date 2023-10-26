@@ -11,7 +11,7 @@ function Product() {
             <li className="product" key={index}>
               <style.MainProd {...(item.sticker ? { sale: true } : {})}>
                 <div className="prod_thumb">
-                  <Link to={`detail/${index}`}>
+                  <Link to={`detail/${item.id}`}>
                     <img src={item.image} alt="" />
                   </Link>
                   <div className="icon_box">
@@ -23,23 +23,23 @@ function Product() {
                 </div>
                 <div className="prod_desc">
                   <div className="name">
-                    <Link to={`detail/${index}`}>{item.name}</Link>
+                    <Link to={`detail/${item.id}`}>{item.name}</Link>
                   </div>
                   <ul>
                     <li className="composition">
                       <strong>구성 : </strong>
                       <span>
-                        <Link to={`detail/${index}`}>{item.composition}</Link>
+                        <Link to={`detail/${item.id}`}>{item.composition}</Link>
                       </span>
                     </li>
                     <li className="price">
                       <span>
-                        <Link to={`detail/${index}`}>{item.price}</Link>
+                        <Link to={`detail/${item.id}`}>{item.price}</Link>
                       </span>
                     </li>
                     <li className="sale_price">
                       <span>
-                        <Link to={`detail/${index}`}>{item.sale_price}</Link>
+                        <Link to={`detail/${item.id}`}>{item.sale_price}</Link>
                       </span>
                     </li>
                   </ul>
