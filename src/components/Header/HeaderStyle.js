@@ -8,7 +8,11 @@ export const HeaderWrap = styled.div`
   position: ${(props) => (props.isFixed ? "fixed" : "absolute")};
   top: ${(props) => (props.isFixed ? "-5rem" : "auto")};
   border-bottom: ${(props) =>
-    props.isFixed ? "1px solid #e8e8e8" : "1px solid #fff"};
+    props.isFixed
+      ? "1px solid #e8e8e8"
+      : props.isAboutHeader
+      ? "1px solid #e8e8e8"
+      : "1px solid #fff"};
 `;
 
 export const Header = styled.div`

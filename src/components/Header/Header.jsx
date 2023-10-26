@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import * as style from "./HeaderStyle";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
 
-function Header() {
+function Header({ isAboutHeader }) {
   const [isHeaderFixed, setHeaderFixed] = useState(false);
 
   useEffect(() => {
@@ -15,9 +14,10 @@ function Header() {
       // window.removeEventListener("scroll", () => {});
     };
   }, []);
+
   return (
     <>
-      <style.HeaderWrap isFixed={isHeaderFixed}>
+      <style.HeaderWrap isFixed={isHeaderFixed} isAboutHeader={isAboutHeader}>
         <style.Header>
           <style.HeaderTop>
             <ul className="top_list">

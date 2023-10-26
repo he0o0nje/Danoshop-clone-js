@@ -12,16 +12,18 @@ import { useParams } from "react-router-dom";
 
 function AboutPage() {
   const { id } = useParams();
-
   const product = dummy.find((item) => item.id === parseInt(id));
 
   if (!product) {
     return <div>제품을 찾을 수 없습니다.</div>;
   }
+
+  const isAboutHeader = true;
+
   return (
     <>
       <TopBanner></TopBanner>
-      <Header></Header>
+      <Header isAboutHeader={isAboutHeader}></Header>
       <style.Sub>
         <Top></Top>
         <style.DetailSec>

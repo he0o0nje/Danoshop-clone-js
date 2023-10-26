@@ -5,7 +5,6 @@ export const Sub = styled.div`
   margin: 0 auto;
   margin-top: 22rem;
   position: relative;
-  border-top: 2px solid #e8e8e8;
 `;
 
 export const DetailSec = styled.div`
