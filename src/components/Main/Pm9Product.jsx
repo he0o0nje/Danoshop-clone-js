@@ -11,7 +11,7 @@ function Product() {
             <li className="product" key={index}>
               <style.MainProd {...(item.sticker ? { sale: true } : {})}>
                 <div className="prod_thumb">
-                  <Link to="detail">
+                  <Link to={`detail/${item.id}`}>
                     <img src={item.image} alt="" />
                   </Link>
                   <div className="icon_box">
@@ -23,7 +23,7 @@ function Product() {
                 </div>
                 <div className="prod_desc">
                   <div className="name">
-                    <Link to="detail">{item.name}</Link>
+                    <Link to={`detail/${item.id}`}>{item.name}</Link>
                   </div>
                   <ul>
                     <li className="composition">

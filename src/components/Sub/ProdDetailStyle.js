@@ -12,6 +12,7 @@ export const ProdDetail = styled.div`
   .detail_info {
     width: 100%;
     margin: 0 auto;
+    display: ${(props) => (props.show ? "" : "none")};
     .info_container {
       min-width: 32rem;
       max-width: 80rem;

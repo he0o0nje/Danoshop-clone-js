@@ -1,5 +1,6 @@
 [
   {
+    "id": 20,
     "image": "img/main/9pm/01.png",
     "sticker": "10%",
     "name": "[다노] 힙밴드_근력 운동 헬스밴드",
@@ -7,6 +8,7 @@
     "sale_price": "20,000원"
   },
   {
+    "id": 21,
     "image": "img/main/9pm/02.png",
     "sticker": "10%",
     "name": "[다노] 홈트밴드_근력 운동 헬스밴드",
@@ -14,6 +16,7 @@
     "sale_price": "20,000원"
   },
   {
+    "id": 22,
     "image": "img/main/9pm/03.png",
     "sticker": "10%",
     "name": "[다노] 홈트매트_층간소음방지 논슬립 운동매트",
@@ -21,6 +24,7 @@
     "sale_price": "110,700원"
   },
   {
+    "id": 23,
     "image": "img/main/9pm/04.png",
     "sticker": "3%",
     "name": "[다노] 코르크폼롤러_전신 마사지 스트레칭",
@@ -28,6 +32,7 @@
     "sale_price": "33,000원"
   },
   {
+    "id": 24,
     "image": "img/main/9pm/05.png",
     "sticker": "25%",
     "name": "[다노] 더블폼롤러_전신 마사지 스트레칭",

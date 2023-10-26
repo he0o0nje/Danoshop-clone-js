@@ -12,3 +12,9 @@ export const DetailSec = styled.div`
   width: 92%;
   margin: 0 auto 12rem;
 `;
+
+export const Alert404 = styled.div`
+  text-align: center;
+  margin-top: 20rem;
+  font-size: 3rem;
+`;

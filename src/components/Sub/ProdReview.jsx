@@ -1,10 +1,12 @@
 import * as style from "./ProdReviewStyle";
 import DetailTab02 from "./DetailTab02";
-import dummy from "../../data/sub/7am.json";
+import am7 from "../../data/sub/7am.json";
+import am10 from "../../data/sub/7am.json";
 import { useParams } from "react-router-dom";
 
 function ProdReview() {
   const { id } = useParams();
+  const dummy = [...am7, ...am10];
   const product = dummy.find((item) => item.id === parseInt(id));
 
   return (

@@ -28,19 +28,13 @@ function Product() {
                   <ul>
                     <li className="composition">
                       <strong>구성 : </strong>
-                      <span>
-                        <Link to={`detail/${item.id}`}>{item.composition}</Link>
-                      </span>
+                      <span>{item.composition}</span>
                     </li>
                     <li className="price">
-                      <span>
-                        <Link to={`detail/${item.id}`}>{item.price}</Link>
-                      </span>
+                      <span>{item.price}</span>
                     </li>
                     <li className="sale_price">
-                      <span>
-                        <Link to={`detail/${item.id}`}>{item.sale_price}</Link>
-                      </span>
+                      <span>{item.sale_price}</span>
                     </li>
                   </ul>
                 </div>

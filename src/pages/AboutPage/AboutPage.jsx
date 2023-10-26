@@ -15,7 +15,7 @@ function AboutPage() {
   const product = dummy.find((item) => item.id === parseInt(id));
 
   if (!product) {
-    return <div>제품을 찾을 수 없습니다.</div>;
+    return <style.Alert404>제품을 찾을 수 없습니다.</style.Alert404>;
   }
 
   const isAboutHeader = true;

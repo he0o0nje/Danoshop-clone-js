@@ -1,5 +1,6 @@
 [
   {
+    "id": 29,
     "image": "img/main/TryEat/01.png",
     "sticker": "20%",
     "name": "다노 간편식 세트",
@@ -8,6 +9,7 @@
     "sale_price": "29,120원"
   },
   {
+    "id": 30,
     "image": "img/main/TryEat/02.png",
     "sticker": "20%",
     "name": "다노 분식 세트",

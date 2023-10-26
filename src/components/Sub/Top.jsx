@@ -1,9 +1,11 @@
 import * as style from "./TopStyle";
-import dummy from "../../data/sub/7am.json";
+import am7 from "../../data/sub/7am.json";
+import am10 from "../../data/sub/10am.json";
 import { useParams } from "react-router-dom";
 
 function Top() {
   const { id } = useParams();
+  const dummy = [...am7, ...am10];
   const product = dummy.find((item) => item.id === parseInt(id));
 
   return (

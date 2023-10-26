@@ -1,20 +1,26 @@
 import * as style from "./ProdDetailStyle";
 import DetailTab01 from "./DetailTab01";
-import dummy from "../../data/sub/7am.json";
+import am7 from "../../data/sub/7am.json";
+import am10 from "../../data/sub/10am.json";
 import { useParams } from "react-router-dom";
 
 function ProdDetail() {
   const { id } = useParams();
+  const dummy = [...am7, ...am10];
   const product = dummy.find((item) => item.id === parseInt(id));
 
   return (
     <>
       <DetailTab01></DetailTab01>
-      <style.ProdDetail>
+      <style.ProdDetail
+        {...(product.detail[0].info_name ? { show: true } : {})}
+      >
         <div>
           <p>
             {product.detail[0].image_set.map((item, index) => (
-              <img key={index} src={item.image} alt="" />
+              <div>
+                <img key={index} src={item.image} alt="" />
+              </div>
             ))}
           </p>
           <br></br>

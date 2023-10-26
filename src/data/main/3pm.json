@@ -1,5 +1,6 @@
 [
   {
+    "id": 12,
     "image": "img/main/3pm/01.png",
     "sticker": "20%",
     "name": "[다노] 프로틴 snack eat 옥수수맛_저칼로리 식단관리 간식",
@@ -8,6 +9,7 @@
     "sale_price": "2,080원"
   },
   {
+    "id": 13,
     "image": "img/main/3pm/02.png",
     "sticker": "50%",
     "name": "[다노] 인절미과자_저칼로리 식단관리간식",
@@ -16,12 +18,14 @@
     "sale_price": "3,650원"
   },
   {
+    "id": 14,
     "image": "img/main/3pm/03.png",
     "name": "[다노] 프로틴다노바 2종_단백질 프로틴 견과바",
     "composition": "10/20/30개",
     "price": "2,500원"
   },
   {
+    "id": 15,
     "image": "img/main/3pm/04.jpg",
     "sticker": "20%",
     "name": "[다노] 꺼내먹구말랭_고구마말랭이 저칼로리 식단관리간식",
