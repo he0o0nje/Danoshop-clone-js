@@ -7,6 +7,7 @@ function Top() {
   const { id } = useParams();
   const dummy = [...am7, ...am10];
   const product = dummy.find((item) => item.id === parseInt(id));
+  console.log(product);
 
   return (
     <>

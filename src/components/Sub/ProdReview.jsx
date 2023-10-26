@@ -1,7 +1,7 @@
 import * as style from "./ProdReviewStyle";
 import DetailTab02 from "./DetailTab02";
 import am7 from "../../data/sub/7am.json";
-import am10 from "../../data/sub/7am.json";
+import am10 from "../../data/sub/10am.json";
 import { useParams } from "react-router-dom";
 
 function ProdReview() {

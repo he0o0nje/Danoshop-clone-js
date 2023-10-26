@@ -14,7 +14,16 @@ export const DetailSec = styled.div`
 `;
 
 export const Alert404 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rem auto;
   text-align: center;
-  margin-top: 20rem;
   font-size: 3rem;
+  width: 20rem;
+  height: 10rem;
+  line-height: 3.5rem;
+  background-color: #eee;
+  border-radius: 1rem;
+  border: 1px solid #aaa;
 `;
