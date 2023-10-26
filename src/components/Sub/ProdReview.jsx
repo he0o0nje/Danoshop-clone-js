@@ -1,6 +1,6 @@
 import * as style from "./ProdReviewStyle";
 import DetailTab02 from "./DetailTab02";
-import dummy from "../../data/sub/prod001.json";
+import dummy from "../../data/sub/7am.json";
 
 function ProdReview() {
   return (

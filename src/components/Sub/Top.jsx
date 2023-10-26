@@ -1,5 +1,5 @@
 import * as style from "./TopStyle";
-import dummy from "../../data/sub/prod001.json";
+import dummy from "../../data/sub/7am.json";
 
 function Top() {
   return (
