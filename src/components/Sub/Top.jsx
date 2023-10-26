@@ -1,16 +1,20 @@
 import * as style from "./TopStyle";
 import dummy from "../../data/sub/7am.json";
+import { useParams } from "react-router-dom";
 
 function Top() {
+  const { id } = useParams();
+
+  const product = dummy[id];
   return (
     <>
       <style.HeadCategory>
         <ol>
           <li>
-            <a href="!">홈</a>
+            <a href="#none">홈</a>
           </li>
           <li>
-            <a href="!">다노절 이벤트</a>
+            <a href="#none">다노절 이벤트</a>
           </li>
         </ol>
       </style.HeadCategory>
@@ -18,21 +22,21 @@ function Top() {
         <style.DetailArea>
           <style.ImgArea>
             <div className="prod_img">
-              <a href="!">
-                <img src={dummy[0].top[0].product_img} alt="" />
+              <a href="#none">
+                <img src={product.top[0].product_img} alt="" />
               </a>
             </div>
             <div className="list_img">
               <ul>
                 <li>
-                  <img src={dummy[0].top[0].product_imgS} alt="" />
+                  <img src={product.top[0].product_imgS} alt="" />
                 </li>
               </ul>
             </div>
           </style.ImgArea>
-          <style.InfoArea {...(dummy[0].top[0].discount ? { sale: true } : {})}>
+          <style.InfoArea {...(product.top[0].discount ? { sale: true } : {})}>
             <div className="heading_area">
-              <h1>{dummy[0].top[0].header}</h1>
+              <h1>{product.top[0].header}</h1>
             </div>
             <table className="sale_info">
               <tbody>
@@ -41,7 +45,7 @@ function Top() {
                     <span>상품요약정보</span>
                   </th>
                   <td>
-                    <span>{dummy[0].top[0].summary_info}</span>
+                    <span>{product.top[0].summary_info}</span>
                   </td>
                 </tr>
                 <tr>
@@ -50,7 +54,7 @@ function Top() {
                   </th>
                   <td>
                     <span className="price">
-                      <strong>{dummy[0].top[0].price}</strong>
+                      <strong>{product.top[0].price}</strong>
                     </span>
                   </td>
                 </tr>
@@ -60,10 +64,8 @@ function Top() {
                   </th>
                   <td>
                     <span className="sale_price">
-                      {dummy[0].top[0].sale_price}
-                      <span className="percent">
-                        {dummy[0].top[0].discount}
-                      </span>
+                      {product.top[0].sale_price}
+                      <span className="percent">{product.top[0].discount}</span>
                     </span>
                   </td>
                 </tr>
@@ -75,7 +77,7 @@ function Top() {
                   </th>
                   <td>
                     <span style={{ fontSize: "1.2rem", color: "#000" }}>
-                      {dummy[0].top[0].composition}
+                      {product.top[0].composition}
                     </span>
                   </td>
                 </tr>
@@ -107,7 +109,7 @@ function Top() {
                     <select name="" id="">
                       <option value="">- [필수] 옵션을 선택해 주세요 -</option>
                       <option value="">-------------------</option>
-                      {dummy[0].top[0].select.map((item, index) => (
+                      {product.top[0].select.map((item, index) => (
                         <option key={index}>{item.option}</option>
                       ))}
                     </select>
@@ -124,7 +126,7 @@ function Top() {
                   <tr>
                     <td>
                       <p class="product">
-                        {dummy[0].top[0].header}
+                        {product.top[0].header}
                         <br></br> -{" "}
                         <span>자이언트 브라운라이스소울 프로틴_베리</span>
                       </p>
@@ -132,14 +134,14 @@ function Top() {
                     <td>
                       <span className="quantity">
                         <input type="text" value={1} />
-                        <a href="!" className="up">
+                        <a href="#none" className="up">
                           +
                         </a>
-                        <a href="!" className="down">
+                        <a href="#none" className="down">
                           -
                         </a>
                       </span>
-                      <a href="!" className="delete">
+                      <a href="#none" className="delete">
                         <img src="img/icon/ico_product_delete.svg" alt="" />
                       </a>
                     </td>
@@ -198,12 +200,12 @@ function Top() {
                         <tbody>
                           <tr>
                             <td>
-                              <a href="!" class="npay_btn_pay">
+                              <a href="#none" class="npay_btn_pay">
                                 -
                               </a>
                             </td>
                             <td>
-                              <a href="!" class="npay_btn_zzim">
+                              <a href="#none" class="npay_btn_zzim">
                                 -
                               </a>
                             </td>
@@ -214,12 +216,12 @@ function Top() {
                     <div className="npay_event">
                       <p>
                         <strong>현장결제</strong>
-                        <a href="!">결제할 때 마다, 월 50번 포인트 뽑기!</a>
+                        <a href="#none">결제할 때 마다, 월 50번 포인트 뽑기!</a>
                       </p>
-                      <a href="!" className="npay_more prev">
+                      <a href="#none" className="npay_more prev">
                         -
                       </a>
-                      <a href="!" className="npay_more next">
+                      <a href="#none" className="npay_more next">
                         -
                       </a>
                     </div>

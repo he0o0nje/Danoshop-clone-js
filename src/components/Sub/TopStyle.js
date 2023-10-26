@@ -156,8 +156,8 @@ export const InfoArea = styled.div`
             font-size: 1.3rem;
             border: 0.1rem solid #e0e0e0;
             box-sizing: border-box;
-            background: #fff url("img/icon/ico_select.png") no-repeat right 1rem
-              center;
+            background: #fff url("/img/icon/ico_select.png") no-repeat right
+              1rem center;
             background-size: 1.4rem 0.8rem;
             appearance: none;
             vertical-align: middle;
@@ -365,7 +365,7 @@ export const InfoArea = styled.div`
             left: 0;
             width: 7.9rem;
             height: 3.6rem;
-            background: url("img/icon/npay_text.png") no-repeat;
+            background: url("/img/icon/npay_text.png") no-repeat;
             background-size: 18rem auto;
           }
           table {
@@ -392,12 +392,12 @@ export const InfoArea = styled.div`
               .npay_btn_pay {
                 border-color: #00c851;
                 background-color: #00de5a;
-                background-image: url(img/icon/npay_pay.png);
+                background-image: url(/img/icon/npay_pay.png);
                 background-position: 50% 0;
                 background-size: 6.3rem auto;
               }
               .npay_btn_zzim {
-                background-image: url(img/icon/npay_zzim.png);
+                background-image: url(/img/icon/npay_zzim.png);
                 background-position: 50% 0;
                 background-size: 3.5rem auto;
               }
@@ -432,7 +432,7 @@ export const InfoArea = styled.div`
             top: 0.5rem;
             width: 1.6rem;
             height: 1.6rem;
-            background: url(img/icon/npay_more.png) no-repeat;
+            background: url(/img/icon/npay_more.png) no-repeat;
             background-size: 3.1rem auto;
             text-indent: -999rem;
           }

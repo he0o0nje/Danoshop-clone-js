@@ -57,18 +57,18 @@ function Header() {
           <style.HeaderBottom>
             <style.LogoWrap>
               <Link to="/">
-                <img src="img/header/logo.jpg" alt="" />
+                <img src="/img/header/logo.jpg" alt="" />
               </Link>
             </style.LogoWrap>
             <style.MypageWrap>
               <a href="/">
-                <img src="img/header/mypage1.svg" alt="" />
+                <img src="/img/header/mypage1.svg" alt="" />
               </a>
               <a href="/">
-                <img src="img/header/mypage2.svg" alt="" />
+                <img src="/img/header/mypage2.svg" alt="" />
               </a>
               <a href="/">
-                <img src="img/header/mypage3.svg" alt="" />
+                <img src="/img/header/mypage3.svg" alt="" />
               </a>
             </style.MypageWrap>
             <style.BotCategory>

@@ -1,15 +1,19 @@
 import * as style from "./ProdDetailStyle";
 import DetailTab01 from "./DetailTab01";
 import dummy from "../../data/sub/7am.json";
+import { useParams } from "react-router-dom";
 
 function ProdDetail() {
+  const { id } = useParams();
+
+  const product = dummy[id];
   return (
     <>
       <DetailTab01></DetailTab01>
       <style.ProdDetail>
         <div>
           <p>
-            {dummy[0].detail[0].image_set.map((item, index) => (
+            {product.detail[0].image_set.map((item, index) => (
               <img key={index} src={item.image} alt="" />
             ))}
           </p>
@@ -28,7 +32,7 @@ function ProdDetail() {
                       <strong>제품명</strong>
                     </th>
                     <td>
-                      <span>{dummy[0].detail[0].info_name}</span>
+                      <span>{product.detail[0].info_name}</span>
                     </td>
                   </tr>
                   <tr>
@@ -47,7 +51,7 @@ function ProdDetail() {
                     </th>
                     <td>
                       <div>
-                        <span>{dummy[0].detail[0].keep}</span>
+                        <span>{product.detail[0].keep}</span>
                       </div>
                     </td>
                   </tr>

@@ -1,6 +1,6 @@
 import * as style from "./ProductStyle";
 import dummy from "../../data/main/7am.json";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Product() {
   return (
@@ -11,7 +11,7 @@ function Product() {
             <li className="product" key={index}>
               <style.MainProd {...(item.sticker ? { sale: true } : {})}>
                 <div className="prod_thumb">
-                  <Link to="detail">
+                  <Link to={`detail/${index}`}>
                     <img src={item.image} alt="" />
                   </Link>
                   <div className="icon_box">
@@ -23,18 +23,24 @@ function Product() {
                 </div>
                 <div className="prod_desc">
                   <div className="name">
-                    <Link to="detail">{item.name}</Link>
+                    <Link to={`detail/${index}`}>{item.name}</Link>
                   </div>
                   <ul>
                     <li className="composition">
                       <strong>구성 : </strong>
-                      <span>{item.composition}</span>
+                      <span>
+                        <Link to={`detail/${index}`}>{item.composition}</Link>
+                      </span>
                     </li>
                     <li className="price">
-                      <span>{item.price}</span>
+                      <span>
+                        <Link to={`detail/${index}`}>{item.price}</Link>
+                      </span>
                     </li>
                     <li className="sale_price">
-                      <span>{item.sale_price}</span>
+                      <span>
+                        <Link to={`detail/${index}`}>{item.sale_price}</Link>
+                      </span>
                     </li>
                   </ul>
                 </div>

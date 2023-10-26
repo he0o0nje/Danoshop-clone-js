@@ -66,7 +66,7 @@ export const Contents = styled.div`
     text-align: center;
     font-size: 0;
     a {
-      background: url("img/icon/btn_page_next.png") no-repeat center center;
+      background: url("/img/icon/btn_page_next.png") no-repeat center center;
       background-size: 4rem;
       width: 4rem;
       height: 4rem;
@@ -75,15 +75,15 @@ export const Contents = styled.div`
       display: inline-block;
     }
     .first {
-      background: url("img/icon/btn_page_first.png") no-repeat center center;
+      background: url("/img/icon/btn_page_first.png") no-repeat center center;
       background-size: 4rem;
     }
     .first + a {
-      background: url("img/icon/btn_page_prev.png") no-repeat center center;
+      background: url("/img/icon/btn_page_prev.png") no-repeat center center;
       background-size: 4rem;
     }
     .last {
-      background: url("img/icon/btn_page_last.png") no-repeat center center;
+      background: url("/img/icon/btn_page_last.png") no-repeat center center;
       background-size: 4rem;
     }
     ol {

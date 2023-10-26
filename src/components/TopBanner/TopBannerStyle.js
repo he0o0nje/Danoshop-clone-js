@@ -41,14 +41,14 @@ export const TopBanClose = styled.div`
   input {
     width: 1.5rem;
     height: 1.5rem;
-    background: url("img/header/checkbox_off.svg") no-repeat center;
+    background: url("/img/header/checkbox_off.svg") no-repeat center;
     background-size: 1.5rem;
     border: 0.1rem solid #d9d9d9;
     cursor: pointer;
     appearance: none;
   }
   input[type="checkbox"]:checked {
-    background: url("img/header/checkbox_on.svg") no-repeat center;
+    background: url("/img/header/checkbox_on.svg") no-repeat center;
     background-size: 1.5rem;
     transition: none;
   }

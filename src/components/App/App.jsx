@@ -11,7 +11,7 @@ function App() {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/detail" element={<AboutPage />} />
+        <Route path="/detail/:id" element={<AboutPage />} />
       </Routes>
       <style.ShadowLayer></style.ShadowLayer>
     </>

@@ -43,7 +43,7 @@ function ProdQnA() {
                   <td>306</td>
                   <td>기타문의</td>
                   <td class="left subject">
-                    <img src="img/icon/ico_lock.gif" alt="" />
+                    <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
@@ -58,9 +58,9 @@ function ProdQnA() {
                   <td>기타문의</td>
                   <td class="left subject">
                     &nbsp;&nbsp;&nbsp;
-                    <img src="img/icon/ico_re.gif" alt="" />
+                    <img src="/img/icon/ico_re.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
-                    <img src="img/icon/ico_lock.gif" alt="" />
+                    <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
@@ -74,7 +74,7 @@ function ProdQnA() {
                   <td>304</td>
                   <td>상품 문의</td>
                   <td class="left subject">
-                    <img src="img/icon/ico_lock.gif" alt="" />
+                    <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
@@ -89,9 +89,9 @@ function ProdQnA() {
                   <td>상품 문의</td>
                   <td class="left subject">
                     &nbsp;&nbsp;&nbsp;
-                    <img src="img/icon/ico_re.gif" alt="" />
+                    <img src="/img/icon/ico_re.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
-                    <img src="img/icon/ico_lock.gif" alt="" />
+                    <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
@@ -105,7 +105,7 @@ function ProdQnA() {
                   <td>302</td>
                   <td>기타문의</td>
                   <td class="left subject">
-                    <img src="img/icon/ico_lock.gif" alt="" />
+                    <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
                     &nbsp;&nbsp;&nbsp;

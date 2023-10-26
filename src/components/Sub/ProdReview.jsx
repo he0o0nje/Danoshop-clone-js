@@ -1,8 +1,12 @@
 import * as style from "./ProdReviewStyle";
 import DetailTab02 from "./DetailTab02";
 import dummy from "../../data/sub/7am.json";
+import { useParams } from "react-router-dom";
 
 function ProdReview() {
+  const { id } = useParams();
+
+  const product = dummy[id];
   return (
     <>
       <style.ProdReview>
@@ -14,14 +18,14 @@ function ProdReview() {
               <span className="review_count"> (2,020) </span>
             </div>
             <div className="all_review">
-              <a href="!">전체 상품 리뷰 보기</a>
+              <a href="#none">전체 상품 리뷰 보기</a>
             </div>
           </div>
           <style.ReviewSummary>
             <div className="left_content">
               <div className="score">
                 <div className="icon">
-                  <img src="img/icon/ico_star.svg" alt="" />
+                  <img src="/img/icon/ico_star.svg" alt="" />
                 </div>
                 <span class="text">5.0</span>
               </div>
@@ -92,7 +96,7 @@ function ProdReview() {
                 <span className="review_count">(1,542)</span>
               </div>
               <div className="more_btn">
-                <a href="!">
+                <a href="#none">
                   전체보기
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +115,7 @@ function ProdReview() {
             </div>
             <div className="summary_content">
               <ul>
-                {dummy[0].media_review.map((item, index) => (
+                {product.media_review.map((item, index) => (
                   <li key={index}>
                     <img src={item.media} alt="" />
                   </li>
@@ -131,7 +135,7 @@ function ProdReview() {
               <li className="search">
                 <div className="input_container">
                   <input type="text" placeholder="리뷰 키워드 검색" />
-                  <a href="!">
+                  <a href="#none">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18"
@@ -157,7 +161,7 @@ function ProdReview() {
                 </div>
               </li>
               <li className="media_first">
-                <a href="!">
+                <a href="#none">
                   <div className="toggle_btn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +237,7 @@ function ProdReview() {
           </style.SortFilter>
           <style.ReviewList>
             <ul className="review_list">
-              {dummy[0].review.map((item, index) => (
+              {product.review.map((item, index) => (
                 <li key={index}>
                   <div className="left_content">
                     <div className="tag_section">
@@ -250,19 +254,19 @@ function ProdReview() {
                       <div className="score_container">
                         <div className="score_star">
                           <div>
-                            <img src="img/icon/ico_star.svg" alt="" />
+                            <img src="/img/icon/ico_star.svg" alt="" />
                           </div>
                           <div>
-                            <img src="img/icon/ico_star.svg" alt="" />
+                            <img src="/img/icon/ico_star.svg" alt="" />
                           </div>
                           <div>
-                            <img src="img/icon/ico_star.svg" alt="" />
+                            <img src="/img/icon/ico_star.svg" alt="" />
                           </div>
                           <div>
-                            <img src="img/icon/ico_star.svg" alt="" />
+                            <img src="/img/icon/ico_star.svg" alt="" />
                           </div>
                           <div>
-                            <img src="img/icon/ico_star.svg" alt="" />
+                            <img src="/img/icon/ico_star.svg" alt="" />
                           </div>
                         </div>
                         <div className="score_text">아주 좋아요</div>
@@ -276,7 +280,7 @@ function ProdReview() {
                     </div>
                     <div className="like_section">
                       <div className="comment_info">
-                        <a href="!">
+                        <a href="#none">
                           <span className="text">댓글</span>
                           <span className="count">0</span>
                           <svg
@@ -311,21 +315,21 @@ function ProdReview() {
           </style.ReviewList>
           <style.ReviewPagination>
             <div className="pagination">
-              <a href="!" className="disabled">
+              <a href="#none" className="disabled">
                 {"<"}
               </a>
-              <a href="!" className="active">
+              <a href="#none" className="active">
                 1
               </a>
-              <a href="!">2</a>
-              <a href="!">3</a>
-              <a href="!">4</a>
-              <a href="!">5</a>
-              <a href="!">6</a>
-              <a href="!">7</a>
-              <a href="!">8</a>
-              <a href="!">9</a>
-              <a href="!">{">"}</a>
+              <a href="#none">2</a>
+              <a href="#none">3</a>
+              <a href="#none">4</a>
+              <a href="#none">5</a>
+              <a href="#none">6</a>
+              <a href="#none">7</a>
+              <a href="#none">8</a>
+              <a href="#none">9</a>
+              <a href="#none">{">"}</a>
             </div>
           </style.ReviewPagination>
         </style.ReviewWrap>

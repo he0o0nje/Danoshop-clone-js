@@ -8,7 +8,7 @@ function Main() {
         <style.FooterInner>
           <style.LogoWrap>
             <Link to="/">
-              <img src="img/header/logo.jpg" alt="" />
+              <img src="/img/header/logo.jpg" alt="" />
             </Link>
           </style.LogoWrap>
           <style.BtnUtil>
@@ -107,16 +107,16 @@ function Main() {
             <style.SnsTit>SNS</style.SnsTit>
             <style.SnsBox>
               <a href="/">
-                <img src="img/footer/sns1.png" alt="" />
+                <img src="/img/footer/sns1.png" alt="" />
               </a>
               <a href="/">
-                <img src="img/footer/sns2.png" alt="" />
+                <img src="/img/footer/sns2.png" alt="" />
               </a>
               <a href="/">
-                <img src="img/footer/sns3.png" alt="" />
+                <img src="/img/footer/sns3.png" alt="" />
               </a>
               <a href="/">
-                <img src="img/footer/sns4.png" alt="" />
+                <img src="/img/footer/sns4.png" alt="" />
               </a>
             </style.SnsBox>
           </style.Sns>
