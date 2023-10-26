@@ -17,6 +17,9 @@ export const FirstBeneCont = styled.div`
           text-decoration: underline;
         }
       }
+      img {
+        width: 100%;
+      }
       .txt_area {
         width: 100%;
         margin-top: 3rem;
