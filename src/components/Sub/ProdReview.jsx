@@ -5,8 +5,8 @@ import { useParams } from "react-router-dom";
 
 function ProdReview() {
   const { id } = useParams();
+  const product = dummy.find((item) => item.id === parseInt(id));
 
-  const product = dummy[id];
   return (
     <>
       <style.ProdReview>
@@ -27,64 +27,64 @@ function ProdReview() {
                 <div className="icon">
                   <img src="/img/icon/ico_star.svg" alt="" />
                 </div>
-                <span class="text">5.0</span>
+                <span className="text">5.0</span>
               </div>
-              <div class="score_percentage">
+              <div className="score_percentage">
                 <b>99%</b>의 구매자가 이 상품을 좋아합니다.
               </div>
-              <button class="create_review_btn">상품 리뷰 작성하기</button>
+              <button className="create_review_btn">상품 리뷰 작성하기</button>
             </div>
             <div className="right_content">
               <ul>
                 <li className="highlighted">
-                  <div class="title">아주 좋아요</div>
-                  <div class="gauge">
+                  <div className="title">아주 좋아요</div>
+                  <div className="gauge">
                     <div
                       style={{ width: "max(97%, 12px)" }}
-                      class="percentile"
+                      className="percentile"
                     ></div>
                   </div>
-                  <div class="count">1,964</div>
+                  <div className="count">1,964</div>
                 </li>
                 <li>
-                  <div class="title">맘에 들어요</div>
-                  <div class="gauge">
+                  <div className="title">맘에 들어요</div>
+                  <div className="gauge">
                     <div
                       style={{ width: "max(2%, 12px)" }}
-                      class="percentile"
+                      className="percentile"
                     ></div>
                   </div>
-                  <div class="count">42</div>
+                  <div className="count">42</div>
                 </li>
                 <li>
-                  <div class="title">보통이에요</div>
-                  <div class="gauge">
+                  <div className="title">보통이에요</div>
+                  <div className="gauge">
                     <div
                       style={{ width: "max(0%, 0px)" }}
-                      class="percentile"
+                      className="percentile"
                     ></div>
                   </div>
-                  <div class="count">10</div>
+                  <div className="count">10</div>
                 </li>
                 <li>
-                  <div class="title">그냥 그래요</div>
-                  <div class="gauge">
+                  <div className="title">그냥 그래요</div>
+                  <div className="gauge">
                     <div
                       style={{ width: "max(0%, 0px)" }}
-                      class="percentile"
+                      className="percentile"
                     ></div>
                   </div>
-                  <div class="count">3</div>
+                  <div className="count">3</div>
                 </li>
                 <li>
-                  <div class="title">별로예요</div>
-                  <div class="gauge">
+                  <div className="title">별로예요</div>
+                  <div className="gauge">
                     <div
                       style={{ width: "max(0%, 0px)" }}
-                      class="percentile"
+                      className="percentile"
                     ></div>
                   </div>
-                  <div class="count">4</div>
+                  <div className="count">4</div>
                 </li>
               </ul>
             </div>
@@ -102,7 +102,7 @@ function ProdReview() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 8 8"
-                    class="show_all_arrow"
+                    className="show_all_arrow"
                   >
                     <path
                       stroke-linecap="round"
@@ -142,7 +142,7 @@ function ProdReview() {
                       height="18"
                       fill="none"
                       viewBox="0 0 18 18"
-                      class="search_input_icon"
+                      className="search_input_icon"
                     >
                       <rect
                         width="10.5"
@@ -167,7 +167,7 @@ function ProdReview() {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      class="on"
+                      className="on"
                     >
                       <rect
                         width="18.5"
@@ -188,7 +188,7 @@ function ProdReview() {
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 16 16"
-                      class=""
+                      className=""
                     >
                       <rect
                         width="12.333"
@@ -220,7 +220,7 @@ function ProdReview() {
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 8 8"
-                          class="dropdown_arrow"
+                          className="dropdown_arrow"
                         >
                           <path
                             stroke-linecap="round"
@@ -271,8 +271,8 @@ function ProdReview() {
                         </div>
                         <div className="score_text">아주 좋아요</div>
                       </div>
-                      <div class="edit_container">
-                        <div class="date">{item.date}</div>
+                      <div className="edit_container">
+                        <div className="date">{item.date}</div>
                       </div>
                     </div>
                     <div className="content_section">
@@ -287,7 +287,7 @@ function ProdReview() {
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 8 8"
-                            class=""
+                            className=""
                           >
                             <path
                               stroke-linecap="round"

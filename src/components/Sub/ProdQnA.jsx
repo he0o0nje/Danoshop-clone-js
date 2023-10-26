@@ -9,11 +9,11 @@ function ProdQnA() {
         <div>
           <style.BoardTit>
             <h2>Q&amp;A</h2>
-            <div class="QnA_btn_wrap">
-              <a href="!" class="normal_btn">
+            <div className="QnA_btn_wrap">
+              <a href="!" className="normal_btn">
                 LIST
               </a>
-              <a href="!" class="normal_btn">
+              <a href="!" className="normal_btn">
                 WRITE
               </a>
             </div>
@@ -38,16 +38,16 @@ function ProdQnA() {
                   <th>조회</th>
                 </tr>
               </thead>
-              <tbody class="center">
+              <tbody className="center">
                 <tr>
                   <td>306</td>
                   <td>기타문의</td>
-                  <td class="left subject">
+                  <td className="left subject">
                     <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
-                    <span class="comment"></span>
+                    <span className="comment"></span>
                   </td>
                   <td> 한****</td>
                   <td>2023-10-16 18:36:22</td>
@@ -56,7 +56,7 @@ function ProdQnA() {
                 <tr>
                   <td>305</td>
                   <td>기타문의</td>
-                  <td class="left subject">
+                  <td className="left subject">
                     &nbsp;&nbsp;&nbsp;
                     <img src="/img/icon/ico_re.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
@@ -64,7 +64,7 @@ function ProdQnA() {
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
-                    <span class="comment"></span>
+                    <span className="comment"></span>
                   </td>
                   <td> 다노샵</td>
                   <td>2023-10-17 11:55:12</td>
@@ -73,12 +73,12 @@ function ProdQnA() {
                 <tr>
                   <td>304</td>
                   <td>상품 문의</td>
-                  <td class="left subject">
+                  <td className="left subject">
                     <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
-                    <span class="comment"></span>
+                    <span className="comment"></span>
                   </td>
                   <td> 이****</td>
                   <td>2023-10-04 13:23:55</td>
@@ -87,7 +87,7 @@ function ProdQnA() {
                 <tr>
                   <td>303</td>
                   <td>상품 문의</td>
-                  <td class="left subject">
+                  <td className="left subject">
                     &nbsp;&nbsp;&nbsp;
                     <img src="/img/icon/ico_re.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
@@ -95,7 +95,7 @@ function ProdQnA() {
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">안녕하세요, 다노샵입니다. 💁‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
-                    <span class="comment"></span>
+                    <span className="comment"></span>
                   </td>
                   <td> 다노샵</td>
                   <td>2023-10-04 15:43:16</td>
@@ -104,12 +104,12 @@ function ProdQnA() {
                 <tr>
                   <td>302</td>
                   <td>기타문의</td>
-                  <td class="left subject">
+                  <td className="left subject">
                     <img src="/img/icon/ico_lock.gif" alt="" />
                     &nbsp;&nbsp;&nbsp;
                     <a href="!">다노샵 상품이 궁금해요🙋‍♀️</a>
                     &nbsp;&nbsp;&nbsp;
-                    <span class="comment"></span>
+                    <span className="comment"></span>
                   </td>
                   <td> 권****</td>
                   <td>2023-10-02 18:57:56</td>
@@ -117,40 +117,40 @@ function ProdQnA() {
                 </tr>
               </tbody>
             </table>
-            <div class="paginate">
-              <a href="!" class="first">
+            <div className="paginate">
+              <a href="!" className="first">
                 첫 페이지
               </a>
               <a href="!">이전 페이지</a>
               <ol>
                 <li>
-                  <a href="!" class="this">
+                  <a href="!" className="this">
                     1
                   </a>
                 </li>
                 <li>
-                  <a href="!" class="other">
+                  <a href="!" className="other">
                     2
                   </a>
                 </li>
                 <li>
-                  <a href="!" class="other">
+                  <a href="!" className="other">
                     3
                   </a>
                 </li>
                 <li>
-                  <a href="!" class="other">
+                  <a href="!" className="other">
                     4
                   </a>
                 </li>
                 <li>
-                  <a href="!" class="other">
+                  <a href="!" className="other">
                     5
                   </a>
                 </li>
               </ol>
               <a href="!">다음 페이지</a>
-              <a href="!" class="last">
+              <a href="!" className="last">
                 마지막 페이지
               </a>
             </div>

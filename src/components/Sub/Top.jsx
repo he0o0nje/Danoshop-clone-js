@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 
 function Top() {
   const { id } = useParams();
+  const product = dummy.find((item) => item.id === parseInt(id));
 
-  const product = dummy[id];
   return (
     <>
       <style.HeadCategory>
@@ -118,14 +118,14 @@ function Top() {
               </tbody>
             </table>
             <div className="guide_area">
-              <p class="info ">(최소주문수량 1개 이상)</p>
+              <p className="info ">(최소주문수량 1개 이상)</p>
             </div>
             <div className="total_products">
               <table>
                 <tbody>
                   <tr>
                     <td>
-                      <p class="product">
+                      <p className="product">
                         {product.top[0].header}
                         <br></br> -{" "}
                         <span>자이언트 브라운라이스소울 프로틴_베리</span>
@@ -156,7 +156,7 @@ function Top() {
             </div>
             <div className="total_price">
               <strong className="title">
-                TOTAL <span class="qty">(QUANTITY)</span>
+                TOTAL <span className="qty">(QUANTITY)</span>
               </strong>
               <span className="total">
                 <strong>
@@ -168,14 +168,15 @@ function Top() {
             <div className="delivery_info">
               <div className="title">배송정보</div>
               <div className="info_value">
-                <p class="type">다노배송(새벽/택배)</p>
-                <p class="value">
-                  새벽배송 : <span class="highlight">오후 5시</span>까지 결제 시{" "}
-                  <span class="highlight">내일 오전 7시 전</span> 도착
+                <p className="type">다노배송(새벽/택배)</p>
+                <p className="value">
+                  새벽배송 : <span className="highlight">오후 5시</span>까지
+                  결제 시 <span className="highlight">내일 오전 7시 전</span>{" "}
+                  도착
                 </p>
-                <p class="value">
-                  택배배송 : <span class="highlight">오후 5시</span>까지 결제 시{" "}
-                  <span class="highlight">오늘</span> 출고
+                <p className="value">
+                  택배배송 : <span className="highlight">오후 5시</span>까지
+                  결제 시 <span className="highlight">오늘</span> 출고
                 </p>
               </div>
             </div>
@@ -194,18 +195,18 @@ function Top() {
                   <div className="npay_btn_box">
                     <div className="npay_btn">
                       <div className="npay_txt">
-                        <span class="npay_blind"></span>
+                        <span className="npay_blind"></span>
                       </div>
                       <table>
                         <tbody>
                           <tr>
                             <td>
-                              <a href="#none" class="npay_btn_pay">
+                              <a href="#none" className="npay_btn_pay">
                                 -
                               </a>
                             </td>
                             <td>
-                              <a href="#none" class="npay_btn_zzim">
+                              <a href="#none" className="npay_btn_zzim">
                                 -
                               </a>
                             </td>

@@ -12,7 +12,7 @@ function ProdInfo() {
               <h2>PAYMENT INFO</h2>
             </div>
             <div className="contents">
-              <div class="info">
+              <div className="info">
                 고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도
                 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문등
                 정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는
@@ -26,11 +26,11 @@ function ProdInfo() {
             </div>
           </div>
           <div className="info_box">
-            <div class="title">
+            <div className="title">
               <h2>DELIVERY INFO</h2>
             </div>
-            <div class="contents">
-              <ul class="info">
+            <div className="contents">
+              <ul className="info">
                 <li>배송 방법 : 택배</li>
                 <li>배송 지역 : 전국지역</li>
                 <li>배송 비용 : 3,500원</li>
@@ -45,11 +45,11 @@ function ProdInfo() {
             </div>
           </div>
           <div className="info_box">
-            <div class="title">
+            <div className="title">
               <h2>EXCHANGE INFO</h2>
             </div>
-            <div class="contents">
-              <div class="info">
+            <div className="contents">
+              <div className="info">
                 <strong>교환 및 반품 주소</strong>
                 <br></br>&nbsp;- [17405] 경기도 이천시 부발읍 황무로 1780
                 한진택배 이천택배지점<br></br>&nbsp;<br></br>
@@ -83,11 +83,11 @@ function ProdInfo() {
             </div>
           </div>
           <div className="info_box">
-            <div class="title">
+            <div className="title">
               <h2>SERVICE INFO</h2>
             </div>
-            <div class="contents">
-              <div class="info"></div>
+            <div className="contents">
+              <div className="info"></div>
             </div>
           </div>
         </style.DetailGuide>

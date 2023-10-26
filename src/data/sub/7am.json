@@ -110,12 +110,12 @@
     ],
     "detail": [
       {
-        "image": [
-          { "image01": "/img/sub/prod002/detail01.png" },
-          { "image02": "/img/sub/prod002/detail02.png" },
-          { "image03": "/img/sub/prod002/detail03.jpg" },
-          { "image04": "/img/sub/prod002/detail04.png" },
-          { "image05": "/img/sub/prod002/detail05.png" }
+        "image_set": [
+          { "image": "/img/sub/prod002/detail01.png" },
+          { "image": "/img/sub/prod002/detail02.png" },
+          { "image": "/img/sub/prod002/detail03.jpg" },
+          { "image": "/img/sub/prod002/detail04.png" },
+          { "image": "/img/sub/prod002/detail05.png" }
         ],
         "info_name": "프로틴 브라운라이스소울 2종 (베리, 초코)",
         "keep": "1개 35g"
@@ -194,13 +194,13 @@
     ],
     "detail": [
       {
-        "image": [
-          { "image01": "/img/sub/prod003/detail01.png" },
-          { "image02": "/img/sub/prod003/detail02.png" },
-          { "image03": "/img/sub/prod003/detail03.gif" },
-          { "image04": "/img/sub/prod003/detail04.png" },
-          { "image05": "/img/sub/prod003/detail05.png" },
-          { "image05": "/img/sub/prod003/detail06.png" }
+        "image_set": [
+          { "image": "/img/sub/prod003/detail01.png" },
+          { "image": "/img/sub/prod003/detail02.png" },
+          { "image": "/img/sub/prod003/detail03.gif" },
+          { "image": "/img/sub/prod003/detail04.png" },
+          { "image": "/img/sub/prod003/detail05.png" },
+          { "image": "/img/sub/prod003/detail06.png" }
         ],
         "info_name": "흑임자죽",
         "keep": "1개 30g"
@@ -279,13 +279,13 @@
     ],
     "detail": [
       {
-        "image": [
-          { "image01": "/img/sub/prod004/detail01.jpg" },
-          { "image02": "/img/sub/prod004/detail02.jpg" },
-          { "image03": "/img/sub/prod004/detail03.jpg" },
-          { "image04": "/img/sub/prod004/detail04.gif" },
-          { "image05": "/img/sub/prod004/detail05.jpg" },
-          { "image05": "/img/sub/prod004/detail06.gif" }
+        "image_set": [
+          { "image": "/img/sub/prod004/detail01.jpg" },
+          { "image": "/img/sub/prod004/detail02.jpg" },
+          { "image": "/img/sub/prod004/detail03.jpg" },
+          { "image": "/img/sub/prod004/detail04.gif" },
+          { "image": "/img/sub/prod004/detail05.jpg" },
+          { "image": "/img/sub/prod004/detail06.gif" }
         ],
         "info_name": "통밀팬케이크 믹스",
         "keep": "1개 70g"

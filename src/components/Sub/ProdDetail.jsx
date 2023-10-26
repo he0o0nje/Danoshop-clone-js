@@ -5,8 +5,8 @@ import { useParams } from "react-router-dom";
 
 function ProdDetail() {
   const { id } = useParams();
+  const product = dummy.find((item) => item.id === parseInt(id));
 
-  const product = dummy[id];
   return (
     <>
       <DetailTab01></DetailTab01>
