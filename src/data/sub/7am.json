@@ -32,30 +32,14 @@
       }
     ],
     "media_review": [
-      {
-        "media": "img/sub/prod001/media01.jpg"
-      },
-      {
-        "media": "img/sub/prod001/media02.jpg"
-      },
-      {
-        "media": "img/sub/prod001/media03.jpg"
-      },
-      {
-        "media": "img/sub/prod001/media04.jpg"
-      },
-      {
-        "media": "img/sub/prod001/media05.jpg"
-      },
-      {
-        "media": "img/sub/prod001/media06.jpg"
-      },
-      {
-        "media": "img/sub/prod001/media07.jpg"
-      },
-      {
-        "media": "img/sub/prod001/media08.jpg"
-      }
+      { "media": "img/sub/prod001/media01.jpg" },
+      { "media": "img/sub/prod001/media02.jpg" },
+      { "media": "img/sub/prod001/media03.jpg" },
+      { "media": "img/sub/prod001/media04.jpg" },
+      { "media": "img/sub/prod001/media05.jpg" },
+      { "media": "img/sub/prod001/media06.jpg" },
+      { "media": "img/sub/prod001/media07.jpg" },
+      { "media": "img/sub/prod001/media08.jpg" }
     ],
     "review": [
       {
@@ -124,40 +108,26 @@
     ],
     "detail": [
       {
-        "image01": "img/sub/prod002/detail01.png",
-        "image02": "img/sub/prod002/detail02.png",
-        "image03": "img/sub/prod002/detail03.jpg",
-        "image04": "img/sub/prod002/detail04.png",
-        "image05": "img/sub/prod002/detail05.png",
+        "image": [
+          { "image01": "img/sub/prod002/detail01.png" },
+          { "image02": "img/sub/prod002/detail02.png" },
+          { "image03": "img/sub/prod002/detail03.jpg" },
+          { "image04": "img/sub/prod002/detail04.png" },
+          { "image05": "img/sub/prod002/detail05.png" }
+        ],
         "info_name": "프로틴 브라운라이스소울 2종 (베리, 초코)",
         "keep": "1개 35g"
       }
     ],
     "media_review": [
-      {
-        "media": "img/sub/prod002/media01.jpg"
-      },
-      {
-        "media": "img/sub/prod002/media02.jpg"
-      },
-      {
-        "media": "img/sub/prod002/media03.jpg"
-      },
-      {
-        "media": "img/sub/prod002/media04.jpg"
-      },
-      {
-        "media": "img/sub/prod002/media05.jpg"
-      },
-      {
-        "media": "img/sub/prod002/media06.jpg"
-      },
-      {
-        "media": "img/sub/prod002/media07.jpg"
-      },
-      {
-        "media": "img/sub/prod002/media08.jpg"
-      }
+      { "media": "img/sub/prod002/media01.jpg" },
+      { "media": "img/sub/prod002/media02.jpg" },
+      { "media": "img/sub/prod002/media03.jpg" },
+      { "media": "img/sub/prod002/media04.jpg" },
+      { "media": "img/sub/prod002/media05.jpg" },
+      { "media": "img/sub/prod002/media06.jpg" },
+      { "media": "img/sub/prod002/media07.jpg" },
+      { "media": "img/sub/prod002/media08.jpg" }
     ],
     "review": [
       {

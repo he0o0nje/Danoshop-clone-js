@@ -21,7 +21,7 @@ function BotBanner() {
           <p>당신의 더 나은 삶을 위한 DANO의 제품을 만나보세요.</p>
         </div>
         <div class="bot_banner_link">
-          <a href="!">회원가입</a>
+          <a href="/">회원가입</a>
         </div>
       </style.BotBanner>
     </>
