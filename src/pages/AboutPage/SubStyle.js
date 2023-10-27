@@ -19,8 +19,8 @@ export const Alert404 = styled.div`
   align-items: center;
   margin: 20rem auto;
   text-align: center;
-  font-size: 3rem;
-  width: 20rem;
+  font-size: 2rem;
+  width: 30rem;
   height: 10rem;
   line-height: 3.5rem;
   background-color: #eee;

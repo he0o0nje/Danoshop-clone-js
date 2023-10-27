@@ -92,88 +92,94 @@
     "id": 6,
     "top": [
       {
-        "product_imgB": "/img/sub/prod002/big01.webp",
-        "product_imgS": "/img/sub/prod002/small01.gif",
-        "header": "[다노] 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-        "summary_info": "달콤하게 즐기는 고단백 현미시리얼",
-        "price": "7,500원",
+        "product_imgB": "/img/sub/prod006/big01.webp",
+        "product_imgS": "/img/sub/prod006/small01.png",
+        "header": "[다노] 클린티 2종",
+        "summary_info": "하루 2잔 클린해지는 습관",
+        "price": "14,900원",
         "sale_price": "",
         "discount": "",
-        "composition": "3/9/10개",
+        "composition": "1팩/2팩",
         "select": [
-          { "option": "브라운라이스소울 프로틴 _베리(3개)" },
-          { "option": "[-4%]브라운라이스소울 프로틴_베리(10개)(+16,500원)" },
-          { "option": "브라운라이스소울 프로틴_초코(3개)" },
-          { "option": "[-4%]브라운라이스소울 프로틴_초코(10개)(+16,500원)" },
-          {
-            "option": "[-2%]프로틴 혼합 9개입(베리+초코+녹차초코 각 3개)(+14,500원)"
-          }
+          { "option": "클린 모닝티 (wake up)" },
+          { "option": "클린 힐링티 (peace)" },
+          { "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)" }
         ]
       }
     ],
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod002/detail01.png" },
-          { "image": "/img/sub/prod002/detail02.png" },
-          { "image": "/img/sub/prod002/detail03.jpg" },
-          { "image": "/img/sub/prod002/detail04.png" },
-          { "image": "/img/sub/prod002/detail05.png" }
+          { "image": "/img/sub/prod006/detail01.png" },
+          { "image": "/img/sub/prod006/detail02.png" },
+          { "image": "/img/sub/prod006/detail03.png" },
+          { "image": "/img/sub/prod006/detail04.png" },
+          { "image": "/img/sub/prod006/detail05.png" },
+          { "image": "/img/sub/prod006/detail06.png" },
+          { "image": "/img/sub/prod006/detail07.png" },
+          { "image": "/img/sub/prod006/detail08.png" },
+          { "image": "/img/sub/prod006/detail09.png" },
+          { "image": "/img/sub/prod006/detail10.mp4" },
+          { "image": "/img/sub/prod006/detail11.png" },
+          { "image": "/img/sub/prod006/detail12.png" },
+          { "image": "/img/sub/prod006/detail13.png" },
+          { "image": "/img/sub/prod006/detail14.png" },
+          { "image": "/img/sub/prod006/detail15.png" }
         ],
-        "info_name": "프로틴 브라운라이스소울 2종 (베리, 초코)",
-        "keep": "1개 35g"
+        "info_name": "클린티 2종 (Wake up, Peace)",
+        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod002/media01.jpg" },
-      { "media": "/img/sub/prod002/media02.jpg" },
-      { "media": "/img/sub/prod002/media03.jpg" },
-      { "media": "/img/sub/prod002/media04.jpg" },
-      { "media": "/img/sub/prod002/media05.jpg" },
-      { "media": "/img/sub/prod002/media06.jpg" },
-      { "media": "/img/sub/prod002/media07.jpg" },
-      { "media": "/img/sub/prod002/media08.jpg" }
+      { "media": "/img/sub/prod006/media01.jpg" },
+      { "media": "/img/sub/prod006/media02.jpg" },
+      { "media": "/img/sub/prod006/media03.jpg" },
+      { "media": "/img/sub/prod006/media04.jpg" },
+      { "media": "/img/sub/prod006/media05.jpg" },
+      { "media": "/img/sub/prod006/media06.jpg" },
+      { "media": "/img/sub/prod006/media07.jpg" },
+      { "media": "/img/sub/prod006/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
         "date": "2023.10.22",
-        "message": "야식먹으면 안되지만 야식이 생각나면 과자대신 먹기도하고 아침으로 먹기도해요~! ㅎㅎ",
-        "user_name": "박",
-        "option": " [-2%]프로틴 혼합 9개입(베리+초코+녹차초코 각 3개)"
+        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
+        "user_name": "정",
+        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
+        "tag_repurchase": "",
         "date": "2023.10.10",
-        "message": "몇년째 제 최애 씨리얼입니다",
-        "user_name": "송",
-        "option": "프로틴 혼합 9개입(베리+초코+녹차초코 각 3개)"
+        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
+        "user_name": "최",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
+        "tag_repurchase": "",
         "date": "2023.10.9",
-        "message": "오랜만에 베리맛초이스",
-        "user_name": "현",
-        "option": " [-4%]브라운라이스소울 프로틴_베리(10개)"
+        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
+        "user_name": "제",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
         "date": "2023.10.4",
-        "message": "달달한 거 먹고 싶을 때 한그릇 하면 군것질 욕구 충족 됩니당",
+        "message": "따뜻하게 우려서 먹으면 좋아요.",
         "user_name": "김",
-        "option": "브라운라이스소울 프로틴_베리(10개)"
+        "option": "[텀블러 증정]클린 힐링티 (peace)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
         "date": "2023.10.1",
-        "message": "브라솔 보기만 많이 봤지 넘 비싸서 이번에 할인하길래 처음 주문해봤는데 맛있네요",
-        "user_name": "김",
-        "option": "브라운라이스소울 프로틴_초코(3개)"
+        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
+        "user_name": "허",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
       }
     ]
   }
