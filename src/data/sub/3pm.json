@@ -180,103 +180,92 @@
     "id": 14,
     "top": [
       {
-        "product_imgB": "/img/sub/prod009/big01.png",
-        "product_imgS": "/img/sub/prod009/small01.png",
-        "header": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
-        "summary_info": "나트륨 함량을 확 낮춘 닭가슴살 큐브",
-        "price": "10,000원",
+        "product_imgB": "/img/sub/prod014/big01.png",
+        "product_imgS": "/img/sub/prod014/small01.png",
+        "header": "[다노] 프로틴다노바 2종_단백질 프로틴 견과바",
+        "summary_info": "프락토올리고당이 함유된 업그레이드 프로틴 다노바",
+        "price": "2,500원",
         "sale_price": "",
         "discount": "",
-        "composition": "5/10/20/30개",
+        "composition": "1/3/10개",
         "select": [
-          { "option": "큐브 닭가슴살_오리지널(5개)" },
-          { "option": "큐브 닭가슴살_ 청양고추(5개)" },
-          { "option": "큐브 닭가슴살 _허브(5개)" },
-          { "option": "[-3%] 큐브 닭가슴살_오리지널(10개)(+9,500원)" },
-          { "option": "[-3%] 큐브 닭가슴살_ 청양고추(10개)(+9,500원)" },
-          { "option": "[-3%] 큐브 닭가슴살 _허브(10개)(+9,500원)" },
-          { "option": "[-5%] 큐브 닭가슴살_오리지널(20개)(+28,000원)" },
-          { "option": "[-5%] 큐브 닭가슴살_ 청양고추(20개)(+28,000원)" },
-          { "option": "[-5%] 큐브 닭가슴살 _허브(20개)(+28,000원)" },
-          { "option": "[-7%] 큐브 닭가슴살_오리지널(30개)(+46,000원)" },
-          { "option": "[-7%] 큐브 닭가슴살_ 청양고추(30개)(+46,000원)" },
-          { "option": "[-7%] 큐브 닭가슴살 _허브(30개)(+46,000원)" }
+          { "option": "프로틴 다노바_베리(1개)" },
+          { "option": "프로틴 다노바_초코(1개)" },
+          { "option": "프로틴 다노바_베리(3개)(+5,000원)" },
+          { "option": "프로틴 다노바_초코(3개)(+5,000원)" },
+          { "option": "[-4%] 프로틴 다노바_베리(10개)(+21,500원)" },
+          { "option": "[-4%] 프로틴 다노바_초코(10개)(+21,500원)" }
         ]
       }
     ],
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod009/detail01.png" },
-          { "image": "/img/sub/prod009/detail02.png" },
-          { "image": "/img/sub/prod009/detail03.png" },
-          { "image": "/img/sub/prod009/detail04.png" },
-          { "image": "/img/sub/prod009/detail05.png" },
-          { "image": "/img/sub/prod009/detail06.png" },
-          { "image": "/img/sub/prod009/detail07.png" },
-          { "image": "/img/sub/prod009/detail08.mp4" },
-          { "image": "/img/sub/prod009/detail09.png" },
-          { "image": "/img/sub/prod009/detail10.png" },
-          { "image": "/img/sub/prod009/detail11.png" },
-          { "image": "/img/sub/prod009/detail12.png" },
-          { "image": "/img/sub/prod009/detail13.png" },
-          { "image": "/img/sub/prod009/detail14.png" }
+          { "image": "/img/sub/prod014/detail01.jpg" },
+          { "image": "/img/sub/prod014/detail02.mp4" },
+          { "image": "/img/sub/prod014/detail03.jpg" },
+          { "image": "/img/sub/prod014/detail04.jpg" },
+          { "image": "/img/sub/prod014/detail05.png" },
+          { "image": "/img/sub/prod014/detail06.jpg" },
+          { "image": "/img/sub/prod014/detail07.mp4" },
+          { "image": "/img/sub/prod014/detail08.mp4" },
+          { "image": "/img/sub/prod014/detail09.png" }
         ],
-        "info_name": "닭가슴살 큐브 3종 (오리지널, 청양고추, 허브)",
-        "keep": "냉동보관",
-        "volume": "1개 100g"
+        "info_name": "프로틴 다노바 2종 (베리, 초코)",
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "1개 40g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod009/media01.jpg" },
-      { "media": "/img/sub/prod009/media02.jpg" },
-      { "media": "/img/sub/prod009/media03.jpg" },
-      { "media": "/img/sub/prod009/media04.jpg" },
-      { "media": "/img/sub/prod009/media05.jpg" },
-      { "media": "/img/sub/prod009/media06.jpg" },
-      { "media": "/img/sub/prod009/media07.jpg" },
-      { "media": "/img/sub/prod009/media08.jpg" }
+      { "media": "/img/sub/prod014/media01.jpg" },
+      { "media": "/img/sub/prod014/media02.jpg" },
+      { "media": "/img/sub/prod014/media03.jpg" },
+      { "media": "/img/sub/prod014/media04.jpg" },
+      { "media": "/img/sub/prod014/media05.jpg" },
+      { "media": "/img/sub/prod014/media06.jpg" },
+      { "media": "/img/sub/prod014/media07.jpg" },
+      { "media": "/img/sub/prod014/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.17",
+        "message": "이만한 성분에, 이만한 맛에, 속까지 편한 단백질바는 없더라구요. 재구매합니다",
+        "user_name": "",
+        "option": "프로틴 다노바_초코(3개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.15",
+        "message": "정말 맛있엉6 여러개 더 사놓고 출근준비하면서 먹어야겠어요ㅎㅎ 어나더레벨의 프로틴바입니다 구매를 망설이지미세요!",
+        "user_name": "경",
+        "option": "프로틴 다노바_베리(1개)"
+      },
+      {
+        "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.10.23",
-        "message": "간편하고 맛도 있습니다",
-        "user_name": "네이버 페이 구",
-        "option": ""
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.22",
-        "message": "촉촉해서 먹기좋아요",
-        "user_name": "김",
-        "option": "큐브 닭가슴살_오리지널(10개)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.20",
-        "message": "잘못왔지만 다시보내주신다해서 너무 좋아용",
-        "user_name": "이",
-        "option": "[-3%] 큐브 닭가슴살_ 청양고추(10개)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.19",
-        "message": "맛있어요^^! 재구매합미다",
-        "user_name": "강",
-        "option": " 큐브 닭가슴살_ 청양고추(5개)"
+        "date": "2023.10.12",
+        "message": "다노바 오랜만에 다시 구매해봤어요. 여기저기 단백질바 전전하다보면 여기로 다시 돌아온다능~~",
+        "user_name": "",
+        "option": " [-4%] 프로틴 다노바_베리(10개)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
         "date": "2023.10.10",
-        "message": "매콤하고 맛있어요",
-        "user_name": "이",
-        "option": "큐브 닭가슴살_ 청양고추(10개)"
+        "message": "당류가 이렇게 적은데 이런 단맛이 나는게 신기하네요 맛있어요",
+        "user_name": "박",
+        "option": "프로틴 다노바_초코(3개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.1",
+        "message": "바쁠 때 식사대용으로 먹기 좋아요 건강에도 좋구",
+        "user_name": "김",
+        "option": "프로틴 다노바_초코(3개)"
       }
     ]
   },
