@@ -7,10 +7,15 @@ import ProdQnA from "../../components/Sub/ProdQnA";
 import ProdInfo from "../../components/Sub/ProdInfo";
 import Footer from "../../components/Footer/Footer";
 import * as style from "./SubStyle";
-import dummy from "../../data/sub/7am.json";
+import am7 from "../../data/sub/7am.json";
+import am10 from "../../data/sub/10am.json";
+import pm1 from "../../data/sub/1pm.json";
+import { useParams } from "react-router-dom";
 
 function AboutPage() {
-  const product = dummy.find((item) => item.id);
+  const { id } = useParams();
+  const dummy = [...am7, ...am10, ...pm1];
+  const product = dummy.find((item) => item.id === parseInt(id));
 
   if (!product) {
     return <style.Alert404>제품을 찾을 수 없습니다.</style.Alert404>;

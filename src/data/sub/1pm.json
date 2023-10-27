@@ -1,0 +1,508 @@
+[
+  {
+    "id": 7,
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod007/big01.webp",
+        "product_imgS": "/img/sub/prod007/small01.png",
+        "header": "[다노] 오븐치킨 6종_식단관리 닭가슴살",
+        "summary_info": "기름에 튀기지 않고 오븐에서 구워 촉촉한",
+        "price": "8,100원",
+        "sale_price": "",
+        "discount": "",
+        "composition": "3/10/20개",
+        "select": [
+          { "option": "오븐치킨 닭가슴살_오리지널(3개)" },
+          { "option": "오븐치킨 닭가슴살_왕갈비맛(3개)(+1,300원)" },
+          { "option": "오븐치킨 닭가슴살_마그마맛(3개)(+1,300원) [품절]" },
+          { "option": "오븐치킨 닭다리살_오리지널(3개)(+2,600원)" },
+          { "option": "[-20%]오븐치킨 닭다리살_왕갈비맛(3개)(+1,420원)" },
+          { "option": "[-15%]오븐치킨 닭다리살_마그마맛(3개)(+2,010원)" },
+          { "option": "[-4%] 오븐치킨 닭가슴살_오리지널(10개)(+17,900원)" },
+          { "option": "[-4%] 오븐치킨 닭가슴살_왕갈비맛(10개)(+21,900원)" },
+          { "option": "오븐치킨 닭가슴살_마그마맛(10개)(+23,230원) [품절]" },
+          { "option": "[-4%] 오븐치킨 닭다리살_오리지널(10개)(+26,100원)" },
+          { "option": "[-20%]오븐치킨 닭다리살_왕갈비맛(10개)(+23,630원)" },
+          { "option": "[-15%]오븐치킨 닭다리살_마그마맛(10개)(+25,610원)" },
+          { "option": "[-35%] 오븐치킨 닭가슴살_오리지널(20개)(+27,000원)" },
+          { "option": "[-30%] 오븐치킨 닭가슴살_왕갈비맛(20개)(+35,660원)" },
+          { "option": "[-27%] 오븐치킨 닭다리살_오리지널(20개)(+44,340원)" },
+          { "option": "[-24%] 오븐치킨 닭다리살_왕갈비맛(20개)(+52,340원)" },
+          { "option": "[-24%] 오븐치킨 닭다리살_마그마맛(20개)(+52,340원)" }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod007/detail01.png" },
+          { "image": "/img/sub/prod007/detail02.png" },
+          { "image": "/img/sub/prod007/detail03.mp4" },
+          { "image": "/img/sub/prod007/detail04.mp4" },
+          { "image": "/img/sub/prod007/detail05.png" },
+          { "image": "/img/sub/prod007/detail06.png" },
+          { "image": "/img/sub/prod007/detail07.png" },
+          { "image": "/img/sub/prod007/detail08.png" },
+          { "image": "/img/sub/prod007/detail09.mp4" },
+          { "image": "/img/sub/prod007/detail10.mp4" },
+          { "image": "/img/sub/prod007/detail11.mp4" },
+          { "image": "/img/sub/prod007/detail12.png" },
+          { "image": "/img/sub/prod007/detail13.png" },
+          { "image": "/img/sub/prod007/detail14.mp4" },
+          { "image": "/img/sub/prod007/detail15.mp4" },
+          { "image": "/img/sub/prod007/detail16.mp4" },
+          { "image": "/img/sub/prod007/detail17.png" },
+          { "image": "/img/sub/prod007/detail18.png" },
+          { "image": "/img/sub/prod007/detail19.png" },
+          { "image": "/img/sub/prod007/detail20.png" },
+          { "image": "/img/sub/prod007/detail21.png" },
+          { "image": "/img/sub/prod007/detail22.png" },
+          { "image": "/img/sub/prod007/detail23.jpg" }
+        ],
+        "info_name": "오븐치킨 6종 (오리지널, 왕갈비맛, 마그마)",
+        "keep": "냉동보관",
+        "volume": "상세페이지 참조"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod007/media01.jpg" },
+      { "media": "/img/sub/prod007/media02.jpg" },
+      { "media": "/img/sub/prod007/media03.jpg" },
+      { "media": "/img/sub/prod007/media04.jpg" },
+      { "media": "/img/sub/prod007/media05.jpg" },
+      { "media": "/img/sub/prod007/media06.jpg" },
+      { "media": "/img/sub/prod007/media07.jpg" },
+      { "media": "/img/sub/prod007/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.22",
+        "message": "다른 닭찌들에 비해 가격대가 있어서 못사다가 세잉하길래 냉큼 겟했어요 소스까지 다양해서 간단히 뜯어먹으며 입맛 만족할 수 있는 제품은 아니지만 담백해서 여러 요리에 활용하기 좋아요",
+        "user_name": "정",
+        "option": "오븐치킨 닭가슴살_오리지널(10개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.16",
+        "message": "항상 시켜먹는 상품입니다",
+        "user_name": "오",
+        "option": " 오븐치킨 닭가슴살_마그마맛(3개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.16",
+        "message": "아니 제가 먹어본 닭가슴살 중에 진빠 제잏 맛있어서 제 구매해요. 성분도 너무 좋구요 진짜 매일 먹었어요",
+        "user_name": "김",
+        "option": "오븐치킨 닭다리살_오리지널(3개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.15",
+        "message": "음 , 저 체중을 조절하려고 닭가슴살 먹는데요 맛 있 더 라고요",
+        "user_name": "김",
+        "option": "오븐치킨 닭다리살_오리지널(3개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.15",
+        "message": "양념이 맛있고 닭가슴살이 촉촉해요!! 자주 먹을 수 있을거 같아요 재구매의사 있습니다 👍🏻👍🏻",
+        "user_name": "경",
+        "option": "오븐치킨 닭가슴살_왕갈비맛(3개)"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod008/big01.jpg",
+        "product_imgS": "/img/sub/prod008/small01.jpg",
+        "header": "[다노] 곤약 볶음밥 3종_식단관리 저칼로리 냉동볶음밥",
+        "summary_info": "단백질은 챙기고 나트륨을 낮춘 곤약볶음밥",
+        "price": "28,330원",
+        "sale_price": "17,000원",
+        "discount": "40%",
+        "composition": "10/20개",
+        "select": [
+          { "option": "곤약 볶음밥_닭가슴살야채 (10개) [품절]" },
+          { "option": "곤약 볶음밥_소불고기 (10개) [품절]" },
+          { "option": "곤약 볶음밥_새우계란 (10개) [품절]" },
+          { "option": "곤약 볶음밥_닭가슴살야채 (20개)(+28,330원) [품절]" },
+          { "option": "곤약 볶음밥_소불고기 (20개)(+28,330원) [품절]" },
+          { "option": "곤약 볶음밥_새우계란 (20개)(+28,330원) [품절]" }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod008/detail01.png" },
+          { "image": "/img/sub/prod008/detail02.jpg" },
+          { "image": "/img/sub/prod008/detail03.png" },
+          { "image": "/img/sub/prod008/detail04.jpg" },
+          { "image": "/img/sub/prod008/detail05.gif" },
+          { "image": "/img/sub/prod008/detail06.jpg" },
+          { "image": "/img/sub/prod008/detail07.gif" },
+          { "image": "/img/sub/prod008/detail08.jpg" },
+          { "image": "/img/sub/prod008/detail09.gif" },
+          { "image": "/img/sub/prod008/detail10.jpg" },
+          { "image": "/img/sub/prod008/detail11.gif" },
+          { "image": "/img/sub/prod008/detail12.jpg" },
+          { "image": "/img/sub/prod008/detail13.gif" },
+          { "image": "/img/sub/prod008/detail14.png" },
+          { "image": "/img/sub/prod008/detail15.png" },
+          { "image": "/img/sub/prod008/detail16.png" }
+        ],
+        "info_name": "곤약 볶음밥 3종 (닭가슴살야채, 소불고기, 새우 계란)",
+        "keep": "냉동보관",
+        "volume": "1개 200g"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod008/media01.jpg" },
+      { "media": "/img/sub/prod008/media02.jpg" },
+      { "media": "/img/sub/prod008/media03.jpg" },
+      { "media": "/img/sub/prod008/media04.jpg" },
+      { "media": "/img/sub/prod008/media05.jpg" },
+      { "media": "/img/sub/prod008/media06.jpg" },
+      { "media": "/img/sub/prod008/media07.jpg" },
+      { "media": "/img/sub/prod008/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.25",
+        "message": "처음 먹어봤는데 ,,,후라이팬에 데워서 먹을 때가 맛있네요 ㅎㅎ 간이 안 된것도 아니고 슴슴하니 먹을 만 했어요 ㅎㅎ 다른 맛으로 재주문 하려고요 ㅎㅎ 잘 먹을게요",
+        "user_name": "조",
+        "option": " 곤약 볶음밥_소불고기 (10개)"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "",
+        "date": "2023.10.24",
+        "message": "한번씩 먹기 좋아요~ 전 소불고기가 젤 맛나서 이것만 쟁겨놔요",
+        "user_name": "이",
+        "option": " 곤약 볶음밥_소불고기 (10개)"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.24",
+        "message": "피망인가?그런형이많이나요 전에닭가슴살시켰을때도그래서 다른맛이면안그러겠거니했으나....다그런가",
+        "user_name": "임",
+        "option": " 곤약 볶음밥_소불고기 (10개)"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.23",
+        "message": "맛있어요! 할인할때 사서 더 좋아요ㅎ",
+        "user_name": "임",
+        "option": "곤약 볶음밥_닭가슴살야채 (10개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.20",
+        "message": "마싯어요! 점심대용! 짱",
+        "user_name": "이",
+        "option": "곤약 볶음밥_닭가슴살야채 (10개)"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod006/big01.webp",
+        "product_imgS": "/img/sub/prod006/small01.png",
+        "header": "[다노] 클린티 2종",
+        "summary_info": "하루 2잔 클린해지는 습관",
+        "price": "14,900원",
+        "sale_price": "",
+        "discount": "",
+        "composition": "1팩/2팩",
+        "select": [
+          { "option": "클린 모닝티 (wake up)" },
+          { "option": "클린 힐링티 (peace)" },
+          { "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)" }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod006/detail01.png" },
+          { "image": "/img/sub/prod006/detail02.png" },
+          { "image": "/img/sub/prod006/detail03.png" },
+          { "image": "/img/sub/prod006/detail04.png" },
+          { "image": "/img/sub/prod006/detail05.png" },
+          { "image": "/img/sub/prod006/detail06.png" },
+          { "image": "/img/sub/prod006/detail07.png" },
+          { "image": "/img/sub/prod006/detail08.png" },
+          { "image": "/img/sub/prod006/detail09.png" },
+          { "image": "/img/sub/prod006/detail10.mp4" },
+          { "image": "/img/sub/prod006/detail11.png" },
+          { "image": "/img/sub/prod006/detail12.png" },
+          { "image": "/img/sub/prod006/detail13.png" },
+          { "image": "/img/sub/prod006/detail14.png" },
+          { "image": "/img/sub/prod006/detail15.png" }
+        ],
+        "info_name": "클린티 2종 (Wake up, Peace)",
+        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)",
+        "volume": "상세페이지 참조"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod006/media01.jpg" },
+      { "media": "/img/sub/prod006/media02.jpg" },
+      { "media": "/img/sub/prod006/media03.jpg" },
+      { "media": "/img/sub/prod006/media04.jpg" },
+      { "media": "/img/sub/prod006/media05.jpg" },
+      { "media": "/img/sub/prod006/media06.jpg" },
+      { "media": "/img/sub/prod006/media07.jpg" },
+      { "media": "/img/sub/prod006/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.22",
+        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
+        "user_name": "정",
+        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.10",
+        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
+        "user_name": "최",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.9",
+        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
+        "user_name": "제",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.4",
+        "message": "따뜻하게 우려서 먹으면 좋아요.",
+        "user_name": "김",
+        "option": "[텀블러 증정]클린 힐링티 (peace)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.1",
+        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
+        "user_name": "허",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod006/big01.webp",
+        "product_imgS": "/img/sub/prod006/small01.png",
+        "header": "[다노] 클린티 2종",
+        "summary_info": "하루 2잔 클린해지는 습관",
+        "price": "14,900원",
+        "sale_price": "",
+        "discount": "",
+        "composition": "1팩/2팩",
+        "select": [
+          { "option": "클린 모닝티 (wake up)" },
+          { "option": "클린 힐링티 (peace)" },
+          { "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)" }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod006/detail01.png" },
+          { "image": "/img/sub/prod006/detail02.png" },
+          { "image": "/img/sub/prod006/detail03.png" },
+          { "image": "/img/sub/prod006/detail04.png" },
+          { "image": "/img/sub/prod006/detail05.png" },
+          { "image": "/img/sub/prod006/detail06.png" },
+          { "image": "/img/sub/prod006/detail07.png" },
+          { "image": "/img/sub/prod006/detail08.png" },
+          { "image": "/img/sub/prod006/detail09.png" },
+          { "image": "/img/sub/prod006/detail10.mp4" },
+          { "image": "/img/sub/prod006/detail11.png" },
+          { "image": "/img/sub/prod006/detail12.png" },
+          { "image": "/img/sub/prod006/detail13.png" },
+          { "image": "/img/sub/prod006/detail14.png" },
+          { "image": "/img/sub/prod006/detail15.png" }
+        ],
+        "info_name": "클린티 2종 (Wake up, Peace)",
+        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)",
+        "volume": "상세페이지 참조"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod006/media01.jpg" },
+      { "media": "/img/sub/prod006/media02.jpg" },
+      { "media": "/img/sub/prod006/media03.jpg" },
+      { "media": "/img/sub/prod006/media04.jpg" },
+      { "media": "/img/sub/prod006/media05.jpg" },
+      { "media": "/img/sub/prod006/media06.jpg" },
+      { "media": "/img/sub/prod006/media07.jpg" },
+      { "media": "/img/sub/prod006/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.22",
+        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
+        "user_name": "정",
+        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.10",
+        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
+        "user_name": "최",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.9",
+        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
+        "user_name": "제",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.4",
+        "message": "따뜻하게 우려서 먹으면 좋아요.",
+        "user_name": "김",
+        "option": "[텀블러 증정]클린 힐링티 (peace)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.1",
+        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
+        "user_name": "허",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod006/big01.webp",
+        "product_imgS": "/img/sub/prod006/small01.png",
+        "header": "[다노] 클린티 2종",
+        "summary_info": "하루 2잔 클린해지는 습관",
+        "price": "14,900원",
+        "sale_price": "",
+        "discount": "",
+        "composition": "1팩/2팩",
+        "select": [
+          { "option": "클린 모닝티 (wake up)" },
+          { "option": "클린 힐링티 (peace)" },
+          { "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)" }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod006/detail01.png" },
+          { "image": "/img/sub/prod006/detail02.png" },
+          { "image": "/img/sub/prod006/detail03.png" },
+          { "image": "/img/sub/prod006/detail04.png" },
+          { "image": "/img/sub/prod006/detail05.png" },
+          { "image": "/img/sub/prod006/detail06.png" },
+          { "image": "/img/sub/prod006/detail07.png" },
+          { "image": "/img/sub/prod006/detail08.png" },
+          { "image": "/img/sub/prod006/detail09.png" },
+          { "image": "/img/sub/prod006/detail10.mp4" },
+          { "image": "/img/sub/prod006/detail11.png" },
+          { "image": "/img/sub/prod006/detail12.png" },
+          { "image": "/img/sub/prod006/detail13.png" },
+          { "image": "/img/sub/prod006/detail14.png" },
+          { "image": "/img/sub/prod006/detail15.png" }
+        ],
+        "info_name": "클린티 2종 (Wake up, Peace)",
+        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)",
+        "volume": "상세페이지 참조"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod006/media01.jpg" },
+      { "media": "/img/sub/prod006/media02.jpg" },
+      { "media": "/img/sub/prod006/media03.jpg" },
+      { "media": "/img/sub/prod006/media04.jpg" },
+      { "media": "/img/sub/prod006/media05.jpg" },
+      { "media": "/img/sub/prod006/media06.jpg" },
+      { "media": "/img/sub/prod006/media07.jpg" },
+      { "media": "/img/sub/prod006/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.22",
+        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
+        "user_name": "정",
+        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.10",
+        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
+        "user_name": "최",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.9",
+        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
+        "user_name": "제",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.4",
+        "message": "따뜻하게 우려서 먹으면 좋아요.",
+        "user_name": "김",
+        "option": "[텀블러 증정]클린 힐링티 (peace)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.1",
+        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
+        "user_name": "허",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      }
+    ]
+  }
+]

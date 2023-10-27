@@ -27,7 +27,8 @@
           { "image": "/img/sub/prod001/detail05.png" }
         ],
         "info_name": "자이언트 프로틴 브라운라이스소울 2종 (베리, 초코)",
-        "keep": "1개 500g"
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "1개 500g"
       }
     ],
     "media_review": [
@@ -116,7 +117,8 @@
           { "image": "/img/sub/prod002/detail05.png" }
         ],
         "info_name": "프로틴 브라운라이스소울 2종 (베리, 초코)",
-        "keep": "1개 35g"
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "1개 35g"
       }
     ],
     "media_review": [
@@ -201,7 +203,8 @@
           { "image": "/img/sub/prod003/detail06.png" }
         ],
         "info_name": "흑임자죽",
-        "keep": "1개 30g"
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "1개 30g"
       }
     ],
     "media_review": [
@@ -286,7 +289,8 @@
           { "image": "/img/sub/prod004/detail06.gif" }
         ],
         "info_name": "통밀팬케이크 믹스",
-        "keep": "1개 70g"
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "1개 70g"
       }
     ],
     "media_review": [

@@ -3,8 +3,8 @@
     "id": 7,
     "image": "img/main/1pm/01.webp",
     "name": "[다노] 오븐치킨 6종_식단관리 닭가슴살",
-    "composition": "10/20개",
-    "price": "26,000원"
+    "composition": "3/10/20개",
+    "price": "8,100원"
   },
   {
     "id": 8,
@@ -19,8 +19,8 @@
     "id": 9,
     "image": "img/main/1pm/03.png",
     "name": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
-    "composition": "10/20/30개",
-    "price": "19,500원"
+    "composition": "5/10/20/30개",
+    "price": "10,000원"
   },
   {
     "id": 10,

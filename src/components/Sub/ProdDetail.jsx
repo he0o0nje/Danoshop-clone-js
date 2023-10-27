@@ -2,11 +2,12 @@ import * as style from "./ProdDetailStyle";
 import DetailTab01 from "./DetailTab01";
 import am7 from "../../data/sub/7am.json";
 import am10 from "../../data/sub/10am.json";
+import pm1 from "../../data/sub/1pm.json";
 import { useParams } from "react-router-dom";
 
 function ProdDetail() {
   const { id } = useParams();
-  const dummy = [...am7, ...am10];
+  const dummy = [...am7, ...am10, ...pm1];
   const product = dummy.find((item) => item.id === parseInt(id));
 
   return (
@@ -47,7 +48,7 @@ function ProdDetail() {
                     </th>
                     <td>
                       <div>
-                        <span>실온보관(직사광선을 피한 서늘한 곳에 보관)</span>
+                        <span>{product.detail[0].keep}</span>
                       </div>
                     </td>
                   </tr>
@@ -57,7 +58,7 @@ function ProdDetail() {
                     </th>
                     <td>
                       <div>
-                        <span>{product.detail[0].keep}</span>
+                        <span>{product.detail[0].volume}</span>
                       </div>
                     </td>
                   </tr>

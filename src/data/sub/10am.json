@@ -32,7 +32,8 @@
           { "image": "/img/sub/prod005/detail09.png" }
         ],
         "info_name": "",
-        "keep": ""
+        "keep": "",
+        "volume": ""
       }
     ],
     "media_review": [
@@ -127,7 +128,8 @@
           { "image": "/img/sub/prod006/detail15.png" }
         ],
         "info_name": "클린티 2종 (Wake up, Peace)",
-        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)"
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)"
       }
     ],
     "media_review": [
