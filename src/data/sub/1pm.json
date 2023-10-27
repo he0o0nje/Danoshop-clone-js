@@ -436,7 +436,9 @@
           { "image": "/img/sub/prod011/detail03.jpg" },
           { "image": "/img/sub/prod011/detail04.jpg" },
           { "image": "/img/sub/prod011/detail05.mp4" },
-          { "image": "/img/sub/prod011/detail06.jpg" }
+          { "image": "/img/sub/prod011/detail06.jpg" },
+          { "image": "/img/sub/prod011/detail07.jpg" },
+          { "image": "/img/sub/prod011/detail08.jpg" }
         ],
         "info_name": "두부 비엔나 소시지",
         "keep": "냉동보관",
