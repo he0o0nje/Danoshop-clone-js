@@ -325,95 +325,86 @@
     "id": 10,
     "top": [
       {
-        "product_imgB": "/img/sub/prod006/big01.webp",
-        "product_imgS": "/img/sub/prod006/small01.png",
-        "header": "[다노] 클린티 2종",
-        "summary_info": "하루 2잔 클린해지는 습관",
-        "price": "14,900원",
+        "product_imgB": "/img/sub/prod010/big01.png",
+        "product_imgS": "/img/sub/prod010/small01.png",
+        "header": "[다노] 통밀 오트 베이글_식단용 건강빵",
+        "summary_info": "간편하게 즐기는 뉴욕 브런치",
+        "price": "8,900원",
         "sale_price": "",
         "discount": "",
-        "composition": "1팩/2팩",
+        "composition": "5/10/20/36개",
         "select": [
-          { "option": "클린 모닝티 (wake up)" },
-          { "option": "클린 힐링티 (peace)" },
-          { "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)" }
+          { "option": "[-6%]통밀 오트 베이글 (5개)" },
+          { "option": "[-7%]통밀 오트 베이글 (10개)(+8,770원)" },
+          { "option": "[-10%]통밀 오트 베이글 (20개)(+25,300원)" },
+          { "option": "[-15%]통밀 오트 베이글 (36개)(+49,240원)" }
         ]
       }
     ],
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod006/detail01.png" },
-          { "image": "/img/sub/prod006/detail02.png" },
-          { "image": "/img/sub/prod006/detail03.png" },
-          { "image": "/img/sub/prod006/detail04.png" },
-          { "image": "/img/sub/prod006/detail05.png" },
-          { "image": "/img/sub/prod006/detail06.png" },
-          { "image": "/img/sub/prod006/detail07.png" },
-          { "image": "/img/sub/prod006/detail08.png" },
-          { "image": "/img/sub/prod006/detail09.png" },
-          { "image": "/img/sub/prod006/detail10.mp4" },
-          { "image": "/img/sub/prod006/detail11.png" },
-          { "image": "/img/sub/prod006/detail12.png" },
-          { "image": "/img/sub/prod006/detail13.png" },
-          { "image": "/img/sub/prod006/detail14.png" },
-          { "image": "/img/sub/prod006/detail15.png" }
+          { "image": "/img/sub/prod010/detail01.png" },
+          { "image": "/img/sub/prod010/detail02.png" },
+          { "image": "/img/sub/prod010/detail03.png" },
+          { "image": "/img/sub/prod010/detail04.png" },
+          { "image": "/img/sub/prod010/detail05.png" }
         ],
-        "info_name": "클린티 2종 (Wake up, Peace)",
-        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)",
-        "volume": "상세페이지 참조"
+        "info_name": "통밀 오트 베이글",
+        "keep": "냉동보관",
+        "volume": "1개 110g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod006/media01.jpg" },
-      { "media": "/img/sub/prod006/media02.jpg" },
-      { "media": "/img/sub/prod006/media03.jpg" },
-      { "media": "/img/sub/prod006/media04.jpg" },
-      { "media": "/img/sub/prod006/media05.jpg" },
-      { "media": "/img/sub/prod006/media06.jpg" },
-      { "media": "/img/sub/prod006/media07.jpg" },
-      { "media": "/img/sub/prod006/media08.jpg" }
+      { "media": "/img/sub/prod010/media01.jpg" },
+      { "media": "/img/sub/prod010/media02.jpg" },
+      { "media": "/img/sub/prod010/media03.jpg" },
+      { "media": "/img/sub/prod010/media04.jpg" },
+      { "media": "/img/sub/prod010/media05.jpg" },
+      { "media": "/img/sub/prod010/media06.jpg" },
+      { "media": "/img/sub/prod010/media07.jpg" },
+      { "media": "/img/sub/prod010/media08.jpg" }
     ],
     "review": [
       {
+        "tag_new": "NEW",
+        "tag_repurchase": "",
+        "date": "2023.10.27",
+        "message": "빠른배송에 만족하고 항상 맛있게 먹고 있습니다!!^^ 떨어질 때 되면 항상 주문해먹어요!",
+        "user_name": "백",
+        "option": " [-15%]통밀 오트 베이글 (36개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.21",
+        "message": "식단하고 있어서 오트랑 어니언 주문했는데, 원래 베이글을 좋아하지 않았는데 데워서 바로 먹으니까 생각보다 맛있어서 너무 좋아요",
+        "user_name": "이",
+        "option": "통밀 오트 베이글 (5개)"
+      },
+      {
         "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.10.22",
-        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
-        "user_name": "정",
-        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.10",
-        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
-        "user_name": "최",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.9",
-        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
-        "user_name": "제",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.4",
-        "message": "따뜻하게 우려서 먹으면 좋아요.",
+        "date": "2023.10.17",
+        "message": "인생 베이글입니다. 어디에서도 찾을 수 없는 식감과 고소함과 맛입니다. 많이 구입해 냉동실에 저장해 두고 바쁠 때 식사대용으로 여유로운 시간엔 플레인요거트를 발라 커피와 함께 즐깁니다. 먹을 때 없어지는게 넘 속상합니다 ㅋㅋ",
         "user_name": "김",
-        "option": "[텀블러 증정]클린 힐링티 (peace)"
+        "option": " [-15%]통밀 오트 베이글 (36개)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.1",
-        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
-        "user_name": "허",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+        "date": "2023.10.16",
+        "message": "빵먹고 싶을 때 너무 좋아요 근데 조금 질깁니다 ㅠㅠ‧⁺◟( ᵒ̴̶̷̥́ ·̫ ᵒ̴̶̷̣̥̀ ) 그게 제일 아쉬운데 크림치즈에 발라먹으면 짱맛이에요",
+        "user_name": "김",
+        "option": "[-6%]통밀 오트 베이글 (5개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.14",
+        "message": "빠른배송에 늘 맛있는 제품!",
+        "user_name": "백",
+        "option": " [-15%]통밀 오트 베이글 (36개)"
       }
     ]
   },
@@ -421,95 +412,87 @@
     "id": 11,
     "top": [
       {
-        "product_imgB": "/img/sub/prod006/big01.webp",
-        "product_imgS": "/img/sub/prod006/small01.png",
-        "header": "[다노] 클린티 2종",
-        "summary_info": "하루 2잔 클린해지는 습관",
-        "price": "14,900원",
-        "sale_price": "",
-        "discount": "",
-        "composition": "1팩/2팩",
+        "product_imgB": "/img/sub/prod011/big01.jpg",
+        "product_imgS": "/img/sub/prod011/small01.jpg",
+        "header": "[다노] 두부비엔나소시지",
+        "summary_info": "나트륨을 64% 낮춰 짜지 않고 뽀득한",
+        "price": "12,000원",
+        "sale_price": "7,200원",
+        "discount": "40%",
+        "composition": "4/10/20/30개",
         "select": [
-          { "option": "클린 모닝티 (wake up)" },
-          { "option": "클린 힐링티 (peace)" },
-          { "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)" }
+          { "option": "두부 비엔나 소시지 (90g*4팩)" },
+          { "option": "두부 비엔나 소시지 (90g*10팩)(+18,000원)" },
+          { "option": "두부 비엔나 소시지 (90g*20팩)(+48,000원)" },
+          { "option": "두부 비엔나 소시지 (90g*30팩)(+78,000원)" }
         ]
       }
     ],
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod006/detail01.png" },
-          { "image": "/img/sub/prod006/detail02.png" },
-          { "image": "/img/sub/prod006/detail03.png" },
-          { "image": "/img/sub/prod006/detail04.png" },
-          { "image": "/img/sub/prod006/detail05.png" },
-          { "image": "/img/sub/prod006/detail06.png" },
-          { "image": "/img/sub/prod006/detail07.png" },
-          { "image": "/img/sub/prod006/detail08.png" },
-          { "image": "/img/sub/prod006/detail09.png" },
-          { "image": "/img/sub/prod006/detail10.mp4" },
-          { "image": "/img/sub/prod006/detail11.png" },
-          { "image": "/img/sub/prod006/detail12.png" },
-          { "image": "/img/sub/prod006/detail13.png" },
-          { "image": "/img/sub/prod006/detail14.png" },
-          { "image": "/img/sub/prod006/detail15.png" }
+          { "image": "/img/sub/prod011/detail01.jpg" },
+          { "image": "/img/sub/prod011/detail02.jpg" },
+          { "image": "/img/sub/prod011/detail03.jpg" },
+          { "image": "/img/sub/prod011/detail04.jpg" },
+          { "image": "/img/sub/prod011/detail05.mp4" },
+          { "image": "/img/sub/prod011/detail06.jpg" }
         ],
-        "info_name": "클린티 2종 (Wake up, Peace)",
-        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)",
-        "volume": "상세페이지 참조"
+        "info_name": "두부 비엔나 소시지",
+        "keep": "냉동보관",
+        "volume": "1개 90g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod006/media01.jpg" },
-      { "media": "/img/sub/prod006/media02.jpg" },
-      { "media": "/img/sub/prod006/media03.jpg" },
-      { "media": "/img/sub/prod006/media04.jpg" },
-      { "media": "/img/sub/prod006/media05.jpg" },
-      { "media": "/img/sub/prod006/media06.jpg" },
-      { "media": "/img/sub/prod006/media07.jpg" },
-      { "media": "/img/sub/prod006/media08.jpg" }
+      { "media": "/img/sub/prod011/media01.jpg" },
+      { "media": "/img/sub/prod011/media02.jpg" },
+      { "media": "/img/sub/prod011/media03.jpg" },
+      { "media": "/img/sub/prod011/media04.jpg" },
+      { "media": "/img/sub/prod011/media05.jpg" },
+      { "media": "/img/sub/prod011/media06.jpg" },
+      { "media": "/img/sub/prod011/media07.jpg" },
+      { "media": "/img/sub/prod011/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
         "date": "2023.10.22",
-        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
-        "user_name": "정",
-        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
+        "message": "믿고먹는 두부비엔나소시지! 너무 맛있어요!",
+        "user_name": "박",
+        "option": "[13%] 두부 비엔나 소시지 (90g*10팩)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.10",
-        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
-        "user_name": "최",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+        "date": "2023.10.20",
+        "message": "떡볶이에 넣어먹으려고 삿어용!!",
+        "user_name": "이",
+        "option": "두부 비엔나 소시지 (90g*10팩)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.9",
-        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
-        "user_name": "제",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.4",
-        "message": "따뜻하게 우려서 먹으면 좋아요.",
+        "date": "2023.10.20",
+        "message": "그냥 늘 쟁이고 먹는 식품 !!! 성분은 다노꺼가 눈씻고 찾아도 최고애요 그냥 짱이에요 믿고 사세요",
         "user_name": "김",
-        "option": "[텀블러 증정]클린 힐링티 (peace)"
+        "option": "두부 비엔나 소시지 (90g*20팩)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.1",
-        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
-        "user_name": "허",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+        "date": "2023.10.14",
+        "message": "퍽퍽한데 그럭저럭 맛있음",
+        "user_name": "왕",
+        "option": "두부 비엔나 소시지 (90g*4팩)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.9.16",
+        "message": "가끔 소세지 먹고 싶을때 이거 먹음 죄책감 없이 마구 먹을수 있죠 ㅋㅋ",
+        "user_name": "이",
+        "option": "두부 비엔나 소시지 (90g*4팩)"
       }
     ]
   }
