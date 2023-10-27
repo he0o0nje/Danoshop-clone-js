@@ -1,6 +1,6 @@
 import * as style from "./ProductStyle";
 import dummy from "../../data/main/7am.json";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Product() {
   return (
