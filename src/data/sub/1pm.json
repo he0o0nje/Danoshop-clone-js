@@ -221,95 +221,103 @@
     "id": 9,
     "top": [
       {
-        "product_imgB": "/img/sub/prod006/big01.webp",
-        "product_imgS": "/img/sub/prod006/small01.png",
-        "header": "[다노] 클린티 2종",
-        "summary_info": "하루 2잔 클린해지는 습관",
-        "price": "14,900원",
+        "product_imgB": "/img/sub/prod009/big01.png",
+        "product_imgS": "/img/sub/prod009/small01.png",
+        "header": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
+        "summary_info": "나트륨 함량을 확 낮춘 닭가슴살 큐브",
+        "price": "10,000원",
         "sale_price": "",
         "discount": "",
-        "composition": "1팩/2팩",
+        "composition": "5/10/20/30개",
         "select": [
-          { "option": "클린 모닝티 (wake up)" },
-          { "option": "클린 힐링티 (peace)" },
-          { "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)" }
+          { "option": "큐브 닭가슴살_오리지널(5개)" },
+          { "option": "큐브 닭가슴살_ 청양고추(5개)" },
+          { "option": "큐브 닭가슴살 _허브(5개)" },
+          { "option": "[-3%] 큐브 닭가슴살_오리지널(10개)(+9,500원)" },
+          { "option": "[-3%] 큐브 닭가슴살_ 청양고추(10개)(+9,500원)" },
+          { "option": "[-3%] 큐브 닭가슴살 _허브(10개)(+9,500원)" },
+          { "option": "[-5%] 큐브 닭가슴살_오리지널(20개)(+28,000원)" },
+          { "option": "[-5%] 큐브 닭가슴살_ 청양고추(20개)(+28,000원)" },
+          { "option": "[-5%] 큐브 닭가슴살 _허브(20개)(+28,000원)" },
+          { "option": "[-7%] 큐브 닭가슴살_오리지널(30개)(+46,000원)" },
+          { "option": "[-7%] 큐브 닭가슴살_ 청양고추(30개)(+46,000원)" },
+          { "option": "[-7%] 큐브 닭가슴살 _허브(30개)(+46,000원)" }
         ]
       }
     ],
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod006/detail01.png" },
-          { "image": "/img/sub/prod006/detail02.png" },
-          { "image": "/img/sub/prod006/detail03.png" },
-          { "image": "/img/sub/prod006/detail04.png" },
-          { "image": "/img/sub/prod006/detail05.png" },
-          { "image": "/img/sub/prod006/detail06.png" },
-          { "image": "/img/sub/prod006/detail07.png" },
-          { "image": "/img/sub/prod006/detail08.png" },
-          { "image": "/img/sub/prod006/detail09.png" },
-          { "image": "/img/sub/prod006/detail10.mp4" },
-          { "image": "/img/sub/prod006/detail11.png" },
-          { "image": "/img/sub/prod006/detail12.png" },
-          { "image": "/img/sub/prod006/detail13.png" },
-          { "image": "/img/sub/prod006/detail14.png" },
-          { "image": "/img/sub/prod006/detail15.png" }
+          { "image": "/img/sub/prod009/detail01.png" },
+          { "image": "/img/sub/prod009/detail02.png" },
+          { "image": "/img/sub/prod009/detail03.png" },
+          { "image": "/img/sub/prod009/detail04.png" },
+          { "image": "/img/sub/prod009/detail05.png" },
+          { "image": "/img/sub/prod009/detail06.png" },
+          { "image": "/img/sub/prod009/detail07.png" },
+          { "image": "/img/sub/prod009/detail08.mp4" },
+          { "image": "/img/sub/prod009/detail09.png" },
+          { "image": "/img/sub/prod009/detail10.png" },
+          { "image": "/img/sub/prod009/detail11.png" },
+          { "image": "/img/sub/prod009/detail12.png" },
+          { "image": "/img/sub/prod009/detail13.png" },
+          { "image": "/img/sub/prod009/detail14.png" }
         ],
-        "info_name": "클린티 2종 (Wake up, Peace)",
-        "keep": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)",
-        "volume": "상세페이지 참조"
+        "info_name": "닭가슴살 큐브 3종 (오리지널, 청양고추, 허브)",
+        "keep": "냉동보관",
+        "volume": "1개 100g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod006/media01.jpg" },
-      { "media": "/img/sub/prod006/media02.jpg" },
-      { "media": "/img/sub/prod006/media03.jpg" },
-      { "media": "/img/sub/prod006/media04.jpg" },
-      { "media": "/img/sub/prod006/media05.jpg" },
-      { "media": "/img/sub/prod006/media06.jpg" },
-      { "media": "/img/sub/prod006/media07.jpg" },
-      { "media": "/img/sub/prod006/media08.jpg" }
+      { "media": "/img/sub/prod009/media01.jpg" },
+      { "media": "/img/sub/prod009/media02.jpg" },
+      { "media": "/img/sub/prod009/media03.jpg" },
+      { "media": "/img/sub/prod009/media04.jpg" },
+      { "media": "/img/sub/prod009/media05.jpg" },
+      { "media": "/img/sub/prod009/media06.jpg" },
+      { "media": "/img/sub/prod009/media07.jpg" },
+      { "media": "/img/sub/prod009/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
+        "date": "2023.10.23",
+        "message": "간편하고 맛도 있습니다",
+        "user_name": "네이버 페이 구",
+        "option": ""
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
         "date": "2023.10.22",
-        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
-        "user_name": "정",
-        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
+        "message": "촉촉해서 먹기좋아요",
+        "user_name": "김",
+        "option": "큐브 닭가슴살_오리지널(10개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.20",
+        "message": "잘못왔지만 다시보내주신다해서 너무 좋아용",
+        "user_name": "이",
+        "option": "[-3%] 큐브 닭가슴살_ 청양고추(10개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.19",
+        "message": "맛있어요^^! 재구매합미다",
+        "user_name": "강",
+        "option": " 큐브 닭가슴살_ 청양고추(5개)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
         "date": "2023.10.10",
-        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
-        "user_name": "최",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.9",
-        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
-        "user_name": "제",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.4",
-        "message": "따뜻하게 우려서 먹으면 좋아요.",
-        "user_name": "김",
-        "option": "[텀블러 증정]클린 힐링티 (peace)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.1",
-        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
-        "user_name": "허",
-        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+        "message": "매콤하고 맛있어요",
+        "user_name": "이",
+        "option": "큐브 닭가슴살_ 청양고추(10개)"
       }
     ]
   },
