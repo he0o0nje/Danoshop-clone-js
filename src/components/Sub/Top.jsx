@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 import * as style from "./TopStyle";
 import am7 from "../../data/sub/7am.json";
 import am10 from "../../data/sub/10am.json";
@@ -7,8 +9,6 @@ import pm6 from "../../data/sub/6pm.json";
 import pm9 from "../../data/sub/9pm.json";
 import pm11 from "../../data/sub/11pm.json";
 import Try from "../../data/sub/Try.json";
-import { useParams } from "react-router-dom";
-import { useState } from "react";
 
 function Top() {
   const { id } = useParams();
@@ -23,23 +23,36 @@ function Top() {
     ...Try,
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
-  console.log(dummy);
 
-  const [selectedOption, setSelectedOption] = useState("");
-  const [quantity, setQuantity] = useState(1);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [quantity, setQuantity] = useState(0);
 
-  const handleProductSelect = (product) => {
-    setSelectedOption(product);
+  const handleProductSelect = (e) => {
+    const selectedValue = e.target.value;
+    if (selectedValue === "") {
+      // 옵션 선택이 해제된 경우 선택목록에서 제거
+      setSelectedOptions(
+        selectedOptions.filter((option) => option !== selectedValue)
+      );
+    } else {
+      // 이미 선택한 옵션이 아니면 추가
+      if (!selectedOptions.includes(selectedValue)) {
+        setSelectedOptions([...selectedOptions, selectedValue]);
+        setQuantity(1);
+      } else {
+        alert("이미 선택한 옵션입니다.");
+      }
+    }
+  };
+
+  const handleProductDelete = () => {
+    setSelectedOptions([]);
+    setQuantity(0);
   };
 
   const handleQuantityChange = (event) => {
     const newQuantity = parseInt(event.target.value);
     setQuantity(newQuantity);
-  };
-
-  const handleProductDelete = () => {
-    setSelectedOption("");
-    alert("선택한 상품이 장바구니에서 삭제되었습니다.");
   };
 
   return (
@@ -142,21 +155,11 @@ function Top() {
                 <tr>
                   <th>옵션</th>
                   <td>
-                    <select
-                      name=""
-                      id=""
-                      value={selectedOption}
-                      onChange={(e) => setSelectedOption(e.target.value)}
-                    >
+                    <select name="" id="" onChange={handleProductSelect}>
                       <option value="">- [필수] 옵션을 선택해 주세요 -</option>
                       <option value="">-------------------</option>
                       {product.top[0].select.map((item, index) => (
-                        <option
-                          key={index}
-                          onClick={() => handleProductSelect(product)}
-                        >
-                          {item.option}
-                        </option>
+                        <option key={index}>{item.option}</option>
                       ))}
                     </select>
                   </td>
@@ -166,8 +169,8 @@ function Top() {
             <div className="guide_area">
               <p className="info ">(최소주문수량 1개 이상)</p>
             </div>
-            {selectedOption && (
-              <div className="total_products">
+            {selectedOptions.map((selectedOption, index) => (
+              <div className="total_products" key={index}>
                 <table>
                   <tbody>
                     <tr>
@@ -185,14 +188,14 @@ function Top() {
                             onChange={handleQuantityChange}
                           />
                           <a
-                            href="#none"
+                            href="javascript:void(0);"
                             className="up"
                             onClick={() => setQuantity(quantity + 1)}
                           >
                             +
                           </a>
                           <a
-                            href="#none"
+                            href="javascript:void(0);"
                             className="down"
                             onClick={() =>
                               setQuantity(quantity - 1 >= 1 ? quantity - 1 : 1)
@@ -218,7 +221,7 @@ function Top() {
                   </tbody>
                 </table>
               </div>
-            )}
+            ))}
             <div className="total_price">
               <strong className="title">
                 TOTAL <span className="qty">(QUANTITY)</span>
