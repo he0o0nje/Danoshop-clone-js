@@ -204,103 +204,99 @@
     "id": 18,
     "top": [
       {
-        "product_imgB": "/img/sub/prod009/big01.png",
-        "product_imgS": "/img/sub/prod009/small01.png",
-        "header": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
-        "summary_info": "나트륨 함량을 확 낮춘 닭가슴살 큐브",
-        "price": "10,000원",
+        "product_imgB": "/img/sub/prod018/big01.webp",
+        "product_imgS": "/img/sub/prod018/small01.png",
+        "header": "[다노] 닭가슴살도시락 7종 세트_식단관리 고단백 냉동도시락",
+        "summary_info": "7가지 닭가슴살 요리로 맛있게 즐기는 도시락",
+        "price": "31,500원",
         "sale_price": "",
         "discount": "",
-        "composition": "5/10/20/30개",
+        "composition": "1/2세트",
         "select": [
-          { "option": "큐브 닭가슴살_오리지널(5개)" },
-          { "option": "큐브 닭가슴살_ 청양고추(5개)" },
-          { "option": "큐브 닭가슴살 _허브(5개)" },
-          { "option": "[-3%] 큐브 닭가슴살_오리지널(10개)(+9,500원)" },
-          { "option": "[-3%] 큐브 닭가슴살_ 청양고추(10개)(+9,500원)" },
-          { "option": "[-3%] 큐브 닭가슴살 _허브(10개)(+9,500원)" },
-          { "option": "[-5%] 큐브 닭가슴살_오리지널(20개)(+28,000원)" },
-          { "option": "[-5%] 큐브 닭가슴살_ 청양고추(20개)(+28,000원)" },
-          { "option": "[-5%] 큐브 닭가슴살 _허브(20개)(+28,000원)" },
-          { "option": "[-7%] 큐브 닭가슴살_오리지널(30개)(+46,000원)" },
-          { "option": "[-7%] 큐브 닭가슴살_ 청양고추(30개)(+46,000원)" },
-          { "option": "[-7%] 큐브 닭가슴살 _허브(30개)(+46,000원)" }
+          { "option": "닭가슴살 도시락(1세트)" },
+          { "option": "[-5%] 닭가슴살 도시락(2세트)(+28,500원)" }
         ]
       }
     ],
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod009/detail01.png" },
-          { "image": "/img/sub/prod009/detail02.png" },
-          { "image": "/img/sub/prod009/detail03.png" },
-          { "image": "/img/sub/prod009/detail04.png" },
-          { "image": "/img/sub/prod009/detail05.png" },
-          { "image": "/img/sub/prod009/detail06.png" },
-          { "image": "/img/sub/prod009/detail07.png" },
-          { "image": "/img/sub/prod009/detail08.mp4" },
-          { "image": "/img/sub/prod009/detail09.png" },
-          { "image": "/img/sub/prod009/detail10.png" },
-          { "image": "/img/sub/prod009/detail11.png" },
-          { "image": "/img/sub/prod009/detail12.png" },
-          { "image": "/img/sub/prod009/detail13.png" },
-          { "image": "/img/sub/prod009/detail14.png" }
+          { "image": "/img/sub/prod018/detail01.png" },
+          { "image": "/img/sub/prod018/detail02.mp4" },
+          { "image": "/img/sub/prod018/detail03.png" },
+          { "image": "/img/sub/prod018/detail04.png" },
+          { "image": "/img/sub/prod018/detail05.png" },
+          { "image": "/img/sub/prod018/detail06.jpg" },
+          { "image": "/img/sub/prod018/detail07.jpg" },
+          { "image": "/img/sub/prod018/detail08.jpg" },
+          { "image": "/img/sub/prod018/detail09.png" },
+          { "image": "/img/sub/prod018/detail10.png" },
+          { "image": "/img/sub/prod018/detail11.png" },
+          { "image": "/img/sub/prod018/detail12.png" },
+          { "image": "/img/sub/prod018/detail13.png" },
+          { "image": "/img/sub/prod018/detail14.png" },
+          { "image": "/img/sub/prod018/detail15.png" },
+          { "image": "/img/sub/prod018/detail16.png" },
+          { "image": "/img/sub/prod018/detail17.png" },
+          { "image": "/img/sub/prod018/detail18.png" },
+          { "image": "/img/sub/prod018/detail19.png" },
+          { "image": "/img/sub/prod018/detail20.png" }
         ],
-        "info_name": "닭가슴살 큐브 3종 (오리지널, 청양고추, 허브)",
+        "info_name": "닭가슴살 도시락",
         "keep": "냉동보관",
-        "volume": "1개 100g"
+        "volume": "상세페이지 참조"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod009/media01.jpg" },
-      { "media": "/img/sub/prod009/media02.jpg" },
-      { "media": "/img/sub/prod009/media03.jpg" },
-      { "media": "/img/sub/prod009/media04.jpg" },
-      { "media": "/img/sub/prod009/media05.jpg" },
-      { "media": "/img/sub/prod009/media06.jpg" },
-      { "media": "/img/sub/prod009/media07.jpg" },
-      { "media": "/img/sub/prod009/media08.jpg" }
+      { "media": "/img/sub/prod018/media01.jpg" },
+      { "media": "/img/sub/prod018/media02.jpg" },
+      { "media": "/img/sub/prod018/media03.jpg" },
+      { "media": "/img/sub/prod018/media04.jpg" },
+      { "media": "/img/sub/prod018/media05.jpg" },
+      { "media": "/img/sub/prod018/media06.jpg" },
+      { "media": "/img/sub/prod018/media07.jpg" },
+      { "media": "/img/sub/prod018/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.10.23",
-        "message": "간편하고 맛도 있습니다",
-        "user_name": "네이버 페이 구",
-        "option": ""
+        "date": "2023.10.26",
+        "message": "재구매 강추입니다!!",
+        "user_name": "강",
+        "option": "닭가슴살 도시락(1세트)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
+        "date": "2023.10.23",
+        "message": "허기지지않고 적당히 먹었다는 느낌이 들고 먹고난후 더부룩하지않고 가뿐해서 좋아요 맛도 저는 괜찮았습니다~~",
+        "user_name": "임",
+        "option": "닭가슴살 도시락(1세트)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
         "date": "2023.10.22",
-        "message": "촉촉해서 먹기좋아요",
-        "user_name": "김",
-        "option": "큐브 닭가슴살_오리지널(10개)"
+        "message": "질릴줄 알았는데 닭가슴살이 맛있어서 한끼로 딱 좋아요",
+        "user_name": "박",
+        "option": "닭가슴살 도시락(1세트)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
         "date": "2023.10.20",
-        "message": "잘못왔지만 다시보내주신다해서 너무 좋아용",
-        "user_name": "이",
-        "option": "[-3%] 큐브 닭가슴살_ 청양고추(10개)"
+        "message": "냉장고에 항상 쟁여놓는 도시락입니다",
+        "user_name": "최",
+        "option": "닭가슴살 도시락(1세트)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.19",
-        "message": "맛있어요^^! 재구매합미다",
-        "user_name": "강",
-        "option": " 큐브 닭가슴살_ 청양고추(5개)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.10",
-        "message": "매콤하고 맛있어요",
-        "user_name": "이",
-        "option": "큐브 닭가슴살_ 청양고추(10개)"
+        "date": "2023.10.16",
+        "message": "맛있어요!! 또구매하려고 들어왔어요",
+        "user_name": "김",
+        "option": "닭가슴살 도시락(1세트)"
       }
     ]
   },
@@ -308,86 +304,101 @@
     "id": 19,
     "top": [
       {
-        "product_imgB": "/img/sub/prod010/big01.png",
-        "product_imgS": "/img/sub/prod010/small01.png",
-        "header": "[다노] 통밀 오트 베이글_식단용 건강빵",
-        "summary_info": "간편하게 즐기는 뉴욕 브런치",
-        "price": "8,900원",
+        "product_imgB": "/img/sub/prod019/big01.png",
+        "product_imgS": "/img/sub/prod019/small01.png",
+        "header": "[다노] 저당 곤약 도시락 7종 세트_식단관리 저당 냉동도시락",
+        "summary_info": "탄수화물을 낮춘 도시락",
+        "price": "33,000원",
         "sale_price": "",
         "discount": "",
-        "composition": "5/10/20/36개",
+        "composition": "1/2세트",
         "select": [
-          { "option": "[-6%]통밀 오트 베이글 (5개)" },
-          { "option": "[-7%]통밀 오트 베이글 (10개)(+8,770원)" },
-          { "option": "[-10%]통밀 오트 베이글 (20개)(+25,300원)" },
-          { "option": "[-15%]통밀 오트 베이글 (36개)(+49,240원)" }
+          { "option": "저당 곤약 도시락(1세트)" },
+          { "option": "[-5%] 저당 곤약 도시락(2세트)(+30,000원)" }
         ]
       }
     ],
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod010/detail01.png" },
-          { "image": "/img/sub/prod010/detail02.png" },
-          { "image": "/img/sub/prod010/detail03.png" },
-          { "image": "/img/sub/prod010/detail04.png" },
-          { "image": "/img/sub/prod010/detail05.png" }
+          { "image": "/img/sub/prod019/detail01.png" },
+          { "image": "/img/sub/prod019/detail02.png" },
+          { "image": "/img/sub/prod019/detail03.png" },
+          { "image": "/img/sub/prod019/detail04.png" },
+          { "image": "/img/sub/prod019/detail05.png" },
+          { "image": "/img/sub/prod019/detail06.png" },
+          { "image": "/img/sub/prod019/detail07.png" },
+          { "image": "/img/sub/prod019/detail08.png" },
+          { "image": "/img/sub/prod019/detail09.png" },
+          { "image": "/img/sub/prod019/detail10.png" },
+          { "image": "/img/sub/prod019/detail11.png" },
+          { "image": "/img/sub/prod019/detail12.png" },
+          { "image": "/img/sub/prod019/detail13.png" },
+          { "image": "/img/sub/prod019/detail14.png" },
+          { "image": "/img/sub/prod019/detail15.png" },
+          { "image": "/img/sub/prod019/detail16.png" },
+          { "image": "/img/sub/prod019/detail17.png" },
+          { "image": "/img/sub/prod019/detail18.jpg" },
+          { "image": "/img/sub/prod019/detail19.jpg" },
+          { "image": "/img/sub/prod019/detail20.png" },
+          { "image": "/img/sub/prod019/detail21.png" },
+          { "image": "/img/sub/prod019/detail22.png" }
         ],
-        "info_name": "통밀 오트 베이글",
+        "info_name": "저당 곤약 도시락",
         "keep": "냉동보관",
-        "volume": "1개 110g"
+        "volume": "1개 200g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod010/media01.jpg" },
-      { "media": "/img/sub/prod010/media02.jpg" },
-      { "media": "/img/sub/prod010/media03.jpg" },
-      { "media": "/img/sub/prod010/media04.jpg" },
-      { "media": "/img/sub/prod010/media05.jpg" },
-      { "media": "/img/sub/prod010/media06.jpg" },
-      { "media": "/img/sub/prod010/media07.jpg" },
-      { "media": "/img/sub/prod010/media08.jpg" }
+      { "media": "/img/sub/prod019/media01.jpg" },
+      { "media": "/img/sub/prod019/media02.jpg" },
+      { "media": "/img/sub/prod019/media03.jpg" },
+      { "media": "/img/sub/prod019/media04.jpg" },
+      { "media": "/img/sub/prod019/media05.jpg" },
+      { "media": "/img/sub/prod019/media06.jpg" },
+      { "media": "/img/sub/prod019/media07.jpg" },
+      { "media": "/img/sub/prod019/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.10.27",
-        "message": "빠른배송에 만족하고 항상 맛있게 먹고 있습니다!!^^ 떨어질 때 되면 항상 주문해먹어요!",
-        "user_name": "백",
-        "option": " [-15%]통밀 오트 베이글 (36개)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.21",
-        "message": "식단하고 있어서 오트랑 어니언 주문했는데, 원래 베이글을 좋아하지 않았는데 데워서 바로 먹으니까 생각보다 맛있어서 너무 좋아요",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.28",
+        "message": "냉동실에 쟁여두고 먹어요",
         "user_name": "이",
-        "option": "통밀 오트 베이글 (5개)"
+        "option": " 저당 곤약 도시락(1세트)"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.28",
+        "message": "다이어트 성공하고 있어요",
+        "user_name": "이",
+        "option": " 저당 곤약 도시락(1세트)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.10.17",
-        "message": "인생 베이글입니다. 어디에서도 찾을 수 없는 식감과 고소함과 맛입니다. 많이 구입해 냉동실에 저장해 두고 바쁠 때 식사대용으로 여유로운 시간엔 플레인요거트를 발라 커피와 함께 즐깁니다. 먹을 때 없어지는게 넘 속상합니다 ㅋㅋ",
-        "user_name": "김",
-        "option": " [-15%]통밀 오트 베이글 (36개)"
-      },
-      {
-        "tag_new": "",
-        "tag_repurchase": "",
-        "date": "2023.10.16",
-        "message": "빵먹고 싶을 때 너무 좋아요 근데 조금 질깁니다 ㅠㅠ‧⁺◟( ᵒ̴̶̷̥́ ·̫ ᵒ̴̶̷̣̥̀ ) 그게 제일 아쉬운데 크림치즈에 발라먹으면 짱맛이에요",
-        "user_name": "김",
-        "option": "[-6%]통밀 오트 베이글 (5개)"
+        "date": "2023.10.27",
+        "message": "다이어트 중인데 한끼 식사로 딱입니다.",
+        "user_name": "",
+        "option": " 저당 곤약 도시락(1세트)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.10.14",
-        "message": "빠른배송에 늘 맛있는 제품!",
-        "user_name": "백",
-        "option": " [-15%]통밀 오트 베이글 (36개)"
+        "date": "2023.10.26",
+        "message": "항살 맛있게 먹고있어요!!재구매 추천",
+        "user_name": "강",
+        "option": " 저당 곤약 도시락(1세트)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.24",
+        "message": "매일 뭐먹지 고민안하고 그냥 손에 집히는거 돌려 먹어요~ 간편하고 좋습니당",
+        "user_name": "이",
+        "option": " 저당 곤약 도시락(1세트)"
       }
     ]
   }
