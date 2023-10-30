@@ -25,7 +25,7 @@ function Top() {
   const product = dummy.find((item) => item.id === parseInt(id));
 
   const [selectedOptions, setSelectedOptions] = useState([]);
-  const [quantity, setQuantity] = useState(0);
+  const [optionQuantities, setOptionQuantities] = useState({});
 
   const handleProductSelect = (e) => {
     const selectedValue = e.target.value;
@@ -34,26 +34,42 @@ function Top() {
       setSelectedOptions(
         selectedOptions.filter((option) => option !== selectedValue)
       );
+      const { [selectedOptions]: _, ...restQuantities } = optionQuantities;
+      setOptionQuantities(restQuantities);
     } else {
       // 이미 선택한 옵션이 아니면 추가
       if (!selectedOptions.includes(selectedValue)) {
         setSelectedOptions([...selectedOptions, selectedValue]);
-        setQuantity(1);
+        setOptionQuantities({
+          ...optionQuantities,
+          [selectedValue]: optionQuantities[selectedValue] || 1,
+        });
       } else {
         alert("이미 선택한 옵션입니다.");
       }
     }
   };
 
-  const handleProductDelete = () => {
-    setSelectedOptions([]);
-    setQuantity(0);
+  const handleProductDelete = (deletedOption) => {
+    setSelectedOptions(
+      selectedOptions.filter((option) => option !== deletedOption)
+    );
+    const { [deletedOption]: _, ...restQuantities } = optionQuantities;
+    setOptionQuantities(restQuantities);
   };
 
-  const handleQuantityChange = (event) => {
+  const handleQuantityChange = (event, option) => {
     const newQuantity = parseInt(event.target.value);
-    setQuantity(newQuantity);
+    setOptionQuantities({
+      ...optionQuantities,
+      [option]: newQuantity,
+    });
   };
+
+  const totalQuantity = Object.values(optionQuantities).reduce(
+    (total, quantity) => total + quantity,
+    0
+  );
 
   return (
     <>
@@ -184,13 +200,26 @@ function Top() {
                         <span className="quantity">
                           <input
                             type="number"
-                            value={quantity}
-                            onChange={handleQuantityChange}
+                            value={optionQuantities[selectedOption] || 0}
+                            onChange={(e) =>
+                              handleQuantityChange(e, selectedOption)
+                            }
                           />
                           <a
                             href="javascript:void(0);"
                             className="up"
-                            onClick={() => setQuantity(quantity + 1)}
+                            onClick={() =>
+                              handleQuantityChange(
+                                {
+                                  target: {
+                                    value:
+                                      (optionQuantities[selectedOption] || 0) +
+                                      1,
+                                  },
+                                },
+                                selectedOption
+                              )
+                            }
                           >
                             +
                           </a>
@@ -198,7 +227,20 @@ function Top() {
                             href="javascript:void(0);"
                             className="down"
                             onClick={() =>
-                              setQuantity(quantity - 1 >= 1 ? quantity - 1 : 1)
+                              handleQuantityChange(
+                                {
+                                  target: {
+                                    value:
+                                      (optionQuantities[selectedOption] || 0) -
+                                        1 >=
+                                      1
+                                        ? (optionQuantities[selectedOption] ||
+                                            0) - 1
+                                        : 1,
+                                  },
+                                },
+                                selectedOption
+                              )
                             }
                           >
                             -
@@ -207,14 +249,17 @@ function Top() {
                         <a
                           href="#none"
                           className="delete"
-                          onClick={handleProductDelete}
+                          onClick={() => handleProductDelete(selectedOption)}
                         >
                           <img src="/img/icon/ico_product_delete.svg" alt="" />
                         </a>
                       </td>
                       <td>
                         <span className="right">
-                          <span>{product.top[0].price * quantity}</span>
+                          <span>
+                            {product.top[0].price *
+                              (optionQuantities[selectedOption] || 0)}
+                          </span>
                         </span>
                       </td>
                     </tr>
@@ -228,9 +273,9 @@ function Top() {
               </strong>
               <span className="total">
                 <strong>
-                  <em>{product.top[0].price * quantity}원</em>
+                  <em>{product.top[0].price * totalQuantity}원</em>
                 </strong>{" "}
-                ({quantity}개)
+                ({totalQuantity}개)
               </span>
             </div>
             <div className="delivery_info">
@@ -238,13 +283,12 @@ function Top() {
               <div className="info_value">
                 <p className="type">다노배송(새벽/택배)</p>
                 <p className="value">
-                  새벽배송 : <span className="highlight">오후 5시</span>까지
-                  결제 시 <span className="highlight">내일 오전 7시 전</span>{" "}
-                  도착
+                  새벽배송: <span className="highlight">오후 5시</span>까지 결제
+                  시 <span className="highlight">내일 오전 7시 전</span> 도착
                 </p>
                 <p className="value">
-                  택배배송 : <span className="highlight">오후 5시</span>까지
-                  결제 시 <span className="highlight">오늘</span> 출고
+                  택배배송: <span className="highlight">오후 5시</span>까지 결제
+                  시 <span className="highlight">오늘</span> 출고
                 </p>
               </div>
             </div>

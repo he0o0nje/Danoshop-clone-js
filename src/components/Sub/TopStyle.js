@@ -173,7 +173,7 @@ export const InfoArea = styled.div`
     }
   }
   .total_products {
-    margin-top: 5.9rem;
+    /* margin-top: 5.9rem; */
     table {
       margin: 0;
       tr {
