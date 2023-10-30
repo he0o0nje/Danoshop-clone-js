@@ -12,9 +12,9 @@ import am10 from "../../data/sub/10am.json";
 import pm1 from "../../data/sub/1pm.json";
 import pm3 from "../../data/sub/3pm.json";
 import pm6 from "../../data/sub/6pm.json";
-import pm9 from "../../data/sub/9pm.json";
-import pm11 from "../../data/sub/11pm.json";
-import Try from "../../data/sub/Try.json";
+// import pm9 from "../../data/sub/9pm.json";
+// import pm11 from "../../data/sub/11pm.json";
+// import Try from "../../data/sub/Try.json";
 import { useParams } from "react-router-dom";
 
 function AboutPage() {
@@ -25,9 +25,9 @@ function AboutPage() {
     ...pm1,
     ...pm3,
     ...pm6,
-    ...pm9,
-    ...pm11,
-    ...Try,
+    // ...pm9,
+    // ...pm11,
+    // ...Try,
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
 
