@@ -27,15 +27,6 @@ function Top() {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [optionQuantities, setOptionQuantities] = useState({});
 
-  // 옵션별 가격을 저장하는 객체
-  const optionPrices = {};
-
-  product.top[0].select.forEach((option) => {
-    const priceWithoutWon = option.sale_price || option.price;
-    const optionPrice = parseInt(priceWithoutWon.replace(/[^\d]+/g, ""));
-    optionPrices[option.option] = optionPrice;
-  });
-
   const handleProductSelect = (e) => {
     const selectedValue = e.target.value;
     if (selectedValue === "") {
@@ -74,6 +65,15 @@ function Top() {
       [selectedOption]: newQuantity,
     });
   };
+
+  // 옵션별 가격을 저장하는 객체
+  const optionPrices = {};
+
+  product.top[0].select.forEach((option) => {
+    const priceWithoutWon = option.sale_price || option.price;
+    const optionPrice = parseInt(priceWithoutWon.replace(/[^\d]+/g, ""));
+    optionPrices[option.option] = optionPrice;
+  });
 
   const calculateSubTotal = (option) => {
     const optionQuantity = optionQuantities[option] || 0;
