@@ -167,7 +167,7 @@ export const InfoArea = styled.div`
     }
   }
   .guide_area {
-    margin: 2.5rem 0 1rem;
+    margin: 2.5rem 0 6rem;
     .info {
       float: left;
     }
@@ -210,6 +210,10 @@ export const InfoArea = styled.div`
             padding: 0;
             border: 0.1rem solid #e5e5e5;
             text-align: center;
+          }
+          input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
           }
           a {
             width: 3rem;

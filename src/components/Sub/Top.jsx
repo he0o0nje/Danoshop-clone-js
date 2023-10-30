@@ -8,6 +8,7 @@ import pm9 from "../../data/sub/9pm.json";
 import pm11 from "../../data/sub/11pm.json";
 import Try from "../../data/sub/Try.json";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 function Top() {
   const { id } = useParams();
@@ -23,6 +24,23 @@ function Top() {
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
   console.log(dummy);
+
+  const [selectedOption, setSelectedOption] = useState("");
+  const [quantity, setQuantity] = useState(1);
+
+  const handleProductSelect = (product) => {
+    setSelectedOption(product);
+  };
+
+  const handleQuantityChange = (event) => {
+    const newQuantity = parseInt(event.target.value);
+    setQuantity(newQuantity);
+  };
+
+  const handleProductDelete = () => {
+    setSelectedOption("");
+    alert("선택한 상품이 장바구니에서 삭제되었습니다.");
+  };
 
   return (
     <>
@@ -124,11 +142,21 @@ function Top() {
                 <tr>
                   <th>옵션</th>
                   <td>
-                    <select name="" id="">
+                    <select
+                      name=""
+                      id=""
+                      value={selectedOption}
+                      onChange={(e) => setSelectedOption(e.target.value)}
+                    >
                       <option value="">- [필수] 옵션을 선택해 주세요 -</option>
                       <option value="">-------------------</option>
                       {product.top[0].select.map((item, index) => (
-                        <option key={index}>{item.option}</option>
+                        <option
+                          key={index}
+                          onClick={() => handleProductSelect(product)}
+                        >
+                          {item.option}
+                        </option>
                       ))}
                     </select>
                   </td>
@@ -138,49 +166,68 @@ function Top() {
             <div className="guide_area">
               <p className="info ">(최소주문수량 1개 이상)</p>
             </div>
-            <div className="total_products">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p className="product">
-                        {product.top[0].header}
-                        <br></br> -{" "}
-                        <span>자이언트 브라운라이스소울 프로틴_베리</span>
-                      </p>
-                    </td>
-                    <td>
-                      <span className="quantity">
-                        <input type="text" value={1} />
-                        <a href="#none" className="up">
-                          +
+            {selectedOption && (
+              <div className="total_products">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p className="product">
+                          {product.top[0].header}
+                          <br></br> - <span>{selectedOption}</span>
+                        </p>
+                      </td>
+                      <td>
+                        <span className="quantity">
+                          <input
+                            type="number"
+                            value={quantity}
+                            onChange={handleQuantityChange}
+                          />
+                          <a
+                            href="#none"
+                            className="up"
+                            onClick={() => setQuantity(quantity + 1)}
+                          >
+                            +
+                          </a>
+                          <a
+                            href="#none"
+                            className="down"
+                            onClick={() =>
+                              setQuantity(quantity - 1 >= 1 ? quantity - 1 : 1)
+                            }
+                          >
+                            -
+                          </a>
+                        </span>
+                        <a
+                          href="#none"
+                          className="delete"
+                          onClick={handleProductDelete}
+                        >
+                          <img src="/img/icon/ico_product_delete.svg" alt="" />
                         </a>
-                        <a href="#none" className="down">
-                          -
-                        </a>
-                      </span>
-                      <a href="#none" className="delete">
-                        <img src="img/icon/ico_product_delete.svg" alt="" />
-                      </a>
-                    </td>
-                    <td>
-                      <span className="right">
-                        <span>32,000원</span>
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                      </td>
+                      <td>
+                        <span className="right">
+                          <span>{product.top[0].price * quantity}</span>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            )}
             <div className="total_price">
               <strong className="title">
                 TOTAL <span className="qty">(QUANTITY)</span>
               </strong>
               <span className="total">
                 <strong>
-                  <em>29,000원</em>
+                  <em>{product.top[0].price * quantity}원</em>
                 </strong>{" "}
-                (1개)
+                ({quantity}개)
               </span>
             </div>
             <div className="delivery_info">
