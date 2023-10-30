@@ -27,6 +27,15 @@ function Top() {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [optionQuantities, setOptionQuantities] = useState({});
 
+  // 옵션별 가격을 저장하는 객체
+  const optionPrices = {};
+
+  product.top[0].select.forEach((option) => {
+    const priceWithoutWon = option.sale_price || option.price;
+    const optionPrice = parseInt(priceWithoutWon.replace(/[^\d]+/g, ""));
+    optionPrices[option.option] = optionPrice;
+  });
+
   const handleProductSelect = (e) => {
     const selectedValue = e.target.value;
     if (selectedValue === "") {
@@ -34,7 +43,7 @@ function Top() {
       setSelectedOptions(
         selectedOptions.filter((option) => option !== selectedValue)
       );
-      const { [selectedOptions]: _, ...restQuantities } = optionQuantities;
+      const { [selectedValue]: _, ...restQuantities } = optionQuantities;
       setOptionQuantities(restQuantities);
     } else {
       // 이미 선택한 옵션이 아니면 추가
@@ -50,26 +59,39 @@ function Top() {
     }
   };
 
-  const handleProductDelete = (deletedOption) => {
+  const handleProductDelete = (selectedOption) => {
     setSelectedOptions(
-      selectedOptions.filter((option) => option !== deletedOption)
+      selectedOptions.filter((option) => option !== selectedOption)
     );
-    const { [deletedOption]: _, ...restQuantities } = optionQuantities;
+    const { [selectedOption]: _, ...restQuantities } = optionQuantities;
     setOptionQuantities(restQuantities);
   };
 
-  const handleQuantityChange = (event, option) => {
+  const handleQuantityChange = (event, selectedOption) => {
     const newQuantity = parseInt(event.target.value);
     setOptionQuantities({
       ...optionQuantities,
-      [option]: newQuantity,
+      [selectedOption]: newQuantity,
     });
+  };
+
+  const calculateSubTotal = (option) => {
+    const optionQuantity = optionQuantities[option] || 0;
+    const optionPrice = optionPrices[option] || 0; // 기본값 0으로 설정
+
+    // 가격과 수량을 숫자로 변환하여 곱셈
+    return optionPrice * optionQuantity;
   };
 
   const totalQuantity = Object.values(optionQuantities).reduce(
     (total, quantity) => total + quantity,
     0
   );
+
+  const totalPrice = selectedOptions.reduce((total, option) => {
+    // 각 옵션의 가격과 수량을 숫자로 변환하여 합산
+    return total + calculateSubTotal(option);
+  }, 0);
 
   return (
     <>
@@ -247,7 +269,7 @@ function Top() {
                           </a>
                         </span>
                         <a
-                          href="#none"
+                          href="javascript:void(0);"
                           className="delete"
                           onClick={() => handleProductDelete(selectedOption)}
                         >
@@ -256,10 +278,7 @@ function Top() {
                       </td>
                       <td>
                         <span className="right">
-                          <span>
-                            {product.top[0].price *
-                              (optionQuantities[selectedOption] || 0)}
-                          </span>
+                          <span>{calculateSubTotal(selectedOption)} 원</span>
                         </span>
                       </td>
                     </tr>
@@ -273,7 +292,7 @@ function Top() {
               </strong>
               <span className="total">
                 <strong>
-                  <em>{product.top[0].price * totalQuantity}원</em>
+                  <em>{totalPrice}원</em>
                 </strong>{" "}
                 ({totalQuantity}개)
               </span>
@@ -283,12 +302,13 @@ function Top() {
               <div className="info_value">
                 <p className="type">다노배송(새벽/택배)</p>
                 <p className="value">
-                  새벽배송: <span className="highlight">오후 5시</span>까지 결제
-                  시 <span className="highlight">내일 오전 7시 전</span> 도착
+                  새벽배송 : <span className="highlight">오후 5시</span>까지
+                  결제 시 <span className="highlight">내일 오전 7시 전</span>{" "}
+                  도착
                 </p>
                 <p className="value">
-                  택배배송: <span className="highlight">오후 5시</span>까지 결제
-                  시 <span className="highlight">오늘</span> 출고
+                  택배배송 : <span className="highlight">오후 5시</span>까지
+                  결제 시 <span className="highlight">오늘</span> 출고
                 </p>
               </div>
             </div>
