@@ -11,11 +11,12 @@ import pm6 from "../../data/sub/6pm.json";
 // import pm9 from "../../data/sub/9pm.json";
 // import pm11 from "../../data/sub/11pm.json";
 // import Try from "../../data/sub/Try.json";
-import am7C from "../../data/main/7am.json";
-import am10C from "../../data/main/10am.json";
-import pm1C from "../../data/main/1pm.json";
-import pm3C from "../../data/main/3pm.json";
-import pm6C from "../../data/main/6pm.json";
+
+// import am7C from "../../data/main/7am.json";
+// import am10C from "../../data/main/10am.json";
+// import pm1C from "../../data/main/1pm.json";
+// import pm3C from "../../data/main/3pm.json";
+// import pm6C from "../../data/main/6pm.json";
 
 function Top() {
   const { id } = useParams();
@@ -102,8 +103,8 @@ function Top() {
 
   let dispatch = useDispatch();
 
-  const dummyCart = [...am7C, ...am10C, ...pm1C, ...pm3C, ...pm6C];
-  const productCart = dummyCart.find((item) => item.id === parseInt(id));
+  // const dummyCart = [...am7C, ...am10C, ...pm1C, ...pm3C, ...pm6C];
+  // const productCart = dummyCart.find((item) => item.id === parseInt(id));
 
   // 장바구니에 상품을 추가하는 함수
   const addToCart = () => {
@@ -116,9 +117,9 @@ function Top() {
     // 장바구니에 상품 추가
     dispatch(
       addItem({
-        id: productCart.id,
-        imgurl: productCart.image,
-        name: productCart.name,
+        id: product.id,
+        imgurl: product.image,
+        name: product.name,
         options: selectedOptionsWithQuantities,
       })
     );

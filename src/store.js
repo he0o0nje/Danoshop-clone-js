@@ -1,35 +1,56 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-let user = createSlice({
-  name: "user",
-  initialState: { name: "kim", age: 20 },
-  reducers: {
-    changeName(state) {
-      state.name = "park";
-    },
-    increase(state, action) {
-      state.age += action.payload;
-    },
-  },
-});
-
-export let { changeName, increase } = user.actions;
-
 // Cart 상태 관리
 let cart = createSlice({
   name: "cart",
-  initialState: [],
+  initialState: {
+    items: [
+      {
+        id: "1",
+        image: "/img/main/7am/01.png",
+        name: "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
+        price: "32,000원",
+        sale_price: "29,000원",
+        option: "자이언트 브라운라이스소울 프로틴_베리",
+        quantity: 2,
+      },
+      {
+        id: "2",
+        image: "/img/main/7am/02.webp",
+        name: "[다노] 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
+        price: "7,500원",
+        sale_price: "",
+        option: "브라운라이스소울 프로틴 _베리(3개)",
+        quantity: 1,
+      },
+      {
+        id: "3",
+        image: "/img/main/7am/03.jpg",
+        name: "[다노] 흑임자죽_단백질 프로틴 식사대용죽",
+        price: "9,600원",
+        sale_price: "",
+        option: "흑임자죽(4개)",
+        quantity: 1,
+      },
+    ],
+  },
   reducers: {
     addCount(state, action) {
       let product = state.find((item) => item.id === action.payload);
       if (product) {
         product.count++;
+        product.finalPrice = (
+          parseFloat(product.price.replace(/,/g, "")) * product.count
+        ).toLocaleString();
       }
     },
     decreaseCount(state, action) {
       let product = state.find((item) => item.id === action.payload);
       if (product && product.count > 0) {
         product.count--;
+        product.finalPrice = (
+          parseFloat(product.price.replace(/,/g, "")) * product.count
+        ).toLocaleString();
       } else if (product && product.count === 0) {
         alert("상품이 더 이상 없습니다.");
       }
@@ -38,28 +59,78 @@ let cart = createSlice({
       let product = state.find((item) => item.id === action.payload.id);
       if (product) {
         product.count++;
+        product.finalPrice = (
+          parseFloat(product.price.replace(/,/g, "")) * product.count
+        ).toLocaleString();
       } else {
-        state.push(action.payload);
+        state.items.push({
+          ...action.payload,
+          count: 1,
+          finalPrice: action.payload.price,
+        });
       }
     },
     deleteItem(state, action) {
-      let index = state.findIndex((item) => item.id === action.payload);
-      if (index !== -1) {
-        state.splice(index, 1);
-      }
+      state.items = state.items.filter((item) => item.id !== action.payload);
     },
     sortName(state) {
       state.sort((a, b) => (a.name > b.name ? 1 : -1));
     },
+
+    calculateFinalPrice: (state) => {
+      state.items.forEach((item) => {
+        item.finalPrice = (
+          parseFloat(item.price.replace(/,/g, "")) * item.count
+        ).toLocaleString();
+      });
+    },
   },
 });
 
-export let { addCount, decreaseCount, addItem, deleteItem, sortName } =
-  cart.actions;
+export let {
+  addCount,
+  decreaseCount,
+  addItem,
+  deleteItem,
+  sortName,
+  calculateFinalPrice,
+} = cart.actions;
 
-export default configureStore({
-  reducer: {
-    user: user.reducer,
-    cart: cart.reducer,
+const detail = createSlice({
+  name: "detail",
+  initialState: {},
+  reducers: {
+    setDetail(state, action) {
+      // 액션 페이로드를 기반으로 스토어에 제품 세부 정보를 설정
+      //payload 객체는 상태를 업데이트하는 데 사용됨
+      return { ...state, ...action.payload };
+    },
   },
 });
+
+export const { setDetail } = detail.actions;
+
+const products = createSlice({
+  name: "products",
+  initialState: [],
+  reducers: {
+    setProducts(state, action) {
+      return action.payload;
+    },
+  },
+});
+
+export const { setProducts } = products.actions;
+
+const rootReducer = {
+  // user: user.reducer,
+  cart: cart.reducer,
+  detail: detail.reducer,
+  products: products.reducer,
+};
+
+const store = configureStore({
+  reducer: rootReducer,
+});
+
+export default store;
