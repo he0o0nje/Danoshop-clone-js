@@ -69,8 +69,6 @@ function Cart() {
                 </div>
                 <div className="contents">
                   <div className="sub_title">일반상품(개수)</div>
-                </div>
-                <div>
                   <div className="order_list">
                     <div className="prod_box">
                       <input type="checkbox" className="check" /> &nbsp;
@@ -141,6 +139,10 @@ function Cart() {
                     <span class="total">
                       합계 : <strong>합계</strong>원
                     </span>
+                  </div>
+                  <div className="base_btn">
+                    <button>전체선택</button>
+                    <button>선택삭제</button>
                   </div>
                 </div>
               </div>

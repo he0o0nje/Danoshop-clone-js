@@ -86,27 +86,27 @@ export const CartContainer = styled.div`
           position: relative;
           overflow: hidden;
           cursor: pointer;
-          font-size: 13px;
+          font-size: 1.3rem;
           line-height: 1.3;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
           h3 {
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: bold;
-            padding: 20px 0;
+            padding: 2rem 0;
           }
           &:after {
             content: "";
             position: absolute;
-            top: 25px;
-            right: 5px;
+            top: 2.5rem;
+            right: 0.5rem;
             overflow: hidden;
             display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-left: 1px solid #000;
-            border-bottom: 1px solid #000;
+            width: 1rem;
+            height: 1rem;
+            border-left: 0.1rem solid #000;
+            border-bottom: 0.1rem solid #000;
             transform: rotate(135deg);
             transition: 0.3s ease-out;
           }
@@ -114,265 +114,279 @@ export const CartContainer = styled.div`
         .contents {
           .sub_title {
             background-color: #f9f9f9;
-            font-size: 16px;
+            font-size: 1.6rem;
             display: block;
-            padding: 0 0 0 15px;
-            line-height: 55px;
+            padding-left: 1.5rem;
+            line-height: 5.5rem;
             font-weight: normal;
           }
-        }
-        .order_list {
-          position: relative;
-          border-bottom: 1px solid #e8e8e8;
-          box-sizing: border-box;
-          background: #fff;
-          .prod_box {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 35px 0;
+          .order_list {
             position: relative;
-            input[type="checkbox"] {
-              display: inline-block;
-              margin-right: 10px;
-              width: 24px;
-              height: 24px;
-              border: 1px solid #d9d9d9;
-              background: url(/img/header/checkbox_off.svg) no-repeat center;
-              appearance: none;
-              cursor: pointer;
-            }
-            .thumbnail {
-              width: 120px;
-              height: auto;
-              border: 0;
-              overflow: hidden;
-              margin-right: 15px;
-              img {
-                width: 100%;
-              }
-            }
-            .description {
-              margin-right: 20%;
-              flex: 1;
-              line-height: 18px;
-              font-size: 13px;
-              .name {
-                color: #000;
-              }
-              .price {
-                color: #000;
-                line-height: 20px;
-                .discount {
-                  color: #ef441f;
-                }
-              }
-              .delivery_info {
-                margin-top: 5px;
-                li {
-                  margin: 0 0 3px;
-                  font-size: 12px;
-                  color: #7d7d7d;
-                }
-              }
-            }
-            .option_grp {
-              margin: 35px 0 0 37px;
-              padding: 10px 16px 13px;
-              width: 100%;
-              background-color: #f9f9f9;
-              font-size: 14px;
-              li {
-                margin: 5px 0 0;
-                line-height: 20px;
-                color: #7d7d7d;
-                .name {
-                  position: relative;
-                  padding-left: 15px;
-                  span {
-                    display: inline-block;
-                    margin-right: 10px;
-                    color: #000;
-                  }
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    width: 6px;
-                    height: 6px;
-                    top: 7px;
-                    left: 0;
-                    border-left: 1px solid #000;
-                    border-bottom: 1px solid #000;
-                  }
-                }
-              }
-            }
-            .quantity {
-              padding: 0 0 0 37px;
+            border-bottom: 0.1rem solid #e8e8e8;
+            box-sizing: border-box;
+            background: #fff;
+            .prod_box {
               display: flex;
-              align-items: center;
-              width: 100%;
-              margin: 24px 0;
-              .label {
-                flex: 1;
-                font-size: 14px;
-                color: #7a7a7a;
-              }
-              .change_btn {
-                width: 123px;
-                padding: 0 40px;
-                position: relative;
+              flex-wrap: wrap;
+              padding: 3.5rem 0;
+              position: relative;
+              input[type="checkbox"] {
                 display: inline-block;
-                /* vertical-align: top; */
-                input[type="text"] {
-                  width: 45px;
-                  height: 40px;
-                  line-height: 38px;
-                  margin-left: -1px;
-                  border: 1px solid #e5e5e5;
-                  text-align: center;
-                  appearance: none;
-                  font-size: 13px;
+                margin-right: 1rem;
+                width: 2.4rem;
+                height: 2.4rem;
+                border: 0.1rem solid #d9d9d9;
+                background: url(/img/header/checkbox_off.svg) no-repeat center;
+                appearance: none;
+                cursor: pointer;
+              }
+              .thumbnail {
+                width: 12rem;
+                height: auto;
+                border: 0;
+                overflow: hidden;
+                margin-right: 1.5rem;
+                img {
+                  width: 100%;
                 }
+              }
+              .description {
+                margin-right: 20%;
+                flex: 1;
+                line-height: 1.8rem;
+                font-size: 1.3rem;
+                .name {
+                  color: #000;
+                }
+                .price {
+                  color: #000;
+                  line-height: 2rem;
+                  .discount {
+                    color: #ef441f;
+                  }
+                }
+                .delivery_info {
+                  margin-top: 0.5rem;
+                  li {
+                    margin-bottom: 0.3rem;
+                    font-size: 1.2rem;
+                    color: #7d7d7d;
+                  }
+                }
+              }
+              .option_grp {
+                margin: 3.5rem 0 0 3.7rem;
+                padding: 1rem 1.6rem 1.3rem;
+                width: 100%;
+                background-color: #f9f9f9;
+                font-size: 1.4rem;
+                li {
+                  margin: 0.5rem 0 0;
+                  line-height: 2rem;
+                  color: #7d7d7d;
+                  .name {
+                    position: relative;
+                    padding-left: 1.5rem;
+                    span {
+                      display: inline-block;
+                      margin-right: 1rem;
+                      color: #000;
+                    }
+                    &:before {
+                      content: "";
+                      position: absolute;
+                      width: 0.6rem;
+                      height: 0.6rem;
+                      top: 0.7rem;
+                      left: 0;
+                      border-left: 0.1rem solid #000;
+                      border-bottom: 0.1rem solid #000;
+                    }
+                  }
+                }
+              }
+              .quantity {
+                padding-left: 3.7rem;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin: 2.4rem 0;
+                .label {
+                  flex: 1;
+                  font-size: 1.4rem;
+                  color: #7a7a7a;
+                }
+                .change_btn {
+                  width: 12.3rem;
+                  padding: 0 4rem;
+                  position: relative;
+                  display: inline-block;
+                  /* vertical-align: top; */
+                  input[type="text"] {
+                    width: 4.5rem;
+                    height: 4rem;
+                    line-height: 3.8rem;
+                    margin-left: -0.1rem;
+                    border: 0.1rem solid #e5e5e5;
+                    text-align: center;
+                    appearance: none;
+                    font-size: 1.3rem;
+                  }
+                  button {
+                    width: 4rem;
+                    height: 4rem;
+                    border: 0.1rem solid #e5e5e5;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-indent: 150%;
+                    color: transparent;
+                    font-size: 0.1rem;
+                    line-height: 0.1rem;
+                    &:before {
+                      content: "";
+                      position: absolute;
+                      left: 1.4rem;
+                      top: 50%;
+                      width: 1.1rem;
+                      height: 0.1rem;
+                      background: #000;
+                    }
+                  }
+                  .up {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    &:after {
+                      content: "";
+                      position: absolute;
+                      left: 50%;
+                      top: 50%;
+                      width: 0.1rem;
+                      height: 1.1rem;
+                      margin-top: -0.5rem;
+                      background: #000;
+                    }
+                  }
+                  .down {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                  }
+                }
+                .modify {
+                  height: 4rem;
+                  font-size: 1.4rem;
+                  padding: 1.3rem 2rem;
+                  margin-left: 0.6rem;
+                  line-height: 1.2rem;
+                  border: 0.1rem solid #d6d6d6;
+                }
+              }
+              .sum_price {
+                padding-top: 2.4rem;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin: 0 0 2.4rem 3.7rem;
+                border-top: 0.1rem solid #e8e8e8;
+                font-size: 1.3rem;
+                .label {
+                  flex: 1;
+                  font-size: 1.4rem;
+                  color: #1a1a1a;
+                  text-align: left;
+                }
+                strong {
+                  font-weight: bold;
+                  font-size: 1.6rem;
+                }
+              }
+              .btn_group {
+                position: static;
+                width: 100%;
+                display: flex;
+                margin-left: 3.7rem;
                 button {
-                  width: 40px;
-                  height: 40px;
-                  border: 1px solid #e5e5e5;
-                  overflow: hidden;
-                  white-space: nowrap;
-                  text-indent: 150%;
-                  color: transparent;
-                  font-size: 1px;
-                  line-height: 1px;
-                  &:before {
-                    content: "";
-                    position: absolute;
-                    left: 14px;
-                    top: 50%;
-                    width: 11px;
-                    height: 1px;
-                    background: #000;
-                  }
+                  flex: 1;
+                  height: 5rem;
+                  padding: 1.6rem 2rem;
+                  font-weight: 400;
+                  min-width: 8rem;
+                  font-size: 1.4rem;
+                  line-height: 1.8rem;
+                  border: 0.1rem solid #d6d6d6;
                 }
-                .up {
-                  position: absolute;
-                  right: 0;
-                  top: 0;
-                  &:after {
-                    content: "";
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    width: 1px;
-                    height: 11px;
-                    margin-top: -5px;
-                    background: #000;
-                  }
-                }
-                .down {
-                  position: absolute;
-                  left: 0;
-                  top: 0;
+                button + button {
+                  margin-left: 0.8rem;
                 }
               }
-              .modify {
-                height: 40px;
-                font-size: 14px;
-                padding: 13px 20px;
-                margin-left: 6px;
-                line-height: 12px;
-                border: 1px solid #d6d6d6;
-              }
             }
-            .sum_price {
-              padding: 24px 0 0 0;
-              display: flex;
-              align-items: center;
-              width: 100%;
-              margin: 0 0 24px 37px;
-              border-top: 1px solid #e8e8e8;
-              font-size: 13px;
-              .label {
-                flex: 1;
-                font-size: 14px;
-                color: #1a1a1a;
-                text-align: left;
-              }
-              strong {
-                font-weight: bold;
-                font-size: 16px;
-              }
-            }
-            .btn_group {
-              position: static;
-              width: 100%;
-              display: flex;
-              margin-left: 37px;
-              button {
-                flex: 1;
-                height: 50px;
-                padding: 16px 20px;
-                font-weight: 400;
-                min-width: 80px;
-                font-size: 14px;
-                line-height: 18px;
-                border: 1px solid #d6d6d6;
-              }
-              button + button {
-                margin-left: 8px;
-              }
-            }
-          }
-          .delete_btn {
-            display: block;
-            position: absolute;
-            top: 30px;
-            right: -5px;
-            overflow: hidden;
-            width: 30px;
-            height: 30px;
-            margin: 0 auto;
-            font-size: 1px;
-            line-height: 0;
-            color: transparent;
-            white-space: nowrap;
-            transform: rotate(45deg);
-            &:before {
-              content: "";
+            .delete_btn {
+              display: block;
               position: absolute;
-              top: 4px;
-              right: 14px;
-              width: 1px;
-              height: 21px;
-              background: #b5b5b5;
-              transition: 0.3s ease-out;
+              top: 3rem;
+              right: -0.5rem;
+              overflow: hidden;
+              width: 3rem;
+              height: 3rem;
+              margin: 0 auto;
+              font-size: 0.1rem;
+              line-height: 0;
+              color: transparent;
+              white-space: nowrap;
+              transform: rotate(45deg);
+              &:before {
+                content: "";
+                position: absolute;
+                top: 0.4rem;
+                right: 1.4rem;
+                width: 0.1rem;
+                height: 2.1rem;
+                background: #b5b5b5;
+                transition: 0.3s ease-out;
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                top: 1.4rem;
+                right: 0.4rem;
+                width: 2.1rem;
+                height: 0.1rem;
+                background: #b5b5b5;
+                transition: 0.3s ease-out;
+              }
             }
-            &:after {
-              content: "";
-              position: absolute;
-              top: 14px;
-              right: 4px;
-              width: 21px;
-              height: 1px;
-              background: #b5b5b5;
-              transition: 0.3s ease-out;
+          }
+          .summary {
+            margin-bottom: 4rem;
+            font-size: 1.4rem;
+            padding: 2.4rem;
+            border-bottom: 0.1rem solid #e8e8e8;
+            background: #f9f9f9;
+            .title {
+              margin-bottom: 1rem;
+            }
+            .contents {
+              line-height: 2rem;
+            }
+            .total {
+              display: block;
+              margin-top: 0.5rem;
             }
           }
-        }
-        .summary {
-          margin: 0 0 40px 0;
-          font-size: 14px;
-          padding: 24px;
-          border-bottom: 1px solid #e8e8e8;
-          background: #f9f9f9;
-          .title {
-            margin-bottom: 10px;
-          }
-          .contents {
-            line-height: 20px;
-          }
-          .total {
-            display: block;
-            margin-top: 5px;
+          .base_btn {
+            float: left;
+            text-align: left;
+            button {
+              height: 5rem;
+              padding: 1.7rem 2rem;
+              line-height: 1;
+              font-size: 1.4rem;
+              border: 0.1rem solid #d6d6d6;
+            }
+            button + button {
+              margin-left: 1rem;
+            }
           }
         }
       }
