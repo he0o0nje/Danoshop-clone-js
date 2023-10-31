@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../store.js";
-import { Button } from "react-bootstrap";
 import * as style from "./TopStyle";
 import am7 from "../../data/sub/7am.json";
 import am10 from "../../data/sub/10am.json";
@@ -134,10 +133,10 @@ function Top() {
       <style.HeadCategory>
         <ol>
           <li>
-            <a href="#none">홈</a>
+            <Link to="">홈</Link>
           </li>
           <li>
-            <a href="#none">다노절 이벤트</a>
+            <Link to="">다노절 이벤트</Link>
           </li>
         </ol>
       </style.HeadCategory>
@@ -145,9 +144,9 @@ function Top() {
         <style.DetailArea>
           <style.ImgArea>
             <div className="prod_img">
-              <a href="#none">
+              <Link to="">
                 <img src={product.top[0].product_imgB} alt="" />
-              </a>
+              </Link>
             </div>
             <div className="list_img">
               <ul>
@@ -263,8 +262,7 @@ function Top() {
                               handleQuantityChange(e, selectedOption)
                             }
                           />
-                          <a
-                            href="javascript:void(0);"
+                          <button
                             className="up"
                             onClick={() =>
                               handleQuantityChange(
@@ -280,9 +278,8 @@ function Top() {
                             }
                           >
                             +
-                          </a>
-                          <a
-                            href="javascript:void(0);"
+                          </button>
+                          <button
                             className="down"
                             onClick={() =>
                               handleQuantityChange(
@@ -302,15 +299,14 @@ function Top() {
                             }
                           >
                             -
-                          </a>
+                          </button>
                         </span>
-                        <a
-                          href="javascript:void(0);"
+                        <button
                           className="delete"
                           onClick={() => handleProductDelete(selectedOption)}
                         >
                           <img src="/img/icon/ico_product_delete.svg" alt="" />
-                        </a>
+                        </button>
                       </td>
                       <td>
                         <span className="right">
@@ -356,7 +352,6 @@ function Top() {
                 <button
                   className="btn_normal sizeL action_cart"
                   onClick={addToCart}
-                  variant="primary"
                 >
                   장바구니
                 </button>

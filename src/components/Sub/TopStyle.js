@@ -215,7 +215,7 @@ export const InfoArea = styled.div`
             -webkit-appearance: none;
             margin: 0;
           }
-          a {
+          button {
             width: 3rem;
             height: 3rem;
             border: 0.1rem solid #e5e5e5;

@@ -34,6 +34,42 @@ export const Cart = styled.div`
       }
     }
   }
+  .title_area {
+    max-width: 1420px;
+    width: 92%;
+    margin: 8.3rem auto 4rem;
+    text-align: center;
+    h2 {
+      font-weight: 500;
+      font-size: 3.2rem;
+      color: #1a1a1a;
+    }
+  }
+  .step_area {
+    max-width: 1420px;
+    width: 92%;
+    margin: 5rem auto 5rem;
+    text-align: center;
+    li {
+      display: inline-block;
+      font-size: 1.4rem;
+      color: #8a8a8a;
+      &:not(:last-child):after {
+        content: "";
+        display: inline-block;
+        width: 0.8rem;
+        height: 0.8rem;
+        vertical-align: middle;
+        border-left: 0.1rem solid #e0e0e0;
+        border-bottom: 0.1rem solid #e0e0e0;
+        transform: rotate(-135deg);
+        margin: -0.2rem 3.2rem 0;
+      }
+    }
+    .selected {
+      color: #1a1a1a;
+    }
+  }
 `;
 
 export const Help = styled.div`
@@ -53,9 +89,9 @@ export const Help = styled.div`
     border: 0.1rem solid #e5e5e5;
     border-top: 0.2rem solid #1a1a1a;
     h4 {
-      margin: 22px 0 -4px;
+      margin: 2.2rem 0 -0.4rem;
       color: #000;
-      font-size: 12px;
+      font-size: 1.2rem;
       font-weight: normal;
       &:first-child {
         margin-top: 0;
@@ -66,14 +102,14 @@ export const Help = styled.div`
       li {
         padding-left: 1.2rem;
         color: #6d6d6d;
-        font-size: 12px;
-        line-height: 21px;
+        font-size: 1.2rem;
+        line-height: 2.1rem;
         &::before {
           content: "";
           display: inline-block;
-          width: 3px;
-          height: 3px;
-          margin: 7px 9px 0 -12px;
+          width: 0.3rem;
+          height: 0.3rem;
+          margin: 0.7rem 0.9rem 0 -1.2rem;
           vertical-align: top;
           border-radius: 50%;
           background: #6d6d6d;

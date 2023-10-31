@@ -19,28 +19,16 @@ function Cart() {
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  const smallProductStyle = {
-    border: "1px solid #ddd",
-    width: "100px",
-    height: "80px",
-    cursor: "pointer",
-  };
-
-  const textVerticalAlign = {
-    verticalAlign: "middle",
-    textAlign: "center",
-  };
-
   const handleSortByName = () => {
     dispatch(sortName());
   };
 
-  function getImgExtension(imageUrl) {
-    if (imageUrl.endsWith(".webp")) {
+  function getImgExtension(image) {
+    if (image.endsWith(".webp")) {
       return ".webp";
-    } else if (imageUrl.endsWith(".png")) {
+    } else if (image.endsWith(".png")) {
       return ".png";
-    } else if (imageUrl.endsWith(".jpg")) {
+    } else if (image.endsWith(".jpg")) {
       return ".jpg";
     }
     // 여기에 다른 이미지 확장자에 대한 처리를 추가할 수 있습니다.
@@ -62,9 +50,16 @@ function Cart() {
             </li>
           </ol>
         </div>
-        <h5 style={{ padding: "50px" }}>
-          {state.user.name} {state.user.age}의 장바구니
-        </h5>
+        <div className="title_area">
+          <h2>장바구니</h2>
+        </div>
+        <div className="step_area">
+          <ol className="step">
+            <li className="selected">1. 장바구니</li>
+            <li>2. 주문서작성</li>
+            <li>3. 주문완료</li>
+          </ol>
+        </div>
         <Table>
           <thead>
             <tr>
@@ -78,7 +73,7 @@ function Cart() {
           <tbody>
             {state.cart.map((product, index) => (
               <tr key={product.id}>
-                <td style={textVerticalAlign}>{product.id}</td>
+                <td>{product.id}</td>
                 <td>
                   <Link to={`/detail/${product.id}`}>
                     <img
@@ -86,14 +81,13 @@ function Cart() {
                         product.image
                       )}`}
                       alt=""
-                      style={smallProductStyle}
                     />
                   </Link>
                 </td>
 
-                <td style={textVerticalAlign}>{product.name}</td>
-                <td style={textVerticalAlign}>{product.count}</td>
-                <td style={textVerticalAlign}>
+                <td>{product.name}</td>
+                <td>{product.count}</td>
+                <td>
                   <Button
                     onClick={() => {
                       // 상품 수량 증가 액션을 디스패치
