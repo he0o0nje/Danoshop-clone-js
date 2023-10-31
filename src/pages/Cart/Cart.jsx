@@ -60,7 +60,95 @@ function Cart() {
             <li>3. 주문완료</li>
           </ol>
         </div>
-        <Table>
+        <style.CartContainer>
+          <div className="cart">
+            <div className="cart_prod">
+              <div className="inner">
+                <div className="title">
+                  <h3>장바구니 상품</h3>
+                </div>
+                <div className="contents">
+                  <div className="sub_title">일반상품(개수)</div>
+                </div>
+                <div>
+                  <div className="order_list">
+                    <div className="prod_box">
+                      <input type="checkbox" className="check" /> &nbsp;
+                      <div className="thumbnail">
+                        <Link to="">
+                          <img src="" alt="" />
+                          이미지
+                        </Link>
+                      </div>
+                      <div className="description">
+                        <strong>
+                          <Link to="" className="name">
+                            이름
+                          </Link>
+                        </strong>
+                        <ul className="price">
+                          <li>
+                            <strong>가격</strong>원
+                          </li>
+                          <li>
+                            <span className="discount">할인</span>원
+                          </li>
+                        </ul>
+                        <ul className="delivery_info">
+                          <li>
+                            배송 : <span>3,500원</span> [조건] / 기본배송
+                          </li>
+                          -
+                        </ul>
+                      </div>
+                      <ul className="option_grp">
+                        <li>
+                          <div className="name">
+                            <span>[옵션: ]</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div className="quantity">
+                        <span className="label">수량</span>
+                        <div>
+                          <span className="change_btn">
+                            <input type="text" value="1" />
+                            <button className="up">+</button>
+                            <button className="down">-</button>
+                          </span>
+                          <button className="modify">변경</button>
+                        </div>
+                      </div>
+                      <div className="sum_price">
+                        <span className="label">주문금액</span>
+                        <strong>가격</strong>원
+                      </div>
+                      <div className="btn_group">
+                        <button>관심상품</button>
+                        <button>주문하기</button>
+                      </div>
+                    </div>
+                    <button className="delete_btn">삭제</button>
+                  </div>
+                  <div className="summary">
+                    <div class="title">
+                      <h5>[기본배송]</h5>
+                    </div>
+                    <div className="contents">
+                      상품구매금액 <strong>가격</strong> + 배송비 3,500
+                      <span className="sale"> - 상품할인금액 금액</span>
+                    </div>
+                    <span class="total">
+                      합계 : <strong>합계</strong>원
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="cart_total"></div>
+          </div>
+        </style.CartContainer>
+        {/* <Table>
           <thead>
             <tr>
               <th>id</th>
@@ -124,7 +212,7 @@ function Cart() {
         </Table>
         <Button variant="outline-primary" onClick={handleSortByName}>
           이름순으로 정렬
-        </Button>
+        </Button> */}
         <style.Help>
           <h3>이용안내</h3>
           <div class="inner">
