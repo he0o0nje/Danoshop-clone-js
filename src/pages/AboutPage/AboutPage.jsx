@@ -35,14 +35,12 @@ function AboutPage() {
     return <style.Alert404>제품을 찾을 수 없습니다.</style.Alert404>;
   }
 
-  const isAboutHeader = true;
-
   window.scroll({ top: 0, behavior: "instant" });
 
   return (
     <>
       <TopBanner />
-      <Header isAboutHeader={isAboutHeader} />
+      <Header isAboutHeader={true} />
       <style.Sub>
         <Top />
         <style.DetailSec>

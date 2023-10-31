@@ -61,15 +61,15 @@ function Header({ isAboutHeader }) {
               </Link>
             </style.LogoWrap>
             <style.MypageWrap>
-              <a href="/">
+              <Link to="/">
                 <img src="/img/header/mypage1.svg" alt="" />
-              </a>
-              <a href="/">
+              </Link>
+              <Link to="/cart">
                 <img src="/img/header/mypage2.svg" alt="" />
-              </a>
-              <a href="/">
+              </Link>
+              <Link to="/">
                 <img src="/img/header/mypage3.svg" alt="" />
-              </a>
+              </Link>
             </style.MypageWrap>
             <style.BotCategory>
               <ul>

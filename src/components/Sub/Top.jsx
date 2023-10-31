@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../store.js";
+import { Button } from "react-bootstrap";
 import * as style from "./TopStyle";
 import am7 from "../../data/sub/7am.json";
 import am10 from "../../data/sub/10am.json";
@@ -9,6 +12,11 @@ import pm6 from "../../data/sub/6pm.json";
 // import pm9 from "../../data/sub/9pm.json";
 // import pm11 from "../../data/sub/11pm.json";
 // import Try from "../../data/sub/Try.json";
+import am7C from "../../data/main/7am.json";
+import am10C from "../../data/main/10am.json";
+import pm1C from "../../data/main/1pm.json";
+import pm3C from "../../data/main/3pm.json";
+import pm6C from "../../data/main/6pm.json";
 
 function Top() {
   const { id } = useParams();
@@ -92,6 +100,34 @@ function Top() {
     // 각 옵션의 가격과 수량을 숫자로 변환하여 합산
     return total + calculateSubTotal(option);
   }, 0);
+
+  let dispatch = useDispatch();
+
+  const dummyCart = [...am7C, ...am10C, ...pm1C, ...pm3C, ...pm6C];
+  const productCart = dummyCart.find((item) => item.id === parseInt(id));
+
+  // 장바구니에 상품을 추가하는 함수
+  const addToCart = () => {
+    // 선택한 옵션들과 수량을 배열로 만들기
+    const selectedOptionsWithQuantities = selectedOptions.map((option) => ({
+      option,
+      quantity: optionQuantities[option] || 0,
+    }));
+
+    // 장바구니에 상품 추가
+    dispatch(
+      addItem({
+        id: productCart.id,
+        imgurl: productCart.image,
+        name: productCart.name,
+        options: selectedOptionsWithQuantities,
+      })
+    );
+
+    // 장바구니에 상품을 추가한 후 선택된 옵션 초기화
+    setSelectedOptions([]);
+    setOptionQuantities({});
+  };
 
   return (
     <>
@@ -314,8 +350,14 @@ function Top() {
             </div>
             <div className="action_btn_wrap">
               <div className="action_btn">
-                <button className="btn_submit sizeL">구매하기</button>
-                <button className="btn_normal sizeL action_cart">
+                <button className="btn_submit sizeL" onClick={addToCart}>
+                  구매하기
+                </button>
+                <button
+                  className="btn_normal sizeL action_cart"
+                  onClick={addToCart}
+                  variant="primary"
+                >
                   장바구니
                 </button>
                 <button className="btn_normal sizeL action_wish">
