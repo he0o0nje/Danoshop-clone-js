@@ -19,22 +19,22 @@ function HomePage() {
 
   return (
     <>
-      <TopBanner></TopBanner>
-      <Header></Header>
+      <TopBanner />
+      <Header />
       <style.Main>
-        <Banner></Banner>
-        <Am7></Am7>
-        <Am10></Am10>
-        <FirstBenefit></FirstBenefit>
-        <Pm1></Pm1>
-        <Pm3></Pm3>
-        <Pm6></Pm6>
-        <Pm9></Pm9>
-        <Pm11></Pm11>
-        <TryEat></TryEat>
-        <BotBanner></BotBanner>
+        <Banner />
+        <Am7 />
+        <Am10 />
+        <FirstBenefit />
+        <Pm1 />
+        <Pm3 />
+        <Pm6 />
+        <Pm9 />
+        <Pm11 />
+        <TryEat />
+        <BotBanner />
       </style.Main>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }

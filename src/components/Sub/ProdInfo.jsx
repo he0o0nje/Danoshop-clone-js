@@ -5,7 +5,7 @@ function ProdInfo() {
   return (
     <>
       <style.ProdInfo>
-        <DetailTab04></DetailTab04>
+        <DetailTab04 />
         <style.DetailGuide>
           <div className="info_box">
             <div className="title">

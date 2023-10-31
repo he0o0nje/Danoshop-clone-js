@@ -26,7 +26,7 @@ function ProdDetail() {
 
   return (
     <>
-      <DetailTab01></DetailTab01>
+      <DetailTab01 />
       <style.ProdDetail
         {...(product.detail[0].info_name ? { show: true } : {})}
       >

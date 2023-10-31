@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/detail/:id" element={<AboutPage />} />
       </Routes>
-      <style.ShadowLayer></style.ShadowLayer>
+      <style.ShadowLayer />
     </>
   );
 }

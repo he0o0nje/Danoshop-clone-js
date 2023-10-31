@@ -41,18 +41,18 @@ function AboutPage() {
 
   return (
     <>
-      <TopBanner></TopBanner>
-      <Header isAboutHeader={isAboutHeader}></Header>
+      <TopBanner />
+      <Header isAboutHeader={isAboutHeader} />
       <style.Sub>
-        <Top></Top>
+        <Top />
         <style.DetailSec>
-          <ProdDetail></ProdDetail>
-          <ProdReview></ProdReview>
-          <ProdQnA></ProdQnA>
-          <ProdInfo></ProdInfo>
+          <ProdDetail />
+          <ProdReview />
+          <ProdQnA />
+          <ProdInfo />
         </style.DetailSec>
       </style.Sub>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }

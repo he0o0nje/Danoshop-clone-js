@@ -5,7 +5,7 @@ function ProdQnA() {
   return (
     <>
       <style.ProdQnA>
-        <DetailTab03></DetailTab03>
+        <DetailTab03 />
         <div>
           <style.BoardTit>
             <h2>Q&amp;A</h2>

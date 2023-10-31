@@ -27,7 +27,7 @@ function ProdReview() {
   return (
     <>
       <style.ProdReview>
-        <DetailTab02></DetailTab02>
+        <DetailTab02 />
         <style.ReviewWrap>
           <div className="header">
             <div className="title_wrap">
