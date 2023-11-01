@@ -143,9 +143,6 @@ function Top() {
   const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
 
   function SendToCart(item) {
-    console.log("장바구니 추가 상품:", item);
-    console.log("add", addItem(product));
-
     dispatch(
       addItem({
         id: product.id,
@@ -156,6 +153,9 @@ function Top() {
         options: optionQuantities,
       })
     );
+
+    console.log("장바구니 추가 상품:", item);
+    console.log("add", addItem(product));
   }
 
   useEffect(() => {

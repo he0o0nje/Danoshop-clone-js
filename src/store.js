@@ -56,20 +56,20 @@ let cart = createSlice({
       }
     },
     addItem(state, action) {
-      // let product = state.items.find((item) => item.id === action.payload.id);
-      // if (product) {
-      //   product.count++;
-      //   product.finalPrice = (
-      //     parseFloat(product.price.replace(/,/g, "")) * product.count
-      //   ).toLocaleString();
-      // } else {
-      //   state.items.push({
-      //     ...action.payload,
-      //     count: 1,
-      //     finalPrice: action.payload.price,
-      //   });
-      // }
-      state.items.push(action.payload);
+      let product = state.items.find((item) => item.id === action.payload.id);
+      if (product) {
+        product.count++;
+        product.finalPrice = (
+          parseFloat(product.price.replace(/,/g, "")) * product.count
+        ).toLocaleString();
+      } else {
+        state.items.push({
+          ...action.payload,
+          count: 1,
+          finalPrice: action.payload.price,
+        });
+      }
+      // state.items.push(action.payload);
     },
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
