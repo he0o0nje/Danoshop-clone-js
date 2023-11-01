@@ -25,7 +25,7 @@ function Cart() {
     dispatch(calculateFinalPrice());
   }, [dispatch, items]);
 
-  // 체크박스 전체선택/해제 구현
+  // 체크박스 전체선택/해제
   const [selectAll, setSelectAll] = useState(false);
 
   const handleAllCheck = () => {
@@ -89,7 +89,7 @@ function Cart() {
   };
 
   function getImgExtension(image) {
-    if (!items.image) {
+    if (!image) {
       return "";
     }
 
@@ -102,6 +102,20 @@ function Cart() {
     }
     return ".jpg";
   }
+
+  const totalDiscount = items
+    .filter((item) => item.sale_price)
+    .reduce((total, item) => {
+      const price = parseInt(
+        item.price.replace(/원/g, "").replace(/,/g, ""),
+        10
+      );
+      const salePrice = parseInt(
+        item.sale_price.replace(/원/g, "").replace(/,/g, ""),
+        10
+      );
+      return total + (price - salePrice);
+    }, 0);
 
   return (
     <>
@@ -333,13 +347,13 @@ function Cart() {
                       </div>
                     </div>
                   </div>
-                  {items.sale_price && (
+                  {totalDiscount > 0 && (
                     <div className="benefit_price">
                       <div class="heading">
                         <h4 class="title">총 할인금액</h4>
                         <div class="data">
                           <strong>
-                            <span>0</span>
+                            <span>{totalDiscount.toLocaleString()}</span>
                           </strong>
                           원
                         </div>
@@ -347,7 +361,7 @@ function Cart() {
                       <div className="list">
                         <div class="item">
                           <h5 class="title">기간할인</h5>
-                          <div class="data">0원</div>
+                          <div class="data">3000원</div>
                         </div>
                       </div>
                     </div>
