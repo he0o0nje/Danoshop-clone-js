@@ -6,9 +6,9 @@ import Footer from "../../components/Footer/Footer";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import store, {
-  deleteItem,
   addCount,
   decreaseCount,
+  deleteItem,
   calculateFinalPrice,
 } from "../../store";
 import { Link } from "react-router-dom";
@@ -147,7 +147,13 @@ function Cart() {
                     {items.map((product, index) => (
                       <div className="order_list" key={index}>
                         <div className="prod_box">
-                          <input type="checkbox" className="check" /> &nbsp;
+                          <input
+                            type="checkbox"
+                            className="check"
+                            checked={checkboxes[product.id]}
+                            onChange={() => handleSingleCheck(product.id)}
+                          />{" "}
+                          &nbsp;
                           <div className="thumbnail">
                             <Link to={`/detail/${product.id}`}>
                               <img
@@ -169,7 +175,7 @@ function Cart() {
                             </strong>
                             <ul className="price">
                               <li>
-                                <strong>{product.price}</strong>
+                                <strong>{product.price}</strong>원
                               </li>
                               <li>
                                 <span className="discount">
@@ -250,7 +256,11 @@ function Cart() {
                             .reduce((total, item) => {
                               return (
                                 total +
-                                parseFloat(item.finalPrice.replace(/,/g, ""))
+                                (item.finalPrice
+                                  ? parseFloat(
+                                      item.finalPrice.replace(/,/g, "")
+                                    )
+                                  : 0)
                               );
                             }, 0)
                             .toLocaleString()}

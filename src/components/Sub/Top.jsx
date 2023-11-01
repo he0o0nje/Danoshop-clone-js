@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { addItem } from "../../store";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  setDetail,
+  setProducts,
+  addItem,
+  addSelectedOption,
+  removeSelectedOption,
+  clearSelectedOptions,
+} from "../../store";
 import * as style from "./TopStyle";
 import am7 from "../../data/sub/7am.json";
 import am10 from "../../data/sub/10am.json";
@@ -42,12 +49,14 @@ function Top() {
       setSelectedOptions(
         selectedOptions.filter((option) => option !== selectedValue)
       );
+      dispatch(removeSelectedOption(selectedValue));
       const { [selectedValue]: _, ...restQuantities } = optionQuantities;
       setOptionQuantities(restQuantities);
     } else {
       // 이미 선택한 옵션이 아니면 추가
       if (!selectedOptions.includes(selectedValue)) {
         setSelectedOptions([...selectedOptions, selectedValue]);
+        dispatch(addSelectedOption(selectedValue));
         setOptionQuantities({
           ...optionQuantities,
           [selectedValue]: optionQuantities[selectedValue] || 1,
@@ -79,7 +88,7 @@ function Top() {
 
   product.top[0].select.forEach((option) => {
     const priceWithoutWon = option.sale_price || option.price;
-    const optionPrice = parseInt(priceWithoutWon.replace(/[^\d]+/g, ""));
+    const optionPrice = parseInt(priceWithoutWon.replace(/,/g, ""));
     optionPrices[option.option] = optionPrice;
   });
 
@@ -107,27 +116,43 @@ function Top() {
   // const productCart = dummyCart.find((item) => item.id === parseInt(id));
 
   // 장바구니에 상품을 추가하는 함수
-  const addToCart = () => {
-    // 선택한 옵션들과 수량을 배열로 만들기
-    const selectedOptionsWithQuantities = selectedOptions.map((option) => ({
-      option,
-      quantity: optionQuantities[option] || 0,
-    }));
+  // const addToCart = () => {
+  //   // 선택한 옵션들과 수량을 배열로 만들기
+  //   const selectedOptionsWithQuantities = selectedOptions.map((option) => ({
+  //     option,
+  //     quantity: optionQuantities[option] || 0,
+  //   }));
 
-    // 장바구니에 상품 추가
-    dispatch(
-      addItem({
-        id: product.id,
-        imgurl: product.image,
-        name: product.name,
-        options: selectedOptionsWithQuantities,
-      })
-    );
+  //   // 장바구니에 상품 추가
+  //   dispatch(
+  //     addItem({
+  //       id: product.id,
+  //       imgurl: product.image,
+  //       name: product.name,
+  //       options: selectedOptionsWithQuantities,
+  //     })
+  //   );
 
-    // 장바구니에 상품을 추가한 후 선택된 옵션 초기화
-    setSelectedOptions([]);
-    setOptionQuantities({});
-  };
+  //   // 장바구니에 상품을 추가한 후 선택된 옵션 초기화
+  //   setSelectedOptions([]);
+  //   setOptionQuantities({});
+  // };
+
+  const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
+  const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
+
+  function SendToCart(item) {
+    console.log("장바구니 추가 상품:", item);
+    dispatch(addItem(item));
+    // ActivePop();
+  }
+
+  useEffect(() => {
+    // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
+    dispatch(setProducts());
+    // item이 아직 설정되지 않았을 때만 setDetail을 호출
+    dispatch(setDetail(item));
+  }, []);
 
   return (
     <>
@@ -347,12 +372,15 @@ function Top() {
             </div>
             <div className="action_btn_wrap">
               <div className="action_btn">
-                <button className="btn_submit sizeL" onClick={addToCart}>
+                <button
+                  className="btn_submit sizeL"
+                  onClick={() => SendToCart(product)}
+                >
                   구매하기
                 </button>
                 <button
                   className="btn_normal sizeL action_cart"
-                  onClick={addToCart}
+                  onClick={() => SendToCart(product)}
                 >
                   장바구니
                 </button>

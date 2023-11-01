@@ -2,9 +2,11 @@
   {
     "id": 7,
     "image": "img/main/1pm/01.webp",
+    "sticker": "",
     "name": "[다노] 오븐치킨 6종_식단관리 닭가슴살",
     "composition": "3/10/20개",
-    "price": "8,100원"
+    "price": "8,100원",
+    "sale_price": ""
   },
   {
     "id": 8,
@@ -18,16 +20,20 @@
   {
     "id": 9,
     "image": "img/main/1pm/03.png",
+    "sticker": "",
     "name": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
     "composition": "5/10/20/30개",
-    "price": "10,000원"
+    "price": "10,000원",
+    "sale_price": ""
   },
   {
     "id": 10,
     "image": "img/main/1pm/04.png",
+    "sticker": "",
     "name": "[다노] 통밀 오트 베이글_식단용 건강빵",
     "composition": "5/10/20/36개",
-    "price": "8,900원"
+    "price": "8,900원",
+    "sale_price": ""
   },
   {
     "id": 11,

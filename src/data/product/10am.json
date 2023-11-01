@@ -1,0 +1,224 @@
+[
+  {
+    "id": 5,
+    "image": "img/main/10am/01.png",
+    "sticker": "",
+    "name": "[다노] 고백펌킨티_100% 국산 늙은 호박차 티백",
+    "composition": "1팩/2팩/3팩",
+    "price": "12,000원",
+    "sale_price": "",
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod005/big01.png",
+        "product_imgS": "/img/sub/prod005/small01.png",
+        "header": "[다노] 고백펌킨티_100% 국산 늙은 호박차 티백",
+        "summary_info": "차는 짙어지고 나는 가벼워지고",
+        "price": "12,000원",
+        "sale_price": "",
+        "discount": "",
+        "composition": "1팩/2팩/3팩",
+        "select": [
+          {
+            "option": "고백펌킨티(1팩)",
+            "price": "12,000원",
+            "sale_price": ""
+          },
+          {
+            "option": "[-5%]고백펌킨티(2팩)(+10,800원)",
+            "price": "22,800원",
+            "sale_price": ""
+          },
+          {
+            "option": "[-10%]고백펌킨티(3팩)(+20,400원)",
+            "price": "32,400원",
+            "sale_price": ""
+          }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod005/detail01.png" },
+          { "image": "/img/sub/prod005/detail02.png" },
+          { "image": "/img/sub/prod005/detail03.png" },
+          { "image": "/img/sub/prod005/detail04.png" },
+          { "image": "/img/sub/prod005/detail05.gif" },
+          { "image": "/img/sub/prod005/detail06.png" },
+          { "image": "/img/sub/prod005/detail07.png" },
+          { "image": "/img/sub/prod005/detail08.png" },
+          { "image": "/img/sub/prod005/detail09.png" }
+        ],
+        "info_name": "",
+        "keep": "",
+        "volume": ""
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod005/media01.jpg" },
+      { "media": "/img/sub/prod005/media02.jpg" },
+      { "media": "/img/sub/prod005/media03.jpg" },
+      { "media": "/img/sub/prod005/media04.jpg" },
+      { "media": "/img/sub/prod005/media05.jpg" },
+      { "media": "/img/sub/prod005/media06.jpg" },
+      { "media": "/img/sub/prod005/media07.jpg" },
+      { "media": "/img/sub/prod005/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.15",
+        "message": "호박티 없으면 못살아요 히힛 매일 마시니까 너무 좋아요 항상 회사에 다닐때 호박티물만 가지고 다녀요 대박나세용 ~~^^*👍",
+        "user_name": "박",
+        "option": "[-10%]고백펌킨티(3팩)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.9.30",
+        "message": "호박차좋아해서 여러 브랜드꺼 많이 마셨는데 역시 다노가 최고네요! 시큼한맛없이 고소하고 맛있어요! 달지않고 배부르지않은 호박죽 마시는 느낌이라 하루종일 행복합니다 ㅎㅎ",
+        "user_name": "하",
+        "option": "고백펌킨티(4팩) +쇼핑백 동봉"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.9.25",
+        "message": "너무너무 애정하는 호박티. 다노가 제일 좋아요.",
+        "user_name": "김",
+        "option": "고백펌킨티(1팩)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.9.21",
+        "message": "매일 아침 회사에서 즐겨마셔요!",
+        "user_name": "권",
+        "option": "고백펌킨티(4팩) +쇼핑백 동봉"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.9.18",
+        "message": "호박차 다른곳에서 많이 사봤지만 다노가 가장 진하게 많이 우려져서 너무너무 좋아요 호박차는 다노로 정착했어요!!! 주변사람들에게 선물하기도 고퀄이라 완전강추!!!!",
+        "user_name": "양",
+        "option": "고백펌킨티(4팩) +쇼핑백 동봉"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "img/main/10am/02.webp",
+    "sticker": "",
+    "name": "[다노] 클린티 2종",
+    "composition": "1팩/2팩",
+    "price": "14,900원",
+    "sale_price": "",
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod006/big01.webp",
+        "product_imgS": "/img/sub/prod006/small01.png",
+        "header": "[다노] 클린티 2종",
+        "summary_info": "하루 2잔 클린해지는 습관",
+        "price": "14,900원",
+        "sale_price": "",
+        "discount": "",
+        "composition": "1팩/2팩",
+        "select": [
+          {
+            "option": "클린 모닝티 (wake up)",
+            "price": "14,900원",
+            "sale_price": ""
+          },
+          {
+            "option": "클린 힐링티 (peace)",
+            "price": "14,900원",
+            "sale_price": ""
+          },
+          {
+            "option": "[-10%]클린티 세트_2개 (2종*1개씩)(+11,920원)",
+            "price": "26,820원",
+            "sale_price": ""
+          }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod006/detail01.png" },
+          { "image": "/img/sub/prod006/detail02.png" },
+          { "image": "/img/sub/prod006/detail03.png" },
+          { "image": "/img/sub/prod006/detail04.png" },
+          { "image": "/img/sub/prod006/detail05.png" },
+          { "image": "/img/sub/prod006/detail06.png" },
+          { "image": "/img/sub/prod006/detail07.png" },
+          { "image": "/img/sub/prod006/detail08.png" },
+          { "image": "/img/sub/prod006/detail09.png" },
+          { "image": "/img/sub/prod006/detail10.mp4" },
+          { "image": "/img/sub/prod006/detail11.png" },
+          { "image": "/img/sub/prod006/detail12.png" },
+          { "image": "/img/sub/prod006/detail13.png" },
+          { "image": "/img/sub/prod006/detail14.png" },
+          { "image": "/img/sub/prod006/detail15.png" }
+        ],
+        "info_name": "클린티 2종 (Wake up, Peace)",
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "Wake up - 45 g(1.5 g X 30개), Peace - 36 g(1.2 g X 30개)"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod006/media01.jpg" },
+      { "media": "/img/sub/prod006/media02.jpg" },
+      { "media": "/img/sub/prod006/media03.jpg" },
+      { "media": "/img/sub/prod006/media04.jpg" },
+      { "media": "/img/sub/prod006/media05.jpg" },
+      { "media": "/img/sub/prod006/media06.jpg" },
+      { "media": "/img/sub/prod006/media07.jpg" },
+      { "media": "/img/sub/prod006/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.10.22",
+        "message": "애정상품이에요 특히 아침티를 정말 좋아해요 모닝커피 대신 먹고 나서 얼굴이 환해지고 속쓰림이 덜해젔어요 여름동안 안 나와서 봄에 미리 2팩 사서 쟁여 놓고 있었는데 재오픈 전에 다 마셔서 재오픈만 기다렸어요",
+        "user_name": "정",
+        "option": "[-10%]클린티 세트_2개 (2종*1개씩)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.10",
+        "message": "호박티가 질리면 먹는 클린티예요 ㅎ 세일할 때 구매해서 좋아요 잘 먹오 있어요",
+        "user_name": "최",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.9",
+        "message": "꼬소하고 맛있어요! 같이 받은 텀블러에 몇번씩 우려도 생각보다 계속 우러나와서 아주 좋습니다 덕분에 물 마시는게 편해졌어요",
+        "user_name": "제",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.4",
+        "message": "따뜻하게 우려서 먹으면 좋아요.",
+        "user_name": "김",
+        "option": "[텀블러 증정]클린 힐링티 (peace)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.1",
+        "message": "가격도 좋고 맛도 좋네요^^ 떨이지면 또 주문해야겠네요^^",
+        "user_name": "허",
+        "option": " [-70%] [텀블러 증정]클린 모닝티 (wake up)"
+      }
+    ]
+  }
+]

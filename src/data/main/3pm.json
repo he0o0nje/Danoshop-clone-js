@@ -20,9 +20,11 @@
   {
     "id": 14,
     "image": "img/main/3pm/03.png",
+    "sticker": "",
     "name": "[다노] 프로틴다노바 2종_단백질 프로틴 견과바",
     "composition": "1/3/10개",
-    "price": "2,500원"
+    "price": "2,500원",
+    "sale_price": ""
   },
   {
     "id": 15,

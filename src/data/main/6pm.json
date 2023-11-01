@@ -2,29 +2,37 @@
   {
     "id": 16,
     "image": "img/main/6pm/01.webp",
+    "sticker": "",
     "name": "[다노] 단백질 도시락 7종 세트_식단관리 고단백 냉동도시락",
     "composition": "1/2세트",
-    "price": "31,500원"
+    "price": "31,500원",
+    "sale_price": ""
   },
   {
     "id": 17,
     "image": "img/main/6pm/02.jpg",
+    "sticker": "",
     "name": "[다노] 컬리플라워 도시락 6종 세트_식단관리 냉동도시락",
     "composition": "1/2세트",
-    "price": "29,000원"
+    "price": "29,000원",
+    "sale_price": ""
   },
   {
     "id": 18,
     "image": "img/main/6pm/03.webp",
+    "sticker": "",
     "name": "[다노] 닭가슴살도시락 7종 세트_식단관리 고단백 냉동도시락",
     "composition": "1/2세트",
-    "price": "31,500원"
+    "price": "31,500원",
+    "sale_price": ""
   },
   {
     "id": 19,
     "image": "img/main/6pm/04.png",
+    "sticker": "",
     "name": "[다노] 저당 곤약 도시락 7종 세트_식단관리 저당 냉동도시락",
     "composition": "1/2세트",
-    "price": "33,000원"
+    "price": "33,000원",
+    "sale_price": ""
   }
 ]

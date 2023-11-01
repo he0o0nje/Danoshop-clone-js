@@ -73,11 +73,9 @@ let cart = createSlice({
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
-
     // sortName(state) {
     //   state.sort((a, b) => (a.name > b.name ? 1 : -1));
     // },
-
     calculateFinalPrice: (state) => {
       state.items.forEach((item) => {
         item.finalPrice = (
@@ -121,10 +119,30 @@ const products = createSlice({
 
 export const { setProducts } = products.actions;
 
+const selectedOptions = createSlice({
+  name: "selectedOptions",
+  initialState: [],
+  reducers: {
+    addSelectedOption(state, action) {
+      state.push(action.payload);
+    },
+    removeSelectedOption(state, action) {
+      return state.filter((option) => option !== action.payload);
+    },
+    clearSelectedOptions(state) {
+      return [];
+    },
+  },
+});
+
+export const { addSelectedOption, removeSelectedOption, clearSelectedOptions } =
+  selectedOptions.actions;
+
 const rootReducer = {
   cart: cart.reducer,
   detail: detail.reducer,
   products: products.reducer,
+  selectedOptions: selectedOptions.reducer,
 };
 
 const store = configureStore({
