@@ -36,7 +36,7 @@ let cart = createSlice({
   },
   reducers: {
     addCount(state, action) {
-      let product = state.find((item) => item.id === action.payload);
+      let product = state.items.find((item) => item.id === action.payload);
       if (product) {
         product.count++;
         product.finalPrice = (
@@ -45,7 +45,7 @@ let cart = createSlice({
       }
     },
     decreaseCount(state, action) {
-      let product = state.find((item) => item.id === action.payload);
+      let product = state.items.find((item) => item.id === action.payload);
       if (product && product.count > 0) {
         product.count--;
         product.finalPrice = (
@@ -56,26 +56,34 @@ let cart = createSlice({
       }
     },
     addItem(state, action) {
-      let product = state.find((item) => item.id === action.payload.id);
-      if (product) {
-        product.count++;
-        product.finalPrice = (
-          parseFloat(product.price.replace(/,/g, "")) * product.count
-        ).toLocaleString();
-      } else {
-        state.items.push({
-          ...action.payload,
-          count: 1,
-          finalPrice: action.payload.price,
-        });
-      }
+      // let product = state.items.find((item) => item.id === action.payload.id);
+      // if (product) {
+      //   product.count++;
+      //   product.finalPrice = (
+      //     parseFloat(product.price.replace(/,/g, "")) * product.count
+      //   ).toLocaleString();
+      // } else {
+      //   state.items.push({
+      //     ...action.payload,
+      //     count: 1,
+      //     finalPrice: action.payload.price,
+      //   });
+      // }
+      state.items.push(action.payload);
     },
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
-    // sortName(state) {
-    //   state.sort((a, b) => (a.name > b.name ? 1 : -1));
-    // },
+    updateItem: (state, action) => {
+      const updatedItem = action.payload;
+      const itemIndex = state.items.findIndex(
+        (item) => item.id === updatedItem.id
+      );
+
+      if (itemIndex !== -1) {
+        state.items[itemIndex] = updatedItem;
+      }
+    },
     calculateFinalPrice: (state) => {
       state.items.forEach((item) => {
         item.finalPrice = (

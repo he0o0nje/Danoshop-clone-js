@@ -88,11 +88,11 @@ function Cart() {
     setCheckboxes(initialCheckboxes);
   };
 
-  // const handleSortByName = () => {
-  //   dispatch(sortName());
-  // };
-
   function getImgExtension(image) {
+    if (!items.image) {
+      return "";
+    }
+
     if (image.endsWith(".webp")) {
       return ".webp";
     } else if (image.endsWith(".png")) {
@@ -100,8 +100,7 @@ function Cart() {
     } else if (image.endsWith(".jpg")) {
       return ".jpg";
     }
-    // 여기에 다른 이미지 확장자에 대한 처리를 추가할 수 있습니다.
-    return ".jpg"; // 기본적으로 .jpg로 설정
+    return ".jpg";
   }
 
   return (
@@ -156,12 +155,7 @@ function Cart() {
                           &nbsp;
                           <div className="thumbnail">
                             <Link to={`/detail/${product.id}`}>
-                              <img
-                                src={`/img/main/7am/0${
-                                  product.id
-                                }${getImgExtension(product.image)}`}
-                                alt=""
-                              />
+                              <img src={product.image} alt="" />
                             </Link>
                           </div>
                           <div className="description">
@@ -188,7 +182,6 @@ function Cart() {
                               <li>
                                 배송 : <span>3,500원</span> [조건] / 기본배송
                               </li>
-                              -
                             </ul>
                           </div>
                           <ul className="option_grp">
@@ -260,7 +253,7 @@ function Cart() {
                                   ? parseFloat(
                                       item.finalPrice.replace(/,/g, "")
                                     )
-                                  : 0)
+                                  : " ")
                               );
                             }, 0)
                             .toLocaleString()}
@@ -299,7 +292,11 @@ function Cart() {
                               .reduce((total, item) => {
                                 return (
                                   total +
-                                  parseFloat(item.finalPrice.replace(/,/g, ""))
+                                  (item.finalPrice
+                                    ? parseFloat(
+                                        item.finalPrice.replace(/,/g, "")
+                                      )
+                                    : " ")
                                 );
                               }, 0)
                               .toLocaleString()}
@@ -320,23 +317,25 @@ function Cart() {
                       </div>
                     </div>
                   </div>
-                  <div className="benefit_price">
-                    <div class="heading">
-                      <h4 class="title">총 할인금액</h4>
-                      <div class="data">
-                        <strong>
-                          <span>0</span>
-                        </strong>
-                        원
+                  {items.sale_price && (
+                    <div className="benefit_price">
+                      <div class="heading">
+                        <h4 class="title">총 할인금액</h4>
+                        <div class="data">
+                          <strong>
+                            <span>0</span>
+                          </strong>
+                          원
+                        </div>
+                      </div>
+                      <div className="list">
+                        <div class="item">
+                          <h5 class="title">기간할인</h5>
+                          <div class="data">0원</div>
+                        </div>
                       </div>
                     </div>
-                    <div className="list">
-                      <div class="item">
-                        <h5 class="title">기간할인</h5>
-                        <div class="data">0원</div>
-                      </div>
-                    </div>
-                  </div>
+                  )}
                   <div className="total">
                     <h3 class="title">결제예정금액</h3>
                     <div className="payment_price">
@@ -346,7 +345,9 @@ function Cart() {
                           .reduce((total, item) => {
                             return (
                               total +
-                              parseFloat(item.finalPrice.replace(/,/g, ""))
+                              (item.finalPrice
+                                ? parseFloat(item.finalPrice.replace(/,/g, ""))
+                                : " ")
                             );
                           }, 0)
                           .toLocaleString()}

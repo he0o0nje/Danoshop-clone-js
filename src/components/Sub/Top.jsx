@@ -145,6 +145,7 @@ function Top() {
   function SendToCart(item) {
     console.log("장바구니 추가 상품:", item);
     console.log("add", addItem(product));
+
     dispatch(
       addItem({
         id: product.id,
@@ -444,20 +445,24 @@ function Top() {
       {CartAlert && (
         <style.AlertWrap>
           <div className="alert">
-            <div class="content">
+            <div className="content">
               <p>
                 장바구니에 상품이<br></br>정상적으로 담겼습니다.
               </p>
             </div>
-            <div class="submit_btn">
-              <button class="continue" onClick={activeCartAlert}>
+            <div className="submit_btn">
+              <button className="continue" onClick={activeCartAlert}>
                 계속 쇼핑하기
               </button>
-              <button class="cart" onClick={() => SendToCart(item)}>
+              <Link
+                to="/cart"
+                className="cart"
+                onClick={() => SendToCart(item)}
+              >
                 장바구니 이동
-              </button>
+              </Link>
             </div>
-            <button class="close_btn" onClick={activeCartAlert}>
+            <button className="close_btn" onClick={activeCartAlert}>
               닫기
             </button>
           </div>

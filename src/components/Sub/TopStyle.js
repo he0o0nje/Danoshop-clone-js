@@ -495,7 +495,7 @@ export const AlertWrap = styled.div`
         line-height: 5rem;
         font-size: 1.4rem;
       }
-      button + button {
+      button + a {
         margin-left: 0.8rem;
       }
       .continue {
@@ -504,6 +504,11 @@ export const AlertWrap = styled.div`
       .cart {
         background: #1a1a1a;
         color: #fff;
+        font-size: 1.4rem;
+        line-height: 5.3rem;
+        display: inline-block;
+        width: 10.2rem;
+        height: 5rem;
       }
     }
     .close_btn {
