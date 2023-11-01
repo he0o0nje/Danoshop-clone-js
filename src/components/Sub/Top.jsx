@@ -110,34 +110,9 @@ function Top() {
   }, 0);
   console.log("옵션", selectedOptions);
   console.log("선택옵션", optionQuantities);
+  console.log("선택옵션", optionQuantities[selectedOptions]);
 
   let dispatch = useDispatch();
-
-  // const dummyCart = [...am7C, ...am10C, ...pm1C, ...pm3C, ...pm6C];
-  // const productCart = dummyCart.find((item) => item.id === parseInt(id));
-
-  // 장바구니에 상품을 추가하는 함수
-  // const addToCart = () => {
-  //   // 선택한 옵션들과 수량을 배열로 만들기
-  //   const selectedOptionsWithQuantities = selectedOptions.map((option) => ({
-  //     option,
-  //     quantity: optionQuantities[option] || 0,
-  //   }));
-
-  //   // 장바구니에 상품 추가
-  //   dispatch(
-  //     addItem({
-  //       id: product.id,
-  //       imgurl: product.image,
-  //       name: product.name,
-  //       options: selectedOptionsWithQuantities,
-  //     })
-  //   );
-
-  //   // 장바구니에 상품을 추가한 후 선택된 옵션 초기화
-  //   setSelectedOptions([]);
-  //   setOptionQuantities({});
-  // };
 
   const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
   const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
@@ -150,12 +125,10 @@ function Top() {
         name: product.name,
         price: product.price,
         sale_price: product.sale_price,
-        options: optionQuantities,
+        options: selectedOptions,
+        quantity: optionQuantities[selectedOptions],
       })
     );
-
-    console.log("장바구니 추가 상품:", item);
-    console.log("add", addItem(product));
   }
 
   useEffect(() => {

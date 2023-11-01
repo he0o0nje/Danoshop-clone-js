@@ -1,7 +1,7 @@
 [
   {
     "id": 5,
-    "image": "img/main/10am/01.png",
+    "image": "/img/main/10am/01.png",
     "sticker": "",
     "name": "[다노] 고백펌킨티_100% 국산 늙은 호박차 티백",
     "composition": "1팩/2팩/3팩",
@@ -109,7 +109,7 @@
   },
   {
     "id": 6,
-    "image": "img/main/10am/02.webp",
+    "image": "/img/main/10am/02.webp",
     "sticker": "",
     "name": "[다노] 클린티 2종",
     "composition": "1팩/2팩",

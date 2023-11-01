@@ -1,7 +1,7 @@
 [
   {
     "id": 7,
-    "image": "img/main/1pm/01.webp",
+    "image": "/img/main/1pm/01.webp",
     "sticker": "",
     "name": "[다노] 오븐치킨 6종_식단관리 닭가슴살",
     "composition": "3/10/20개",
@@ -193,7 +193,7 @@
   },
   {
     "id": 8,
-    "image": "img/main/1pm/02.png",
+    "image": "/img/main/1pm/02.png",
     "sticker": "40%",
     "name": "[다노] 곤약 볶음밥 3종_식단관리 저칼로리 냉동볶음밥",
     "composition": "10/20개",
@@ -323,7 +323,7 @@
   },
   {
     "id": 9,
-    "image": "img/main/1pm/03.png",
+    "image": "/img/main/1pm/03.png",
     "sticker": "",
     "name": "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
     "composition": "5/10/20/30개",
@@ -481,7 +481,7 @@
   },
   {
     "id": 10,
-    "image": "img/main/1pm/04.png",
+    "image": "/img/main/1pm/04.png",
     "sticker": "",
     "name": "[다노] 통밀 오트 베이글_식단용 건강빵",
     "composition": "5/10/20/36개",
@@ -590,7 +590,7 @@
   },
   {
     "id": 11,
-    "image": "img/main/1pm/05.jpg",
+    "image": "/img/main/1pm/05.jpg",
     "sticker": "40%",
     "name": "[다노] 두부비엔나소시지",
     "composition": "4/10/20/30개",

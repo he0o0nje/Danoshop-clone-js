@@ -5,7 +5,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import store, {
+import {
   addCount,
   decreaseCount,
   deleteItem,
@@ -17,13 +17,25 @@ function Cart() {
   const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (!items.length) {
-      window.scrollTo(0, 0);
-    }
-    // 최종 가격을 계산하는 액션을 디스패치
-    dispatch(calculateFinalPrice());
-  }, [dispatch, items]);
+  items.forEach((item) => {
+    const id = item.id;
+    const img = item.img;
+    const name = item.name;
+    const price = item.price;
+    const sale_price = item.sale_price;
+    const options = item.options;
+    const quantity = item.quantity;
+
+    console.log(id, img, name, price, sale_price, options, quantity);
+  });
+
+  // useEffect(() => {
+  //   if (!items.length) {
+  //     window.scrollTo(0, 0);
+  //   }
+  //   // 최종 가격을 계산하는 액션을 디스패치
+  //   dispatch(calculateFinalPrice());
+  // }, [dispatch, items]);
 
   // 체크박스 전체선택/해제
   const [selectAll, setSelectAll] = useState(false);
@@ -88,20 +100,13 @@ function Cart() {
     setCheckboxes(initialCheckboxes);
   };
 
-  function getImgExtension(image) {
-    if (!image) {
-      return "";
-    }
-
-    if (image.endsWith(".webp")) {
-      return ".webp";
-    } else if (image.endsWith(".png")) {
-      return ".png";
-    } else if (image.endsWith(".jpg")) {
-      return ".jpg";
-    }
-    return ".jpg";
-  }
+  const calculateItemPrice = items.map((item) => {
+    const quantity = item.quantity;
+    const price = item.sale_price
+      ? parseInt(item.sale_price.replace(/,/, ""))
+      : parseInt(item.price.replace(/,/, ""));
+    return quantity * price;
+  });
 
   const totalDiscount = items
     .filter((item) => item.sale_price)
@@ -116,6 +121,12 @@ function Cart() {
       );
       return total + (price - salePrice);
     }, 0);
+
+  const totalPrice = calculateItemPrice.reduce((total, itemPrice) => {
+    return total + itemPrice;
+  }, 0);
+
+  const finalPrice = totalPrice - 3500 - totalDiscount;
 
   return (
     <>
@@ -169,7 +180,10 @@ function Cart() {
                           &nbsp;
                           <div className="thumbnail">
                             <Link to={`/detail/${product.id}`}>
-                              <img src={product.image} alt="" />
+                              <img
+                                src={product.img ? product.img : product.image}
+                                alt=""
+                              />
                             </Link>
                           </div>
                           <div className="description">
@@ -212,7 +226,13 @@ function Cart() {
                           <ul className="option_grp">
                             <li>
                               <div className="name">
-                                <span>[옵션: ]</span>
+                                <span>
+                                  [옵션:{" "}
+                                  {product.options
+                                    ? product.options
+                                    : product.option}
+                                  ]
+                                </span>
                               </div>
                             </li>
                           </ul>
@@ -220,7 +240,7 @@ function Cart() {
                             <span className="label">수량</span>
                             <div>
                               <span className="change_btn">
-                                <input type="text" value="1" />
+                                <input type="text" value={product.quantity} />
                                 <button
                                   className="up"
                                   onClick={() => {
@@ -245,12 +265,7 @@ function Cart() {
                           </div>
                           <div className="sum_price">
                             <span className="label">주문금액</span>
-                            <strong>
-                              {product.sale_price
-                                ? product.sale_price.replace(/원/, "")
-                                : product.price.replace(/원/, "")}
-                            </strong>
-                            원
+                            <strong>{calculateItemPrice[index]}</strong>원
                           </div>
                           <div className="btn_group">
                             <button>관심상품</button>
@@ -273,26 +288,15 @@ function Cart() {
                         <h5>[기본배송]</h5>
                       </div>
                       <div className="contents">
-                        상품구매금액{" "}
-                        <strong>
-                          {items
-                            .reduce((total, item) => {
-                              return (
-                                total +
-                                (item.finalPrice
-                                  ? parseFloat(
-                                      item.finalPrice.replace(/,/g, "")
-                                    )
-                                  : " ")
-                              );
-                            }, 0)
-                            .toLocaleString()}
-                        </strong>{" "}
-                        + 배송비 3,500
-                        <span className="sale"> - 상품할인금액 금액</span>
+                        상품구매금액 <strong>{totalPrice}</strong> + 배송비
+                        3,500
+                        <span className="sale">
+                          {" "}
+                          - 상품할인금액 {totalDiscount}
+                        </span>
                       </div>
                       <span class="total">
-                        합계 : <strong>합계</strong>원
+                        합계 : <strong>{finalPrice}</strong>원
                       </span>
                     </div>
                     <div className="base_btn">
@@ -316,21 +320,7 @@ function Cart() {
                       <h4 class="title">총 상품금액</h4>
                       <div class="data">
                         <strong>
-                          <span>
-                            {/* 각 항목의 finalPrice 합산 */}
-                            {items
-                              .reduce((total, item) => {
-                                return (
-                                  total +
-                                  (item.finalPrice
-                                    ? parseFloat(
-                                        item.finalPrice.replace(/,/g, "")
-                                      )
-                                    : " ")
-                                );
-                              }, 0)
-                              .toLocaleString()}
-                          </span>
+                          <span>{finalPrice}</span>
                         </strong>
                         원
                       </div>
@@ -369,20 +359,7 @@ function Cart() {
                   <div className="total">
                     <h3 class="title">결제예정금액</h3>
                     <div className="payment_price">
-                      <strong>
-                        {/* 각 항목의 finalPrice 합산 */}
-                        {items
-                          .reduce((total, item) => {
-                            return (
-                              total +
-                              (item.finalPrice
-                                ? parseFloat(item.finalPrice.replace(/,/g, ""))
-                                : " ")
-                            );
-                          }, 0)
-                          .toLocaleString()}
-                      </strong>
-                      원
+                      <strong>{finalPrice}</strong>원
                     </div>
                   </div>
                 </div>
