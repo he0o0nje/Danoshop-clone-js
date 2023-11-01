@@ -74,23 +74,23 @@ let cart = createSlice({
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
-    updateItem: (state, action) => {
-      const updatedItem = action.payload;
-      const itemIndex = state.items.findIndex(
-        (item) => item.id === updatedItem.id
-      );
+    // updateItem: (state, action) => {
+    //   const updatedItem = action.payload;
+    //   const itemIndex = state.items.findIndex(
+    //     (item) => item.id === updatedItem.id
+    //   );
 
-      if (itemIndex !== -1) {
-        state.items[itemIndex] = updatedItem;
-      }
-    },
-    calculateFinalPrice: (state) => {
-      state.items.forEach((item) => {
-        item.finalPrice = (
-          parseFloat(item.price.replace(/,/g, "")) * item.count
-        ).toLocaleString();
-      });
-    },
+    //   if (itemIndex !== -1) {
+    //     state.items[itemIndex] = updatedItem;
+    //   }
+    // },
+    // calculateFinalPrice: (state) => {
+    //   state.items.forEach((item) => {
+    //     item.finalPrice = (
+    //       parseFloat(item.price.replace(/,/g, "")) * item.count
+    //     ).toLocaleString();
+    //   });
+    // },
   },
 });
 
@@ -100,7 +100,7 @@ export const {
   addItem,
   deleteItem,
   sortName,
-  calculateFinalPrice,
+  // calculateFinalPrice,
 } = cart.actions;
 
 const detail = createSlice({

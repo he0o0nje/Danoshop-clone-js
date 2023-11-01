@@ -9,7 +9,6 @@ import {
   addCount,
   decreaseCount,
   deleteItem,
-  calculateFinalPrice,
 } from "../../store";
 import { Link } from "react-router-dom";
 
