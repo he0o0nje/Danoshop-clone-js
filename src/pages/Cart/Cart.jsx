@@ -14,8 +14,6 @@ import store, {
 import { Link } from "react-router-dom";
 
 function Cart() {
-  window.scroll({ top: 0, behavior: "instant" });
-
   const items = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
@@ -145,7 +143,7 @@ function Cart() {
                     <h3>장바구니 상품</h3>
                   </div>
                   <div className="contents">
-                    <div className="sub_title">일반상품(개수)</div>
+                    <div className="sub_title">일반상품(1)</div>
                     {items.map((product, index) => (
                       <div className="order_list" key={index}>
                         <div className="prod_box">
@@ -171,7 +169,7 @@ function Cart() {
                             </strong>
                             <ul className="price">
                               <li>
-                                <strong>{product.price}</strong>원
+                                <strong>{product.price}</strong>
                               </li>
                               <li>
                                 <span className="discount">
@@ -223,7 +221,7 @@ function Cart() {
                           </div>
                           <div className="sum_price">
                             <span className="label">주문금액</span>
-                            <strong>가격</strong>원
+                            <strong>{product.finalPrice}</strong>원
                           </div>
                           <div className="btn_group">
                             <button>관심상품</button>
@@ -246,7 +244,18 @@ function Cart() {
                         <h5>[기본배송]</h5>
                       </div>
                       <div className="contents">
-                        상품구매금액 <strong>가격</strong> + 배송비 3,500
+                        상품구매금액{" "}
+                        <strong>
+                          {items
+                            .reduce((total, item) => {
+                              return (
+                                total +
+                                parseFloat(item.finalPrice.replace(/,/g, ""))
+                              );
+                            }, 0)
+                            .toLocaleString()}
+                        </strong>{" "}
+                        + 배송비 3,500
                         <span className="sale"> - 상품할인금액 금액</span>
                       </div>
                       <span class="total">
@@ -262,7 +271,7 @@ function Cart() {
                       >
                         전체선택
                       </button>
-                      <button>선택삭제</button>
+                      <button onClick={handleDeleteSelected}>선택삭제</button>
                     </div>
                   </div>
                 </div>
@@ -274,7 +283,17 @@ function Cart() {
                       <h4 class="title">총 상품금액</h4>
                       <div class="data">
                         <strong>
-                          <span>금액</span>
+                          <span>
+                            {/* 각 항목의 finalPrice 합산 */}
+                            {items
+                              .reduce((total, item) => {
+                                return (
+                                  total +
+                                  parseFloat(item.finalPrice.replace(/,/g, ""))
+                                );
+                              }, 0)
+                              .toLocaleString()}
+                          </span>
                         </strong>
                         원
                       </div>
@@ -285,7 +304,7 @@ function Cart() {
                       <h4 class="title">총 배송비</h4>
                       <div class="data">
                         <strong>
-                          <span>금액</span>
+                          <span>3,500</span>
                         </strong>
                         원
                       </div>
@@ -296,7 +315,7 @@ function Cart() {
                       <h4 class="title">총 할인금액</h4>
                       <div class="data">
                         <strong>
-                          <span>금액</span>
+                          <span>0</span>
                         </strong>
                         원
                       </div>
@@ -304,14 +323,25 @@ function Cart() {
                     <div className="list">
                       <div class="item">
                         <h5 class="title">기간할인</h5>
-                        <div class="data">금액원</div>
+                        <div class="data">0원</div>
                       </div>
                     </div>
                   </div>
                   <div className="total">
                     <h3 class="title">결제예정금액</h3>
                     <div className="payment_price">
-                      <strong>금액</strong>원
+                      <strong>
+                        {/* 각 항목의 finalPrice 합산 */}
+                        {items
+                          .reduce((total, item) => {
+                            return (
+                              total +
+                              parseFloat(item.finalPrice.replace(/,/g, ""))
+                            );
+                          }, 0)
+                          .toLocaleString()}
+                      </strong>
+                      원
                     </div>
                   </div>
                 </div>
