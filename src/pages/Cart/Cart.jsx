@@ -1,4 +1,5 @@
 import * as style from "./CartStyle.js";
+import { NaverButton } from "../../components/Sub/TopStyle.js";
 import TopBanner from "../../components/TopBanner/TopBanner";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -266,7 +267,101 @@ function Cart() {
                   </div>
                 </div>
               </div>
-              <div className="cart_total"></div>
+              <div className="cart_total">
+                <div className="total_summary">
+                  <div className="summary_item">
+                    <div class="heading">
+                      <h4 class="title">총 상품금액</h4>
+                      <div class="data">
+                        <strong>
+                          <span>금액</span>
+                        </strong>
+                        원
+                      </div>
+                    </div>
+                  </div>
+                  <div className="shipping">
+                    <div class="heading">
+                      <h4 class="title">총 배송비</h4>
+                      <div class="data">
+                        <strong>
+                          <span>금액</span>
+                        </strong>
+                        원
+                      </div>
+                    </div>
+                  </div>
+                  <div className="benefit_price">
+                    <div class="heading">
+                      <h4 class="title">총 할인금액</h4>
+                      <div class="data">
+                        <strong>
+                          <span>금액</span>
+                        </strong>
+                        원
+                      </div>
+                    </div>
+                    <div className="list">
+                      <div class="item">
+                        <h5 class="title">기간할인</h5>
+                        <div class="data">금액원</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="total">
+                    <h3 class="title">결제예정금액</h3>
+                    <div className="payment_price">
+                      <strong>금액</strong>원
+                    </div>
+                  </div>
+                </div>
+                <div className="order_item">
+                  <div className="order_btn">
+                    <button className="all">전체상품주문</button>
+                    <button className="select">선택상품주문</button>
+                  </div>
+                  <NaverButton>
+                    <div className="npay_store" style={{ width: "66%" }}>
+                      <div className="npay_btn_box">
+                        <div className="npay_btn">
+                          <div className="npay_txt">
+                            <span className="npay_blind"></span>
+                          </div>
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a
+                                    href="#none"
+                                    className="npay_btn_pay"
+                                    style={{ width: "14rem" }}
+                                  >
+                                    -
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div className="npay_event">
+                          <p>
+                            <strong>현장결제</strong>
+                            <a href="#none">
+                              결제할 때 마다, 월 50번 포인트 뽑기!
+                            </a>
+                          </p>
+                          <a href="#none" className="npay_more prev">
+                            -
+                          </a>
+                          <a href="#none" className="npay_more next">
+                            -
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </NaverButton>
+                </div>
+              </div>
             </div>
           )}
         </style.CartContainer>

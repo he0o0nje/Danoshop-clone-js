@@ -398,6 +398,102 @@ export const CartContainer = styled.div`
       width: 36rem;
       margin-left: 4.7rem;
       position: relative;
+      .total_summary {
+        padding: 35px 24px;
+        border: 1px solid #000;
+        .summary_item {
+          margin-bottom: 25px;
+        }
+        .shipping {
+          margin-bottom: 25px;
+        }
+        .heading {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          h4 {
+            font-size: 16px;
+            color: #1a1a1a;
+          }
+          .data {
+            font-size: 14px;
+            color: #1a1a1a;
+            strong {
+              font-size: 16px;
+              color: #1a1a1a;
+            }
+          }
+        }
+        .benefit_price {
+          .item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            color: #6d6d6d;
+            .title {
+              font-size: 16px;
+              color: #1a1a1a;
+              &:before {
+                content: "";
+                display: inline-block;
+                width: 9px;
+                height: 9px;
+                margin: -4px 10px 0 0;
+                vertical-align: top;
+                border-left: 1px solid #dadada;
+                border-bottom: 1px solid #dadada;
+              }
+            }
+            .data {
+              font-size: 14px;
+              color: #1a1a1a;
+            }
+          }
+        }
+        .total {
+          display: flex;
+          justify-content: space-between;
+          overflow: hidden;
+          margin-top: 35px;
+          padding-top: 35px;
+          border-top: 1px solid #e8e8e8;
+          .title {
+            font-size: 16px;
+            color: #1a1a1a;
+            font-weight: bold;
+          }
+          .payment_price {
+            color: #1a1a1a;
+            strong {
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .order_item {
+        .order_btn {
+          margin: 20px 0;
+          text-align: center;
+          button {
+            width: 100%;
+            height: 56px;
+            padding: 0;
+            line-height: 56px;
+            font-size: 16px;
+          }
+          button + button {
+            margin-top: 10px;
+          }
+          .all {
+            background: #1a1a1a;
+            color: #fff;
+          }
+          .select {
+            border: 1px solid #d6d6d6;
+          }
+        }
+      }
     }
   }
 `;

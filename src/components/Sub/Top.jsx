@@ -360,7 +360,7 @@ function Top() {
                   관심상품
                 </button>
               </div>
-              <div className="naver_btn">
+              <style.NaverButton>
                 <div className="npay_store">
                   <div className="npay_btn_box">
                     <div className="npay_btn">
@@ -398,7 +398,7 @@ function Top() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </style.NaverButton>
             </div>
           </style.InfoArea>
         </style.DetailArea>
