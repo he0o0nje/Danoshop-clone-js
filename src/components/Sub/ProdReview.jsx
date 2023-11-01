@@ -1,10 +1,10 @@
 import * as style from "./ProdReviewStyle";
 import DetailTab02 from "./DetailTab02";
-import am7 from "../../data/sub/7am.json";
-import am10 from "../../data/sub/10am.json";
-import pm1 from "../../data/sub/1pm.json";
-import pm3 from "../../data/sub/3pm.json";
-import pm6 from "../../data/sub/6pm.json";
+import am7 from "../../data/product/7am.json";
+import am10 from "../../data/product/10am.json";
+import pm1 from "../../data/product/1pm.json";
+import pm3 from "../../data/product/3pm.json";
+import pm6 from "../../data/product/6pm.json";
 // import pm9 from "../../data/sub/9pm.json";
 // import pm11 from "../../data/sub/11pm.json";
 // import Try from "../../data/sub/Try.json";

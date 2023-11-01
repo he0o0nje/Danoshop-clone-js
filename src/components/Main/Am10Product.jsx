@@ -1,5 +1,5 @@
 import * as style from "./ProductStyle";
-import dummy from "../../data/main/10am.json";
+import dummy from "../../data/product/10am.json";
 import { Link } from "react-router-dom";
 
 function Product() {
