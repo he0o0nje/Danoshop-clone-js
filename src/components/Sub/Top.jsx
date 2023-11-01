@@ -162,6 +162,11 @@ function Top() {
     dispatch(setDetail(item));
   }, []);
 
+  const [CartAlert, setCartAlert] = useState(false);
+  function activeCartAlert() {
+    setCartAlert(!CartAlert);
+  }
+
   return (
     <>
       <style.HeadCategory>
@@ -380,15 +385,12 @@ function Top() {
             </div>
             <div className="action_btn_wrap">
               <div className="action_btn">
-                <button
-                  className="btn_submit sizeL"
-                  onClick={() => SendToCart(product)}
-                >
+                <button className="btn_submit sizeL" onClick={activeCartAlert}>
                   구매하기
                 </button>
                 <button
                   className="btn_normal sizeL action_cart"
-                  onClick={() => SendToCart(product)}
+                  onClick={activeCartAlert}
                 >
                   장바구니
                 </button>
@@ -439,24 +441,28 @@ function Top() {
           </style.InfoArea>
         </style.DetailArea>
       </style.SubTop>
-      <style.AlertWrap>
-        <div className="alert">
-          <div class="content">
-            <p>
-              장바구니에 상품이<br></br>정상적으로 담겼습니다.
-            </p>
-          </div>
-          <div class="submit_btn">
-            <button class="continue" onclick="">
-              계속 쇼핑하기
+      {CartAlert && (
+        <style.AlertWrap>
+          <div className="alert">
+            <div class="content">
+              <p>
+                장바구니에 상품이<br></br>정상적으로 담겼습니다.
+              </p>
+            </div>
+            <div class="submit_btn">
+              <button class="continue" onClick={activeCartAlert}>
+                계속 쇼핑하기
+              </button>
+              <button class="cart" onClick={() => SendToCart(item)}>
+                장바구니 이동
+              </button>
+            </div>
+            <button class="close_btn" onClick={activeCartAlert}>
+              닫기
             </button>
-            <button class="cart">장바구니 이동</button>
           </div>
-          <button class="close_btn" onclick="">
-            닫기
-          </button>
-        </div>
-      </style.AlertWrap>
+        </style.AlertWrap>
+      )}
     </>
   );
 }
