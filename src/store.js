@@ -73,9 +73,10 @@ let cart = createSlice({
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
-    sortName(state) {
-      state.sort((a, b) => (a.name > b.name ? 1 : -1));
-    },
+
+    // sortName(state) {
+    //   state.sort((a, b) => (a.name > b.name ? 1 : -1));
+    // },
 
     calculateFinalPrice: (state) => {
       state.items.forEach((item) => {
@@ -87,7 +88,7 @@ let cart = createSlice({
   },
 });
 
-export let {
+export const {
   addCount,
   decreaseCount,
   addItem,
@@ -101,8 +102,6 @@ const detail = createSlice({
   initialState: {},
   reducers: {
     setDetail(state, action) {
-      // 액션 페이로드를 기반으로 스토어에 제품 세부 정보를 설정
-      //payload 객체는 상태를 업데이트하는 데 사용됨
       return { ...state, ...action.payload };
     },
   },
@@ -123,7 +122,6 @@ const products = createSlice({
 export const { setProducts } = products.actions;
 
 const rootReducer = {
-  // user: user.reducer,
   cart: cart.reducer,
   detail: detail.reducer,
   products: products.reducer,

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addItem } from "../../store.js";
+import { addItem } from "../../store";
 import * as style from "./TopStyle";
 import am7 from "../../data/sub/7am.json";
 import am10 from "../../data/sub/10am.json";

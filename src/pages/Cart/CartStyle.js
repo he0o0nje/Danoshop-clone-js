@@ -140,6 +140,9 @@ export const CartContainer = styled.div`
                 appearance: none;
                 cursor: pointer;
               }
+              input[type="checkbox"]:checked {
+                background: url(/img/header/checkbox_on.svg) no-repeat center;
+              }
               .thumbnail {
                 width: 12rem;
                 height: auto;
@@ -443,5 +446,18 @@ export const Help = styled.div`
         }
       }
     }
+  }
+`;
+
+export const NoneCart = styled.div`
+  border-bottom: 0.1rem solid #e6e6e6;
+  font-size: 1.6rem;
+  color: #9a9a9a;
+  padding: 1.6rem 0 6.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin-bottom: 2rem;
   }
 `;
