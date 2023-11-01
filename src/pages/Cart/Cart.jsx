@@ -174,14 +174,17 @@ function Cart() {
                                 </strong>
                                 원
                               </li>
-                              <li>
-                                <span className="discount">
-                                  {product.price.replace(/원/, "").parseFloat -
-                                    product.sale_price.replace(/원/, "")
-                                      .parseFloat}
-                                </span>
-                                원
-                              </li>
+                              {product.sale_price && (
+                                <li>
+                                  <span className="discount">
+                                    {parseInt(product.price.replace(/,/g, "")) -
+                                      parseInt(
+                                        product.sale_price.replace(/,/g, "")
+                                      )}
+                                  </span>
+                                  원
+                                </li>
+                              )}
                             </ul>
                             <ul className="delivery_info">
                               <li>
@@ -225,7 +228,12 @@ function Cart() {
                           </div>
                           <div className="sum_price">
                             <span className="label">주문금액</span>
-                            <strong>{product.price.replace(/원/, "")}</strong>원
+                            <strong>
+                              {product.sale_price
+                                ? product.sale_price.replace(/원/, "")
+                                : product.price.replace(/원/, "")}
+                            </strong>
+                            원
                           </div>
                           <div className="btn_group">
                             <button>관심상품</button>
