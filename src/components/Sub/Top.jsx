@@ -66,7 +66,6 @@ function Top() {
       }
     }
   };
-
   const handleProductDelete = (selectedOption) => {
     setSelectedOptions(
       selectedOptions.filter((option) => option !== selectedOption)
@@ -109,6 +108,8 @@ function Top() {
     // 각 옵션의 가격과 수량을 숫자로 변환하여 합산
     return total + calculateSubTotal(option);
   }, 0);
+  console.log("옵션", selectedOptions);
+  console.log("선택옵션", optionQuantities);
 
   let dispatch = useDispatch();
 
@@ -143,14 +144,21 @@ function Top() {
 
   function SendToCart(item) {
     console.log("장바구니 추가 상품:", item);
-    dispatch(addItem(item));
-    // ActivePop();
+    console.log("add", addItem(product));
+    dispatch(
+      addItem({
+        id: product.id,
+        img: product.image,
+        name: product.name,
+        price: product.price,
+        sale_price: product.sale_price,
+        options: optionQuantities,
+      })
+    );
   }
 
   useEffect(() => {
-    // 액션을 사용하여 제품 항목을 가져오기 위한 액션을 디스패치
     dispatch(setProducts());
-    // item이 아직 설정되지 않았을 때만 setDetail을 호출
     dispatch(setDetail(item));
   }, []);
 
@@ -431,6 +439,24 @@ function Top() {
           </style.InfoArea>
         </style.DetailArea>
       </style.SubTop>
+      <style.AlertWrap>
+        <div className="alert">
+          <div class="content">
+            <p>
+              장바구니에 상품이<br></br>정상적으로 담겼습니다.
+            </p>
+          </div>
+          <div class="submit_btn">
+            <button class="continue" onclick="">
+              계속 쇼핑하기
+            </button>
+            <button class="cart">장바구니 이동</button>
+          </div>
+          <button class="close_btn" onclick="">
+            닫기
+          </button>
+        </div>
+      </style.AlertWrap>
     </>
   );
 }

@@ -1,33 +1,5 @@
 import styled from "styled-components";
 
-export const Sub = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 22rem;
-  position: relative;
-`;
-
-export const DetailSec = styled.div`
-  max-width: 1420px;
-  width: 92%;
-  margin: 0 auto 12rem;
-`;
-
-export const Alert404 = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20rem auto;
-  text-align: center;
-  font-size: 2rem;
-  width: 30rem;
-  height: 10rem;
-  line-height: 3.5rem;
-  background-color: #eee;
-  border-radius: 1rem;
-  border: 1px solid #aaa;
-`;
-
 export const AlertWrap = styled.div`
   position: fixed;
   top: 0;
@@ -35,7 +7,7 @@ export const AlertWrap = styled.div`
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
-  z-index: 10000;
+  z-index: 1000;
   .alert {
     position: fixed;
     top: 50%;

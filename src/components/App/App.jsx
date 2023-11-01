@@ -12,7 +12,7 @@ function App() {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/detail/:id" element={<AboutPage />} />
+        <Route path="/detail/:id" element={<AboutPage />} />0
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <style.ShadowLayer />
