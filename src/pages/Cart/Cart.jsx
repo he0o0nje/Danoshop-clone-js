@@ -174,17 +174,20 @@ function Cart() {
                                 </strong>
                                 원
                               </li>
-                              {product.sale_price && (
-                                <li>
-                                  <span className="discount">
-                                    {parseInt(product.price.replace(/,/g, "")) -
+                              <li>
+                                <span className="discount">
+                                  -
+                                  {product.sale_price
+                                    ? parseInt(
+                                        product.price.replace(/,/g, "")
+                                      ) -
                                       parseInt(
                                         product.sale_price.replace(/,/g, "")
-                                      )}
-                                  </span>
-                                  원
-                                </li>
-                              )}
+                                      )
+                                    : 0}
+                                </span>
+                                원
+                              </li>
                             </ul>
                             <ul className="delivery_info">
                               <li>
