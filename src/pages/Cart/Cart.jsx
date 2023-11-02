@@ -276,7 +276,10 @@ function Cart() {
                       </div>
                       <div className="contents">
                         상품구매금액 <strong>{totalPriceValue}</strong> + 배송비
-                        3,500
+                        <strong>
+                          {" "}
+                          {totalPriceValue >= 70000 ? "0 (무료)" : "3,500"}
+                        </strong>
                         <span className="sale">
                           {" "}
                           - 상품할인금액 {totalDiscountValue}
@@ -307,7 +310,7 @@ function Cart() {
                       <h4 class="title">총 상품금액</h4>
                       <div class="data">
                         <strong>
-                          <span>{finalPriceValue}</span>
+                          <span>{totalPriceValue}</span>
                         </strong>
                         원
                       </div>
@@ -318,7 +321,9 @@ function Cart() {
                       <h4 class="title">총 배송비</h4>
                       <div class="data">
                         <strong>
-                          <span>3,500</span>
+                          <span>
+                            {totalPriceValue >= 70000 ? "0" : "3,500"}
+                          </span>
                         </strong>
                         원
                       </div>

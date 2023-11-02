@@ -211,6 +211,8 @@ const calculatePrice = createSlice({
         .reduce((total, itemPrice) => {
           return total + itemPrice;
         }, 0);
+      // 배송비 계산
+      const shippingFee = totalPrice > 70000 ? 0 : 3500;
       const totalDiscount = items
         .filter((item) => item.sale_price)
         .reduce((total, item) => {
@@ -224,7 +226,8 @@ const calculatePrice = createSlice({
           );
           return total + (price - salePrice);
         }, 0);
-      const finalPrice = totalPrice - totalDiscount - 3500;
+
+      const finalPrice = totalPrice + shippingFee - totalDiscount;
       state.finalPrice = finalPrice;
     },
   },
