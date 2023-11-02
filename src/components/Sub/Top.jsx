@@ -24,46 +24,83 @@ function Top() {
   const product = dummy.find((item) => item.id === parseInt(id));
 
   const [selectedOptions, setSelectedOptions] = useState([]);
-  const [optionQuantities, setOptionQuantities] = useState({});
+  const [optionQuantities, setOptionQuantities] = useState([]);
 
   const handleProductSelect = (e) => {
     const selectedValue = e.target.value;
+
     if (selectedValue === "") {
       // 옵션 선택이 해제된 경우 선택목록에서 제거
       setSelectedOptions(
         selectedOptions.filter((option) => option !== selectedValue)
       );
       dispatch(removeSelectedOption(selectedValue));
-      const { [selectedValue]: _, ...restQuantities } = optionQuantities;
-      setOptionQuantities(restQuantities);
+
+      // const { [selectedValue]: _, ...restQuantities } = optionQuantities;
+      // setOptionQuantities(restQuantities);
+      // 선택한 옵션을 배열에서 제거
+      const updatedOptionQuantities = optionQuantities.filter(
+        (entry) => entry.option !== selectedValue
+      );
+      setOptionQuantities(updatedOptionQuantities);
     } else {
       // 이미 선택한 옵션이 아니면 추가
       if (!selectedOptions.includes(selectedValue)) {
         setSelectedOptions([...selectedOptions, selectedValue]);
         dispatch(addSelectedOption(selectedValue));
-        setOptionQuantities({
-          ...optionQuantities,
-          [selectedValue]: optionQuantities[selectedValue] || 1,
-        });
+
+        // setOptionQuantities({
+        //   ...optionQuantities,
+        //   [selectedValue]: optionQuantities[selectedValue] || 1,
+        // });
+
+        // 옵션 수량을 객체로 만들어 배열에 추가--수정
+        const optionQuantityEntry = {
+          option: selectedValue,
+          quantity:
+            optionQuantities.find((entry) => entry.option === selectedValue)
+              ?.quantity || 1,
+        };
+        setOptionQuantities([...optionQuantities, optionQuantityEntry]);
       } else {
         alert("이미 선택한 옵션입니다.");
       }
     }
   };
+
+  // const handleProductDelete = (selectedOption) => {
+  //   setSelectedOptions(
+  //     selectedOptions.filter((option) => option !== selectedOption)
+  //   );
+  //   const { [selectedOption]: _, ...restQuantities } = optionQuantities;
+  //   setOptionQuantities(restQuantities);
+  // };
   const handleProductDelete = (selectedOption) => {
     setSelectedOptions(
       selectedOptions.filter((option) => option !== selectedOption)
     );
-    const { [selectedOption]: _, ...restQuantities } = optionQuantities;
-    setOptionQuantities(restQuantities);
+    const updatedOptionQuantities = optionQuantities.filter(
+      (entry) => entry.option !== selectedOption
+    );
+    setOptionQuantities(updatedOptionQuantities);
   };
 
+  // const handleQuantityChange = (event, selectedOption) => {
+  //   const newQuantity = parseInt(event.target.value);
+  //   setOptionQuantities({
+  //     ...optionQuantities,
+  //     [selectedOption]: newQuantity,
+  //   });
+  // };
   const handleQuantityChange = (event, selectedOption) => {
     const newQuantity = parseInt(event.target.value);
-    setOptionQuantities({
-      ...optionQuantities,
-      [selectedOption]: newQuantity,
+    const updatedOptionQuantities = optionQuantities.map((entry) => {
+      if (entry.option === selectedOption) {
+        entry.quantity = newQuantity;
+      }
+      return entry;
     });
+    setOptionQuantities(updatedOptionQuantities);
   };
 
   // 옵션별 가격을 저장하는 객체
@@ -75,22 +112,40 @@ function Top() {
     optionPrices[option.option] = optionPrice;
   });
 
-  const calculateSubTotal = (option) => {
-    const optionQuantity = optionQuantities[option] || 0;
-    const optionPrice = optionPrices[option] || 0; // 기본값 0으로 설정
+  // const calculateSubTotal = (option) => {
+  //   const optionQuantity = optionQuantities[option] || 0;
+  //   const optionPrice = optionPrices[option] || 0; // 기본값 0으로 설정
 
-    // 가격과 수량을 숫자로 변환하여 곱셈
-    return optionPrice * optionQuantity;
+  //   // 가격과 수량을 숫자로 변환하여 곱셈
+  //   return optionPrice * optionQuantity;
+  // };
+  const calculateSubTotal = (option) => {
+    const optionQuantityEntry = optionQuantities.find(
+      (entry) => entry.option === option
+    );
+    if (optionQuantityEntry) {
+      const optionPrice = optionPrices[option];
+      return optionPrice * optionQuantityEntry.quantity;
+    }
+    return 0;
   };
 
-  const totalQuantity = Object.values(optionQuantities).reduce(
-    (total, quantity) => total + quantity,
+  // const totalQuantity = Object.values(optionQuantities).reduce(
+  //   (total, quantity) => total + quantity,
+  //   0
+  // );
+  const totalQuantity = optionQuantities.reduce(
+    (total, entry) => total + entry.quantity,
     0
   );
 
+  // const totalPrice = selectedOptions.reduce((total, option) => {
+  //   // 각 옵션의 가격과 수량을 숫자로 변환하여 합산
+  //   return total + calculateSubTotal(option);
+  // }, 0);
   const totalPrice = selectedOptions.reduce((total, option) => {
-    // 각 옵션의 가격과 수량을 숫자로 변환하여 합산
-    return total + calculateSubTotal(option);
+    const subTotal = calculateSubTotal(option);
+    return total + subTotal;
   }, 0);
 
   let dispatch = useDispatch();
@@ -118,7 +173,7 @@ function Top() {
 
   console.log("옵션", selectedOptions);
   console.log("선택옵션", optionQuantities);
-  console.log("선택옵션", optionQuantities[selectedOptions]);
+  console.log("수량", optionQuantities[selectedOptions]);
 
   return (
     <>
@@ -249,20 +304,39 @@ function Top() {
                         <span className="quantity">
                           <input
                             type="number"
-                            value={optionQuantities[selectedOption] || 0}
+                            // value={optionQuantities[selectedOption] || 0}
+                            value={
+                              optionQuantities.find(
+                                (entry) => entry.option === selectedOption
+                              )?.quantity || 0
+                            }
                             onChange={(e) =>
                               handleQuantityChange(e, selectedOption)
                             }
                           />
                           <button
                             className="up"
+                            // onClick={() =>
+                            //   handleQuantityChange(
+                            //     {
+                            //       target: {
+                            //         value:
+                            //           (optionQuantities[selectedOption] || 0) +
+                            //           1,
+                            //       },
+                            //     },
+                            //     selectedOption
+                            //   )
+                            // }
                             onClick={() =>
                               handleQuantityChange(
                                 {
                                   target: {
                                     value:
-                                      (optionQuantities[selectedOption] || 0) +
-                                      1,
+                                      (optionQuantities.find(
+                                        (entry) =>
+                                          entry.option === selectedOption
+                                      )?.quantity || 0) + 1,
                                   },
                                 },
                                 selectedOption
@@ -273,17 +347,33 @@ function Top() {
                           </button>
                           <button
                             className="down"
+                            // onClick={() =>
+                            //   handleQuantityChange(
+                            //     {
+                            //       target: {
+                            //         value:
+                            //           (optionQuantities[selectedOption] || 0) -
+                            //             1 >=
+                            //           1
+                            //             ? (optionQuantities[selectedOption] ||
+                            //                 0) - 1
+                            //             : 1,
+                            //       },
+                            //     },
+                            //     selectedOption
+                            //   )
+                            // }
                             onClick={() =>
                               handleQuantityChange(
                                 {
                                   target: {
-                                    value:
-                                      (optionQuantities[selectedOption] || 0) -
-                                        1 >=
+                                    value: Math.max(
+                                      (optionQuantities.find(
+                                        (entry) =>
+                                          entry.option === selectedOption
+                                      )?.quantity || 0) - 1,
                                       1
-                                        ? (optionQuantities[selectedOption] ||
-                                            0) - 1
-                                        : 1,
+                                    ),
                                   },
                                 },
                                 selectedOption
