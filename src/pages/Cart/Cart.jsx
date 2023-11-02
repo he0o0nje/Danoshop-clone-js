@@ -79,10 +79,17 @@ function Cart() {
   };
 
   const handleDeleteSelected = () => {
-    // 선택한 항목을 삭제하는 액션을 디스패치.
-    selectedItems.forEach((itemId) => {
-      dispatch(deleteItem(itemId));
-    });
+    if (selectAll) {
+      // 전체 선택된 경우, 모든 항목 삭제
+      items.forEach((item) => {
+        dispatch(deleteItem(item.id));
+      });
+    } else {
+      // 선택한 항목만 삭제
+      selectedItems.forEach((itemId) => {
+        dispatch(deleteItem(itemId));
+      });
+    }
 
     // 선택한 항목을 지우고 확인란을 재설정
     setSelectedItems([]);
@@ -288,14 +295,7 @@ function Cart() {
                       </span>
                     </div>
                     <div className="base_btn">
-                      <button
-                        checked={Object.values(checkboxes).every(
-                          (value) => value
-                        )}
-                        onChange={handleAllCheck}
-                      >
-                        전체선택
-                      </button>
+                      <button onClick={handleAllCheck}>전체선택</button>
                       <button onClick={handleDeleteSelected}>선택삭제</button>
                     </div>
                   </div>
