@@ -29,7 +29,7 @@ function Cart() {
     const options = item.options;
     const quantity = item.quantity;
 
-    console.log(id, img, name, price, sale_price, options, quantity);
+    // console.log(id, img, name, price, sale_price, options, quantity);
   });
 
   // 체크박스 전체선택/해제

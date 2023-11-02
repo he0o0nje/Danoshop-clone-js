@@ -36,9 +36,6 @@ function Top() {
       );
       dispatch(removeSelectedOption(selectedValue));
 
-      // const { [selectedValue]: _, ...restQuantities } = optionQuantities;
-      // setOptionQuantities(restQuantities);
-      // 선택한 옵션을 배열에서 제거
       const updatedOptionQuantities = optionQuantities.filter(
         (entry) => entry.option !== selectedValue
       );
@@ -49,12 +46,7 @@ function Top() {
         setSelectedOptions([...selectedOptions, selectedValue]);
         dispatch(addSelectedOption(selectedValue));
 
-        // setOptionQuantities({
-        //   ...optionQuantities,
-        //   [selectedValue]: optionQuantities[selectedValue] || 1,
-        // });
-
-        // 옵션 수량을 객체로 만들어 배열에 추가--수정
+        // 옵션 수량을 객체로 만들어 배열에 추가
         const optionQuantityEntry = {
           option: selectedValue,
           quantity:
@@ -68,13 +60,6 @@ function Top() {
     }
   };
 
-  // const handleProductDelete = (selectedOption) => {
-  //   setSelectedOptions(
-  //     selectedOptions.filter((option) => option !== selectedOption)
-  //   );
-  //   const { [selectedOption]: _, ...restQuantities } = optionQuantities;
-  //   setOptionQuantities(restQuantities);
-  // };
   const handleProductDelete = (selectedOption) => {
     setSelectedOptions(
       selectedOptions.filter((option) => option !== selectedOption)
@@ -85,13 +70,6 @@ function Top() {
     setOptionQuantities(updatedOptionQuantities);
   };
 
-  // const handleQuantityChange = (event, selectedOption) => {
-  //   const newQuantity = parseInt(event.target.value);
-  //   setOptionQuantities({
-  //     ...optionQuantities,
-  //     [selectedOption]: newQuantity,
-  //   });
-  // };
   const handleQuantityChange = (event, selectedOption) => {
     const newQuantity = parseInt(event.target.value);
     const updatedOptionQuantities = optionQuantities.map((entry) => {
@@ -112,13 +90,6 @@ function Top() {
     optionPrices[option.option] = optionPrice;
   });
 
-  // const calculateSubTotal = (option) => {
-  //   const optionQuantity = optionQuantities[option] || 0;
-  //   const optionPrice = optionPrices[option] || 0; // 기본값 0으로 설정
-
-  //   // 가격과 수량을 숫자로 변환하여 곱셈
-  //   return optionPrice * optionQuantity;
-  // };
   const calculateSubTotal = (option) => {
     const optionQuantityEntry = optionQuantities.find(
       (entry) => entry.option === option
@@ -130,19 +101,11 @@ function Top() {
     return 0;
   };
 
-  // const totalQuantity = Object.values(optionQuantities).reduce(
-  //   (total, quantity) => total + quantity,
-  //   0
-  // );
   const totalQuantity = optionQuantities.reduce(
     (total, entry) => total + entry.quantity,
     0
   );
 
-  // const totalPrice = selectedOptions.reduce((total, option) => {
-  //   // 각 옵션의 가격과 수량을 숫자로 변환하여 합산
-  //   return total + calculateSubTotal(option);
-  // }, 0);
   const totalPrice = selectedOptions.reduce((total, option) => {
     const subTotal = calculateSubTotal(option);
     return total + subTotal;
@@ -153,17 +116,19 @@ function Top() {
   const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
   function SendToCart(item) {
-    dispatch(
-      addItem({
+    optionQuantities.forEach((entry) => {
+      const cartItem = {
         id: product.id,
         img: product.image,
         name: product.name,
         price: product.price,
         sale_price: product.sale_price,
-        options: selectedOptions,
-        quantity: optionQuantities[selectedOptions],
-      })
-    );
+        option: entry.option,
+        quantity: entry.quantity,
+      };
+
+      dispatch(addItem(cartItem));
+    });
   }
 
   const [CartAlert, setCartAlert] = useState(false);
