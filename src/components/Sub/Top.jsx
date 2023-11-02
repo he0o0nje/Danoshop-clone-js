@@ -1,14 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  setDetail,
-  setProducts,
-  addItem,
-  addSelectedOption,
-  removeSelectedOption,
-  clearSelectedOptions,
-} from "../../store";
+import { addItem, addSelectedOption, removeSelectedOption } from "../../store";
 import * as style from "./TopStyle";
 import am7 from "../../data/product/7am.json";
 import am10 from "../../data/product/10am.json";
@@ -99,14 +92,10 @@ function Top() {
     // 각 옵션의 가격과 수량을 숫자로 변환하여 합산
     return total + calculateSubTotal(option);
   }, 0);
-  console.log("옵션", selectedOptions);
-  console.log("선택옵션", optionQuantities);
-  console.log("선택옵션", optionQuantities[selectedOptions]);
 
   let dispatch = useDispatch();
 
   const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
-  const products = useSelector((state) => state.products); // Redux 스토어에서 제품 목록 가져오기
 
   function SendToCart(item) {
     dispatch(
@@ -122,15 +111,14 @@ function Top() {
     );
   }
 
-  useEffect(() => {
-    dispatch(setProducts());
-    dispatch(setDetail(item));
-  }, []);
-
   const [CartAlert, setCartAlert] = useState(false);
   function activeCartAlert() {
     setCartAlert(!CartAlert);
   }
+
+  console.log("옵션", selectedOptions);
+  console.log("선택옵션", optionQuantities);
+  console.log("선택옵션", optionQuantities[selectedOptions]);
 
   return (
     <>
