@@ -274,7 +274,6 @@ function Top() {
                         <span className="quantity">
                           <input
                             type="number"
-                            // value={optionQuantities[selectedOption] || 0}
                             value={
                               optionQuantities.find(
                                 (entry) => entry.option === selectedOption
@@ -286,18 +285,6 @@ function Top() {
                           />
                           <button
                             className="up"
-                            // onClick={() =>
-                            //   handleQuantityChange(
-                            //     {
-                            //       target: {
-                            //         value:
-                            //           (optionQuantities[selectedOption] || 0) +
-                            //           1,
-                            //       },
-                            //     },
-                            //     selectedOption
-                            //   )
-                            // }
                             onClick={() =>
                               handleQuantityChange(
                                 {
@@ -317,22 +304,6 @@ function Top() {
                           </button>
                           <button
                             className="down"
-                            // onClick={() =>
-                            //   handleQuantityChange(
-                            //     {
-                            //       target: {
-                            //         value:
-                            //           (optionQuantities[selectedOption] || 0) -
-                            //             1 >=
-                            //           1
-                            //             ? (optionQuantities[selectedOption] ||
-                            //                 0) - 1
-                            //             : 1,
-                            //       },
-                            //     },
-                            //     selectedOption
-                            //   )
-                            // }
                             onClick={() =>
                               handleQuantityChange(
                                 {
