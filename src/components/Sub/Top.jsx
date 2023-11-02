@@ -128,6 +128,8 @@ function Top() {
       };
 
       dispatch(addItem(cartItem));
+
+      console.log(cartItem);
     });
   }
 

@@ -20,6 +20,38 @@ function Cart() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items);
 
+  // // 중복된 상품을 그룹화하는 함수
+  // function groupItemsByUniqueId(items) {
+  //   const groupedItems = [];
+  //   const groupedIds = new Set();
+
+  //   items.forEach((item) => {
+  //     const uniqueId = generateUniqueId(item); // 상품의 고유 ID 생성
+  //     if (!groupedIds.has(uniqueId)) {
+  //       // 중복 아이템이 아닌 경우 그룹에 추가
+  //       groupedItems.push([item]);
+  //       groupedIds.add(uniqueId);
+  //     } else {
+  //       // 중복 아이템인 경우 해당 그룹에 추가
+  //       const groupIndex = groupedItems.findIndex((group) => {
+  //         return generateUniqueId(group[0]) === uniqueId;
+  //       });
+  //       groupedItems[groupIndex].push(item);
+  //     }
+  //   });
+
+  //   return groupedItems;
+  // }
+
+  // // 고유 ID를 생성하는 함수
+  // function generateUniqueId(item) {
+  //   return `${item.id}-${item.optionId}`; // 상품 ID와 옵션 ID 조합
+  // }
+
+  // // 중복된 상품 그룹화
+  // const groupedItems = groupItemsByUniqueId(items);
+  // console.log("Grouped Items:", groupedItems);
+
   items.forEach((item) => {
     const id = item.id;
     const img = item.img;
@@ -160,8 +192,11 @@ function Cart() {
                   </div>
                   <div className="contents">
                     <div className="sub_title">일반상품(1)</div>
+                    {/* {groupedItems.map((group, groupindex) => ( */}
                     {items.map((product, index) => (
                       <div className="order_list" key={index}>
+                        {/* {group.map((product, index) => ( */}
+                        {/* <div key={index}> */}
                         <div className="prod_box">
                           <input
                             type="checkbox"
@@ -273,6 +308,8 @@ function Cart() {
                         >
                           삭제
                         </button>
+                        {/* </div>
+                        ))} */}
                       </div>
                     ))}
                     <div className="summary">
