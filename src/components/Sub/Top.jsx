@@ -15,15 +15,6 @@ import am10 from "../../data/product/10am.json";
 import pm1 from "../../data/product/1pm.json";
 import pm3 from "../../data/product/3pm.json";
 import pm6 from "../../data/product/6pm.json";
-// import pm9 from "../../data/sub/9pm.json";
-// import pm11 from "../../data/sub/11pm.json";
-// import Try from "../../data/sub/Try.json";
-
-// import am7C from "../../data/main/7am.json";
-// import am10C from "../../data/main/10am.json";
-// import pm1C from "../../data/main/1pm.json";
-// import pm3C from "../../data/main/3pm.json";
-// import pm6C from "../../data/main/6pm.json";
 
 function Top() {
   const { id } = useParams();

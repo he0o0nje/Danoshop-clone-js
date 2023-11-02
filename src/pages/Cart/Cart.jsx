@@ -34,6 +34,18 @@ function Cart() {
 
   // 체크박스 전체선택/해제
   const [selectAll, setSelectAll] = useState(false);
+  const [checkboxes, setCheckboxes] = useState({});
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  useEffect(() => {
+    // items 기반으로 checkboxes 상태 초기화
+    // items 배열이 변경될 때마다 checkboxes 상태 초기화
+    const initialCheckboxes = {};
+    items.forEach((item) => {
+      initialCheckboxes[item.id] = false;
+    });
+    setCheckboxes(initialCheckboxes);
+  }, [items]);
 
   const handleAllCheck = () => {
     const updatedCheckboxes = { ...checkboxes };
@@ -43,20 +55,6 @@ function Cart() {
     setCheckboxes(updatedCheckboxes);
     setSelectAll(!selectAll);
   };
-
-  const [checkboxes, setCheckboxes] = useState({});
-
-  useEffect(() => {
-    // items를 기반으로 checkboxes 상태를 초기화
-    //items 배열이 변경될 때마다 checkboxes 상태를 초기화
-    const initialCheckboxes = {};
-    items.forEach((item) => {
-      initialCheckboxes[item.id] = false;
-    });
-    setCheckboxes(initialCheckboxes);
-  }, [items]);
-
-  const [selectedItems, setSelectedItems] = useState([]);
 
   const handleSingleCheck = (id) => {
     const updatedSelectedItems = [...selectedItems];

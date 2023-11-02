@@ -1,6 +1,25 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 // Cart 상태 관리
+const selectedOptions = createSlice({
+  name: "selectedOptions",
+  initialState: [],
+  reducers: {
+    addSelectedOption(state, action) {
+      state.push(action.payload);
+    },
+    removeSelectedOption(state, action) {
+      return state.filter((option) => option !== action.payload);
+    },
+    clearSelectedOptions(state) {
+      return [];
+    },
+  },
+});
+
+export const { addSelectedOption, removeSelectedOption, clearSelectedOptions } =
+  selectedOptions.actions;
+
 let cart = createSlice({
   name: "cart",
   initialState: {
@@ -69,7 +88,6 @@ let cart = createSlice({
           finalPrice: action.payload.price,
         });
       }
-      // state.items.push(action.payload);
     },
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
@@ -84,67 +102,10 @@ let cart = createSlice({
     //     state.items[itemIndex] = updatedItem;
     //   }
     // },
-    // calculateFinalPrice: (state) => {
-    //   state.items.forEach((item) => {
-    //     item.finalPrice = (
-    //       parseFloat(item.price.replace(/,/g, "")) * item.count
-    //     ).toLocaleString();
-    //   });
-    // },
   },
 });
 
-export const {
-  addCount,
-  decreaseCount,
-  addItem,
-  deleteItem,
-  sortName,
-  // calculateFinalPrice,
-} = cart.actions;
-
-const detail = createSlice({
-  name: "detail",
-  initialState: {},
-  reducers: {
-    setDetail(state, action) {
-      return { ...state, ...action.payload };
-    },
-  },
-});
-
-export const { setDetail } = detail.actions;
-
-const products = createSlice({
-  name: "products",
-  initialState: [],
-  reducers: {
-    setProducts(state, action) {
-      return action.payload;
-    },
-  },
-});
-
-export const { setProducts } = products.actions;
-
-const selectedOptions = createSlice({
-  name: "selectedOptions",
-  initialState: [],
-  reducers: {
-    addSelectedOption(state, action) {
-      state.push(action.payload);
-    },
-    removeSelectedOption(state, action) {
-      return state.filter((option) => option !== action.payload);
-    },
-    clearSelectedOptions(state) {
-      return [];
-    },
-  },
-});
-
-export const { addSelectedOption, removeSelectedOption, clearSelectedOptions } =
-  selectedOptions.actions;
+export const { addCount, decreaseCount, addItem, deleteItem } = cart.actions;
 
 const calculatePrice = createSlice({
   name: "calculatePrice",
@@ -236,12 +197,36 @@ const calculatePrice = createSlice({
 export const { calculateItemPrice, totalDiscount, totalPrice, finalPrice } =
   calculatePrice.actions;
 
+const detail = createSlice({
+  name: "detail",
+  initialState: {},
+  reducers: {
+    setDetail(state, action) {
+      return { ...state, ...action.payload };
+    },
+  },
+});
+
+export const { setDetail } = detail.actions;
+
+const products = createSlice({
+  name: "products",
+  initialState: [],
+  reducers: {
+    setProducts(state, action) {
+      return action.payload;
+    },
+  },
+});
+
+export const { setProducts } = products.actions;
+
 const rootReducer = {
+  selectedOptions: selectedOptions.reducer,
   cart: cart.reducer,
+  calculatePrice: calculatePrice.reducer,
   detail: detail.reducer,
   products: products.reducer,
-  selectedOptions: selectedOptions.reducer,
-  calculatePrice: calculatePrice.reducer,
 };
 
 const store = configureStore({
