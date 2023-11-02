@@ -13,56 +13,13 @@ import {
   totalDiscount,
   totalPrice,
   finalPrice,
+  updateQuantity,
 } from "../../store";
 import { Link } from "react-router-dom";
 
 function Cart() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items);
-
-  // // 중복된 상품을 그룹화하는 함수
-  // function groupItemsByUniqueId(items) {
-  //   const groupedItems = [];
-  //   const groupedIds = new Set();
-
-  //   items.forEach((item) => {
-  //     const uniqueId = generateUniqueId(item); // 상품의 고유 ID 생성
-  //     if (!groupedIds.has(uniqueId)) {
-  //       // 중복 아이템이 아닌 경우 그룹에 추가
-  //       groupedItems.push([item]);
-  //       groupedIds.add(uniqueId);
-  //     } else {
-  //       // 중복 아이템인 경우 해당 그룹에 추가
-  //       const groupIndex = groupedItems.findIndex((group) => {
-  //         return generateUniqueId(group[0]) === uniqueId;
-  //       });
-  //       groupedItems[groupIndex].push(item);
-  //     }
-  //   });
-
-  //   return groupedItems;
-  // }
-
-  // // 고유 ID를 생성하는 함수
-  // function generateUniqueId(item) {
-  //   return `${item.id}-${item.optionId}`; // 상품 ID와 옵션 ID 조합
-  // }
-
-  // // 중복된 상품 그룹화
-  // const groupedItems = groupItemsByUniqueId(items);
-  // console.log("Grouped Items:", groupedItems);
-
-  items.forEach((item) => {
-    const id = item.id;
-    const img = item.img;
-    const name = item.name;
-    const price = item.price;
-    const sale_price = item.sale_price;
-    const options = item.options;
-    const quantity = item.quantity;
-
-    // console.log(id, img, name, price, sale_price, options, quantity);
-  });
 
   // 체크박스 전체선택/해제
   const [selectAll, setSelectAll] = useState(false);
@@ -192,11 +149,8 @@ function Cart() {
                   </div>
                   <div className="contents">
                     <div className="sub_title">일반상품(1)</div>
-                    {/* {groupedItems.map((group, groupindex) => ( */}
                     {items.map((product, index) => (
                       <div className="order_list" key={index}>
-                        {/* {group.map((product, index) => ( */}
-                        {/* <div key={index}> */}
                         <div className="prod_box">
                           <input
                             type="checkbox"
@@ -287,7 +241,22 @@ function Cart() {
                                   -
                                 </button>
                               </span>
-                              <button className="modify">변경</button>
+                              <button
+                                className="modify"
+                                onClick={() => {
+                                  const newQuantity = parseInt(
+                                    product.quantity,
+                                    10
+                                  );
+                                  if (!isNaN(newQuantity)) {
+                                    dispatch(
+                                      updateQuantity(product.id, newQuantity)
+                                    );
+                                  }
+                                }}
+                              >
+                                변경
+                              </button>
                             </div>
                           </div>
                           <div className="sum_price">
@@ -308,8 +277,6 @@ function Cart() {
                         >
                           삭제
                         </button>
-                        {/* </div>
-                        ))} */}
                       </div>
                     ))}
                     <div className="summary">

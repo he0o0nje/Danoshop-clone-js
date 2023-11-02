@@ -57,40 +57,50 @@ let cart = createSlice({
     addCount(state, action) {
       let product = state.items.find((item) => item.id === action.payload);
       if (product) {
-        product.count++;
+        product.quantity++;
         product.finalPrice = (
-          parseFloat(product.price.replace(/,/g, "")) * product.count
+          parseFloat(product.price.replace(/,/g, "")) * product.quantity
         ).toLocaleString();
       }
     },
     decreaseCount(state, action) {
       let product = state.items.find((item) => item.id === action.payload);
-      if (product && product.count > 0) {
-        product.count--;
+      if (product && product.quantity > 0) {
+        product.quantity--;
         product.finalPrice = (
-          parseFloat(product.price.replace(/,/g, "")) * product.count
+          parseFloat(product.price.replace(/,/g, "")) * product.quantity
         ).toLocaleString();
-      } else if (product && product.count === 0) {
+      } else if (product && product.quantity === 0) {
         alert("상품이 더 이상 없습니다.");
       }
     },
     addItem(state, action) {
       let product = state.items.find((item) => item.id === action.payload.id);
       if (product) {
-        product.count++;
+        product.quantity++;
         product.finalPrice = (
-          parseFloat(product.price.replace(/,/g, "")) * product.count
+          parseFloat(product.price.replace(/,/g, "")) * product.quantity
         ).toLocaleString();
       } else {
         state.items.push({
           ...action.payload,
-          count: 1,
+          quantity: 1,
           finalPrice: action.payload.price,
         });
       }
     },
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
+    },
+    updateQuantity(state, action) {
+      const { productId, newQuantity } = action.payload;
+      const product = state.items.find((item) => item.id === productId);
+      if (product) {
+        product.quantity = newQuantity;
+        product.finalPrice = (
+          parseFloat(product.price.replace(/,/g, "")) * newQuantity
+        ).toLocaleString();
+      }
     },
     // updateItem: (state, action) => {
     //   const updatedItem = action.payload;
@@ -105,7 +115,8 @@ let cart = createSlice({
   },
 });
 
-export const { addCount, decreaseCount, addItem, deleteItem } = cart.actions;
+export const { addCount, decreaseCount, addItem, deleteItem, updateQuantity } =
+  cart.actions;
 
 const calculatePrice = createSlice({
   name: "calculatePrice",
