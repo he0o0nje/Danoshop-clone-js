@@ -146,11 +146,99 @@ const selectedOptions = createSlice({
 export const { addSelectedOption, removeSelectedOption, clearSelectedOptions } =
   selectedOptions.actions;
 
+const calculatePrice = createSlice({
+  name: "calculatePrice",
+  initialState: {
+    calculateItemPrice: 0,
+    totalDiscount: 0,
+    totalPrice: 0,
+    finalPrice: 0,
+  },
+  reducers: {
+    calculateItemPrice(state, action) {
+      const { items } = action.payload;
+      const calculatedItemPrice = items.map((item) => {
+        const quantity = item.quantity;
+        const price = item.sale_price
+          ? parseInt(item.sale_price.replace(/,/, ""))
+          : parseInt(item.price.replace(/,/, ""));
+        return quantity * price;
+      });
+      state.calculateItemPrice = calculatedItemPrice;
+    },
+    totalDiscount(state, action) {
+      const { items } = action.payload;
+      const totalDiscount = items
+        .filter((item) => item.sale_price)
+        .reduce((total, item) => {
+          const price = parseInt(
+            item.price.replace(/원/g, "").replace(/,/g, ""),
+            10
+          );
+          const salePrice = parseInt(
+            item.sale_price.replace(/원/g, "").replace(/,/g, ""),
+            10
+          );
+          return total + (price - salePrice);
+        }, 0);
+      state.totalDiscount = totalDiscount;
+    },
+    totalPrice(state, action) {
+      const { items } = action.payload;
+      const totalPrice = items
+        .map((item) => {
+          const quantity = item.quantity;
+          const price = item.sale_price
+            ? parseInt(item.sale_price.replace(/,/, ""))
+            : parseInt(item.price.replace(/,/, ""));
+          return quantity * price;
+        })
+        .reduce((total, itemPrice) => {
+          return total + itemPrice;
+        }, 0);
+      state.totalPrice = totalPrice;
+    },
+    finalPrice(state, action) {
+      const { items } = action.payload;
+      const totalPrice = items
+        .map((item) => {
+          const quantity = item.quantity;
+          const price = item.sale_price
+            ? parseInt(item.sale_price.replace(/,/, ""))
+            : parseInt(item.price.replace(/,/, ""));
+          return quantity * price;
+        })
+        .reduce((total, itemPrice) => {
+          return total + itemPrice;
+        }, 0);
+      const totalDiscount = items
+        .filter((item) => item.sale_price)
+        .reduce((total, item) => {
+          const price = parseInt(
+            item.price.replace(/원/g, "").replace(/,/g, ""),
+            10
+          );
+          const salePrice = parseInt(
+            item.sale_price.replace(/원/g, "").replace(/,/g, ""),
+            10
+          );
+          return total + (price - salePrice);
+        }, 0);
+      const finalPrice = totalPrice - totalDiscount - 3500;
+      state.finalPrice = finalPrice;
+    },
+  },
+});
+
+export const { calculateItemPrice, totalDiscount, totalPrice, finalPrice } =
+  calculatePrice.actions;
+
 const rootReducer = {
   cart: cart.reducer,
   detail: detail.reducer,
   products: products.reducer,
   selectedOptions: selectedOptions.reducer,
+  calculatePrice: calculatePrice.reducer,
 };
 
 const store = configureStore({
