@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, addSelectedOption, removeSelectedOption } from "../../store";
 import * as style from "./TopStyle";
@@ -118,51 +118,38 @@ function Top() {
 
   const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
-  // find 메서드를 사용하여 option에 해당하는 quantity 찾기
-  // const foundItem = optionQuantities.find(
-  //   (entry) => entry.option === selectedOptions
-  // );
-
-  // function SendToCart(item) {
-  //   optionQuantities.forEach((entry) => {
-  //     const cartItem = {
-  //       id: product.id,
-  //       img: product.image,
-  //       name: product.name,
-  //       price: product.price,
-  //       sale_price: product.sale_price,
-  //       option: selectedOptions,
-  //       quantity: foundItem,
-  //     };
-
-  //     dispatch(addItem(cartItem));
-
-  //     console.log(cartItem);
-  //   });
-  // }
   function SendToCart(item) {
     const cartItems = selectedOptions.map((option) => {
       const optionQuantityEntry = optionQuantities.find(
         (entry) => entry.option === option
       );
       const quantity = optionQuantityEntry ? optionQuantityEntry.quantity : 0;
-      const subTotal = calculateSubTotal(option);
+
+      // option을 찾아서 해당 option의 price 및 sale_price에 접근
+      const selectedProduct = product.top[0].select.find(
+        (selectOption) => selectOption.option === option
+      );
+
+      const price = selectedProduct ? selectedProduct.price : "";
+      const salePrice = selectedProduct ? selectedProduct.sale_price : "";
+
+      const subTotal = calculateSubTotal(option); // 옵션별 총 금액
 
       return {
         id: product.id,
         img: product.image,
         name: product.name,
-        price: product.price,
-        sale_price: product.sale_price,
+        price: price,
+        sale_price: salePrice,
         option: option,
         quantity: quantity,
         subTotal: subTotal,
       };
     });
 
-    cartItems.forEach((cartItem) => {
-      dispatch(addItem(cartItem));
-      console.log(cartItem);
+    cartItems.forEach((cartItems) => {
+      dispatch(addItem(cartItems));
+      console.log(cartItems);
     });
   }
 
@@ -171,9 +158,13 @@ function Top() {
     setCartAlert(!CartAlert);
   }
 
+  const movePage = useNavigate();
+  function goCart() {
+    movePage("/Cart");
+  }
+
   console.log("옵션", selectedOptions);
   console.log("선택옵션", optionQuantities);
-  console.log("수량", optionQuantities);
 
   return (
     <>
@@ -399,16 +390,30 @@ function Top() {
             </div>
             <div className="action_btn_wrap">
               <div className="action_btn">
-                <button className="btn_submit sizeL" onClick={activeCartAlert}>
+                <button
+                  className="btn_submit sizeL"
+                  onClick={() => {
+                    goCart();
+                    SendToCart();
+                  }}
+                >
                   구매하기
                 </button>
                 <button
                   className="btn_normal sizeL action_cart"
-                  onClick={activeCartAlert}
+                  onClick={() => {
+                    {
+                      SendToCart(item);
+                      activeCartAlert();
+                    }
+                  }}
                 >
                   장바구니
                 </button>
-                <button className="btn_normal sizeL action_wish">
+                <button
+                  className="btn_normal sizeL action_wish"
+                  onClick={() => SendToCart(item)} // 테스트
+                >
                   관심상품
                 </button>
               </div>
@@ -467,11 +472,7 @@ function Top() {
               <button className="continue" onClick={activeCartAlert}>
                 계속 쇼핑하기
               </button>
-              <Link
-                to="/cart"
-                className="cart"
-                onClick={() => SendToCart(item)}
-              >
+              <Link to="/cart" className="cart">
                 장바구니 이동
               </Link>
             </div>

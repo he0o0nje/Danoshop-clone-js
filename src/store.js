@@ -107,16 +107,6 @@ let cart = createSlice({
         ).toLocaleString();
       }
     },
-    // updateItem: (state, action) => {
-    //   const updatedItem = action.payload;
-    //   const itemIndex = state.items.findIndex(
-    //     (item) => item.id === updatedItem.id
-    //   );
-
-    //   if (itemIndex !== -1) {
-    //     state.items[itemIndex] = updatedItem;
-    //   }
-    // },
   },
 });
 
@@ -188,7 +178,6 @@ const calculatePrice = createSlice({
         .reduce((total, itemPrice) => {
           return total + itemPrice;
         }, 0);
-      // 배송비 계산
       const shippingFee = totalPrice > 70000 ? 0 : 3500;
       const totalDiscount = items
         .filter((item) => item.sale_price)

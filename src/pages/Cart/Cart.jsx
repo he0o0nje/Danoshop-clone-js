@@ -242,22 +242,7 @@ function Cart() {
                                   -
                                 </button>
                               </span>
-                              <button
-                                className="modify"
-                                onClick={() => {
-                                  const newQuantity = parseInt(
-                                    product.quantity,
-                                    10
-                                  );
-                                  if (!isNaN(newQuantity)) {
-                                    dispatch(
-                                      updateQuantity(product.id, newQuantity)
-                                    );
-                                  }
-                                }}
-                              >
-                                변경
-                              </button>
+                              <button className="modify">변경</button>
                             </div>
                           </div>
                           <div className="sum_price">
