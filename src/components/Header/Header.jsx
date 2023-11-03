@@ -20,12 +20,12 @@ function Header({ isAboutHeader }) {
     { id: 2, name: "SALE" },
     { id: 3, name: "100원딜" },
     { id: 4, name: "식단관리" },
-    { id: 2, name: "간편식" },
-    { id: 3, name: "베이커리" },
-    { id: 4, name: "간식·음료" },
-    { id: 2, name: "분식·반찬" },
-    { id: 3, name: "홈트용품" },
-    { id: 4, name: "리빙용품" },
+    { id: 5, name: "간편식" },
+    { id: 6, name: "베이커리" },
+    { id: 7, name: "간식·음료" },
+    { id: 8, name: "분식·반찬" },
+    { id: 9, name: "홈트용품" },
+    { id: 10, name: "리빙용품" },
   ];
   return (
     <>
