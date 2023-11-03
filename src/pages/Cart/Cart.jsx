@@ -20,6 +20,7 @@ import { Link } from "react-router-dom";
 function Cart() {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items);
+  // const totalQuantity = useSelector((state) => state.cart.quantity);
 
   // 체크박스 전체선택/해제
   const [selectAll, setSelectAll] = useState(false);
@@ -218,28 +219,7 @@ function Cart() {
                             </li>
                           </ul>
                           <div className="quantity">
-                            <span
-                              className="label"
-                              onChange={(e) => {
-                                const newQuantity = e.target.value; // 사용자가 입력한 새로운 수량
-                                // 유효성 검사: 숫자인지 확인
-                                if (!isNaN(newQuantity)) {
-                                  // 숫자로 변환
-                                  const quantityAsNumber = parseInt(
-                                    newQuantity,
-                                    10
-                                  );
-                                  // 숫자로 변환한 값을 사용하여 product.quantity를 업데이트하는 액션을 디스패치하거나
-                                  // 컴포넌트 상태를 업데이트할 수 있습니다.
-                                  // 예를 들어 Redux를 사용한다면:
-                                  dispatch(
-                                    updateQuantity(product.id, quantityAsNumber)
-                                  );
-                                }
-                              }}
-                            >
-                              수량
-                            </span>
+                            <span className="label">수량</span>
                             <div>
                               <span className="change_btn">
                                 <input type="text" value={product.quantity} />

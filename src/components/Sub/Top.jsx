@@ -118,20 +118,50 @@ function Top() {
 
   const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
+  // find 메서드를 사용하여 option에 해당하는 quantity 찾기
+  // const foundItem = optionQuantities.find(
+  //   (entry) => entry.option === selectedOptions
+  // );
+
+  // function SendToCart(item) {
+  //   optionQuantities.forEach((entry) => {
+  //     const cartItem = {
+  //       id: product.id,
+  //       img: product.image,
+  //       name: product.name,
+  //       price: product.price,
+  //       sale_price: product.sale_price,
+  //       option: selectedOptions,
+  //       quantity: foundItem,
+  //     };
+
+  //     dispatch(addItem(cartItem));
+
+  //     console.log(cartItem);
+  //   });
+  // }
   function SendToCart(item) {
-    optionQuantities.forEach((entry) => {
-      const cartItem = {
+    const cartItems = selectedOptions.map((option) => {
+      const optionQuantityEntry = optionQuantities.find(
+        (entry) => entry.option === option
+      );
+      const quantity = optionQuantityEntry ? optionQuantityEntry.quantity : 0;
+      const subTotal = calculateSubTotal(option);
+
+      return {
         id: product.id,
         img: product.image,
         name: product.name,
         price: product.price,
         sale_price: product.sale_price,
-        option: entry.option,
-        quantity: entry.quantity,
+        option: option,
+        quantity: quantity,
+        subTotal: subTotal,
       };
+    });
 
+    cartItems.forEach((cartItem) => {
       dispatch(addItem(cartItem));
-
       console.log(cartItem);
     });
   }
@@ -143,7 +173,7 @@ function Top() {
 
   console.log("옵션", selectedOptions);
   console.log("선택옵션", optionQuantities);
-  console.log("수량", optionQuantities[selectedOptions]);
+  console.log("수량", optionQuantities);
 
   return (
     <>

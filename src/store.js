@@ -81,6 +81,11 @@ let cart = createSlice({
         product.finalPrice = (
           parseFloat(product.price.replace(/,/g, "")) * product.quantity
         ).toLocaleString();
+        // state.items.push(action.payload);
+        // state.quantity = state.items.reduce(
+        //   (total, item) => total + item.quantity,
+        //   0
+        // );
       } else {
         state.items.push({
           ...action.payload,
