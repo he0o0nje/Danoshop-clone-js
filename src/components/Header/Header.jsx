@@ -15,6 +15,18 @@ function Header({ isAboutHeader }) {
     };
   }, []);
 
+  const cate = [
+    { id: 1, name: "전 상품" },
+    { id: 2, name: "SALE" },
+    { id: 3, name: "100원딜" },
+    { id: 4, name: "식단관리" },
+    { id: 2, name: "간편식" },
+    { id: 3, name: "베이커리" },
+    { id: 4, name: "간식·음료" },
+    { id: 2, name: "분식·반찬" },
+    { id: 3, name: "홈트용품" },
+    { id: 4, name: "리빙용품" },
+  ];
   return (
     <>
       <style.HeaderWrap isFixed={isHeaderFixed} isAboutHeader={isAboutHeader}>
@@ -73,36 +85,11 @@ function Header({ isAboutHeader }) {
             </style.MypageWrap>
             <style.BotCategory>
               <ul>
-                <li>
-                  <style.Link href="/">전 상품</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">SALE</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">100원딜</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">식단관리</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">간편식</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">베이커리</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">간식·음료</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">분식·반찬</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">홈트용품</style.Link>
-                </li>
-                <li>
-                  <style.Link href="/">리빙용품</style.Link>
-                </li>
+                {cate.map((item, index) => (
+                  <li key={index}>
+                    <Link to={`/detail/${item.id}`}>{item.name}</Link>
+                  </li>
+                ))}
               </ul>
             </style.BotCategory>
           </style.HeaderBottom>
