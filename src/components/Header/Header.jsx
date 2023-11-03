@@ -25,7 +25,7 @@ function Header({ isAboutHeader }) {
                 <style.Link href="/">회원가입</style.Link>
               </li>
               <li>
-                <style.Link href="/">로그인</style.Link>
+                <style.Link href="/login">로그인</style.Link>
               </li>
               <li>
                 <style.Link href="/">주문조회</style.Link>
@@ -61,7 +61,7 @@ function Header({ isAboutHeader }) {
               </Link>
             </style.LogoWrap>
             <style.MypageWrap>
-              <Link to="/">
+              <Link to="/Login">
                 <img src="/img/header/mypage1.svg" alt="" />
               </Link>
               <Link to="/cart">
