@@ -123,24 +123,24 @@
     "sale_price": "20,000원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod001/big01.png",
-        "product_imgS": "/img/sub/prod001/small01.png",
-        "header": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-        "summary_info": "달콤하게 즐기는 고단백 현미시리얼",
-        "price": "32,000원",
-        "sale_price": "29,000원",
+        "product_imgB": "/img/sub/prod021/big01.png",
+        "product_imgS": "/img/sub/prod021/small01.png",
+        "header": "[다노] 홈트밴드_근력 운동 헬스밴드",
+        "summary_info": "바른자세와 멋진 상체라인을 만들어 줄 홈트밴드",
+        "price": "22,000원",
+        "sale_price": "20,000원",
         "discount": "10%",
-        "composition": "1개",
+        "composition": "",
         "select": [
           {
-            "option": "자이언트 브라운라이스소울 프로틴_베리",
-            "price": "32,000원",
-            "sale_price": "29,000원"
+            "option": "홈트밴드",
+            "price": "22,000원",
+            "sale_price": "20,000원"
           },
           {
-            "option": "자이언트 브라운라이스소울 프로틴_초코",
-            "price": "32,000원",
-            "sale_price": "29,000원"
+            "option": "SET : 홈트덤벨 + 홈트밴드(+20,800원)",
+            "price": "42,800원",
+            "sale_price": "39,000원"
           }
         ]
       }
@@ -148,66 +148,80 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod001/detail01.png" },
-          { "image": "/img/sub/prod001/detail02.png" },
-          { "image": "/img/sub/prod001/detail03.png" },
-          { "image": "/img/sub/prod001/detail04.png" },
-          { "image": "/img/sub/prod001/detail05.png" }
+          { "image": "/img/sub/prod021/detail01.png" },
+          { "image": "/img/sub/prod021/detail02.mp4" },
+          { "image": "/img/sub/prod021/detail03.mp4" },
+          { "image": "/img/sub/prod021/detail04.png" },
+          { "image": "/img/sub/prod021/detail05.png" },
+          { "image": "/img/sub/prod021/detail06.mp4" },
+          { "image": "/img/sub/prod021/detail07.mp4" },
+          { "image": "/img/sub/prod021/detail08.png" },
+          { "image": "/img/sub/prod021/detail09.mp4" },
+          { "image": "/img/sub/prod021/detail10.png" },
+          { "image": "/img/sub/prod021/detail11.mp4" },
+          { "image": "/img/sub/prod021/detail12.png" },
+          { "image": "/img/sub/prod021/detail13.mp4" },
+          { "image": "/img/sub/prod021/detail14.png" },
+          { "image": "/img/sub/prod021/detail15.mp4" },
+          { "image": "/img/sub/prod021/detail16.png" },
+          { "image": "/img/sub/prod021/detail17.png" },
+          { "image": "/img/sub/prod021/detail18.png" },
+          { "image": "/img/sub/prod021/detail19.png" }
         ],
-        "info_name": "자이언트 프로틴 브라운라이스소울 2종 (베리, 초코)",
-        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
-        "volume": "1개 500g"
+        "info_name": "홈트 밴드",
+        "keep": "",
+        "volume": "1개 113g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod001/media01.png" },
-      { "media": "/img/sub/prod001/media02.png" },
-      { "media": "/img/sub/prod001/media03.png" },
-      { "media": "/img/sub/prod001/media04.png" },
-      { "media": "/img/sub/prod001/media05.png" },
-      { "media": "/img/sub/prod001/media06.png" },
-      { "media": "/img/sub/prod001/media07.png" },
-      { "media": "/img/sub/prod001/media08.png" }
+      { "media": "/img/sub/prod021/media01.jpg" },
+      { "media": "/img/sub/prod021/media02.jpg" },
+      { "media": "/img/sub/prod021/media03.jpg" },
+      { "media": "/img/sub/prod021/media04.jpg" },
+      { "media": "/img/sub/prod021/media05.jpg" },
+      { "media": "/img/sub/prod021/media06.jpg" },
+      { "media": "/img/sub/prod021/media07.jpg" },
+      { "media": "/img/sub/prod021/media08.jpg" }
     ],
     "review": [
       {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.24",
-        "message": "좀딱딱해요 우유에잘안불어요",
-        "user_name": "임",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
-      },
-      {
-        "tag_new": "NEW",
+        "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.23",
-        "message": "너무 맛있고 중간중간 씹히는 초코칩 등이 식감을 더 살려주는 것 같습니다. 단백질도 1회에 18g으로 간편하게 한 끼하기에 좋은 것 같습니다!",
-        "user_name": "두",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.10.22",
-        "message": "또또또또또 재구매입니다 ㅎㅎ\n 시리얼을 좋아하는 저한테는 무조건 있어야하는 템 !\n 할인을 좀 더 많이 해주셨으면 좋겠어요 ,,, ㅠㅠ",
-        "user_name": "조",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.22",
-        "message": "아침식사대용으로 좋앗습니다",
-        "user_name": "김",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
+        "date": "2023.5.27",
+        "message": "너무좋아요. 신축성도 있구, 그립감도 너무좋네요^^",
+        "user_name": "박",
+        "option": "홈트밴드"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.20",
-        "message": "넘넘 맛있어요! 쟁여둘라고 또 삿어요!",
-        "user_name": "이",
+        "tag_repurchase": "",
+        "date": "2023.5.17",
+        "message": "최근에 업로드 된 산후운동을 효과적으로 따라해보고 싶어 구매했어요!! 고무재질이 아닌데도 운동하기 좋아요^^",
+        "user_name": "엄",
+        "option": "홈트밴드"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.5.7",
+        "message": "방문애 걸어서 하는거는 생각보다 짧아서 하기가 애매하더라구요. 앉아서 발로 걸어서 할때는 괜찮아요. 생각보다 탄력이 엄청 부드러워서 초보용인거같아요",
+        "user_name": "양",
+        "option": "홈트밴드"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.3.14",
+        "message": "색도이쁘구 좋아용 처음 사용해봤는데 색도이쁘구 좋잖아용!!!!!",
+        "user_name": "고",
+        "option": "홈트밴드"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2022.12.12",
+        "message": "다노 홈트밴드 얼룩이 묻어도 폼클렌징을 이용하면 깔끔하게 잘 지워져서 좋습니다",
+        "user_name": "윤",
         "option": "자이언트 브라운라이스소울 프로틴_초코"
       }
     ]
@@ -222,24 +236,19 @@
     "sale_price": "110,700원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod001/big01.png",
-        "product_imgS": "/img/sub/prod001/small01.png",
-        "header": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-        "summary_info": "달콤하게 즐기는 고단백 현미시리얼",
-        "price": "32,000원",
-        "sale_price": "29,000원",
+        "product_imgB": "/img/sub/prod022/big01.png",
+        "product_imgS": "/img/sub/prod022/small01.png",
+        "header": "[다노] 홈트매트_층간소음방지 논슬립 운동매트",
+        "summary_info": "홈트레이닝에 최적화된 매트",
+        "price": "123,000원",
+        "sale_price": "110,700원",
         "discount": "10%",
-        "composition": "1개",
+        "composition": "",
         "select": [
           {
-            "option": "자이언트 브라운라이스소울 프로틴_베리",
-            "price": "32,000원",
-            "sale_price": "29,000원"
-          },
-          {
-            "option": "자이언트 브라운라이스소울 프로틴_초코",
-            "price": "32,000원",
-            "sale_price": "29,000원"
+            "option": "와이드 홈트매트_뉴트럴색",
+            "price": "123,000원",
+            "sale_price": "110,700원"
           }
         ]
       }
@@ -247,67 +256,94 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod001/detail01.png" },
-          { "image": "/img/sub/prod001/detail02.png" },
-          { "image": "/img/sub/prod001/detail03.png" },
-          { "image": "/img/sub/prod001/detail04.png" },
-          { "image": "/img/sub/prod001/detail05.png" }
+          { "image": "/img/sub/prod022/detail01.png" },
+          { "image": "/img/sub/prod022/detail02.png" },
+          { "image": "/img/sub/prod022/detail03.png" },
+          { "image": "/img/sub/prod022/detail04.png" },
+          { "image": "/img/sub/prod022/detail05.mp4" },
+          { "image": "/img/sub/prod022/detail06.png" },
+          { "image": "/img/sub/prod022/detail07.mp4" },
+          { "image": "/img/sub/prod022/detail08.png" },
+          { "image": "/img/sub/prod022/detail09.mp4" },
+          { "image": "/img/sub/prod022/detail10.png" },
+          { "image": "/img/sub/prod022/detail11.png" },
+          { "image": "/img/sub/prod022/detail12.mp4" },
+          { "image": "/img/sub/prod022/detail13.png" },
+          { "image": "/img/sub/prod022/detail14.mp4" },
+          { "image": "/img/sub/prod022/detail15.png" },
+          { "image": "/img/sub/prod022/detail16.png" },
+          { "image": "/img/sub/prod022/detail17.mp4" },
+          { "image": "/img/sub/prod022/detail18.png" },
+          { "image": "/img/sub/prod022/detail19.mp4" },
+          { "image": "/img/sub/prod022/detail20.png" },
+          { "image": "/img/sub/prod022/detail21.mp4" },
+          { "image": "/img/sub/prod022/detail22.mp4" },
+          { "image": "/img/sub/prod022/detail23.png" },
+          { "image": "/img/sub/prod022/detail24.png" },
+          { "image": "/img/sub/prod022/detail25.mp4" },
+          { "image": "/img/sub/prod022/detail26.png" },
+          { "image": "/img/sub/prod022/detail27.png" },
+          { "image": "/img/sub/prod022/detail28.png" },
+          { "image": "/img/sub/prod022/detail29.png" },
+          { "image": "/img/sub/prod022/detail30.png" },
+          { "image": "/img/sub/prod022/detail31.mp4" },
+          { "image": "/img/sub/prod022/detail32.png" }
         ],
-        "info_name": "자이언트 프로틴 브라운라이스소울 2종 (베리, 초코)",
-        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
-        "volume": "1개 500g"
+        "info_name": "와이드 홈트매트_뉴트럴색",
+        "keep": "",
+        "volume": "2.3kg / 100*185*2.4cm"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod001/media01.png" },
-      { "media": "/img/sub/prod001/media02.png" },
-      { "media": "/img/sub/prod001/media03.png" },
-      { "media": "/img/sub/prod001/media04.png" },
-      { "media": "/img/sub/prod001/media05.png" },
-      { "media": "/img/sub/prod001/media06.png" },
-      { "media": "/img/sub/prod001/media07.png" },
-      { "media": "/img/sub/prod001/media08.png" }
+      { "media": "/img/sub/prod022/media01.jpg" },
+      { "media": "/img/sub/prod022/media02.jpg" },
+      { "media": "/img/sub/prod022/media03.jpg" },
+      { "media": "/img/sub/prod022/media04.jpg" },
+      { "media": "/img/sub/prod022/media05.jpg" },
+      { "media": "/img/sub/prod022/media06.jpg" },
+      { "media": "/img/sub/prod022/media07.jpg" },
+      { "media": "/img/sub/prod022/media08.jpg" }
     ],
     "review": [
       {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.24",
-        "message": "좀딱딱해요 우유에잘안불어요",
-        "user_name": "임",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
-      },
-      {
-        "tag_new": "NEW",
+        "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.23",
-        "message": "너무 맛있고 중간중간 씹히는 초코칩 등이 식감을 더 살려주는 것 같습니다. 단백질도 1회에 18g으로 간편하게 한 끼하기에 좋은 것 같습니다!",
-        "user_name": "두",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.10.22",
-        "message": "또또또또또 재구매입니다 ㅎㅎ\n 시리얼을 좋아하는 저한테는 무조건 있어야하는 템 !\n 할인을 좀 더 많이 해주셨으면 좋겠어요 ,,, ㅠㅠ",
-        "user_name": "조",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.22",
-        "message": "아침식사대용으로 좋앗습니다",
-        "user_name": "김",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
+        "date": "2023.9.4",
+        "message": "컬러감도 예쁘고 운동할때 쿠션감이 너무 좋아요 운동 하고싶어지네요",
+        "user_name": "남",
+        "option": "와이드 홈트매트_뉴트럴색"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.20",
-        "message": "넘넘 맛있어요! 쟁여둘라고 또 삿어요!",
-        "user_name": "이",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
+        "tag_repurchase": "",
+        "date": "2023.8.10",
+        "message": "정말 좋습니다. 저가형매트는 냄새나고 품질이 좋지않은데 그런거 전혀 없고 운동하기 편합니다. 검정색이 품절이라 아쉽네요.",
+        "user_name": "박",
+        "option": "와이드 홈트매트_뉴트럴색"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.8.7",
+        "message": "층간소음 걱정없이 운동할 수 있어서 좋습니다",
+        "user_name": "강",
+        "option": "와이드 홈트매트_뉴트럴색"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.8.6",
+        "message": "넓어서 어떤 동작도 가능하고 편하게 운동할수 있어서 좋아요 그리고 정말 탄탄해서 층간소음걱정도 덜수 있어서 다른매트는 전혀 안쓰게 되요",
+        "user_name": "최",
+        "option": "와이드 홈트매트_뉴트럴색"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.7.30",
+        "message": "배송 완전 빠르고 저렴하게 구매했어됴 다노샾 번창하세요",
+        "user_name": "조",
+        "option": "와이드 홈트매트_뉴트럴색"
       }
     ]
   },
@@ -321,24 +357,19 @@
     "sale_price": "33,000원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod001/big01.png",
-        "product_imgS": "/img/sub/prod001/small01.png",
-        "header": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-        "summary_info": "달콤하게 즐기는 고단백 현미시리얼",
-        "price": "32,000원",
-        "sale_price": "29,000원",
-        "discount": "10%",
-        "composition": "1개",
+        "product_imgB": "/img/sub/prod023/big01.png",
+        "product_imgS": "/img/sub/prod023/small01.png",
+        "header": "[다노] 코르크폼롤러_전신 마사지 스트레칭",
+        "summary_info": "하체 스트레칭에 탁월한 사이즈와 강도 폼롤러",
+        "price": "34,000원",
+        "sale_price": "33,000원",
+        "discount": "3%",
+        "composition": "",
         "select": [
           {
-            "option": "자이언트 브라운라이스소울 프로틴_베리",
-            "price": "32,000원",
-            "sale_price": "29,000원"
-          },
-          {
-            "option": "자이언트 브라운라이스소울 프로틴_초코",
-            "price": "32,000원",
-            "sale_price": "29,000원"
+            "option": "코르크 폼롤러",
+            "price": "34,000원",
+            "sale_price": "33,000원"
           }
         ]
       }
@@ -346,67 +377,89 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod001/detail01.png" },
-          { "image": "/img/sub/prod001/detail02.png" },
-          { "image": "/img/sub/prod001/detail03.png" },
-          { "image": "/img/sub/prod001/detail04.png" },
-          { "image": "/img/sub/prod001/detail05.png" }
+          { "image": "/img/sub/prod023/detail01.png" },
+          { "image": "/img/sub/prod023/detail02.png" },
+          { "image": "/img/sub/prod023/detail03.png" },
+          { "image": "/img/sub/prod023/detail04.png" },
+          { "image": "/img/sub/prod023/detail05.png" },
+          { "image": "/img/sub/prod023/detail06.mp4" },
+          { "image": "/img/sub/prod023/detail07.png" },
+          { "image": "/img/sub/prod023/detail08.png" },
+          { "image": "/img/sub/prod023/detail09.png" },
+          { "image": "/img/sub/prod023/detail10.png" },
+          { "image": "/img/sub/prod023/detail11.mp4" },
+          { "image": "/img/sub/prod023/detail12.mp4" },
+          { "image": "/img/sub/prod023/detail13.png" },
+          { "image": "/img/sub/prod023/detail14.png" },
+          { "image": "/img/sub/prod023/detail15.png" },
+          { "image": "/img/sub/prod023/detail16.png" },
+          { "image": "/img/sub/prod023/detail17.mp4" },
+          { "image": "/img/sub/prod023/detail18.png" },
+          { "image": "/img/sub/prod023/detail19.png" },
+          { "image": "/img/sub/prod023/detail20.mp4" },
+          { "image": "/img/sub/prod023/detail21.png" },
+          { "image": "/img/sub/prod023/detail22.mp4" },
+          { "image": "/img/sub/prod023/detail23.png" },
+          { "image": "/img/sub/prod023/detail24.mp4" },
+          { "image": "/img/sub/prod023/detail25.png" },
+          { "image": "/img/sub/prod023/detail26.png" },
+          { "image": "/img/sub/prod023/detail27.png" }
         ],
-        "info_name": "자이언트 프로틴 브라운라이스소울 2종 (베리, 초코)",
-        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
-        "volume": "1개 500g"
+        "info_name": "코르크 폼롤러",
+        "keep": "",
+        "volume": "1개 1050g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod001/media01.png" },
-      { "media": "/img/sub/prod001/media02.png" },
-      { "media": "/img/sub/prod001/media03.png" },
-      { "media": "/img/sub/prod001/media04.png" },
-      { "media": "/img/sub/prod001/media05.png" },
-      { "media": "/img/sub/prod001/media06.png" },
-      { "media": "/img/sub/prod001/media07.png" },
-      { "media": "/img/sub/prod001/media08.png" }
+      { "media": "/img/sub/prod023/media01.jpg" },
+      { "media": "/img/sub/prod023/media02.jpg" },
+      { "media": "/img/sub/prod023/media03.jpg" },
+      { "media": "/img/sub/prod023/media04.jpg" },
+      { "media": "/img/sub/prod023/media05.jpg" },
+      { "media": "/img/sub/prod023/media06.jpg" },
+      { "media": "/img/sub/prod023/media07.jpg" },
+      { "media": "/img/sub/prod023/media08.jpg" }
     ],
     "review": [
       {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.24",
-        "message": "좀딱딱해요 우유에잘안불어요",
-        "user_name": "임",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
-      },
-      {
-        "tag_new": "NEW",
+        "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.10.23",
-        "message": "너무 맛있고 중간중간 씹히는 초코칩 등이 식감을 더 살려주는 것 같습니다. 단백질도 1회에 18g으로 간편하게 한 끼하기에 좋은 것 같습니다!",
-        "user_name": "두",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.10.22",
-        "message": "또또또또또 재구매입니다 ㅎㅎ\n 시리얼을 좋아하는 저한테는 무조건 있어야하는 템 !\n 할인을 좀 더 많이 해주셨으면 좋겠어요 ,,, ㅠㅠ",
-        "user_name": "조",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.22",
-        "message": "아침식사대용으로 좋앗습니다",
-        "user_name": "김",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
+        "date": "2023.9.5",
+        "message": "기존에 쓰던 게 너무 두꺼워서 바꿔봤어요! 우선 인체에 무해할 것 같아서 좋구요 정말 딱딱해요 헬스장에 있는 폼롤러들이나 제가 그동안 써온 폼롤러에 비해 훠얼씬 딱딱해요 정말 아파서 인상 찡그려지는데 한국인은 또 그게 좋잖아요..? 시원해서 너무 좋아요 잘 산것 같습니다",
+        "user_name": "한",
+        "option": "코르크 폼롤러"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
-        "date": "2023.10.20",
-        "message": "넘넘 맛있어요! 쟁여둘라고 또 삿어요!",
-        "user_name": "이",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
+        "tag_repurchase": "",
+        "date": "2023.7.15",
+        "message": "스트레칭 할 때 잘 쓰고 있어요!",
+        "user_name": "네이버페이 구",
+        "option": ""
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.7.14",
+        "message": "초대형 박스가 와서 놀랐는데 안에 조그만 코르크 폼롤러가 들어가 있었습니다! ㅎㅎ 몇 년 전에 다노에서 검정색 폼롤러 구입해서 만족했기에 제품력 믿었어요. 침대 같은 좁은 공간에서 쓸만한 것 찾고 있었는데 크기, 길이, 재료, 질감, 무게, 견고성 다 맘에 듭니다.",
+        "user_name": "김",
+        "option": "코르크 폼롤러"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.7.6",
+        "message": "크기도 적당하고 딱딱해서 정말 딱이예요~^^",
+        "user_name": "박",
+        "option": "코르크 폼롤러"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.6.28",
+        "message": "열어서 봤는데 묵직하고 근육 잘 풀어줄 것 같아용 다노 폼롤러 원래도 잘 사용하고 있어서 자극 잘오는 코르크로 구매해봤습니당 굳",
+        "user_name": "임",
+        "option": "코르크 폼롤러"
       }
     ]
   },
@@ -420,24 +473,19 @@
     "sale_price": "49,000원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod001/big01.png",
-        "product_imgS": "/img/sub/prod001/small01.png",
-        "header": "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-        "summary_info": "달콤하게 즐기는 고단백 현미시리얼",
-        "price": "32,000원",
-        "sale_price": "29,000원",
-        "discount": "10%",
-        "composition": "1개",
+        "product_imgB": "/img/sub/prod024/big01.png",
+        "product_imgS": "/img/sub/prod024/small01.png",
+        "header": "[다노] 더블폼롤러_전신 마사지 스트레칭",
+        "summary_info": "숨어있는 근육까지 속속 풀어주는 올인원 더블폼롤러",
+        "price": "65,000원",
+        "sale_price": "49,000원",
+        "discount": "25%",
+        "composition": "",
         "select": [
           {
-            "option": "자이언트 브라운라이스소울 프로틴_베리",
-            "price": "32,000원",
-            "sale_price": "29,000원"
-          },
-          {
-            "option": "자이언트 브라운라이스소울 프로틴_초코",
-            "price": "32,000원",
-            "sale_price": "29,000원"
+            "option": "더블폼롤러",
+            "price": "65,000원",
+            "sale_price": "49,000원"
           }
         ]
       }
@@ -445,67 +493,84 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod001/detail01.png" },
-          { "image": "/img/sub/prod001/detail02.png" },
-          { "image": "/img/sub/prod001/detail03.png" },
-          { "image": "/img/sub/prod001/detail04.png" },
-          { "image": "/img/sub/prod001/detail05.png" }
+          { "image": "/img/sub/prod024/detail01.png" },
+          { "image": "/img/sub/prod024/detail02.png" },
+          { "image": "/img/sub/prod024/detail03.mp4" },
+          { "image": "/img/sub/prod024/detail04.png" },
+          { "image": "/img/sub/prod024/detail05.png" },
+          { "image": "/img/sub/prod024/detail06.mp4" },
+          { "image": "/img/sub/prod024/detail07.png" },
+          { "image": "/img/sub/prod024/detail08.mp4" },
+          { "image": "/img/sub/prod024/detail09.png" },
+          { "image": "/img/sub/prod024/detail10.mp4" },
+          { "image": "/img/sub/prod024/detail11.png" },
+          { "image": "/img/sub/prod024/detail12.mp4" },
+          { "image": "/img/sub/prod024/detail13.png" },
+          { "image": "/img/sub/prod024/detail14.png" },
+          { "image": "/img/sub/prod024/detail15.mp4" },
+          { "image": "/img/sub/prod024/detail16.png" },
+          { "image": "/img/sub/prod024/detail17.png" },
+          { "image": "/img/sub/prod024/detail18.png" },
+          { "image": "/img/sub/prod024/detail19.png" },
+          { "image": "/img/sub/prod024/detail20.png" },
+          { "image": "/img/sub/prod024/detail21.png" },
+          { "image": "/img/sub/prod024/detail22.png" }
         ],
-        "info_name": "자이언트 프로틴 브라운라이스소울 2종 (베리, 초코)",
-        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
-        "volume": "1개 500g"
+        "info_name": "더블 폼롤러",
+        "keep": "",
+        "volume": "1개 1kg"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod001/media01.png" },
-      { "media": "/img/sub/prod001/media02.png" },
-      { "media": "/img/sub/prod001/media03.png" },
-      { "media": "/img/sub/prod001/media04.png" },
-      { "media": "/img/sub/prod001/media05.png" },
-      { "media": "/img/sub/prod001/media06.png" },
-      { "media": "/img/sub/prod001/media07.png" },
-      { "media": "/img/sub/prod001/media08.png" }
+      { "media": "/img/sub/prod024/media01.jpg" },
+      { "media": "/img/sub/prod024/media02.jpg" },
+      { "media": "/img/sub/prod024/media03.jpg" },
+      { "media": "/img/sub/prod024/media04.jpg" },
+      { "media": "/img/sub/prod024/media05.jpg" },
+      { "media": "/img/sub/prod024/media06.jpg" },
+      { "media": "/img/sub/prod024/media07.jpg" },
+      { "media": "/img/sub/prod024/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "NEW",
         "tag_repurchase": "재구매",
-        "date": "2023.10.24",
-        "message": "좀딱딱해요 우유에잘안불어요",
+        "date": "2023.9.20",
+        "message": "보는 순간 조형물같기도 하고 진짜 시원할것같아서 구입했는데 여지껏 폼롤러하곤 다르게 원하는 부위를 딱 꼬집어조서 넘 나 조아요 . 아이디어도 조은듯해요 !",
         "user_name": "임",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
+        "option": "더블폼롤러"
       },
       {
         "tag_new": "NEW",
         "tag_repurchase": "",
-        "date": "2023.10.23",
-        "message": "너무 맛있고 중간중간 씹히는 초코칩 등이 식감을 더 살려주는 것 같습니다. 단백질도 1회에 18g으로 간편하게 한 끼하기에 좋은 것 같습니다!",
-        "user_name": "두",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
+        "date": "2023.6.27",
+        "message": "좋아요! 더블이라 유용해요",
+        "user_name": "위",
+        "option": "더블폼롤러"
       },
       {
         "tag_new": "NEW",
         "tag_repurchase": "",
-        "date": "2023.10.22",
-        "message": "또또또또또 재구매입니다 ㅎㅎ\n 시리얼을 좋아하는 저한테는 무조건 있어야하는 템 !\n 할인을 좀 더 많이 해주셨으면 좋겠어요 ,,, ㅠㅠ",
-        "user_name": "조",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
+        "date": "2023.6.8",
+        "message": "단단한 인조가죽 느낌도 있고 안에 들어있는 볼록 폼룰러는 엉덩이 허벅지 속근육까지 맛사지 할 수 있어서 너무 좋아요 .",
+        "user_name": "박",
+        "option": "더블폼롤러"
       },
       {
         "tag_new": "NEW",
         "tag_repurchase": "재구매",
-        "date": "2023.10.22",
-        "message": "아침식사대용으로 좋앗습니다",
-        "user_name": "김",
-        "option": "자이언트 브라운라이스소울 프로틴_베리"
+        "date": "2023.6.4",
+        "message": "요즘 너무 잘 쓰고 잇어요!!",
+        "user_name": "KIM SANG H",
+        "option": "더블폼롤러"
       },
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.10.20",
-        "message": "넘넘 맛있어요! 쟁여둘라고 또 삿어요!",
-        "user_name": "이",
-        "option": "자이언트 브라운라이스소울 프로틴_초코"
+        "date": "2023.5.24",
+        "message": "아파여 .. 자극이 잘 되겠쥬? 목이 야파서 샀습니다 다들 건강 챙기고 살아요 화이팅",
+        "user_name": "전",
+        "option": "더블폼롤러"
       }
     ]
   }
