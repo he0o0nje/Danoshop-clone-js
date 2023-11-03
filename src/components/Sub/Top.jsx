@@ -9,8 +9,8 @@ import pm1 from "../../data/product/1pm.json";
 import pm3 from "../../data/product/3pm.json";
 import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
-// import pm11 from "../../data/product/11pm.json";
-// import Try from "../../data/product/Try.json";
+import pm11 from "../../data/product/11pm.json";
+import TryEat from "../../data/product/TryEat.json";
 
 function Top() {
   const { id } = useParams();
@@ -21,8 +21,8 @@ function Top() {
     ...pm3,
     ...pm6,
     ...pm9,
-    // ...pm11,
-    // ...Try,
+    ...pm11,
+    ...TryEat,
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
 

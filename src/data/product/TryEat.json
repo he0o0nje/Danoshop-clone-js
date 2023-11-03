@@ -1,0 +1,230 @@
+[
+  {
+    "id": 29,
+    "image": "img/main/TryEat/01.png",
+    "sticker": "20%",
+    "name": "다노 간편식 세트",
+    "composition": "맛보기 세트 (각 2개씩)",
+    "price": "36,400원",
+    "sale_price": "29,120원",
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod020/big01.png",
+        "product_imgS": "/img/sub/prod020/small01.png",
+        "header": "[다노] 힙밴드_근력 운동 헬스밴드",
+        "summary_info": "사이즈, 동작 등 나에게 맞춰서 꾸준히 운동하게 해주는 힙밴드",
+        "price": "22,000원",
+        "sale_price": "22,000원",
+        "discount": "10%",
+        "composition": "",
+        "select": [
+          {
+            "option": "힙밴드",
+            "price": "22,000원",
+            "sale_price": "20,000원"
+          }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod020/detail01.png" },
+          { "image": "/img/sub/prod020/detail02.png" },
+          { "image": "/img/sub/prod020/detail03.mp4" },
+          { "image": "/img/sub/prod020/detail04.png" },
+          { "image": "/img/sub/prod020/detail05.png" },
+          { "image": "/img/sub/prod020/detail06.mp4" },
+          { "image": "/img/sub/prod020/detail07.png" },
+          { "image": "/img/sub/prod020/detail08.mp4" },
+          { "image": "/img/sub/prod020/detail09.png" },
+          { "image": "/img/sub/prod020/detail10.png" },
+          { "image": "/img/sub/prod020/detail11.png" },
+          { "image": "/img/sub/prod020/detail12.mp4" },
+          { "image": "/img/sub/prod020/detail13.png" },
+          { "image": "/img/sub/prod020/detail14.mp4" },
+          { "image": "/img/sub/prod020/detail15.png" },
+          { "image": "/img/sub/prod020/detail16.png" },
+          { "image": "/img/sub/prod020/detail17.png" },
+          { "image": "/img/sub/prod020/detail18.png" },
+          { "image": "/img/sub/prod020/detail19.png" },
+          { "image": "/img/sub/prod020/detail20.mp4" },
+          { "image": "/img/sub/prod020/detail21.png" },
+          { "image": "/img/sub/prod020/detail22.mp4" },
+          { "image": "/img/sub/prod020/detail23.png" },
+          { "image": "/img/sub/prod020/detail24.png" },
+          { "image": "/img/sub/prod020/detail25.png" }
+        ],
+        "info_name": "힙밴드",
+        "keep": "",
+        "volume": "1개 115g"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod020/media01.jpg" },
+      { "media": "/img/sub/prod020/media02.jpg" },
+      { "media": "/img/sub/prod020/media03.jpg" },
+      { "media": "/img/sub/prod020/media04.jpg" },
+      { "media": "/img/sub/prod020/media05.jpg" },
+      { "media": "/img/sub/prod020/media06.jpg" },
+      { "media": "/img/sub/prod020/media07.jpg" },
+      { "media": "/img/sub/prod020/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "재구매",
+        "date": "2023.6.1",
+        "message": "이쁘고 사용하기 편해요",
+        "user_name": "윤",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "",
+        "date": "2023.5.27",
+        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
+        "user_name": "박",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "",
+        "date": "2023.5.22",
+        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
+        "user_name": "김",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "재구매",
+        "date": "2023.4.2",
+        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
+        "user_name": "한",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.2.21",
+        "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
+        "user_name": "김",
+        "option": "힙밴드"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "image": "img/main/TryEat/02.png",
+    "sticker": "20%",
+    "name": "다노 분식 세트",
+    "composition": "분식 맛보기 세트",
+    "price": "30,000원",
+    "sale_price": "24,000원",
+    "top": [
+      {
+        "product_imgB": "/img/sub/prod020/big01.png",
+        "product_imgS": "/img/sub/prod020/small01.png",
+        "header": "[다노] 힙밴드_근력 운동 헬스밴드",
+        "summary_info": "사이즈, 동작 등 나에게 맞춰서 꾸준히 운동하게 해주는 힙밴드",
+        "price": "22,000원",
+        "sale_price": "22,000원",
+        "discount": "10%",
+        "composition": "",
+        "select": [
+          {
+            "option": "힙밴드",
+            "price": "22,000원",
+            "sale_price": "20,000원"
+          }
+        ]
+      }
+    ],
+    "detail": [
+      {
+        "image_set": [
+          { "image": "/img/sub/prod020/detail01.png" },
+          { "image": "/img/sub/prod020/detail02.png" },
+          { "image": "/img/sub/prod020/detail03.mp4" },
+          { "image": "/img/sub/prod020/detail04.png" },
+          { "image": "/img/sub/prod020/detail05.png" },
+          { "image": "/img/sub/prod020/detail06.mp4" },
+          { "image": "/img/sub/prod020/detail07.png" },
+          { "image": "/img/sub/prod020/detail08.mp4" },
+          { "image": "/img/sub/prod020/detail09.png" },
+          { "image": "/img/sub/prod020/detail10.png" },
+          { "image": "/img/sub/prod020/detail11.png" },
+          { "image": "/img/sub/prod020/detail12.mp4" },
+          { "image": "/img/sub/prod020/detail13.png" },
+          { "image": "/img/sub/prod020/detail14.mp4" },
+          { "image": "/img/sub/prod020/detail15.png" },
+          { "image": "/img/sub/prod020/detail16.png" },
+          { "image": "/img/sub/prod020/detail17.png" },
+          { "image": "/img/sub/prod020/detail18.png" },
+          { "image": "/img/sub/prod020/detail19.png" },
+          { "image": "/img/sub/prod020/detail20.mp4" },
+          { "image": "/img/sub/prod020/detail21.png" },
+          { "image": "/img/sub/prod020/detail22.mp4" },
+          { "image": "/img/sub/prod020/detail23.png" },
+          { "image": "/img/sub/prod020/detail24.png" },
+          { "image": "/img/sub/prod020/detail25.png" }
+        ],
+        "info_name": "힙밴드",
+        "keep": "",
+        "volume": "1개 115g"
+      }
+    ],
+    "media_review": [
+      { "media": "/img/sub/prod020/media01.jpg" },
+      { "media": "/img/sub/prod020/media02.jpg" },
+      { "media": "/img/sub/prod020/media03.jpg" },
+      { "media": "/img/sub/prod020/media04.jpg" },
+      { "media": "/img/sub/prod020/media05.jpg" },
+      { "media": "/img/sub/prod020/media06.jpg" },
+      { "media": "/img/sub/prod020/media07.jpg" },
+      { "media": "/img/sub/prod020/media08.jpg" }
+    ],
+    "review": [
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "재구매",
+        "date": "2023.6.1",
+        "message": "이쁘고 사용하기 편해요",
+        "user_name": "윤",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "",
+        "date": "2023.5.27",
+        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
+        "user_name": "박",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "",
+        "date": "2023.5.22",
+        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
+        "user_name": "김",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "NEW",
+        "tag_repurchase": "재구매",
+        "date": "2023.4.2",
+        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
+        "user_name": "한",
+        "option": "힙밴드"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "재구매",
+        "date": "2023.2.21",
+        "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
+        "user_name": "김",
+        "option": "힙밴드"
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 import * as style from "./ProductStyle";
-import dummy from "../../data/main/TryEat.json";
+import dummy from "../../data/product/TryEat.json";
 import { Link } from "react-router-dom";
 
 function Product() {
