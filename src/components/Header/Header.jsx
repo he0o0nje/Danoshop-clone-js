@@ -34,7 +34,7 @@ function Header({ isAboutHeader }) {
           <style.HeaderTop>
             <ul className="top_list">
               <li>
-                <style.Link href="/">회원가입</style.Link>
+                <style.Link href="/Login">회원가입</style.Link>
               </li>
               <li>
                 <style.Link href="/login">로그인</style.Link>

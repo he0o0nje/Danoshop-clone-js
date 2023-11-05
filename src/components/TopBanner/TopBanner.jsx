@@ -1,13 +1,23 @@
 import * as style from "./TopBannerStyle";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function TopBanner() {
   const [isHidden, setIsHidden] = useState(false);
 
   const handleCloseClick = () => {
-    setIsHidden(true);
+    const checkbox = document.getElementById("checkbox");
+    if (checkbox.checked) {
+      setIsHidden(true);
+      localStorage.setItem("isTopBannerHidden", "false");
+    }
   };
 
+  useEffect(() => {
+    // 로컬 스토리지에서 값을 가져와서 TopBanner의 가시성 상태 설정
+    if (localStorage.getItem("isTopBannerHidden") === "false") {
+      setIsHidden(true);
+    }
+  }, []);
   return (
     !isHidden && (
       <>
