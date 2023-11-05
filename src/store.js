@@ -25,31 +25,31 @@ let cart = createSlice({
   initialState: {
     items: [
       {
-        id: "1",
-        image: "/img/main/7am/01.png",
-        name: "[다노] 자이언트 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-        price: "32,000원",
-        sale_price: "29,000원",
-        option: "자이언트 브라운라이스소울 프로틴_베리",
+        id: "9",
+        image: "/img/main/1pm/03.png",
+        name: "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
+        price: "10,000원",
+        sale_price: "",
+        option: "큐브 닭가슴살_오리지널(5개)",
+        quantity: 3,
+      },
+      {
+        id: "10",
+        image: "/img/main/1pm/04.png",
+        name: "[다노] 통밀 오트 베이글_식단용 건강빵",
+        price: "8,900원",
+        sale_price: "",
+        option: "-6%",
         quantity: 2,
       },
       {
-        id: "2",
-        image: "/img/main/7am/02.webp",
-        name: "[다노] 브라운라이스소울 프로틴 2종_식사대용 현미 시리얼 그래놀라",
-        price: "7,500원",
-        sale_price: "",
-        option: "브라운라이스소울 프로틴 _베리(3개)",
-        quantity: 1,
-      },
-      {
-        id: "3",
-        image: "/img/main/7am/03.jpg",
-        name: "[다노] 흑임자죽_단백질 프로틴 식사대용죽",
-        price: "9,600원",
-        sale_price: "",
-        option: "흑임자죽(4개)",
-        quantity: 1,
+        id: "11",
+        image: "/img/main/1pm/05.jpg",
+        name: "[다노] 두부비엔나소시지",
+        price: "12,000원",
+        sale_price: "7,200원",
+        option: "두부 비엔나 소시지 (90g*4팩)",
+        quantity: 5,
       },
     ],
   },
@@ -97,16 +97,16 @@ let cart = createSlice({
     deleteItem(state, action) {
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
-    updateQuantity(state, action) {
-      const { productId, newQuantity } = action.payload;
-      const product = state.items.find((item) => item.id === productId);
-      if (product) {
-        product.quantity = newQuantity;
-        product.finalPrice = (
-          parseFloat(product.price.replace(/,/g, "")) * newQuantity
-        ).toLocaleString();
-      }
-    },
+    // updateQuantity(state, action) {
+    //   const { productId, newQuantity } = action.payload;
+    //   const product = state.items.find((item) => item.id === productId);
+    //   if (product) {
+    //     product.quantity = newQuantity;
+    //     product.finalPrice = (
+    //       parseFloat(product.price.replace(/,/g, "")) * newQuantity
+    //     ).toLocaleString();
+    //   }
+    // },
   },
 });
 

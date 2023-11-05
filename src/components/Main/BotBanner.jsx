@@ -1,4 +1,5 @@
 import * as style from "./BotBannerStyle";
+import { Link } from "react-router-dom";
 
 function BotBanner() {
   return (
@@ -21,7 +22,7 @@ function BotBanner() {
           <p>당신의 더 나은 삶을 위한 DANO의 제품을 만나보세요.</p>
         </div>
         <div className="bot_banner_link">
-          <a href="/">회원가입</a>
+          <Link to="/Login">회원가입</Link>
         </div>
       </style.BotBanner>
     </>

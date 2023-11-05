@@ -13,11 +13,12 @@ import {
   totalDiscount,
   totalPrice,
   finalPrice,
-  updateQuantity,
 } from "../../store";
 import { Link } from "react-router-dom";
 
 function Cart() {
+  window.scroll({ top: 0, behavior: "instant" });
+
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items);
   // const totalQuantity = useSelector((state) => state.cart.quantity);
