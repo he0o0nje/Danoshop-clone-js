@@ -402,10 +402,8 @@ function Top() {
                 <button
                   className="btn_normal sizeL action_cart"
                   onClick={() => {
-                    {
-                      SendToCart(item);
-                      activeCartAlert();
-                    }
+                    SendToCart(item);
+                    activeCartAlert();
                   }}
                 >
                   장바구니
