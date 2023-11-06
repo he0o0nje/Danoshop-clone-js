@@ -9,8 +9,8 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod020/big01.png",
-        "product_imgS": "/img/sub/prod020/small01.png",
+        "product_imgB": "/img/sub/prod025/big01.png",
+        "product_imgS": "/img/sub/prod025/small01.png",
         "header": "[다노] 닭가슴살칩 3종_저칼로리 식단관리 고단백 간식",
         "summary_info": "[다노] 닭가슴살칩 3종_저칼로리 식단관리 고단백 간식",
         "price": "9,600원",
@@ -19,7 +19,7 @@
         "composition": "3/5/10개",
         "select": [
           {
-            "option": "힙밴드",
+            "option": "닭가슴살칩_오리지널(3개)",
             "price": "9,600원",
             "sale_price": ""
           }
@@ -29,87 +29,70 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod020/detail01.png" },
-          { "image": "/img/sub/prod020/detail02.png" },
-          { "image": "/img/sub/prod020/detail03.mp4" },
-          { "image": "/img/sub/prod020/detail04.png" },
-          { "image": "/img/sub/prod020/detail05.png" },
-          { "image": "/img/sub/prod020/detail06.mp4" },
-          { "image": "/img/sub/prod020/detail07.png" },
-          { "image": "/img/sub/prod020/detail08.mp4" },
-          { "image": "/img/sub/prod020/detail09.png" },
-          { "image": "/img/sub/prod020/detail10.png" },
-          { "image": "/img/sub/prod020/detail11.png" },
-          { "image": "/img/sub/prod020/detail12.mp4" },
-          { "image": "/img/sub/prod020/detail13.png" },
-          { "image": "/img/sub/prod020/detail14.mp4" },
-          { "image": "/img/sub/prod020/detail15.png" },
-          { "image": "/img/sub/prod020/detail16.png" },
-          { "image": "/img/sub/prod020/detail17.png" },
-          { "image": "/img/sub/prod020/detail18.png" },
-          { "image": "/img/sub/prod020/detail19.png" },
-          { "image": "/img/sub/prod020/detail20.mp4" },
-          { "image": "/img/sub/prod020/detail21.png" },
-          { "image": "/img/sub/prod020/detail22.mp4" },
-          { "image": "/img/sub/prod020/detail23.png" },
-          { "image": "/img/sub/prod020/detail24.png" },
-          { "image": "/img/sub/prod020/detail25.png" }
+          { "image": "/img/sub/prod025/detail01.png" },
+          { "image": "/img/sub/prod025/detail02.png" },
+          { "image": "/img/sub/prod025/detail03.mp4" },
+          { "image": "/img/sub/prod025/detail04.png" },
+          { "image": "/img/sub/prod025/detail05.png" },
+          { "image": "/img/sub/prod025/detail06.mp4" },
+          { "image": "/img/sub/prod025/detail07.png" },
+          { "image": "/img/sub/prod025/detail08.png" }
         ],
-        "info_name": "힙밴드",
-        "keep": "",
-        "volume": "1개 115g"
+        "info_name": "닭가슴살칩 3종 (오리지널, 커리페퍼, 바베큐)",
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "1개 25g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod020/media01.jpg" },
-      { "media": "/img/sub/prod020/media02.jpg" },
-      { "media": "/img/sub/prod020/media03.jpg" },
-      { "media": "/img/sub/prod020/media04.jpg" },
-      { "media": "/img/sub/prod020/media05.jpg" },
-      { "media": "/img/sub/prod020/media06.jpg" },
-      { "media": "/img/sub/prod020/media07.jpg" },
-      { "media": "/img/sub/prod020/media08.jpg" }
+      { "media": "/img/sub/prod025/media01.jpg" },
+      { "media": "/img/sub/prod025/media02.jpg" },
+      { "media": "/img/sub/prod025/media03.jpg" },
+      { "media": "/img/sub/prod025/media04.jpg" },
+      { "media": "/img/sub/prod025/media05.jpg" },
+      { "media": "/img/sub/prod025/media06.jpg" },
+      { "media": "/img/sub/prod025/media07.jpg" },
+      { "media": "/img/sub/prod025/media08.jpg" }
     ],
     "review": [
       {
-        "tag_new": "NEW",
+        "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.6.1",
-        "message": "이쁘고 사용하기 편해요",
+        "date": "2023.10.23",
+        "message": "맛잇어용 맨날 먹고픈맛",
         "user_name": "윤",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.5.27",
-        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
-        "user_name": "박",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.5.22",
-        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
-        "user_name": "김",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.4.2",
-        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
-        "user_name": "한",
-        "option": "힙밴드"
+        "option": "닭가슴살칩_커리페퍼맛(3개)"
       },
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.2.21",
-        "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
-        "user_name": "김",
-        "option": "힙밴드"
+        "date": "2023.10.23",
+        "message": "맛잇음",
+        "user_name": "함",
+        "option": "[-6%]닭가슴살칩_바베큐맛(10개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.20",
+        "message": "맛잇어용 맨날 먹고픈맛",
+        "user_name": "함",
+        "option": "닭가슴살칩_오리지널(3개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.17",
+        "message": "이거 진짜 맛잇어용. 커리페퍼맛보다 갠적으론 바베큐맛이 더 깔끔하고 고소합니당. 추가구매 예정입니당!",
+        "user_name": "정",
+        "option": " [-3%]닭가슴살칩_바베큐맛(5개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.17",
+        "message": "사실 아주 맛있지는 않지만 ㅋㅋ 이렇게 성분이 클린한 과자는 없죠! 그래서 챙겨 먹습니다",
+        "user_name": "",
+        "option": "닭가슴살칩_커리페퍼맛(3개)"
       }
     ]
   },
