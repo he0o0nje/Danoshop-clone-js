@@ -326,17 +326,17 @@
     "sale_price": "1,680원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod020/big01.png",
-        "product_imgS": "/img/sub/prod020/small01.png",
+        "product_imgB": "/img/sub/prod028/big01.png",
+        "product_imgS": "/img/sub/prod028/small01.png",
         "header": "[다노] 쌀국수 2종_식단관리 미니 컵라면 컵누들 간편식",
-        "summary_info": "[다노] 쌀국수 2종_식단관리 미니 컵라면 컵누들 간편식",
+        "summary_info": "베트남 현지에서 만든 정통 쌀국수",
         "price": "2,100원",
         "sale_price": "1,680원",
         "discount": "20%",
         "composition": "1/3/6/12개",
         "select": [
           {
-            "option": "힙밴드",
+            "option": "쌀국수 닭고기맛(1개)",
             "price": "2,100원",
             "sale_price": "1,680원"
           }
@@ -346,87 +346,76 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod020/detail01.png" },
-          { "image": "/img/sub/prod020/detail02.png" },
-          { "image": "/img/sub/prod020/detail03.png" },
-          { "image": "/img/sub/prod020/detail04.png" },
-          { "image": "/img/sub/prod020/detail05.png" },
-          { "image": "/img/sub/prod020/detail06.png" },
-          { "image": "/img/sub/prod020/detail07.png" },
-          { "image": "/img/sub/prod020/detail08.png" },
-          { "image": "/img/sub/prod020/detail09.png" },
-          { "image": "/img/sub/prod020/detail10.png" },
-          { "image": "/img/sub/prod020/detail11.png" },
-          { "image": "/img/sub/prod020/detail12.png" },
-          { "image": "/img/sub/prod020/detail13.png" },
-          { "image": "/img/sub/prod020/detail14.png" },
-          { "image": "/img/sub/prod020/detail15.png" },
-          { "image": "/img/sub/prod020/detail16.png" },
-          { "image": "/img/sub/prod020/detail17.png" },
-          { "image": "/img/sub/prod020/detail18.png" },
-          { "image": "/img/sub/prod020/detail19.png" },
-          { "image": "/img/sub/prod020/detail20.png" },
-          { "image": "/img/sub/prod020/detail21.png" },
-          { "image": "/img/sub/prod020/detail22.png" },
-          { "image": "/img/sub/prod020/detail23.png" },
-          { "image": "/img/sub/prod020/detail24.png" },
-          { "image": "/img/sub/prod020/detail25.png" }
+          { "image": "/img/sub/prod028/detail01.png" },
+          { "image": "/img/sub/prod028/detail02.png" },
+          { "image": "/img/sub/prod028/detail03.png" },
+          { "image": "/img/sub/prod028/detail04.png" },
+          { "image": "/img/sub/prod028/detail05.png" },
+          { "image": "/img/sub/prod028/detail06.png" },
+          { "image": "/img/sub/prod028/detail07.png" },
+          { "image": "/img/sub/prod028/detail08.png" },
+          { "image": "/img/sub/prod028/detail09.png" },
+          { "image": "/img/sub/prod028/detail10.png" },
+          { "image": "/img/sub/prod028/detail11.png" },
+          { "image": "/img/sub/prod028/detail12.png" },
+          { "image": "/img/sub/prod028/detail13.png" },
+          { "image": "/img/sub/prod028/detail14.png" }
         ],
-        "info_name": "힙밴드",
-        "keep": "",
-        "volume": "1개 115g"
+        "info_name": "쌀국수 2종 (소고기맛, 닭고기맛)",
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "1개 50g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod020/media01.jpg" },
-      { "media": "/img/sub/prod020/media02.jpg" },
-      { "media": "/img/sub/prod020/media03.jpg" },
-      { "media": "/img/sub/prod020/media04.jpg" },
-      { "media": "/img/sub/prod020/media05.jpg" },
-      { "media": "/img/sub/prod020/media06.jpg" },
-      { "media": "/img/sub/prod020/media07.jpg" },
-      { "media": "/img/sub/prod020/media08.jpg" }
+      { "media": "/img/sub/prod028/media01.jpg" },
+      { "media": "/img/sub/prod028/media02.jpg" },
+      { "media": "/img/sub/prod028/media03.jpg" },
+      { "media": "/img/sub/prod028/media04.jpg" },
+      { "media": "/img/sub/prod028/media05.jpg" },
+      { "media": "/img/sub/prod028/media06.jpg" },
+      { "media": "/img/sub/prod028/media07.jpg" },
+      { "media": "/img/sub/prod028/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.6.1",
-        "message": "이쁘고 사용하기 편해요",
-        "user_name": "윤",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
         "tag_repurchase": "",
-        "date": "2023.5.27",
-        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
-        "user_name": "박",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.5.22",
-        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
-        "user_name": "김",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.4.2",
-        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
-        "user_name": "한",
-        "option": "힙밴드"
+        "date": "2023.11.4",
+        "message": "그냥 나름 쌀국수맛..",
+        "user_name": "문",
+        "option": "쌀국수 닭고기맛(1개)"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
-        "date": "2023.2.21",
-        "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
-        "user_name": "김",
-        "option": "힙밴드"
+        "tag_repurchase": "",
+        "date": "2023.11.4",
+        "message": "국물이 생각 나는 요즘 단백하고 건강하게 즐길수 있어 좋습니다",
+        "user_name": "송",
+        "option": "쌀국수 닭고기맛(6개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.11.2",
+        "message": "처음으로 쌀국수를 시켰어요. 2가지 맛을 다 시켰었는데요. . 맛이 엄청 깔금하고 단백해요. 저는 개인적으로 소고기맛이 더 취향이더군요. 추천해요.",
+        "user_name": "채",
+        "option": "쌀국수 닭고기맛(3개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.31",
+        "message": "면먹고 싶을때 먹으면 너무좋고 든든하고 맛있어요♡",
+        "user_name": "이",
+        "option": "쌀국수 소고기맛(6개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.19",
+        "message": "진짜 쌀국수 먹는 느낌이에요!",
+        "user_name": "문",
+        "option": "[-5%]쌀국수 소고기맛(6개)"
       }
     ]
   }
