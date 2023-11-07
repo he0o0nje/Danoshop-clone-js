@@ -1,12 +1,30 @@
 import * as style from "./ProdQnAStyle";
-import DetailTab03 from "./DetailTab03";
+import DetailTab from "./DetailTab";
+import { useState, useRef } from "react";
 
 function ProdQnA() {
+  const [selectedTab, setSelectedTab] = useState(1);
+  const tabContentRef = useRef(null);
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    if (tabContentRef.current) {
+      const tabContentOffset = tabContentRef.current.offsetTop;
+      window.scrollTo({
+        top: tabContentOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <style.ProdQnA>
-        <DetailTab03 />
-        <div>
+        <DetailTab
+          openTab={3}
+          selectedTab={selectedTab}
+          onTabClick={handleTabClick}
+        />
+        <div ref={tabContentRef}>
           <style.BoardTit>
             <h2>Q&amp;A</h2>
             <div className="QnA_btn_wrap">

@@ -1,5 +1,5 @@
 import * as style from "./ProdDetailStyle";
-import DetailTab01 from "./DetailTab01";
+import DetailTab from "./DetailTab";
 import am7 from "../../data/product/7am.json";
 import am10 from "../../data/product/10am.json";
 import pm1 from "../../data/product/1pm.json";
@@ -8,6 +8,7 @@ import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
+import { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 
 function ProdDetail() {
@@ -24,11 +25,30 @@ function ProdDetail() {
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
 
+  const [selectedTab, setSelectedTab] = useState(1);
+  const tabContentRef = useRef(null);
+
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    if (tabContentRef.current) {
+      const tabContentOffset = tabContentRef.current.offsetTop;
+      window.scrollTo({
+        top: tabContentOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
-      <DetailTab01 />
+      <DetailTab
+        openTab={1}
+        selectedTab={selectedTab}
+        onTabClick={handleTabClick}
+      />
       <style.ProdDetail
         {...(product.detail[0].info_name ? { show: true } : {})}
+        ref={tabContentRef}
       >
         <div>
           <p>

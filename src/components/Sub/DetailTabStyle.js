@@ -25,6 +25,7 @@ export const DetailTab = styled.div`
         font-size: 1.6rem;
         line-height: 6rem;
         text-align: center;
+        cursor: pointer;
         span {
           padding: 0 0.3rem;
           margin-left: 0.5rem;

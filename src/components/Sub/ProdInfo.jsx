@@ -1,12 +1,30 @@
 import * as style from "./ProdInfoStyle";
-import DetailTab04 from "./DetailTab04";
+import DetailTab from "./DetailTab";
+import { useState, useRef } from "react";
 
 function ProdInfo() {
+  const [selectedTab, setSelectedTab] = useState(1);
+  const tabContentRef = useRef(null);
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    if (tabContentRef.current) {
+      const tabContentOffset = tabContentRef.current.offsetTop;
+      window.scrollTo({
+        top: tabContentOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <style.ProdInfo>
-        <DetailTab04 />
-        <style.DetailGuide>
+        <DetailTab
+          openTab={4}
+          selectedTab={selectedTab}
+          onTabClick={handleTabClick}
+        />
+        <style.DetailGuide ref={tabContentRef}>
           <div className="info_box">
             <div className="title">
               <h2>PAYMENT INFO</h2>

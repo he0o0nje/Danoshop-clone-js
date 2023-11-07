@@ -1,5 +1,5 @@
 import * as style from "./ProdReviewStyle";
-import DetailTab02 from "./DetailTab02";
+import DetailTab from "./DetailTab";
 import am7 from "../../data/product/7am.json";
 import am10 from "../../data/product/10am.json";
 import pm1 from "../../data/product/1pm.json";
@@ -8,6 +8,7 @@ import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
+import { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 
 function ProdReview() {
@@ -24,11 +25,28 @@ function ProdReview() {
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
 
+  const [selectedTab, setSelectedTab] = useState(1);
+  const tabContentRef = useRef(null);
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    if (tabContentRef.current) {
+      const tabContentOffset = tabContentRef.current.offsetTop;
+      window.scrollTo({
+        top: tabContentOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <style.ProdReview>
-        <DetailTab02 />
-        <style.ReviewWrap>
+        <DetailTab
+          openTab={2}
+          selectedTab={selectedTab}
+          onTabClick={handleTabClick}
+        />
+        <style.ReviewWrap ref={tabContentRef}>
           <div className="header">
             <div className="title_wrap">
               <span className="title"> REVIEW </span>
