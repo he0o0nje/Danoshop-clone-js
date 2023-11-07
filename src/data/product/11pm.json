@@ -12,7 +12,7 @@
         "product_imgB": "/img/sub/prod025/big01.png",
         "product_imgS": "/img/sub/prod025/small01.png",
         "header": "[다노] 닭가슴살칩 3종_저칼로리 식단관리 고단백 간식",
-        "summary_info": "[다노] 닭가슴살칩 3종_저칼로리 식단관리 고단백 간식",
+        "summary_info": "국내산 닭가슴살로 구운 건강 간식",
         "price": "9,600원",
         "sale_price": "",
         "discount": "",
@@ -31,10 +31,10 @@
         "image_set": [
           { "image": "/img/sub/prod025/detail01.png" },
           { "image": "/img/sub/prod025/detail02.png" },
-          { "image": "/img/sub/prod025/detail03.mp4" },
+          { "image": "/img/sub/prod025/detail03.png" },
           { "image": "/img/sub/prod025/detail04.png" },
           { "image": "/img/sub/prod025/detail05.png" },
-          { "image": "/img/sub/prod025/detail06.mp4" },
+          { "image": "/img/sub/prod025/detail06.png" },
           { "image": "/img/sub/prod025/detail07.png" },
           { "image": "/img/sub/prod025/detail08.png" }
         ],
@@ -106,17 +106,17 @@
     "sale_price": "",
     "top": [
       {
-        "product_imgB": "/img/sub/prod020/big01.png",
-        "product_imgS": "/img/sub/prod020/small01.png",
+        "product_imgB": "/img/sub/prod026/big01.webp",
+        "product_imgS": "/img/sub/prod026/small01.jpg",
         "header": "[다노] 떡볶이 2종_저당 고단백 저칼로리 떡볶이",
-        "summary_info": "[다노] 떡볶이 2종_저당 고단백 저칼로리 떡볶이",
+        "summary_info": "안심하고 즐기는 매콤, 짜장 떡볶이",
         "price": "6,000원",
         "sale_price": "",
         "discount": "",
         "composition": "2/5/10개",
         "select": [
           {
-            "option": "힙밴드",
+            "option": "매콤떡볶이 (2개)",
             "price": "6,000원",
             "sale_price": ""
           }
@@ -126,87 +126,79 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod020/detail01.png" },
-          { "image": "/img/sub/prod020/detail02.png" },
-          { "image": "/img/sub/prod020/detail03.mp4" },
-          { "image": "/img/sub/prod020/detail04.png" },
-          { "image": "/img/sub/prod020/detail05.png" },
-          { "image": "/img/sub/prod020/detail06.mp4" },
-          { "image": "/img/sub/prod020/detail07.png" },
-          { "image": "/img/sub/prod020/detail08.mp4" },
-          { "image": "/img/sub/prod020/detail09.png" },
-          { "image": "/img/sub/prod020/detail10.png" },
-          { "image": "/img/sub/prod020/detail11.png" },
-          { "image": "/img/sub/prod020/detail12.mp4" },
-          { "image": "/img/sub/prod020/detail13.png" },
-          { "image": "/img/sub/prod020/detail14.mp4" },
-          { "image": "/img/sub/prod020/detail15.png" },
-          { "image": "/img/sub/prod020/detail16.png" },
-          { "image": "/img/sub/prod020/detail17.png" },
-          { "image": "/img/sub/prod020/detail18.png" },
-          { "image": "/img/sub/prod020/detail19.png" },
-          { "image": "/img/sub/prod020/detail20.mp4" },
-          { "image": "/img/sub/prod020/detail21.png" },
-          { "image": "/img/sub/prod020/detail22.mp4" },
-          { "image": "/img/sub/prod020/detail23.png" },
-          { "image": "/img/sub/prod020/detail24.png" },
-          { "image": "/img/sub/prod020/detail25.png" }
+          { "image": "/img/sub/prod026/detail01.gif" },
+          { "image": "/img/sub/prod026/detail02.gif" },
+          { "image": "/img/sub/prod026/detail03.png" },
+          { "image": "/img/sub/prod026/detail04.png" },
+          { "image": "/img/sub/prod026/detail05.png" },
+          { "image": "/img/sub/prod026/detail06.png" },
+          { "image": "/img/sub/prod026/detail07.png" },
+          { "image": "/img/sub/prod026/detail08.png" },
+          { "image": "/img/sub/prod026/detail09.gif" },
+          { "image": "/img/sub/prod026/detail10.png" },
+          { "image": "/img/sub/prod026/detail11.png" },
+          { "image": "/img/sub/prod026/detail12.gif" },
+          { "image": "/img/sub/prod026/detail13.png" },
+          { "image": "/img/sub/prod026/detail14.png" },
+          { "image": "/img/sub/prod026/detail15.png" },
+          { "image": "/img/sub/prod026/detail16.png" },
+          { "image": "/img/sub/prod026/detail17.png" }
         ],
-        "info_name": "힙밴드",
-        "keep": "",
+        "info_name": "떡볶이 2종 (매콤, 짜장)",
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
         "volume": "1개 115g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod020/media01.jpg" },
-      { "media": "/img/sub/prod020/media02.jpg" },
-      { "media": "/img/sub/prod020/media03.jpg" },
-      { "media": "/img/sub/prod020/media04.jpg" },
-      { "media": "/img/sub/prod020/media05.jpg" },
-      { "media": "/img/sub/prod020/media06.jpg" },
-      { "media": "/img/sub/prod020/media07.jpg" },
-      { "media": "/img/sub/prod020/media08.jpg" }
+      { "media": "/img/sub/prod026/media01.jpg" },
+      { "media": "/img/sub/prod026/media02.jpg" },
+      { "media": "/img/sub/prod026/media03.jpg" },
+      { "media": "/img/sub/prod026/media04.jpg" },
+      { "media": "/img/sub/prod026/media05.jpg" },
+      { "media": "/img/sub/prod026/media06.jpg" },
+      { "media": "/img/sub/prod026/media07.jpg" },
+      { "media": "/img/sub/prod026/media08.jpg" }
     ],
     "review": [
       {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.6.1",
-        "message": "이쁘고 사용하기 편해요",
-        "user_name": "윤",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
+        "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.5.27",
-        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
-        "user_name": "박",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.5.22",
-        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
-        "user_name": "김",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.4.2",
-        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
-        "user_name": "한",
-        "option": "힙밴드"
+        "date": "2023.11.1",
+        "message": "맛있어요 흑흑 짜장 만세",
+        "user_name": "임",
+        "option": "짜장떡볶이 (2개)"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
-        "date": "2023.2.21",
-        "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
+        "tag_repurchase": "",
+        "date": "2023.11.1",
+        "message": "떡볶이 땡길때 딱좋아요! 삶은계란 1-2개 같이 먹으면 한끼 뚝딱입니다",
+        "user_name": "이",
+        "option": " [-3%]매콤떡볶이 (5개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.20",
+        "message": "떡볶이가 댕길때 어묵추가해서 먹어용",
+        "user_name": "이",
+        "option": "매콤떡볶이 (2개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.14",
+        "message": "떡 식감도 좋고 양념도 너무 맛있어요 :)",
+        "user_name": "한",
+        "option": "짜장떡볶이 (2개)"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.10.7",
+        "message": "다이어트 할 때 떡볶이 땡기몀 방어하기 좋아요. 성분도 좋고 맛도 맛있어서 잘 먹을 것 같아요 감사합니다",
         "user_name": "김",
-        "option": "힙밴드"
+        "option": "매콤떡볶이 (2개)"
       }
     ]
   },
@@ -220,17 +212,17 @@
     "sale_price": "1,700원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod020/big01.png",
-        "product_imgS": "/img/sub/prod020/small01.png",
+        "product_imgB": "/img/sub/prod027/big01.webp",
+        "product_imgS": "/img/sub/prod027/small01.png",
         "header": "[다노] 오뚜기 컵누들_식단관리 미니 컵라면 간편식",
-        "summary_info": "[다노] 오뚜기 컵누들_식단관리 미니 컵라면 간편식",
+        "summary_info": "나트륨을 낮춰 더욱 가벼운",
         "price": "2,000원",
         "sale_price": "1,700원",
         "discount": "15%",
         "composition": "1/3/6/12개",
         "select": [
           {
-            "option": "힙밴드",
+            "option": "김치순두부 (1개)",
             "price": "2,000원",
             "sale_price": "1,700원"
           }
@@ -240,87 +232,87 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod020/detail01.png" },
-          { "image": "/img/sub/prod020/detail02.png" },
-          { "image": "/img/sub/prod020/detail03.mp4" },
-          { "image": "/img/sub/prod020/detail04.png" },
-          { "image": "/img/sub/prod020/detail05.png" },
-          { "image": "/img/sub/prod020/detail06.mp4" },
-          { "image": "/img/sub/prod020/detail07.png" },
-          { "image": "/img/sub/prod020/detail08.mp4" },
-          { "image": "/img/sub/prod020/detail09.png" },
-          { "image": "/img/sub/prod020/detail10.png" },
-          { "image": "/img/sub/prod020/detail11.png" },
-          { "image": "/img/sub/prod020/detail12.mp4" },
-          { "image": "/img/sub/prod020/detail13.png" },
-          { "image": "/img/sub/prod020/detail14.mp4" },
-          { "image": "/img/sub/prod020/detail15.png" },
-          { "image": "/img/sub/prod020/detail16.png" },
-          { "image": "/img/sub/prod020/detail17.png" },
-          { "image": "/img/sub/prod020/detail18.png" },
-          { "image": "/img/sub/prod020/detail19.png" },
-          { "image": "/img/sub/prod020/detail20.mp4" },
-          { "image": "/img/sub/prod020/detail21.png" },
-          { "image": "/img/sub/prod020/detail22.mp4" },
-          { "image": "/img/sub/prod020/detail23.png" },
-          { "image": "/img/sub/prod020/detail24.png" },
-          { "image": "/img/sub/prod020/detail25.png" }
+          { "image": "/img/sub/prod027/detail01.png" },
+          { "image": "/img/sub/prod027/detail02.png" },
+          { "image": "/img/sub/prod027/detail03.png" },
+          { "image": "/img/sub/prod027/detail04.mp4" },
+          { "image": "/img/sub/prod027/detail05.png" },
+          { "image": "/img/sub/prod027/detail06.mp4" },
+          { "image": "/img/sub/prod027/detail07.png" },
+          { "image": "/img/sub/prod027/detail08.mp4" },
+          { "image": "/img/sub/prod027/detail09.png" },
+          { "image": "/img/sub/prod027/detail10.png" },
+          { "image": "/img/sub/prod027/detail11.png" },
+          { "image": "/img/sub/prod027/detail12.png" },
+          { "image": "/img/sub/prod027/detail13.png" },
+          { "image": "/img/sub/prod027/detail14.png" },
+          { "image": "/img/sub/prod027/detail15.png" },
+          { "image": "/img/sub/prod027/detail16.png" },
+          { "image": "/img/sub/prod027/detail17.png" },
+          { "image": "/img/sub/prod027/detail18.png" },
+          { "image": "/img/sub/prod027/detail19.png" },
+          { "image": "/img/sub/prod027/detail20.png" },
+          { "image": "/img/sub/prod027/detail21.png" },
+          { "image": "/img/sub/prod027/detail22.png" },
+          { "image": "/img/sub/prod027/detail23.png" },
+          { "image": "/img/sub/prod027/detail24.png" },
+          { "image": "/img/sub/prod027/detail25.png" }
         ],
-        "info_name": "힙밴드",
-        "keep": "",
-        "volume": "1개 115g"
+        "info_name": "컵누들 2종 (김치순두부, 닭가슴살팟타이)",
+        "keep": "실온보관(직사광선을 피한 서늘한 곳에 보관)",
+        "volume": "김치순두부 1개 34g / 닭가슴살팟타이 1개 43g"
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod020/media01.jpg" },
-      { "media": "/img/sub/prod020/media02.jpg" },
-      { "media": "/img/sub/prod020/media03.jpg" },
-      { "media": "/img/sub/prod020/media04.jpg" },
-      { "media": "/img/sub/prod020/media05.jpg" },
-      { "media": "/img/sub/prod020/media06.jpg" },
-      { "media": "/img/sub/prod020/media07.jpg" },
-      { "media": "/img/sub/prod020/media08.jpg" }
+      { "media": "/img/sub/prod027/media01.jpg" },
+      { "media": "/img/sub/prod027/media02.jpg" },
+      { "media": "/img/sub/prod027/media03.jpg" },
+      { "media": "/img/sub/prod027/media04.jpg" },
+      { "media": "/img/sub/prod027/media05.jpg" },
+      { "media": "/img/sub/prod027/media06.jpg" },
+      { "media": "/img/sub/prod027/media07.jpg" },
+      { "media": "/img/sub/prod027/media08.jpg" }
     ],
     "review": [
       {
         "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.6.1",
-        "message": "이쁘고 사용하기 편해요",
-        "user_name": "윤",
-        "option": "힙밴드"
+        "tag_repurchase": "",
+        "date": "2023.11.7",
+        "message": "궁금해서 한개만 시켜봤는데 맛있네요 진짜 순두부도 같이 넣고 라면냄비에 끓여먹었어요 다른 재료 듬뿍 넣고 먹으면 배부르고 더 맛있을 거 같네요 다음에는 다른 맛으로 시켜봐야겠어요!",
+        "user_name": "이",
+        "option": "김치순두부 (1개)"
       },
       {
         "tag_new": "NEW",
         "tag_repurchase": "",
-        "date": "2023.5.27",
-        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
-        "user_name": "박",
-        "option": "힙밴드"
+        "date": "2023.11.6",
+        "message": "배송이 따로 와서 조금 당황했는데 지금 보니 실온 제품이라 그렇네요. 배송비 두배로 안받고 신경써서 보내주셔서 넘나 감사해요. 아마 배송비가 두배로 들었을 것 같다는 생각이 드네요 ㅠㅠ 오뚜기 콜라보 제품이라 그냥 경험삼아 먹어보고 싶었어요",
+        "user_name": "이",
+        "option": "닭가슴살팟타이 (1개)"
       },
       {
         "tag_new": "NEW",
         "tag_repurchase": "",
-        "date": "2023.5.22",
-        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
-        "user_name": "김",
-        "option": "힙밴드"
+        "date": "2023.11.5",
+        "message": "음....제가 레시피를 잘못 만들었나봐요;; 잘 모르겠는 맛입니다;;;",
+        "user_name": "강",
+        "option": "닭가슴살팟타이 (3개)"
       },
       {
         "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.4.2",
-        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
-        "user_name": "한",
-        "option": "힙밴드"
+        "tag_repurchase": "",
+        "date": "2023.11.4",
+        "message": "팟타이라고 하기엔 그렇지만 그래도 다이어트 중에 속세맛 대용으로 괜찮아요",
+        "user_name": "문",
+        "option": "닭가슴살팟타이 (1개)"
       },
       {
         "tag_new": "",
-        "tag_repurchase": "재구매",
-        "date": "2023.2.21",
-        "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
-        "user_name": "김",
-        "option": "힙밴드"
+        "tag_repurchase": "",
+        "date": "2023.11.3",
+        "message": "누들로 팟타이는 첨 먹어보는데 기대되요 뭔가 동남아를 느끼고싶을때 먹고싶은맛이라 샀음요",
+        "user_name": "진",
+        "option": "닭가슴살팟타이 (3개)"
       }
     ]
   },
@@ -356,26 +348,26 @@
         "image_set": [
           { "image": "/img/sub/prod020/detail01.png" },
           { "image": "/img/sub/prod020/detail02.png" },
-          { "image": "/img/sub/prod020/detail03.mp4" },
+          { "image": "/img/sub/prod020/detail03.png" },
           { "image": "/img/sub/prod020/detail04.png" },
           { "image": "/img/sub/prod020/detail05.png" },
-          { "image": "/img/sub/prod020/detail06.mp4" },
+          { "image": "/img/sub/prod020/detail06.png" },
           { "image": "/img/sub/prod020/detail07.png" },
-          { "image": "/img/sub/prod020/detail08.mp4" },
+          { "image": "/img/sub/prod020/detail08.png" },
           { "image": "/img/sub/prod020/detail09.png" },
           { "image": "/img/sub/prod020/detail10.png" },
           { "image": "/img/sub/prod020/detail11.png" },
-          { "image": "/img/sub/prod020/detail12.mp4" },
+          { "image": "/img/sub/prod020/detail12.png" },
           { "image": "/img/sub/prod020/detail13.png" },
-          { "image": "/img/sub/prod020/detail14.mp4" },
+          { "image": "/img/sub/prod020/detail14.png" },
           { "image": "/img/sub/prod020/detail15.png" },
           { "image": "/img/sub/prod020/detail16.png" },
           { "image": "/img/sub/prod020/detail17.png" },
           { "image": "/img/sub/prod020/detail18.png" },
           { "image": "/img/sub/prod020/detail19.png" },
-          { "image": "/img/sub/prod020/detail20.mp4" },
+          { "image": "/img/sub/prod020/detail20.png" },
           { "image": "/img/sub/prod020/detail21.png" },
-          { "image": "/img/sub/prod020/detail22.mp4" },
+          { "image": "/img/sub/prod020/detail22.png" },
           { "image": "/img/sub/prod020/detail23.png" },
           { "image": "/img/sub/prod020/detail24.png" },
           { "image": "/img/sub/prod020/detail25.png" }
