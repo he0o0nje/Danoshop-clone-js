@@ -125,40 +125,42 @@ function ProdReview() {
               </ul>
             </div>
           </style.ReviewSummary>
-          <style.MediaSummary>
-            <div className="header">
-              <div className="title_wrap">
-                <span className="title">포토&동영상</span>
-                <span className="review_count">(1,542)</span>
+          {dummy.media_review && (
+            <style.MediaSummary>
+              <div className="header">
+                <div className="title_wrap">
+                  <span className="title">포토&동영상</span>
+                  <span className="review_count">(1,542)</span>
+                </div>
+                <div className="more_btn">
+                  <a href="#none">
+                    전체보기
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 8 8"
+                      className="show_all_arrow"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M.667 2.333L4 5.667l3.333-3.334"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <div className="more_btn">
-                <a href="#none">
-                  전체보기
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 8"
-                    className="show_all_arrow"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M.667 2.333L4 5.667l3.333-3.334"
-                    ></path>
-                  </svg>
-                </a>
+              <div className="summary_content">
+                <ul>
+                  {product.media_review.map((item, index) => (
+                    <li key={index}>
+                      <img src={item.media} alt="" />
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </div>
-            <div className="summary_content">
-              <ul>
-                {product.media_review.map((item, index) => (
-                  <li key={index}>
-                    <img src={item.media} alt="" />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </style.MediaSummary>
+            </style.MediaSummary>
+          )}
           <style.SortFilter>
             <ul>
               <li className="basic_sort">
@@ -196,54 +198,56 @@ function ProdReview() {
                   </a>
                 </div>
               </li>
-              <li className="media_first">
-                <a href="#none">
-                  <div className="toggle_btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      className="on"
-                    >
-                      <rect
-                        width="18.5"
-                        height="18.5"
-                        x="2.75"
-                        y="2.75"
-                        stroke-width="1.5"
-                        rx="9.25"
-                      ></rect>
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
-                        d="M7 12l4 4 6-7"
-                      ></path>
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 16 16"
-                      className=""
-                    >
-                      <rect
-                        width="12.333"
-                        height="12.333"
-                        x="1.833"
-                        y="1.833"
-                        rx="6.167"
-                      ></rect>
-                      <path
-                        stroke="#fff"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M4.667 8l2.666 2.667 4-4.667"
-                      ></path>
-                    </svg>
-                    <span>포토/동영상 먼저 보기</span>
-                  </div>
-                </a>
-              </li>
+              {dummy.media_review && (
+                <li className="media_first">
+                  <a href="#none">
+                    <div className="toggle_btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        className="on"
+                      >
+                        <rect
+                          width="18.5"
+                          height="18.5"
+                          x="2.75"
+                          y="2.75"
+                          stroke-width="1.5"
+                          rx="9.25"
+                        ></rect>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M7 12l4 4 6-7"
+                        ></path>
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                        className=""
+                      >
+                        <rect
+                          width="12.333"
+                          height="12.333"
+                          x="1.833"
+                          y="1.833"
+                          rx="6.167"
+                        ></rect>
+                        <path
+                          stroke="#fff"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4.667 8l2.666 2.667 4-4.667"
+                        ></path>
+                      </svg>
+                      <span>포토/동영상 먼저 보기</span>
+                    </div>
+                  </a>
+                </li>
+              )}
             </ul>
             <div className="filter_list">
               <ul>

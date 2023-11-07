@@ -9,8 +9,8 @@
     "sale_price": "29,120원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod020/big01.png",
-        "product_imgS": "/img/sub/prod020/small01.png",
+        "product_imgB": "/img/sub/prod029/big01.png",
+        "product_imgS": "/img/sub/prod029/small01.png",
         "header": "다노 간편식 세트",
         "summary_info": "다노 간편식 세트",
         "price": "36,400원",
@@ -19,7 +19,7 @@
         "composition": "맛보기 세트 (각 2개씩)",
         "select": [
           {
-            "option": "힙밴드",
+            "option": "간편식 세트 [품절]",
             "price": "36,400원",
             "sale_price": "29,120원"
           }
@@ -29,87 +29,52 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod020/detail01.png" },
-          { "image": "/img/sub/prod020/detail02.png" },
-          { "image": "/img/sub/prod020/detail03.mp4" },
-          { "image": "/img/sub/prod020/detail04.png" },
-          { "image": "/img/sub/prod020/detail05.png" },
-          { "image": "/img/sub/prod020/detail06.mp4" },
-          { "image": "/img/sub/prod020/detail07.png" },
-          { "image": "/img/sub/prod020/detail08.mp4" },
-          { "image": "/img/sub/prod020/detail09.png" },
-          { "image": "/img/sub/prod020/detail10.png" },
-          { "image": "/img/sub/prod020/detail11.png" },
-          { "image": "/img/sub/prod020/detail12.mp4" },
-          { "image": "/img/sub/prod020/detail13.png" },
-          { "image": "/img/sub/prod020/detail14.mp4" },
-          { "image": "/img/sub/prod020/detail15.png" },
-          { "image": "/img/sub/prod020/detail16.png" },
-          { "image": "/img/sub/prod020/detail17.png" },
-          { "image": "/img/sub/prod020/detail18.png" },
-          { "image": "/img/sub/prod020/detail19.png" },
-          { "image": "/img/sub/prod020/detail20.mp4" },
-          { "image": "/img/sub/prod020/detail21.png" },
-          { "image": "/img/sub/prod020/detail22.mp4" },
-          { "image": "/img/sub/prod020/detail23.png" },
-          { "image": "/img/sub/prod020/detail24.png" },
-          { "image": "/img/sub/prod020/detail25.png" }
+          { "image": "/img/sub/prod029/detail01.png" },
+          { "image": "/img/sub/prod029/detail02.png" },
+          { "image": "/img/sub/prod029/detail03.png" },
+          { "image": "/img/sub/prod029/detail04.jpg" },
+          { "image": "/img/sub/prod029/detail05.png" },
+          { "image": "/img/sub/prod029/detail06.png" },
+          { "image": "/img/sub/prod029/detail07.png" },
+          { "image": "/img/sub/prod029/detail08.png" },
+          { "image": "/img/sub/prod029/detail09.png" },
+          { "image": "/img/sub/prod029/detail10.png" },
+          { "image": "/img/sub/prod029/detail11.png" },
+          { "image": "/img/sub/prod029/detail12.png" },
+          { "image": "/img/sub/prod029/detail13.png" },
+          { "image": "/img/sub/prod029/detail14.png" },
+          { "image": "/img/sub/prod029/detail15.png" },
+          { "image": "/img/sub/prod029/detail16.png" },
+          { "image": "/img/sub/prod029/detail17.png" },
+          { "image": "/img/sub/prod029/detail18.png" },
+          { "image": "/img/sub/prod029/detail19.png" },
+          { "image": "/img/sub/prod029/detail20.png" },
+          { "image": "/img/sub/prod029/detail21.png" },
+          { "image": "/img/sub/prod029/detail22.png" },
+          { "image": "/img/sub/prod029/detail23.png" },
+          { "image": "/img/sub/prod029/detail24.png" },
+          { "image": "/img/sub/prod029/detail25.png" },
+          { "image": "/img/sub/prod029/detail26.png" },
+          { "image": "/img/sub/prod029/detail27.png" },
+          { "image": "/img/sub/prod029/detail28.png" },
+          { "image": "/img/sub/prod029/detail29.jpg" },
+          { "image": "/img/sub/prod029/detail30.jpg" },
+          { "image": "/img/sub/prod029/detail31.jpg" }
         ],
-        "info_name": "힙밴드",
+        "info_name": "",
         "keep": "",
-        "volume": "1개 115g"
+        "volume": ""
       }
     ],
-    "media_review": [
-      { "media": "/img/sub/prod020/media01.jpg" },
-      { "media": "/img/sub/prod020/media02.jpg" },
-      { "media": "/img/sub/prod020/media03.jpg" },
-      { "media": "/img/sub/prod020/media04.jpg" },
-      { "media": "/img/sub/prod020/media05.jpg" },
-      { "media": "/img/sub/prod020/media06.jpg" },
-      { "media": "/img/sub/prod020/media07.jpg" },
-      { "media": "/img/sub/prod020/media08.jpg" }
-    ],
+    "media_review": [],
     "review": [
       {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.6.1",
-        "message": "이쁘고 사용하기 편해요",
-        "user_name": "윤",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.5.27",
-        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
-        "user_name": "박",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.5.22",
-        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
-        "user_name": "김",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.4.2",
-        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
-        "user_name": "한",
-        "option": "힙밴드"
-      },
-      {
         "tag_new": "",
-        "tag_repurchase": "재구매",
-        "date": "2023.2.21",
-        "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
-        "user_name": "김",
-        "option": "힙밴드"
+        "tag_repurchase": "",
+        "date": "2023.8.21",
+        "message": "ㅜㅜ먹을거 없을때 최고에요",
+        "user_name": "",
+        "option": "간편식 세트"
       }
     ]
   },
@@ -123,17 +88,17 @@
     "sale_price": "24,000원",
     "top": [
       {
-        "product_imgB": "/img/sub/prod020/big01.png",
-        "product_imgS": "/img/sub/prod020/small01.png",
+        "product_imgB": "/img/sub/prod030/big01.png",
+        "product_imgS": "/img/sub/prod030/small01.png",
         "header": "다노 분식 세트",
-        "summary_info": "다노 분식 세트",
+        "summary_info": "떡볶이부터 면까지 다양하게 즐기는 분식세트",
         "price": "30,000원",
         "sale_price": "24,000원",
         "discount": "20%",
         "composition": "분식 맛보기 세트",
         "select": [
           {
-            "option": "힙밴드",
+            "option": "분식 세트",
             "price": "30,000원",
             "sale_price": "24,000원"
           }
@@ -143,87 +108,99 @@
     "detail": [
       {
         "image_set": [
-          { "image": "/img/sub/prod020/detail01.png" },
-          { "image": "/img/sub/prod020/detail02.png" },
-          { "image": "/img/sub/prod020/detail03.mp4" },
-          { "image": "/img/sub/prod020/detail04.png" },
-          { "image": "/img/sub/prod020/detail05.png" },
-          { "image": "/img/sub/prod020/detail06.mp4" },
-          { "image": "/img/sub/prod020/detail07.png" },
-          { "image": "/img/sub/prod020/detail08.mp4" },
-          { "image": "/img/sub/prod020/detail09.png" },
-          { "image": "/img/sub/prod020/detail10.png" },
-          { "image": "/img/sub/prod020/detail11.png" },
-          { "image": "/img/sub/prod020/detail12.mp4" },
-          { "image": "/img/sub/prod020/detail13.png" },
-          { "image": "/img/sub/prod020/detail14.mp4" },
-          { "image": "/img/sub/prod020/detail15.png" },
-          { "image": "/img/sub/prod020/detail16.png" },
-          { "image": "/img/sub/prod020/detail17.png" },
-          { "image": "/img/sub/prod020/detail18.png" },
-          { "image": "/img/sub/prod020/detail19.png" },
-          { "image": "/img/sub/prod020/detail20.mp4" },
-          { "image": "/img/sub/prod020/detail21.png" },
-          { "image": "/img/sub/prod020/detail22.mp4" },
-          { "image": "/img/sub/prod020/detail23.png" },
-          { "image": "/img/sub/prod020/detail24.png" },
-          { "image": "/img/sub/prod020/detail25.png" }
+          { "image": "/img/sub/prod030/detail01.png" },
+          { "image": "/img/sub/prod030/detail02.png" },
+          { "image": "/img/sub/prod030/detail03.png" },
+          { "image": "/img/sub/prod030/detail04.png" },
+          { "image": "/img/sub/prod030/detail05.png" },
+          { "image": "/img/sub/prod030/detail06.png" },
+          { "image": "/img/sub/prod030/detail07.png" },
+          { "image": "/img/sub/prod030/detail08.png" },
+          { "image": "/img/sub/prod030/detail09.png" },
+          { "image": "/img/sub/prod030/detail10.png" },
+          { "image": "/img/sub/prod030/detail11.png" },
+          { "image": "/img/sub/prod030/detail12.png" },
+          { "image": "/img/sub/prod030/detail13.png" },
+          { "image": "/img/sub/prod030/detail14.mp4" },
+          { "image": "/img/sub/prod030/detail15.png" },
+          { "image": "/img/sub/prod030/detail16.mp4" },
+          { "image": "/img/sub/prod030/detail17.png" },
+          { "image": "/img/sub/prod030/detail18.mp4" },
+          { "image": "/img/sub/prod030/detail19.png" },
+          { "image": "/img/sub/prod030/detail20.png" },
+          { "image": "/img/sub/prod030/detail21.png" },
+          { "image": "/img/sub/prod030/detail22.gif" },
+          { "image": "/img/sub/prod030/detail23.png" },
+          { "image": "/img/sub/prod030/detail24.gif" },
+          { "image": "/img/sub/prod030/detail25.png" },
+          { "image": "/img/sub/prod030/detail26.gif" },
+          { "image": "/img/sub/prod030/detail27.png" },
+          { "image": "/img/sub/prod030/detail28.gif" },
+          { "image": "/img/sub/prod030/detail29.png" },
+          { "image": "/img/sub/prod030/detail30.gif" },
+          { "image": "/img/sub/prod030/detail31.png" },
+          { "image": "/img/sub/prod030/detail32.gif" },
+          { "image": "/img/sub/prod030/detail33.png" },
+          { "image": "/img/sub/prod030/detail34.png" },
+          { "image": "/img/sub/prod030/detail35.png" },
+          { "image": "/img/sub/prod030/detail36.png" },
+          { "image": "/img/sub/prod030/detail37.png" },
+          { "image": "/img/sub/prod030/detail38.png" },
+          { "image": "/img/sub/prod030/detail39.gif" },
+          { "image": "/img/sub/prod030/detail40.png" },
+          { "image": "/img/sub/prod030/detail41.gif" },
+          { "image": "/img/sub/prod030/detail42.png" },
+          { "image": "/img/sub/prod030/detail43.png" }
         ],
-        "info_name": "힙밴드",
+        "info_name": "",
         "keep": "",
-        "volume": "1개 115g"
+        "volume": ""
       }
     ],
     "media_review": [
-      { "media": "/img/sub/prod020/media01.jpg" },
-      { "media": "/img/sub/prod020/media02.jpg" },
-      { "media": "/img/sub/prod020/media03.jpg" },
-      { "media": "/img/sub/prod020/media04.jpg" },
-      { "media": "/img/sub/prod020/media05.jpg" },
-      { "media": "/img/sub/prod020/media06.jpg" },
-      { "media": "/img/sub/prod020/media07.jpg" },
-      { "media": "/img/sub/prod020/media08.jpg" }
+      { "media": "/img/sub/prod030/media01.jpg" },
+      { "media": "/img/sub/prod030/media02.jpg" }
     ],
     "review": [
       {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.6.1",
-        "message": "이쁘고 사용하기 편해요",
-        "user_name": "윤",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
+        "tag_new": "",
         "tag_repurchase": "",
-        "date": "2023.5.27",
-        "message": "처음사봤는데 조절할 수 있어서 너무좋네요.",
-        "user_name": "박",
-        "option": "힙밴드"
-      },
-      {
-        "tag_new": "NEW",
-        "tag_repurchase": "",
-        "date": "2023.5.22",
-        "message": "요즘 홈트를 하고있는데 스쿼드 자세가 어떻게 하는게 제대로 하는걸까 고민중에 힙밴드를 발견했어요. 당장 구매후 사용해보니 무릎이 흔들리는걸 방지해주고, 앉고 일어서는 자에도 안정되더군요. 요즘 스쿼드 할때마다 꼭 사용하고 있어요! 스쿼드 초보들께 강추합니다.~~~",
+        "date": "2023.10.9",
+        "message": "맛도 괜찮고 다이어트식이라고 하니 가볍게 먹기 좋아요",
         "user_name": "김",
-        "option": "힙밴드"
+        "option": "분식 세트"
       },
       {
-        "tag_new": "NEW",
-        "tag_repurchase": "재구매",
-        "date": "2023.4.2",
-        "message": "맨날 고무재질이 먼지 붙어서 화났는데 이건 그러지않고 탄력도 있어서 좋아요♡",
-        "user_name": "한",
-        "option": "힙밴드"
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.9.12",
+        "message": "구성이 좋은거같아요. 기대하고 있습니다.",
+        "user_name": "김",
+        "option": "분식 세트"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.9.3",
+        "message": "떡...ㅅ식감이 요상하네요",
+        "user_name": "오",
+        "option": "분식 세트"
+      },
+      {
+        "tag_new": "",
+        "tag_repurchase": "",
+        "date": "2023.8.21",
+        "message": "쌀국수 너무 맛있어유 ㅠㅠ 쌀국수만 따로 더 구매할 예정이에요",
+        "user_name": "",
+        "option": "분식 세트"
       },
       {
         "tag_new": "",
         "tag_repurchase": "재구매",
-        "date": "2023.2.21",
+        "date": "2023.8.8",
         "message": "굿 세라밴드 묶기 귀찮아서 샀는데 튼튼해요",
-        "user_name": "김",
-        "option": "힙밴드"
+        "user_name": "이",
+        "option": "분식 세트"
       }
     ]
   }
