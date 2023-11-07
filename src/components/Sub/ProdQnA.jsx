@@ -21,10 +21,11 @@ function ProdQnA() {
       <style.ProdQnA>
         <DetailTab
           openTab={3}
-          selectedTab={selectedTab}
-          onTabClick={handleTabClick}
+          // selectedTab={selectedTab}
+          // onTabClick={handleTabClick}
+          // ref={tabContentRef}
         />
-        <div ref={tabContentRef}>
+        <div>
           <style.BoardTit>
             <h2>Q&amp;A</h2>
             <div className="QnA_btn_wrap">

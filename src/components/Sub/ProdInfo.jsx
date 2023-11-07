@@ -21,10 +21,11 @@ function ProdInfo() {
       <style.ProdInfo>
         <DetailTab
           openTab={4}
-          selectedTab={selectedTab}
-          onTabClick={handleTabClick}
+          // selectedTab={selectedTab}
+          // onTabClick={handleTabClick}
+          // ref={tabContentRef}
         />
-        <style.DetailGuide ref={tabContentRef}>
+        <style.DetailGuide>
           <div className="info_box">
             <div className="title">
               <h2>PAYMENT INFO</h2>

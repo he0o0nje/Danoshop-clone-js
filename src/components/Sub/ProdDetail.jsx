@@ -43,12 +43,12 @@ function ProdDetail() {
     <>
       <DetailTab
         openTab={1}
-        selectedTab={selectedTab}
-        onTabClick={handleTabClick}
+        // selectedTab={selectedTab}
+        // onTabClick={handleTabClick}
+        // ref={tabContentRef}
       />
       <style.ProdDetail
         {...(product.detail[0].info_name ? { show: true } : {})}
-        ref={tabContentRef}
       >
         <div>
           <p>

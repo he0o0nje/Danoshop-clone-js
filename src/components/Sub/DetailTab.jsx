@@ -1,27 +1,39 @@
 import * as style from "./DetailTabStyle";
+import { useScroll } from "./Context";
+import { Link } from "react-router-dom";
 
-function DetailTab04({ openTab, onTabClick }) {
+function DetailTab({ openTab }) {
+  const { selectedTab, setSelectedTab } = useScroll();
+
+  const onTabClick = (tabIndex) => {
+    setSelectedTab(tabIndex);
+  };
+
   return (
     <>
       <style.DetailTab>
         <ul>
           <li className={openTab === 1 ? "tab_open" : ""}>
-            <a onClick={() => onTabClick(1)}>상세정보</a>
+            <Link to="#none" onClick={() => onTabClick(1)}>
+              상세정보
+            </Link>
           </li>
           <li className={openTab === 2 ? "tab_open" : ""}>
-            <a onClick={() => onTabClick(2)}>
+            <Link to="#none" onClick={() => onTabClick(1)}>
               상품후기
               <span>2,020</span>
-            </a>
+            </Link>
           </li>
           <li className={openTab === 3 ? "tab_open" : ""}>
-            <a onClick={() => onTabClick(3)}>
+            <Link to="#none" onClick={() => onTabClick(1)}>
               상품문의
               <span>306</span>
-            </a>
+            </Link>
           </li>
           <li className={openTab === 4 ? "tab_open" : ""}>
-            <a onClick={() => onTabClick(4)}>배송/교환/환불 안내</a>
+            <Link to="#none" onClick={() => onTabClick(1)}>
+              배송/교환/환불 안내
+            </Link>
           </li>
         </ul>
       </style.DetailTab>
@@ -29,4 +41,4 @@ function DetailTab04({ openTab, onTabClick }) {
   );
 }
 
-export default DetailTab04;
+export default DetailTab;

@@ -43,10 +43,11 @@ function ProdReview() {
       <style.ProdReview>
         <DetailTab
           openTab={2}
-          selectedTab={selectedTab}
-          onTabClick={handleTabClick}
+          // selectedTab={selectedTab}
+          // onTabClick={handleTabClick}
+          // ref={tabContentRef}
         />
-        <style.ReviewWrap ref={tabContentRef}>
+        <style.ReviewWrap>
           <div className="header">
             <div className="title_wrap">
               <span className="title"> REVIEW </span>
