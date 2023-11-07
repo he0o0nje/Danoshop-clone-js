@@ -3,18 +3,18 @@ import DetailTab from "./DetailTab";
 import { useState, useRef } from "react";
 
 function ProdInfo() {
-  const [selectedTab, setSelectedTab] = useState(1);
-  const tabContentRef = useRef(null);
-  const handleTabClick = (tab) => {
-    setSelectedTab(tab);
-    if (tabContentRef.current) {
-      const tabContentOffset = tabContentRef.current.offsetTop;
-      window.scrollTo({
-        top: tabContentOffset,
-        behavior: "smooth",
-      });
-    }
-  };
+  // const [selectedTab, setSelectedTab] = useState(1);
+  // const tabContentRef = useRef(null);
+  // const handleTabClick = (tab) => {
+  //   setSelectedTab(tab);
+  //   if (tabContentRef.current) {
+  //     const tabContentOffset = tabContentRef.current.offsetTop;
+  //     window.scrollTo({
+  //       top: tabContentOffset,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // };
 
   return (
     <>

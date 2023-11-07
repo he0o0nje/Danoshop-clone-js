@@ -1,5 +1,5 @@
 import * as style from "./DetailTabStyle";
-import { useScroll } from "./Context";
+import { useScroll } from "./ScrollContext";
 import { Link } from "react-router-dom";
 
 function DetailTab({ openTab }) {

@@ -25,19 +25,19 @@ function ProdDetail() {
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
 
-  const [selectedTab, setSelectedTab] = useState(1);
-  const tabContentRef = useRef(null);
+  // const [selectedTab, setSelectedTab] = useState(1);
+  // const tabContentRef = useRef(null);
 
-  const handleTabClick = (tab) => {
-    setSelectedTab(tab);
-    if (tabContentRef.current) {
-      const tabContentOffset = tabContentRef.current.offsetTop;
-      window.scrollTo({
-        top: tabContentOffset,
-        behavior: "smooth",
-      });
-    }
-  };
+  // const handleTabClick = (tab) => {
+  //   setSelectedTab(tab);
+  //   if (tabContentRef.current) {
+  //     const tabContentOffset = tabContentRef.current.offsetTop;
+  //     window.scrollTo({
+  //       top: tabContentOffset,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // };
 
   return (
     <>

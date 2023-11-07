@@ -15,14 +15,14 @@ import pm6 from "../../data/product/6pm.json";
 import pm9 from "../../data/product/9pm.json";
 import pm11 from "../../data/product/11pm.json";
 import TryEat from "../../data/product/TryEat.json";
-import { useScroll } from "../../components/Sub/Context";
+import { useScroll } from "../../components/Sub/ScrollContext";
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
 function AboutPage() {
   const { id } = useParams();
-  const { selectedTab } = useScroll();
-  const sectionRefs = [useRef(), useRef(), useRef(), useRef()];
+  // const { selectedTab } = useScroll();
+  // const sectionRefs = [useRef(), useRef(), useRef(), useRef()];
 
   const dummy = [
     ...am7,
@@ -36,13 +36,13 @@ function AboutPage() {
   ];
   const product = dummy.find((item) => item.id === parseInt(id));
 
-  useEffect(() => {
-    // 선택한 탭의 위치로 스크롤
-    window.scrollTo({
-      top: sectionRefs[selectedTab].current.offsetTop,
-      behavior: "smooth",
-    });
-  }, [selectedTab]);
+  // useEffect(() => {
+  //   // 선택한 탭의 위치로 스크롤
+  //   window.scrollTo({
+  //     top: sectionRefs[selectedTab].current.offsetTop,
+  //     behavior: "smooth",
+  //   });
+  // }, [selectedTab]);
 
   if (!product) {
     return <style.Alert404>제품을 찾을 수 없습니다.</style.Alert404>;
@@ -57,10 +57,18 @@ function AboutPage() {
       <style.Sub>
         <Top />
         <style.DetailSec>
-          <ProdDetail ref={sectionRefs[1]} />
-          <ProdReview ref={sectionRefs[2]} />
-          <ProdQnA ref={sectionRefs[3]} />
-          <ProdInfo ref={sectionRefs[4]} />
+          <ProdDetail
+          // ref={sectionRefs[1]}
+          />
+          <ProdReview
+          // ref={sectionRefs[2]}
+          />
+          <ProdQnA
+          // ref={sectionRefs[3]}
+          />
+          <ProdInfo
+          // ref={sectionRefs[4]}
+          />
         </style.DetailSec>
       </style.Sub>
       <Footer />
