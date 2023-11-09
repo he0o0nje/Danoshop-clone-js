@@ -17,7 +17,7 @@ import {
 import { Link } from "react-router-dom";
 
 function Cart() {
-  window.scroll({ top: 0, behavior: "instant" });
+  window.scroll({ top: 0, behavior: "auto" });
 
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items);
@@ -332,7 +332,9 @@ function Cart() {
                       <div className="list">
                         <div class="item">
                           <h5 class="title">기간할인</h5>
-                          <div class="data">3000원</div>
+                          <div class="data">
+                            {totalDiscountValue.toLocaleString()}원
+                          </div>
                         </div>
                       </div>
                     </div>

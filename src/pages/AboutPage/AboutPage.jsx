@@ -48,7 +48,7 @@ function AboutPage() {
     return <style.Alert404>제품을 찾을 수 없습니다.</style.Alert404>;
   }
 
-  window.scroll({ top: 0, behavior: "instant" });
+  window.scroll({ top: 0, behavior: "auto" });
 
   return (
     <>

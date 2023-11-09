@@ -29,6 +29,7 @@ function Top() {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [optionQuantities, setOptionQuantities] = useState([]);
 
+  // 선택한 옵션 데이터 만들기
   const handleProductSelect = (e) => {
     const selectedValue = e.target.value;
 
@@ -63,6 +64,7 @@ function Top() {
     }
   };
 
+  // 옵션별 삭제 기능
   const handleProductDelete = (selectedOption) => {
     setSelectedOptions(
       selectedOptions.filter((option) => option !== selectedOption)
@@ -73,6 +75,7 @@ function Top() {
     setOptionQuantities(updatedOptionQuantities);
   };
 
+  // 옵션별 수량 변경
   const handleQuantityChange = (event, selectedOption) => {
     const newQuantity = parseInt(event.target.value);
     const updatedOptionQuantities = optionQuantities.map((entry) => {
@@ -84,7 +87,31 @@ function Top() {
     setOptionQuantities(updatedOptionQuantities);
   };
 
-  // 옵션별 가격을 저장하는 객체
+  // 옵션별 원래 가격
+  function getPriceForOption(product, optionName) {
+    const selectedOption = product?.top[0].select.find(
+      (option) => option.option === optionName
+    );
+    if (selectedOption) {
+      const priceWithoutCommas = selectedOption.price.replace(/,/g, "");
+      return parseInt(priceWithoutCommas);
+    }
+
+    return 0;
+  }
+  // 옵션별 원래 가격 * 수량
+  const optionTotalPrice = (option) => {
+    const optionQuantityEntry = optionQuantities.find(
+      (entry) => entry.option === option
+    );
+    if (optionQuantityEntry) {
+      const optionPrice = getPriceForOption(product, option);
+      return optionPrice * optionQuantityEntry.quantity;
+    }
+    return 0;
+  };
+
+  // 옵션별 할인 가격을 저장하는 객체
   const optionPrices = {};
 
   product.top[0].select.forEach((option) => {
@@ -92,7 +119,7 @@ function Top() {
     const optionPrice = parseInt(priceWithoutWon.replace(/,/g, ""));
     optionPrices[option.option] = optionPrice;
   });
-
+  // 옵션별 할인 가격 * 수량
   const calculateSubTotal = (option) => {
     const optionQuantityEntry = optionQuantities.find(
       (entry) => entry.option === option
@@ -104,11 +131,13 @@ function Top() {
     return 0;
   };
 
+  // 총 수량
   const totalQuantity = optionQuantities.reduce(
     (total, entry) => total + entry.quantity,
     0
   );
 
+  // 총 가격
   const totalPrice = selectedOptions.reduce((total, option) => {
     const subTotal = calculateSubTotal(option);
     return total + subTotal;
@@ -118,6 +147,7 @@ function Top() {
 
   const item = useSelector((state) => state.detail); // Redux 스토어에서 제품 세부 정보 가져오기
 
+  // 장바구니로 보내기
   function SendToCart(item) {
     const cartItems = selectedOptions.map((option) => {
       const optionQuantityEntry = optionQuantities.find(
@@ -142,8 +172,9 @@ function Top() {
         price: price,
         sale_price: salePrice,
         option: option,
-        quantity: quantity,
+        quantity: quantity, // 수량정보 수정 필요
         subTotal: subTotal,
+        options: selectedOptions, // 옵션정보 수정 필요
       };
     });
 

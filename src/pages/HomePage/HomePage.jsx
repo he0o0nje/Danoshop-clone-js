@@ -15,7 +15,7 @@ import BotBanner from "../../components/Main/BotBanner";
 import Footer from "../../components/Footer/Footer";
 
 function HomePage() {
-  window.scroll({ behavior: "instant" });
+  window.scroll({ top: 0, behavior: "auto" });
 
   return (
     <>

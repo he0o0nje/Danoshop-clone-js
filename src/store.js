@@ -25,6 +25,24 @@ let cart = createSlice({
   initialState: {
     items: [
       {
+        id: "12",
+        image: "/img/main/3pm/01.png",
+        name: "[다노] 프로틴 snack eat 옥수수맛_저칼로리 식단관리 간식",
+        price: "2,600원",
+        sale_price: "2,080원",
+        option: "프로틴 snack eat 옥수수맛(1개)",
+        quantity: 5,
+      },
+      {
+        id: "16",
+        image: "/img/main/6pm/01.webp",
+        name: "[다노] 단백질 도시락 7종 세트_식단관리 고단백 냉동도시락",
+        price: "31,500원",
+        sale_price: "",
+        option: "단백질 도시락(1세트)",
+        quantity: 1,
+      },
+      {
         id: "9",
         image: "/img/main/1pm/03.png",
         name: "[다노] 닭가슴살 큐브_식단관리 닭가슴살",
@@ -32,24 +50,6 @@ let cart = createSlice({
         sale_price: "",
         option: "큐브 닭가슴살_오리지널(5개)",
         quantity: 3,
-      },
-      {
-        id: "10",
-        image: "/img/main/1pm/04.png",
-        name: "[다노] 통밀 오트 베이글_식단용 건강빵",
-        price: "8,900원",
-        sale_price: "",
-        option: "-6%",
-        quantity: 2,
-      },
-      {
-        id: "11",
-        image: "/img/main/1pm/05.jpg",
-        name: "[다노] 두부비엔나소시지",
-        price: "12,000원",
-        sale_price: "7,200원",
-        option: "두부 비엔나 소시지 (90g*4팩)",
-        quantity: 5,
       },
     ],
   },
@@ -146,7 +146,7 @@ const calculatePrice = createSlice({
             item.sale_price.replace(/원/g, "").replace(/,/g, ""),
             10
           );
-          return total + (price - salePrice);
+          return total + (price - salePrice) * item.quantity;
         }, 0);
       state.totalDiscount = totalDiscount;
     },
